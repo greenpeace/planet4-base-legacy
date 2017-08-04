@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "1d52dac8b20f97b8285d85c0eae54eb3",
-    "content-hash": "0fe5580e944db5f2fe73d00ace569cb6",
+    "hash": "26ba1c1a157082d6c648bb72aa207bea",
+    "content-hash": "629819abcc0a1e8c7d7f4644157dac72",
     "packages": [
         {
             "name": "composer/ca-bundle",
@@ -382,20 +382,20 @@
         },
         {
             "name": "greenpeace/planet4-child-theme",
-            "version": "0.2.1",
+            "version": "0.2.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/greenpeace/planet4-child-theme.git",
-                "reference": "2bf89dac3be26aea001940fb1c37bce873874223"
+                "reference": "b0e7c0882641ed11c4d995f3e8c9b4e5b676b39c"
             },
             "dist": {
                 "type": "tar",
-                "url": "https://p4-composer-registry.greenpeace.org//dist/greenpeace/planet4-child-theme/greenpeace-planet4-child-theme-2bf89dac3be26aea001940fb1c37bce873874223-zip-5c75a6.tar",
-                "reference": "2bf89dac3be26aea001940fb1c37bce873874223",
-                "shasum": "a28d76347dea1e331a880ed8075ad70f6776fa2d"
+                "url": "https://p4-composer-registry.greenpeace.org//dist/greenpeace/planet4-child-theme/greenpeace-planet4-child-theme-b0e7c0882641ed11c4d995f3e8c9b4e5b676b39c-zip-51ccfb.tar",
+                "reference": "b0e7c0882641ed11c4d995f3e8c9b4e5b676b39c",
+                "shasum": "84bca491d66457b05b0b26df77b95964291a8acc"
             },
             "require": {
-                "wpackagist-plugin/timber-library": "0.22.*"
+                "wpackagist-plugin/timber-library": "1.3.*"
             },
             "type": "wordpress-theme",
             "extra": {
@@ -422,7 +422,7 @@
                 "wiki": "https://github.com/greenpeace/planet4-child-theme/wiki",
                 "source": "https://github.com/greenpeace/planet4-child-theme"
             },
-            "time": "2017-07-03 13:12:49"
+            "time": "2017-08-04 13:30:04"
         },
         {
             "name": "greenpeace/planet4-content-default",
@@ -494,20 +494,20 @@
         },
         {
             "name": "greenpeace/planet4-master-theme",
-            "version": "v0.2.0",
+            "version": "0.2.1",
             "source": {
                 "type": "git",
-                "url": "git@github.com:greenpeace/planet4-master-theme.git",
-                "reference": "7a816d49749b56407594816c7e56863443cdf0ae"
+                "url": "https://github.com/greenpeace/planet4-master-theme.git",
+                "reference": "5bf0c08fe9b3a81e4a6274cd71d84e171bd4a19c"
             },
             "dist": {
                 "type": "tar",
-                "url": "https://p4-composer-registry.greenpeace.org//dist/greenpeace/planet4-master-theme/greenpeace-planet4-master-theme-7a816d49749b56407594816c7e56863443cdf0ae-zip-b1b074.tar",
-                "reference": "7a816d49749b56407594816c7e56863443cdf0ae",
-                "shasum": "0ab19cfe207dde8a7f6c69f6e511e983422b7804"
+                "url": "https://p4-composer-registry.greenpeace.org//dist/greenpeace/planet4-master-theme/greenpeace-planet4-master-theme-5bf0c08fe9b3a81e4a6274cd71d84e171bd4a19c-zip-3fbb7e.tar",
+                "reference": "5bf0c08fe9b3a81e4a6274cd71d84e171bd4a19c",
+                "shasum": "cde7a49553074f6a39a96e60b39ef319317f99bc"
             },
             "require": {
-                "wpackagist-plugin/timber-library": "0.22.*"
+                "wpackagist-plugin/timber-library": "1.3.*"
             },
             "type": "wordpress-theme",
             "extra": {
@@ -538,21 +538,27 @@
                 "wiki": "https://github.com/greenpeace/planet4-master-theme/wiki",
                 "source": "https://github.com/greenpeace/planet4-master-theme"
             },
-            "time": "2017-07-03 13:05:23"
+            "time": "2017-08-04 11:35:10"
         },
         {
             "name": "greenpeace/planet4-plugin-engagingnetworks",
-            "version": "0.1",
+            "version": "0.1.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/greenpeace/planet4-plugin-engagingnetworks.git",
-                "reference": "4b0cf2a3e4e50cf84c6d845f2ce45cb70d2bbf94"
+                "reference": "30c8b06dfa773daee9f641441b6a73f9ef2d28a7"
             },
             "dist": {
                 "type": "tar",
-                "url": "https://p4-composer-registry.greenpeace.org//dist/greenpeace/planet4-plugin-engagingnetworks/greenpeace-planet4-plugin-engagingnetworks-4b0cf2a3e4e50cf84c6d845f2ce45cb70d2bbf94-zip-40fea1.tar",
-                "reference": "4b0cf2a3e4e50cf84c6d845f2ce45cb70d2bbf94",
-                "shasum": "5b15777ffb0baa1c2d1c99a40812ad4369a9bdfb"
+                "url": "https://p4-composer-registry.greenpeace.org//dist/greenpeace/planet4-plugin-engagingnetworks/greenpeace-planet4-plugin-engagingnetworks-30c8b06dfa773daee9f641441b6a73f9ef2d28a7-zip-1618d4.tar",
+                "reference": "30c8b06dfa773daee9f641441b6a73f9ef2d28a7",
+                "shasum": "3deb57ea21b076837c84ca828a390b2807639d68"
+            },
+            "require-dev": {
+                "dealerdirect/phpcodesniffer-composer-installer": "^0.4.0",
+                "frenck/php-compatibility": "^7.1",
+                "squizlabs/php_codesniffer": "2.9.*",
+                "wp-coding-standards/wpcs": "0.13.*"
             },
             "type": "wordpress-plugin",
             "license": [
@@ -566,10 +572,10 @@
             ],
             "description": "This repository contains the wordpress plugin that connects Planet 4 with the Engaging Networks platform.",
             "support": {
-                "source": "https://github.com/greenpeace/planet4-plugin-engagingnetworks/tree/v0.1",
+                "source": "https://github.com/greenpeace/planet4-plugin-engagingnetworks/tree/v0.1.3",
                 "issues": "https://github.com/greenpeace/planet4-plugin-engagingnetworks/issues"
             },
-            "time": "2017-07-25 10:59:20"
+            "time": "2017-08-04 11:45:30"
         },
         {
             "name": "greenpeace/planet4-wordpress",
@@ -1095,7 +1101,7 @@
         },
         {
             "name": "symfony/config",
-            "version": "v2.8.25",
+            "version": "v2.8.26",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/config.git",
@@ -1151,16 +1157,16 @@
         },
         {
             "name": "symfony/console",
-            "version": "v2.8.25",
+            "version": "v2.8.26",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/console.git",
-                "reference": "46e65f8d98c9ab629bbfcc16a4ff023f61c37fb2"
+                "reference": "32a3c6b3398de5db8ed381f4ef92970c59c2fcdd"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/console/zipball/46e65f8d98c9ab629bbfcc16a4ff023f61c37fb2",
-                "reference": "46e65f8d98c9ab629bbfcc16a4ff023f61c37fb2",
+                "url": "https://api.github.com/repos/symfony/console/zipball/32a3c6b3398de5db8ed381f4ef92970c59c2fcdd",
+                "reference": "32a3c6b3398de5db8ed381f4ef92970c59c2fcdd",
                 "shasum": ""
             },
             "require": {
@@ -1208,20 +1214,20 @@
             ],
             "description": "Symfony Console Component",
             "homepage": "https://symfony.com",
-            "time": "2017-07-03 08:04:30"
+            "time": "2017-07-29 21:26:04"
         },
         {
             "name": "symfony/debug",
-            "version": "v2.8.25",
+            "version": "v2.8.26",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/debug.git",
-                "reference": "8470d7701177a88edeb0cec59b44d50ef4477e9b"
+                "reference": "236ca98a425758cc8c2ff2db423bfe4d1a736b8c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/debug/zipball/8470d7701177a88edeb0cec59b44d50ef4477e9b",
-                "reference": "8470d7701177a88edeb0cec59b44d50ef4477e9b",
+                "url": "https://api.github.com/repos/symfony/debug/zipball/236ca98a425758cc8c2ff2db423bfe4d1a736b8c",
+                "reference": "236ca98a425758cc8c2ff2db423bfe4d1a736b8c",
                 "shasum": ""
             },
             "require": {
@@ -1265,20 +1271,20 @@
             ],
             "description": "Symfony Debug Component",
             "homepage": "https://symfony.com",
-            "time": "2017-06-01 20:52:29"
+            "time": "2017-07-28 15:21:22"
         },
         {
             "name": "symfony/dependency-injection",
-            "version": "v2.8.25",
+            "version": "v2.8.26",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/dependency-injection.git",
-                "reference": "db8bdcfc6f54c6968756f31c8a9ea77ac10d08d7"
+                "reference": "e70f025ae0b100600de58fadbd97efe3044e6bfb"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/dependency-injection/zipball/db8bdcfc6f54c6968756f31c8a9ea77ac10d08d7",
-                "reference": "db8bdcfc6f54c6968756f31c8a9ea77ac10d08d7",
+                "url": "https://api.github.com/repos/symfony/dependency-injection/zipball/e70f025ae0b100600de58fadbd97efe3044e6bfb",
+                "reference": "e70f025ae0b100600de58fadbd97efe3044e6bfb",
                 "shasum": ""
             },
             "require": {
@@ -1328,11 +1334,11 @@
             ],
             "description": "Symfony DependencyInjection Component",
             "homepage": "https://symfony.com",
-            "time": "2017-07-17 14:02:19"
+            "time": "2017-07-28 15:21:22"
         },
         {
             "name": "symfony/event-dispatcher",
-            "version": "v2.8.25",
+            "version": "v2.8.26",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/event-dispatcher.git",
@@ -1392,7 +1398,7 @@
         },
         {
             "name": "symfony/filesystem",
-            "version": "v2.8.25",
+            "version": "v2.8.26",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/filesystem.git",
@@ -1441,7 +1447,7 @@
         },
         {
             "name": "symfony/finder",
-            "version": "v2.8.25",
+            "version": "v2.8.26",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/finder.git",
@@ -1549,7 +1555,7 @@
         },
         {
             "name": "symfony/process",
-            "version": "v2.8.25",
+            "version": "v2.8.26",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/process.git",
@@ -1598,7 +1604,7 @@
         },
         {
             "name": "symfony/translation",
-            "version": "v2.8.25",
+            "version": "v2.8.26",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/translation.git",
@@ -1662,7 +1668,7 @@
         },
         {
             "name": "symfony/yaml",
-            "version": "v2.8.25",
+            "version": "v2.8.26",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/yaml.git",
@@ -1711,16 +1717,16 @@
         },
         {
             "name": "wp-cli/php-cli-tools",
-            "version": "v0.11.3",
+            "version": "v0.11.6",
             "source": {
                 "type": "git",
                 "url": "https://github.com/wp-cli/php-cli-tools.git",
-                "reference": "09075e5a5ba804df43e148f887cbf4466bebfa2c"
+                "reference": "d2a4e2eca9f1cd62a5d30f192d10f74e73eb3a05"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/wp-cli/php-cli-tools/zipball/09075e5a5ba804df43e148f887cbf4466bebfa2c",
-                "reference": "09075e5a5ba804df43e148f887cbf4466bebfa2c",
+                "url": "https://api.github.com/repos/wp-cli/php-cli-tools/zipball/d2a4e2eca9f1cd62a5d30f192d10f74e73eb3a05",
+                "reference": "d2a4e2eca9f1cd62a5d30f192d10f74e73eb3a05",
                 "shasum": ""
             },
             "require": {
@@ -1757,7 +1763,7 @@
                 "cli",
                 "console"
             ],
-            "time": "2017-06-08 12:06:09"
+            "time": "2017-08-04 10:42:04"
         },
         {
             "name": "wp-cli/wp-cli",
@@ -1828,15 +1834,15 @@
         },
         {
             "name": "wpackagist-plugin/timber-library",
-            "version": "0.22.6",
+            "version": "1.3.4",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/timber-library/",
-                "reference": "tags/0.22.6"
+                "reference": "tags/1.3.4"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/timber-library.0.22.6.zip",
+                "url": "https://downloads.wordpress.org/plugin/timber-library.1.3.4.zip",
                 "reference": null,
                 "shasum": null
             },
