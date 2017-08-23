@@ -540,17 +540,17 @@
         },
         {
             "name": "greenpeace/planet4-plugin-action-content-type",
-            "version": "0.1.5",
+            "version": "0.1.6",
             "source": {
                 "type": "git",
-                "url": "git@github.com:greenpeace/planet4-plugin-action-content-type.git",
-                "reference": "7a9949fde935225a4f38842ccc202de94d410287"
+                "url": "https://github.com/greenpeace/planet4-plugin-action-content-type.git",
+                "reference": "768459d3f76615422cf42f4be66d6eb6b23ba368"
             },
             "dist": {
                 "type": "tar",
-                "url": "https://p4-composer-registry.greenpeace.org//dist/greenpeace/planet4-plugin-action-content-type/greenpeace-planet4-plugin-action-content-type-7a9949fde935225a4f38842ccc202de94d410287-zip-8e9d8b.tar",
-                "reference": "7a9949fde935225a4f38842ccc202de94d410287",
-                "shasum": "07cf7eda4fda7f7a194d72e9bbda36ac0e72f977"
+                "url": "https://p4-composer-registry.greenpeace.org//dist/greenpeace/planet4-plugin-action-content-type/greenpeace-planet4-plugin-action-content-type-768459d3f76615422cf42f4be66d6eb6b23ba368-zip-c9c9ef.tar",
+                "reference": "768459d3f76615422cf42f4be66d6eb6b23ba368",
+                "shasum": "9953ef29ef03d5026168256c9415d5156b1f2df7"
             },
             "require-dev": {
                 "dealerdirect/phpcodesniffer-composer-installer": "^0.4.0",
@@ -569,7 +569,11 @@
                 }
             ],
             "description": "This repository contains the wordpress plugin which creates custom content type.",
-            "time": "2017-08-17T18:05:37+00:00"
+            "support": {
+                "source": "https://github.com/greenpeace/planet4-plugin-action-content-type/tree/v0.1.6",
+                "issues": "https://github.com/greenpeace/planet4-plugin-action-content-type/issues"
+            },
+            "time": "2017-08-23T04:02:14+00:00"
         },
         {
             "name": "greenpeace/planet4-plugin-engagingnetworks",
@@ -2623,16 +2627,16 @@
         },
         {
             "name": "wp-cli/package-command",
-            "version": "v1.0.3",
+            "version": "v1.0.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/wp-cli/package-command.git",
-                "reference": "744692180a4240ddc75a3196934cafe396dd9178"
+                "reference": "39c5ee37502027baa551830b699a7aa25f749370"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/wp-cli/package-command/zipball/744692180a4240ddc75a3196934cafe396dd9178",
-                "reference": "744692180a4240ddc75a3196934cafe396dd9178",
+                "url": "https://api.github.com/repos/wp-cli/package-command/zipball/39c5ee37502027baa551830b699a7aa25f749370",
+                "reference": "39c5ee37502027baa551830b699a7aa25f749370",
                 "shasum": ""
             },
             "require": {
@@ -2677,7 +2681,7 @@
             ],
             "description": "Manage WP-CLI packages.",
             "homepage": "https://github.com/wp-cli/package-command",
-            "time": "2017-08-07T12:21:11+00:00"
+            "time": "2017-08-18T18:16:46+00:00"
         },
         {
             "name": "wp-cli/php-cli-tools",
@@ -2842,16 +2846,16 @@
         },
         {
             "name": "wp-cli/scaffold-command",
-            "version": "v1.0.5",
+            "version": "v1.0.6",
             "source": {
                 "type": "git",
                 "url": "https://github.com/wp-cli/scaffold-command.git",
-                "reference": "66197c58925cb54ea64320bcb277753661f6b73f"
+                "reference": "decd72649677fa0f731874fe73f792aa80f09f24"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/wp-cli/scaffold-command/zipball/66197c58925cb54ea64320bcb277753661f6b73f",
-                "reference": "66197c58925cb54ea64320bcb277753661f6b73f",
+                "url": "https://api.github.com/repos/wp-cli/scaffold-command/zipball/decd72649677fa0f731874fe73f792aa80f09f24",
+                "reference": "decd72649677fa0f731874fe73f792aa80f09f24",
                 "shasum": ""
             },
             "require-dev": {
@@ -2896,7 +2900,7 @@
             ],
             "description": "Generate code for post types, taxonomies, plugins, child themes, etc.",
             "homepage": "https://github.com/wp-cli/scaffold-command",
-            "time": "2017-08-04T11:49:31+00:00"
+            "time": "2017-08-22T13:48:33+00:00"
         },
         {
             "name": "wp-cli/search-replace-command",
