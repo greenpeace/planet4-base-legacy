@@ -548,7 +548,7 @@
             "version": "0.1.7",
             "source": {
                 "type": "git",
-                "url": "https://github.com/greenpeace/planet4-plugin-action-content-type.git",
+                "url": "git@github.com:greenpeace/planet4-plugin-action-content-type.git",
                 "reference": "71a515c6faa9921fabc912b8f19f4858e6ccaa3c"
             },
             "dist": {
@@ -582,17 +582,17 @@
         },
         {
             "name": "greenpeace/planet4-plugin-engagingnetworks",
-            "version": "0.2.5",
+            "version": "0.2.6",
             "source": {
                 "type": "git",
-                "url": "https://github.com/greenpeace/planet4-plugin-engagingnetworks.git",
-                "reference": "7650c6631374586f742621a49ab6ceecaf5709e0"
+                "url": "git@github.com:greenpeace/planet4-plugin-engagingnetworks.git",
+                "reference": "5c4c81c95a80e45cbddf2c440465753e68675610"
             },
             "dist": {
                 "type": "tar",
-                "url": "https://p4-composer-registry.greenpeace.org//dist/greenpeace/planet4-plugin-engagingnetworks/greenpeace-planet4-plugin-engagingnetworks-7650c6631374586f742621a49ab6ceecaf5709e0-zip-e7230e.tar",
-                "reference": "7650c6631374586f742621a49ab6ceecaf5709e0",
-                "shasum": "c08ca1eae4b50e3a6d7fff550402b0af3f3cb76d"
+                "url": "https://p4-composer-registry.greenpeace.org//dist/greenpeace/planet4-plugin-engagingnetworks/greenpeace-planet4-plugin-engagingnetworks-5c4c81c95a80e45cbddf2c440465753e68675610-zip-193936.tar",
+                "reference": "5c4c81c95a80e45cbddf2c440465753e68675610",
+                "shasum": "8a2ad88fea0030d714c4f3e30c47ce5d857a5121"
             },
             "require-dev": {
                 "dealerdirect/phpcodesniffer-composer-installer": "^0.4.0",
@@ -620,11 +620,7 @@
                 }
             ],
             "description": "This repository contains the wordpress plugin that connects Planet 4 with the Engaging Networks platform.",
-            "support": {
-                "source": "https://github.com/greenpeace/planet4-plugin-engagingnetworks/tree/v0.2.5",
-                "issues": "https://github.com/greenpeace/planet4-plugin-engagingnetworks/issues"
-            },
-            "time": "2017-08-28 09:30:04"
+            "time": "2017-08-29 07:34:20"
         },
         {
             "name": "greenpeace/planet4-wordpress",
@@ -1150,7 +1146,7 @@
         },
         {
             "name": "symfony/config",
-            "version": "v2.8.26",
+            "version": "v2.8.27",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/config.git",
@@ -1206,16 +1202,16 @@
         },
         {
             "name": "symfony/console",
-            "version": "v2.8.26",
+            "version": "v2.8.27",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/console.git",
-                "reference": "32a3c6b3398de5db8ed381f4ef92970c59c2fcdd"
+                "reference": "c0807a2ca978e64d8945d373a9221a5c35d1a253"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/console/zipball/32a3c6b3398de5db8ed381f4ef92970c59c2fcdd",
-                "reference": "32a3c6b3398de5db8ed381f4ef92970c59c2fcdd",
+                "url": "https://api.github.com/repos/symfony/console/zipball/c0807a2ca978e64d8945d373a9221a5c35d1a253",
+                "reference": "c0807a2ca978e64d8945d373a9221a5c35d1a253",
                 "shasum": ""
             },
             "require": {
@@ -1263,20 +1259,20 @@
             ],
             "description": "Symfony Console Component",
             "homepage": "https://symfony.com",
-            "time": "2017-07-29 21:26:04"
+            "time": "2017-08-27 14:29:03"
         },
         {
             "name": "symfony/debug",
-            "version": "v2.8.26",
+            "version": "v2.8.27",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/debug.git",
-                "reference": "236ca98a425758cc8c2ff2db423bfe4d1a736b8c"
+                "reference": "efc9656dcb227e1459905d5aa51e43dfec76e752"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/debug/zipball/236ca98a425758cc8c2ff2db423bfe4d1a736b8c",
-                "reference": "236ca98a425758cc8c2ff2db423bfe4d1a736b8c",
+                "url": "https://api.github.com/repos/symfony/debug/zipball/efc9656dcb227e1459905d5aa51e43dfec76e752",
+                "reference": "efc9656dcb227e1459905d5aa51e43dfec76e752",
                 "shasum": ""
             },
             "require": {
@@ -1320,20 +1316,20 @@
             ],
             "description": "Symfony Debug Component",
             "homepage": "https://symfony.com",
-            "time": "2017-07-28 15:21:22"
+            "time": "2017-08-27 14:29:03"
         },
         {
             "name": "symfony/dependency-injection",
-            "version": "v2.8.26",
+            "version": "v2.8.27",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/dependency-injection.git",
-                "reference": "e70f025ae0b100600de58fadbd97efe3044e6bfb"
+                "reference": "fbeea992f0d30e3c400694c85f60c9bfd10454a3"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/dependency-injection/zipball/e70f025ae0b100600de58fadbd97efe3044e6bfb",
-                "reference": "e70f025ae0b100600de58fadbd97efe3044e6bfb",
+                "url": "https://api.github.com/repos/symfony/dependency-injection/zipball/fbeea992f0d30e3c400694c85f60c9bfd10454a3",
+                "reference": "fbeea992f0d30e3c400694c85f60c9bfd10454a3",
                 "shasum": ""
             },
             "require": {
@@ -1383,11 +1379,11 @@
             ],
             "description": "Symfony DependencyInjection Component",
             "homepage": "https://symfony.com",
-            "time": "2017-07-28 15:21:22"
+            "time": "2017-08-10 14:42:21"
         },
         {
             "name": "symfony/event-dispatcher",
-            "version": "v2.8.26",
+            "version": "v2.8.27",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/event-dispatcher.git",
@@ -1447,7 +1443,7 @@
         },
         {
             "name": "symfony/filesystem",
-            "version": "v2.8.26",
+            "version": "v2.8.27",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/filesystem.git",
@@ -1496,7 +1492,7 @@
         },
         {
             "name": "symfony/finder",
-            "version": "v2.8.26",
+            "version": "v2.8.27",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/finder.git",
@@ -1604,7 +1600,7 @@
         },
         {
             "name": "symfony/process",
-            "version": "v2.8.26",
+            "version": "v2.8.27",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/process.git",
@@ -1653,7 +1649,7 @@
         },
         {
             "name": "symfony/translation",
-            "version": "v2.8.26",
+            "version": "v2.8.27",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/translation.git",
@@ -1717,7 +1713,7 @@
         },
         {
             "name": "symfony/yaml",
-            "version": "v2.8.26",
+            "version": "v2.8.27",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/yaml.git",
