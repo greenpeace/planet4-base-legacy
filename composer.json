@@ -46,7 +46,7 @@
 		"site-update": [
 			"@copy:wordpress",
 			"@reset:themes", "@reset:plugins", "@copy:themes", "@copy:assets", "@copy:plugins",
-			"@core:updatedb", "@plugin:deactivate", "@plugin:activate", "@theme:activate"
+			"@core:updatedb", "@core:updatedb", "@plugin:deactivate", "@plugin:activate", "@theme:activate"
 		],
 
 		"site-dev": [
@@ -65,7 +65,7 @@
 		"copy:themes" : "cp -rf vendor/themes public/wp-content",
 		"copy:assets" : "cp -rf vendor/greenpeace/planet4-content-default/assets public/wp-content/themes/planet4-master-theme",
 
-		"core:config": "wp core config --force",
+		"core:config": "wp core config --skip-check --force",
 		"core:install": "wp core install",
 		"core:updatedb": "wp core update-db",
 		"core:initial-content": "composer run-script content-default -d vendor/greenpeace/planet4-content-default ",
