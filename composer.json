@@ -24,7 +24,7 @@
 		"greenpeace/planet4-master-theme" : "0.2.*",
 		"greenpeace/planet4-child-theme" : "0.2.*",
 		"greenpeace/planet4-content-default": "0.2.*",
-		"greenpeace/planet4-plugin-engagingnetworks" : "dev-feature/gitrepositories",
+		"greenpeace/planet4-plugin-engagingnetworks" : "dev-develop",
 		"greenpeace/planet4-plugin-action-content-type" : "0.1.*"
 	},
 
