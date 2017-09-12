@@ -387,7 +387,7 @@
             "version": "0.2.2",
             "source": {
                 "type": "git",
-                "url": "git@github.com:greenpeace/planet4-child-theme.git",
+                "url": "https://github.com/greenpeace/planet4-child-theme.git",
                 "reference": "b0e7c0882641ed11c4d995f3e8c9b4e5b676b39c"
             },
             "dist": {
@@ -431,7 +431,7 @@
             "version": "0.2.8",
             "source": {
                 "type": "git",
-                "url": "git@github.com:greenpeace/planet4-content-default.git",
+                "url": "https://github.com/greenpeace/planet4-content-default.git",
                 "reference": "fa6e425e4e230d96798618bede372bd2e00f7ae7"
             },
             "dist": {
@@ -495,7 +495,7 @@
             "version": "0.2.1",
             "source": {
                 "type": "git",
-                "url": "git@github.com:greenpeace/planet4-master-theme.git",
+                "url": "https://github.com/greenpeace/planet4-master-theme.git",
                 "reference": "5bf0c08fe9b3a81e4a6274cd71d84e171bd4a19c"
             },
             "dist": {
@@ -543,7 +543,7 @@
             "version": "0.1.7",
             "source": {
                 "type": "git",
-                "url": "git@github.com:greenpeace/planet4-plugin-action-content-type.git",
+                "url": "https://github.com/greenpeace/planet4-plugin-action-content-type.git",
                 "reference": "71a515c6faa9921fabc912b8f19f4858e6ccaa3c"
             },
             "dist": {
@@ -576,7 +576,7 @@
             "version": "dev-develop",
             "source": {
                 "type": "git",
-                "url": "git@github.com:greenpeace/planet4-plugin-engagingnetworks.git",
+                "url": "https://github.com/greenpeace/planet4-plugin-engagingnetworks.git",
                 "reference": "cf1648b70ca8fa9619e917486635c2e3ab6cd201"
             },
             "dist": {
@@ -1455,7 +1455,7 @@
         },
         {
             "name": "symfony/filesystem",
-            "version": "v3.3.8",
+            "version": "v3.3.9",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/filesystem.git",
