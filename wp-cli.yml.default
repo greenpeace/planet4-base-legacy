@@ -6,7 +6,7 @@ core config:
   dbname: wordpress
   dbhost: 127.0.0.1
   extra-php: |
-        if ( (isset($_SERVER['HTTP_X_FORWARDED_PROTO']) && strpos($_SERVER['HTTP_X_FORWARDED_PROTO'], 'https') !== false) {
+        if ( (isset($_SERVER['HTTP_X_FORWARDED_PROTO'])) && strpos($_SERVER['HTTP_X_FORWARDED_PROTO'], 'https') !== false) {
             $_SERVER['HTTPS']='on';
         }
 core install:
