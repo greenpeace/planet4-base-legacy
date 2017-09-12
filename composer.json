@@ -64,6 +64,16 @@
 			"@core:initial-content"
 		],
 
+		"docker-site-prep": [
+			"@copy:wordpress",
+			"@reset:themes", "@copy:themes", "@copy:assets"
+		],
+
+		"docker-site-post-prep": [
+			"@core:config", "@core:install", "@plugin:activate", "@theme:activate",
+			"@core:initial-content"
+		],
+
 		"theme:install": ["@copy:theme", "@theme:activate"],
 		"plugin:install": ["@copy:plugin", "@plugin:activate"],
 
