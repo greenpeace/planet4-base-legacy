@@ -4,11 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-<<<<<<< HEAD
-    "content-hash": "7222206a5ecd2678c26338b413abb6de",
-=======
-    "content-hash": "19bf2caa2c54b5799e0afc41bb0be557",
->>>>>>> develop
+    "content-hash": "3c9f15e1290fb7148640e6daa8c08da7",
     "packages": [
         {
             "name": "composer/ca-bundle",
@@ -391,7 +387,7 @@
             "version": "0.2.2",
             "source": {
                 "type": "git",
-                "url": "https://github.com/greenpeace/planet4-child-theme.git",
+                "url": "git@github.com:greenpeace/planet4-child-theme.git",
                 "reference": "b0e7c0882641ed11c4d995f3e8c9b4e5b676b39c"
             },
             "dist": {
@@ -435,7 +431,7 @@
             "version": "0.2.8",
             "source": {
                 "type": "git",
-                "url": "https://github.com/greenpeace/planet4-content-default.git",
+                "url": "git@github.com:greenpeace/planet4-content-default.git",
                 "reference": "fa6e425e4e230d96798618bede372bd2e00f7ae7"
             },
             "dist": {
@@ -492,13 +488,6 @@
                 }
             ],
             "description": "Scripts that control the default content of the default planet4 installation",
-<<<<<<< HEAD
-=======
-            "support": {
-                "source": "https://github.com/greenpeace/planet4-content-default/tree/v0.2.8",
-                "issues": "https://github.com/greenpeace/planet4-content-default/issues"
-            },
->>>>>>> develop
             "time": "2017-07-04T10:04:21+00:00"
         },
         {
@@ -506,7 +495,7 @@
             "version": "0.2.1",
             "source": {
                 "type": "git",
-                "url": "https://github.com/greenpeace/planet4-master-theme.git",
+                "url": "git@github.com:greenpeace/planet4-master-theme.git",
                 "reference": "5bf0c08fe9b3a81e4a6274cd71d84e171bd4a19c"
             },
             "dist": {
@@ -554,7 +543,7 @@
             "version": "0.1.7",
             "source": {
                 "type": "git",
-                "url": "https://github.com/greenpeace/planet4-plugin-action-content-type.git",
+                "url": "git@github.com:greenpeace/planet4-plugin-action-content-type.git",
                 "reference": "71a515c6faa9921fabc912b8f19f4858e6ccaa3c"
             },
             "dist": {
@@ -580,13 +569,6 @@
                 }
             ],
             "description": "This repository contains the wordpress plugin which creates custom content type.",
-<<<<<<< HEAD
-=======
-            "support": {
-                "source": "https://github.com/greenpeace/planet4-plugin-action-content-type/tree/master",
-                "issues": "https://github.com/greenpeace/planet4-plugin-action-content-type/issues"
-            },
->>>>>>> develop
             "time": "2017-08-24T18:21:13+00:00"
         },
         {
@@ -594,7 +576,7 @@
             "version": "dev-develop",
             "source": {
                 "type": "git",
-                "url": "https://github.com/greenpeace/planet4-plugin-engagingnetworks.git",
+                "url": "git@github.com:greenpeace/planet4-plugin-engagingnetworks.git",
                 "reference": "cf1648b70ca8fa9619e917486635c2e3ab6cd201"
             },
             "dist": {
@@ -629,13 +611,6 @@
                 }
             ],
             "description": "This repository contains the wordpress plugin that connects Planet 4 with the Engaging Networks platform.",
-<<<<<<< HEAD
-=======
-            "support": {
-                "source": "https://github.com/greenpeace/planet4-plugin-engagingnetworks/tree/v0.2.8",
-                "issues": "https://github.com/greenpeace/planet4-plugin-engagingnetworks/issues"
-            },
->>>>>>> develop
             "time": "2017-09-01T07:14:21+00:00"
         },
         {
@@ -656,11 +631,7 @@
                 "greenpeace/planet4-wordpress-upstream": "4.8.1"
             },
             "type": "library",
-<<<<<<< HEAD
-            "time": "2017-06-09T10:09:54+00:00"
-=======
             "time": "2017-09-13T07:54:45+00:00"
->>>>>>> develop
         },
         {
             "name": "greenpeace/planet4-wordpress-upstream",
