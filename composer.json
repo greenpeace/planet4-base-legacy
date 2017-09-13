@@ -55,7 +55,7 @@
 
 		"docker-site-install": [
 			"@copy:wordpress",
-			"@reset:themes", "@copy:themes", "@copy:assets",
+			"@reset:themes", "@copy:themes", "@copy:assets", "@copy:plugins",
 			"@core:config", "@core:install", "@plugin:activate", "@theme:activate",
 			"@core:initial-content"
 		],
