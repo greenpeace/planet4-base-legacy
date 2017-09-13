@@ -16,7 +16,7 @@
 	"require": {
 		"composer/installers": "~1.0",
 		"wp-cli/wp-cli": "^1.1",
-		"greenpeace/planet4-wordpress": "4.8",
+		"greenpeace/planet4-wordpress": "4.8.1",
 		"greenpeace/planet4-master-theme" : "0.2.*",
 		"greenpeace/planet4-child-theme" : "0.2.*",
 		"greenpeace/planet4-content-default": "0.2.*",
@@ -55,7 +55,7 @@
 
 		"docker-site-install": [
 			"@copy:wordpress",
-			"@reset:themes", "@copy:themes", "@copy:assets",
+			"@reset:themes", "@copy:themes", "@copy:assets", "@copy:plugins",
 			"@core:config", "@core:install", "@plugin:activate", "@theme:activate",
 			"@core:initial-content"
 		],
