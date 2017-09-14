@@ -50,7 +50,8 @@
 	},
 
 	"config": {
-		"secure-http": false
+		"secure-http": false,
+		"github-protocols": ["https"]
 	},
 
 	"extra": {
