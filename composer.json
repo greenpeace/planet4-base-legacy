@@ -75,12 +75,12 @@
 
 		"core:config": "wp core config --skip-check --force",
 		"core:install": "wp core install",
-		"core:updatedb": "wp core update-db --allow-root",
+		"core:updatedb": "wp core update-db",
 		"core:initial-content": "composer run-script content-default -d vendor/greenpeace/planet4-content-default ",
 		"core:add-super-admin-user": "wp user create dev p4-dev@greenpeace.org --role=administrator --user_pass=u3vsREsvjwo",
 
-		"plugin:deactivate": "wp plugin deactivate --all --allow-root",
-		"plugin:activate": "wp plugin activate --all --allow-root",
+		"plugin:deactivate": "wp plugin deactivate --all",
+		"plugin:activate": "wp plugin activate --all",
 		"theme:activate": "wp theme activate",
 
 		"server": "php -S 127.0.0.1:9191 -t public"
