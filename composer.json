@@ -47,7 +47,7 @@
 		"site-update": [
 			"@copy:wordpress",
 			"@reset:themes", "@reset:plugins", "@copy:themes", "@copy:assets", "@copy:plugins",
-			"@core:updatedb", "@core:updatedb", "@plugin:deactivate", "@plugin:activate", "@theme:activate"
+			"@core:updatedb", "@plugin:deactivate", "@plugin:activate", "@theme:activate"
 		],
 
 		"site-dev": [
