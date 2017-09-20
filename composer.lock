@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "2ea8b7ce393bd731aacd9cb48d71d2ad",
+    "content-hash": "4678c57cde11c2768679480eeb6ef3af",
     "packages": [
         {
             "name": "composer/ca-bundle",
@@ -387,7 +387,7 @@
             "version": "0.2.3",
             "source": {
                 "type": "git",
-                "url": "https://github.com/greenpeace/planet4-child-theme.git",
+                "url": "git@github.com:greenpeace/planet4-child-theme.git",
                 "reference": "d70c0516a92600bd76308840383ced26bf7de321"
             },
             "dist": {
@@ -431,7 +431,7 @@
             "version": "0.2.8",
             "source": {
                 "type": "git",
-                "url": "https://github.com/greenpeace/planet4-content-default.git",
+                "url": "git@github.com:greenpeace/planet4-content-default.git",
                 "reference": "fa6e425e4e230d96798618bede372bd2e00f7ae7"
             },
             "dist": {
@@ -499,7 +499,7 @@
             "version": "0.2.1",
             "source": {
                 "type": "git",
-                "url": "https://github.com/greenpeace/planet4-master-theme.git",
+                "url": "git@github.com:greenpeace/planet4-master-theme.git",
                 "reference": "5bf0c08fe9b3a81e4a6274cd71d84e171bd4a19c"
             },
             "dist": {
@@ -547,7 +547,7 @@
             "version": "0.2.8",
             "source": {
                 "type": "git",
-                "url": "https://github.com/greenpeace/planet4-plugin-engagingnetworks.git",
+                "url": "git@github.com:greenpeace/planet4-plugin-engagingnetworks.git",
                 "reference": "cf1648b70ca8fa9619e917486635c2e3ab6cd201"
             },
             "dist": {
@@ -587,30 +587,6 @@
                 "issues": "https://github.com/greenpeace/planet4-plugin-engagingnetworks/issues"
             },
             "time": "2017-09-01T07:14:21+00:00"
-        },
-        {
-            "name": "greenpeace/planet4-plugin-saml-20-single-sign-on",
-            "version": "4.8.28",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/greenpeace/planet4-plugin-saml-20-single-sign-on.git",
-                "reference": "c9d656b5cad7fd1eb7c2c7fd8f14db01c789b32e"
-            },
-            "dist": {
-                "type": "tar",
-                "url": "https://p4-composer-registry.greenpeace.org//dist/greenpeace/planet4-plugin-saml-20-single-sign-on/greenpeace-planet4-plugin-saml-20-single-sign-on-c9d656b5cad7fd1eb7c2c7fd8f14db01c789b32e-zip-2c4420.tar",
-                "reference": "c9d656b5cad7fd1eb7c2c7fd8f14db01c789b32e",
-                "shasum": "85d9fccce5f902a95df84824fd73fbb128958988"
-            },
-            "require": {
-                "greenpeace/planet4-plugin-saml-20-single-sign-on": "4.8.28"
-            },
-            "type": "library",
-            "support": {
-                "source": "https://github.com/greenpeace/planet4-plugin-saml-20-single-sign-on/tree/master",
-                "issues": "https://github.com/greenpeace/planet4-plugin-saml-20-single-sign-on/issues"
-            },
-            "time": "2017-09-16T08:49:42+00:00"
         },
         {
             "name": "greenpeace/planet4-wordpress",
