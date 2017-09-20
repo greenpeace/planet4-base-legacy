@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "19bf2caa2c54b5799e0afc41bb0be557",
+    "content-hash": "835d9b900a3ff951c4751658ca3cf692",
     "packages": [
         {
             "name": "composer/ca-bundle",
@@ -384,17 +384,17 @@
         },
         {
             "name": "greenpeace/planet4-child-theme",
-            "version": "0.2.2",
+            "version": "0.2.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/greenpeace/planet4-child-theme.git",
-                "reference": "b0e7c0882641ed11c4d995f3e8c9b4e5b676b39c"
+                "reference": "d70c0516a92600bd76308840383ced26bf7de321"
             },
             "dist": {
                 "type": "tar",
-                "url": "https://p4-composer-registry.greenpeace.org//dist/greenpeace/planet4-child-theme/greenpeace-planet4-child-theme-b0e7c0882641ed11c4d995f3e8c9b4e5b676b39c-zip-51ccfb.tar",
-                "reference": "b0e7c0882641ed11c4d995f3e8c9b4e5b676b39c",
-                "shasum": "84bca491d66457b05b0b26df77b95964291a8acc"
+                "url": "https://p4-composer-registry.greenpeace.org//dist/greenpeace/planet4-child-theme/greenpeace-planet4-child-theme-d70c0516a92600bd76308840383ced26bf7de321-zip-220cd8.tar",
+                "reference": "d70c0516a92600bd76308840383ced26bf7de321",
+                "shasum": "1510fbacc0bfd9c6459878508c1fed5199ec1f09"
             },
             "require": {
                 "wpackagist-plugin/timber-library": "1.3.*"
@@ -424,7 +424,7 @@
                 "wiki": "https://github.com/greenpeace/planet4-child-theme/wiki",
                 "source": "https://github.com/greenpeace/planet4-child-theme"
             },
-            "time": "2017-08-04T13:30:04+00:00"
+            "time": "2017-09-19T09:27:35+00:00"
         },
         {
             "name": "greenpeace/planet4-content-default",
@@ -580,84 +580,62 @@
             "time": "2017-08-24T18:21:13+00:00"
         },
         {
-            "name": "greenpeace/planet4-plugin-engagingnetworks",
-            "version": "0.2.8",
+            "name": "greenpeace/planet4-plugin-saml-20-single-sign-on",
+            "version": "4.8.28",
             "source": {
                 "type": "git",
-                "url": "https://github.com/greenpeace/planet4-plugin-engagingnetworks.git",
-                "reference": "cf1648b70ca8fa9619e917486635c2e3ab6cd201"
+                "url": "https://github.com/greenpeace/planet4-plugin-saml-20-single-sign-on.git",
+                "reference": "c9d656b5cad7fd1eb7c2c7fd8f14db01c789b32e"
             },
             "dist": {
                 "type": "tar",
-                "url": "https://p4-composer-registry.greenpeace.org//dist/greenpeace/planet4-plugin-engagingnetworks/greenpeace-planet4-plugin-engagingnetworks-cf1648b70ca8fa9619e917486635c2e3ab6cd201-zip-22610b.tar",
-                "reference": "cf1648b70ca8fa9619e917486635c2e3ab6cd201",
-                "shasum": "34a6841b176ac7df91b8f0a93fc55b78ca270ccd"
+                "url": "https://p4-composer-registry.greenpeace.org//dist/greenpeace/planet4-plugin-saml-20-single-sign-on/greenpeace-planet4-plugin-saml-20-single-sign-on-c9d656b5cad7fd1eb7c2c7fd8f14db01c789b32e-zip-2c4420.tar",
+                "reference": "c9d656b5cad7fd1eb7c2c7fd8f14db01c789b32e",
+                "shasum": "85d9fccce5f902a95df84824fd73fbb128958988"
             },
-            "require-dev": {
-                "dealerdirect/phpcodesniffer-composer-installer": "^0.4.0",
-                "frenck/php-compatibility": "^7.1",
-                "squizlabs/php_codesniffer": "2.9.*",
-                "wp-coding-standards/wpcs": "0.13.*"
+            "require": {
+                "greenpeace/planet4-plugin-saml-20-single-sign-on": "4.8.28"
             },
-            "type": "wordpress-plugin",
-            "autoload": {
-                "psr-4": {
-                    "P4EN\\": "classes/",
-                    "P4EN\\Controllers\\": "classes/controller/",
-                    "P4EN\\Controllers\\Menu\\": "classes/controller/menu",
-                    "P4EN\\Models\\": "classes/model/",
-                    "P4EN\\Views\\": "classes/view/"
-                }
-            },
-            "license": [
-                "GPL-3"
-            ],
-            "authors": [
-                {
-                    "name": "Greenpeace International",
-                    "email": "planet4-group@greenpeace.org"
-                }
-            ],
-            "description": "This repository contains the wordpress plugin that connects Planet 4 with the Engaging Networks platform.",
+            "type": "library",
             "support": {
-                "source": "https://github.com/greenpeace/planet4-plugin-engagingnetworks/tree/v0.2.8",
-                "issues": "https://github.com/greenpeace/planet4-plugin-engagingnetworks/issues"
+                "source": "https://github.com/greenpeace/planet4-plugin-saml-20-single-sign-on/tree/master",
+                "issues": "https://github.com/greenpeace/planet4-plugin-saml-20-single-sign-on/issues"
             },
-            "time": "2017-09-01T07:14:21+00:00"
+            "time": "2017-09-16T08:49:42+00:00"
         },
         {
             "name": "greenpeace/planet4-wordpress",
-            "version": "4.8.1",
+            "version": "4.8.2",
             "source": {
                 "type": "git",
                 "url": "repositories/planet4-wordpress",
-                "reference": "c8bf54ccf1555758aab2a570120c3d26c43f8c71"
+                "reference": "c7ed57b751384f058510e6e7190a0281bd8f4445"
             },
             "dist": {
                 "type": "tar",
-                "url": "https://p4-composer-registry.greenpeace.org//dist/greenpeace/planet4-wordpress/greenpeace-planet4-wordpress-4.8.1-d492e2.tar",
-                "reference": "c8bf54ccf1555758aab2a570120c3d26c43f8c71",
-                "shasum": "030f4a7fad81d1a3fdd930fd7c7fd551cd7822df"
+                "url": "https://p4-composer-registry.greenpeace.org//dist/greenpeace/planet4-wordpress/greenpeace-planet4-wordpress-4.8.2-870351.tar",
+                "reference": "c7ed57b751384f058510e6e7190a0281bd8f4445",
+                "shasum": "038fb515e5e0b2c5e9e86168f8f0c89fc3bd824e"
             },
             "require": {
-                "greenpeace/planet4-wordpress-upstream": "4.8.1"
+                "greenpeace/planet4-wordpress-upstream": "4.8.2"
             },
             "type": "library",
-            "time": "2017-09-13T07:54:45+00:00"
+            "time": "2017-09-20T10:09:28+00:00"
         },
         {
             "name": "greenpeace/planet4-wordpress-upstream",
-            "version": "4.8.1",
+            "version": "4.8.2",
             "source": {
                 "type": "svn",
                 "url": "https://core.svn.wordpress.org/",
-                "reference": "tags/4.8.1"
+                "reference": "tags/4.8.2"
             },
             "dist": {
                 "type": "tar",
-                "url": "https://p4-composer-registry.greenpeace.org//dist/greenpeace/planet4-wordpress-upstream/greenpeace-planet4-wordpress-upstream-4.8.1-57770f.tar",
-                "reference": "tags/4.8.1",
-                "shasum": "76d82aef3406ba13d8b6300463c1bcd781755ce1"
+                "url": "https://p4-composer-registry.greenpeace.org//dist/greenpeace/planet4-wordpress-upstream/greenpeace-planet4-wordpress-upstream-4.8.2-a79843.tar",
+                "reference": "tags/4.8.2",
+                "shasum": "c06fa0fb3e01ef4a5b1c5007913a01e2bec47056"
             },
             "type": "library"
         },
