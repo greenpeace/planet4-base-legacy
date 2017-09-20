@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "835d9b900a3ff951c4751658ca3cf692",
+    "content-hash": "2ea8b7ce393bd731aacd9cb48d71d2ad",
     "packages": [
         {
             "name": "composer/ca-bundle",
@@ -543,26 +543,35 @@
             "time": "2017-08-04T11:35:10+00:00"
         },
         {
-            "name": "greenpeace/planet4-plugin-action-content-type",
-            "version": "0.1.7",
+            "name": "greenpeace/planet4-plugin-engagingnetworks",
+            "version": "0.2.8",
             "source": {
                 "type": "git",
-                "url": "https://github.com/greenpeace/planet4-plugin-action-content-type.git",
-                "reference": "71a515c6faa9921fabc912b8f19f4858e6ccaa3c"
+                "url": "https://github.com/greenpeace/planet4-plugin-engagingnetworks.git",
+                "reference": "cf1648b70ca8fa9619e917486635c2e3ab6cd201"
             },
             "dist": {
                 "type": "tar",
-                "url": "https://p4-composer-registry.greenpeace.org//dist/greenpeace/planet4-plugin-action-content-type/greenpeace-planet4-plugin-action-content-type-71a515c6faa9921fabc912b8f19f4858e6ccaa3c-zip-877c4a.tar",
-                "reference": "71a515c6faa9921fabc912b8f19f4858e6ccaa3c",
-                "shasum": "04f85c9193c1d538caaa184447458dc9562bc71c"
+                "url": "https://p4-composer-registry.greenpeace.org//dist/greenpeace/planet4-plugin-engagingnetworks/greenpeace-planet4-plugin-engagingnetworks-cf1648b70ca8fa9619e917486635c2e3ab6cd201-zip-22610b.tar",
+                "reference": "cf1648b70ca8fa9619e917486635c2e3ab6cd201",
+                "shasum": "34a6841b176ac7df91b8f0a93fc55b78ca270ccd"
             },
             "require-dev": {
                 "dealerdirect/phpcodesniffer-composer-installer": "^0.4.0",
                 "frenck/php-compatibility": "^7.1",
                 "squizlabs/php_codesniffer": "2.9.*",
-                "wp-coding-standards/wpcs": "0.12"
+                "wp-coding-standards/wpcs": "0.13.*"
             },
             "type": "wordpress-plugin",
+            "autoload": {
+                "psr-4": {
+                    "P4EN\\": "classes/",
+                    "P4EN\\Controllers\\": "classes/controller/",
+                    "P4EN\\Controllers\\Menu\\": "classes/controller/menu",
+                    "P4EN\\Models\\": "classes/model/",
+                    "P4EN\\Views\\": "classes/view/"
+                }
+            },
             "license": [
                 "GPL-3"
             ],
@@ -572,12 +581,12 @@
                     "email": "planet4-group@greenpeace.org"
                 }
             ],
-            "description": "This repository contains the wordpress plugin which creates custom content type.",
+            "description": "This repository contains the wordpress plugin that connects Planet 4 with the Engaging Networks platform.",
             "support": {
-                "source": "https://github.com/greenpeace/planet4-plugin-action-content-type/tree/master",
-                "issues": "https://github.com/greenpeace/planet4-plugin-action-content-type/issues"
+                "source": "https://github.com/greenpeace/planet4-plugin-engagingnetworks/tree/v0.2.8",
+                "issues": "https://github.com/greenpeace/planet4-plugin-engagingnetworks/issues"
             },
-            "time": "2017-08-24T18:21:13+00:00"
+            "time": "2017-09-01T07:14:21+00:00"
         },
         {
             "name": "greenpeace/planet4-plugin-saml-20-single-sign-on",
