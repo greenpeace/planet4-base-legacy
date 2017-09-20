@@ -20,7 +20,6 @@
 		"greenpeace/planet4-master-theme" : "0.2.*",
 		"greenpeace/planet4-child-theme" : "0.2.*",
 		"greenpeace/planet4-content-default": "0.2.*",
-		"greenpeace/planet4-plugin-saml-20-single-sign-on": "4.8.*",
 		"greenpeace/planet4-plugin-engagingnetworks" : "0.*"
 	},
 
