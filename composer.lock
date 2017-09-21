@@ -11,7 +11,7 @@
             "version": "v2.2.5.3",
             "source": {
                 "type": "git",
-                "url": "git@github.com:CMB2/CMB2.git",
+                "url": "https://github.com/CMB2/CMB2.git",
                 "reference": "5c9bdb6e99e17e4dad71ebbc68dab5def3c64e12"
             },
             "dist": {
@@ -447,7 +447,7 @@
             "version": "v0.7.3",
             "source": {
                 "type": "git",
-                "url": "git@github.com:wp-shortcake/shortcake.git",
+                "url": "https://github.com/wp-shortcake/shortcake.git",
                 "reference": "9f9a36af0bfb70a4a3008b443f35a63610e07dd6"
             },
             "dist": {
@@ -645,23 +645,17 @@
         },
         {
             "name": "greenpeace/planet4-plugin-blocks",
-            "version": "0.1.0",
+            "version": "0.1.3",
             "source": {
                 "type": "git",
-                "url": "git@github.com:greenpeace/planet4-plugin-blocks.git",
-                "reference": "fe6f64d549f10aebe372fcc23aca9950df45132e"
+                "url": "https://github.com/greenpeace/planet4-plugin-blocks.git",
+                "reference": "d11589253445c1569cf5264f69d653aa43a5d975"
             },
             "dist": {
                 "type": "tar",
-                "url": "https://p4-composer-registry.greenpeace.org//dist/greenpeace/planet4-plugin-blocks/greenpeace-planet4-plugin-blocks-fe6f64d549f10aebe372fcc23aca9950df45132e-zip-0c8699.tar",
-                "reference": "fe6f64d549f10aebe372fcc23aca9950df45132e",
-                "shasum": "1fa3a8bb8436219a045e7a42bd2c236777e765d9"
-            },
-            "require-dev": {
-                "dealerdirect/phpcodesniffer-composer-installer": "^0.4.0",
-                "frenck/php-compatibility": "^7.1",
-                "squizlabs/php_codesniffer": "2.9.*",
-                "wp-coding-standards/wpcs": "0.13.*"
+                "url": "https://p4-composer-registry.greenpeace.org//dist/greenpeace/planet4-plugin-blocks/greenpeace-planet4-plugin-blocks-d11589253445c1569cf5264f69d653aa43a5d975-zip-95b920.tar",
+                "reference": "d11589253445c1569cf5264f69d653aa43a5d975",
+                "shasum": "7f660cb579136ff2984aeac80babd0ae5f669a8f"
             },
             "type": "wordpress-plugin",
             "autoload": {
@@ -682,7 +676,11 @@
                 }
             ],
             "description": "This repository contains the WordPress plugin that provides the blocks to be used with Shortcake UI plugin.",
-            "time": "2017-09-21T12:37:52+00:00"
+            "support": {
+                "source": "https://github.com/greenpeace/planet4-plugin-blocks/tree/v0.1.3",
+                "issues": "https://github.com/greenpeace/planet4-plugin-blocks/issues"
+            },
+            "time": "2017-09-21T14:49:26+00:00"
         },
         {
             "name": "greenpeace/planet4-plugin-engagingnetworks",
