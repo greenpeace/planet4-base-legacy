@@ -41,7 +41,7 @@
 	"require": {
 		"composer/installers": "~1.0",
 		"wp-cli/wp-cli": "^1.1",
-		"greenpeace/planet4-wordpress": "4.8.1",
+		"greenpeace/planet4-wordpress": "4.8.*",
 		"greenpeace/planet4-master-theme" : "dev-develop",
 		"greenpeace/planet4-child-theme" : "dev-develop",
 		"greenpeace/planet4-content-default": "dev-develop",
