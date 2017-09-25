@@ -387,7 +387,7 @@
             "version": "dev-develop",
             "source": {
                 "type": "git",
-                "url": "git@github.com:greenpeace/planet4-child-theme.git",
+                "url": "https://github.com/greenpeace/planet4-child-theme.git",
                 "reference": "d70c0516a92600bd76308840383ced26bf7de321"
             },
             "dist": {
@@ -431,7 +431,7 @@
             "version": "dev-develop",
             "source": {
                 "type": "git",
-                "url": "git@github.com:greenpeace/planet4-content-default.git",
+                "url": "https://github.com/greenpeace/planet4-content-default.git",
                 "reference": "c33a2379098b640a9b059217414aae3827b3ec08"
             },
             "dist": {
@@ -495,7 +495,7 @@
             "version": "dev-develop",
             "source": {
                 "type": "git",
-                "url": "git@github.com:greenpeace/planet4-master-theme.git",
+                "url": "https://github.com/greenpeace/planet4-master-theme.git",
                 "reference": "155a6fc2c81a52160e911fd694d6134e0634350d"
             },
             "dist": {
@@ -543,7 +543,7 @@
             "version": "dev-develop",
             "source": {
                 "type": "git",
-                "url": "git@github.com:greenpeace/planet4-plugin-action-content-type.git",
+                "url": "https://github.com/greenpeace/planet4-plugin-action-content-type.git",
                 "reference": "82205a14446338b4a50bb5bbc59d5bd0fc859335"
             },
             "dist": {
@@ -576,7 +576,7 @@
             "version": "dev-develop",
             "source": {
                 "type": "git",
-                "url": "git@github.com:greenpeace/planet4-plugin-engagingnetworks.git",
+                "url": "https://github.com/greenpeace/planet4-plugin-engagingnetworks.git",
                 "reference": "cf1648b70ca8fa9619e917486635c2e3ab6cd201"
             },
             "dist": {
