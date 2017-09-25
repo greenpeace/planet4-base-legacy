@@ -4,8 +4,68 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "fe9f34ec7eb19e143fef1f76e76c7354",
+    "content-hash": "0f44dfbc9f60eb70921776ac7d9e2a6f",
     "packages": [
+        {
+            "name": "cmb2/cmb2",
+            "version": "v2.2.5.3",
+            "source": {
+                "type": "git",
+                "url": "git@github.com:CMB2/CMB2.git",
+                "reference": "5c9bdb6e99e17e4dad71ebbc68dab5def3c64e12"
+            },
+            "dist": {
+                "type": "tar",
+                "url": "https://p4-composer-registry.greenpeace.org//dist/cmb2/cmb2/cmb2-cmb2-5c9bdb6e99e17e4dad71ebbc68dab5def3c64e12-zip-39fd0f.tar",
+                "reference": "5c9bdb6e99e17e4dad71ebbc68dab5def3c64e12",
+                "shasum": "860017c4cf5113362b0883eef03c8a7d9cf93625"
+            },
+            "require": {
+                "php": ">5.2.4"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "3.7.*"
+            },
+            "suggest": {
+                "composer/installers": "~1.0"
+            },
+            "type": "wordpress-plugin",
+            "license": [
+                "GPL-2.0+"
+            ],
+            "authors": [
+                {
+                    "name": "Justin Sternberg",
+                    "email": "justin@dsgnwrks.pro",
+                    "homepage": "https://dsgnwrks.pro",
+                    "role": "Developer"
+                },
+                {
+                    "name": "WebDevStudios",
+                    "email": "contact@webdevstudios.com",
+                    "homepage": "https://github.com/WebDevStudios",
+                    "role": "Developer"
+                },
+                {
+                    "name": "Zao",
+                    "email": "office@zao.com",
+                    "homepage": "http://zao.is",
+                    "role": "Developer"
+                }
+            ],
+            "description": "CMB2 is a metabox, custom fields, and forms library for WordPress that will blow your mind.",
+            "homepage": "https://github.com/CMB2/CMB2",
+            "keywords": [
+                "metabox",
+                "plugin",
+                "wordpress"
+            ],
+            "support": {
+                "issues": "https://github.com/CMB2/CMB2/issues",
+                "source": "http://wordpress.org/support/plugin/cmb2"
+            },
+            "time": "2017-08-22T18:14:34+00:00"
+        },
         {
             "name": "composer/ca-bundle",
             "version": "1.0.8",
@@ -383,11 +443,52 @@
             "time": "2017-04-03T19:08:52+00:00"
         },
         {
+            "name": "fusioneng/shortcake",
+            "version": "v0.7.3",
+            "source": {
+                "type": "git",
+                "url": "git@github.com:wp-shortcake/shortcake.git",
+                "reference": "9f9a36af0bfb70a4a3008b443f35a63610e07dd6"
+            },
+            "dist": {
+                "type": "tar",
+                "url": "https://p4-composer-registry.greenpeace.org//dist/fusioneng/shortcake/fusioneng-shortcake-9f9a36af0bfb70a4a3008b443f35a63610e07dd6-zip-079a4c.tar",
+                "reference": "9f9a36af0bfb70a4a3008b443f35a63610e07dd6",
+                "shasum": "83912c65b069e4d4c6fe050932e8959d178a7e93"
+            },
+            "require-dev": {
+                "squizlabs/php_codesniffer": "2.9.*",
+                "wp-coding-standards/wpcs": "dev-develop"
+            },
+            "type": "wordpress-plugin",
+            "scripts": {
+                "post-install-cmd": [
+                    "\"vendor/bin/phpcs\" --config-set installed_paths vendor/wp-coding-standards/wpcs"
+                ],
+                "post-update-cmd": [
+                    "\"vendor/bin/phpcs\" --config-set installed_paths vendor/wp-coding-standards/wpcs"
+                ]
+            },
+            "license": [
+                "GPL-2.0+"
+            ],
+            "authors": [
+                {
+                    "name": "Fusion",
+                    "email": "tech@fusion.net",
+                    "homepage": "http://fusion.net"
+                }
+            ],
+            "description": "Shortcake makes using WordPress shortcodes a piece of cake.",
+            "homepage": "https://github.com/fusioneng/Shortcake",
+            "time": "2017-09-12T20:39:15+00:00"
+        },
+        {
             "name": "greenpeace/planet4-child-theme",
             "version": "dev-develop",
             "source": {
                 "type": "git",
-                "url": "https://github.com/greenpeace/planet4-child-theme.git",
+                "url": "git@github.com:greenpeace/planet4-child-theme.git",
                 "reference": "d70c0516a92600bd76308840383ced26bf7de321"
             },
             "dist": {
@@ -431,7 +532,7 @@
             "version": "dev-develop",
             "source": {
                 "type": "git",
-                "url": "https://github.com/greenpeace/planet4-content-default.git",
+                "url": "git@github.com:greenpeace/planet4-content-default.git",
                 "reference": "c33a2379098b640a9b059217414aae3827b3ec08"
             },
             "dist": {
@@ -495,7 +596,7 @@
             "version": "dev-develop",
             "source": {
                 "type": "git",
-                "url": "https://github.com/greenpeace/planet4-master-theme.git",
+                "url": "git@github.com:greenpeace/planet4-master-theme.git",
                 "reference": "155a6fc2c81a52160e911fd694d6134e0634350d"
             },
             "dist": {
@@ -539,26 +640,34 @@
             "time": "2017-09-24T15:02:44+00:00"
         },
         {
-            "name": "greenpeace/planet4-plugin-action-content-type",
+            "name": "greenpeace/planet4-plugin-blocks",
             "version": "dev-develop",
             "source": {
                 "type": "git",
-                "url": "https://github.com/greenpeace/planet4-plugin-action-content-type.git",
-                "reference": "82205a14446338b4a50bb5bbc59d5bd0fc859335"
+                "url": "git@github.com:greenpeace/planet4-plugin-blocks.git",
+                "reference": "ab1d4666c5e9552066e6ffa3b126b55f33d88360"
             },
             "dist": {
                 "type": "tar",
-                "url": "https://p4-composer-registry.greenpeace.org//dist/greenpeace/planet4-plugin-action-content-type/greenpeace-planet4-plugin-action-content-type-82205a14446338b4a50bb5bbc59d5bd0fc859335-zip-70d0b9.tar",
-                "reference": "82205a14446338b4a50bb5bbc59d5bd0fc859335",
-                "shasum": "519f69fbc7c2f32ab8d45bbe1482dd961596a436"
+                "url": "https://p4-composer-registry.greenpeace.org//dist/greenpeace/planet4-plugin-blocks/greenpeace-planet4-plugin-blocks-ab1d4666c5e9552066e6ffa3b126b55f33d88360-zip-eb22cf.tar",
+                "reference": "ab1d4666c5e9552066e6ffa3b126b55f33d88360",
+                "shasum": "6776846cf4aeb549ffc66f8a0e244e0642104c27"
             },
             "require-dev": {
                 "dealerdirect/phpcodesniffer-composer-installer": "^0.4.0",
                 "frenck/php-compatibility": "^7.1",
                 "squizlabs/php_codesniffer": "2.9.*",
-                "wp-coding-standards/wpcs": "0.12"
+                "wp-coding-standards/wpcs": "0.13.*"
             },
             "type": "wordpress-plugin",
+            "autoload": {
+                "psr-4": {
+                    "P4BKS\\": "classes/",
+                    "P4BKS\\Controllers\\": "classes/controller/",
+                    "P4BKS\\Controllers\\Blocks\\": "classes/controller/blocks",
+                    "P4BKS\\Controllers\\Menu\\": "classes/controller/menu"
+                }
+            },
             "license": [
                 "GPL-3"
             ],
@@ -568,15 +677,15 @@
                     "email": "planet4-group@greenpeace.org"
                 }
             ],
-            "description": "This repository contains the wordpress plugin which creates custom content type.",
-            "time": "2017-08-31T13:55:33+00:00"
+            "description": "This repository contains the WordPress plugin that provides the blocks to be used with Shortcake UI plugin.",
+            "time": "2017-09-22T11:40:44+00:00"
         },
         {
             "name": "greenpeace/planet4-plugin-engagingnetworks",
             "version": "dev-develop",
             "source": {
                 "type": "git",
-                "url": "https://github.com/greenpeace/planet4-plugin-engagingnetworks.git",
+                "url": "git@github.com:greenpeace/planet4-plugin-engagingnetworks.git",
                 "reference": "cf1648b70ca8fa9619e917486635c2e3ab6cd201"
             },
             "dist": {
@@ -612,6 +721,26 @@
             ],
             "description": "This repository contains the wordpress plugin that connects Planet 4 with the Engaging Networks platform.",
             "time": "2017-09-01T07:14:21+00:00"
+        },
+        {
+            "name": "greenpeace/planet4-plugin-saml-20-single-sign-on",
+            "version": "4.8.28",
+            "source": {
+                "type": "git",
+                "url": "repositories/planet4-plugin-saml-20-single-sign-on",
+                "reference": "c9d656b5cad7fd1eb7c2c7fd8f14db01c789b32e"
+            },
+            "dist": {
+                "type": "tar",
+                "url": "https://p4-composer-registry.greenpeace.org//dist/greenpeace/planet4-plugin-saml-20-single-sign-on/greenpeace-planet4-plugin-saml-20-single-sign-on-4.8.28-2c4420.tar",
+                "reference": "c9d656b5cad7fd1eb7c2c7fd8f14db01c789b32e",
+                "shasum": "57d573d6b3c9fd1de28a67ce2825f411b8c200c9"
+            },
+            "require": {
+                "greenpeace/planet4-plugin-saml-20-single-sign-on": "4.8.28"
+            },
+            "type": "library",
+            "time": "2017-09-16T08:49:42+00:00"
         },
         {
             "name": "greenpeace/planet4-wordpress",
@@ -3301,11 +3430,11 @@
     "aliases": [],
     "minimum-stability": "stable",
     "stability-flags": {
-        "greenpeace/planet4-master-theme": 20,
         "greenpeace/planet4-child-theme": 20,
         "greenpeace/planet4-content-default": 20,
-        "greenpeace/planet4-plugin-engagingnetworks": 20,
-        "greenpeace/planet4-plugin-action-content-type": 20
+        "greenpeace/planet4-master-theme": 20,
+        "greenpeace/planet4-plugin-blocks": 20,
+        "greenpeace/planet4-plugin-engagingnetworks": 20
     },
     "prefer-stable": false,
     "prefer-lowest": false,
