@@ -13,14 +13,6 @@
 		},
 		{
 			"type": "vcs",
-			"url": "https://github.com/greenpeace/planet4-wordpress"
-		},
-		{
-			"type": "vcs",
-			"url": "https://github.com/greenpeace/planet4-master-theme"
-		},
-		{
-			"type": "vcs",
 			"url": "https://github.com/greenpeace/planet4-child-theme"
 		},
 		{
@@ -29,13 +21,16 @@
 		},
 		{
 			"type": "vcs",
-			"url": "https://github.com/greenpeace/planet4-plugin-engagingnetworks"
+			"url": "https://github.com/greenpeace/planet4-master-theme"
 		},
 		{
 			"type": "vcs",
-			"url": "https://github.com/greenpeace/planet4-plugin-action-content-type"
+			"url": "https://github.com/greenpeace/planet4-plugin-blocks"
+		},
+		{
+			"type": "vcs",
+			"url": "https://github.com/greenpeace/planet4-plugin-engagingnetworks"
 		}
-
 	],
 
 	"require": {
