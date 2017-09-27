@@ -11,7 +11,7 @@
             "version": "v2.2.5.3",
             "source": {
                 "type": "git",
-                "url": "https://github.com/CMB2/CMB2.git",
+                "url": "git@github.com:CMB2/CMB2.git",
                 "reference": "5c9bdb6e99e17e4dad71ebbc68dab5def3c64e12"
             },
             "dist": {
@@ -447,7 +447,7 @@
             "version": "v0.7.3",
             "source": {
                 "type": "git",
-                "url": "https://github.com/wp-shortcake/shortcake.git",
+                "url": "git@github.com:wp-shortcake/shortcake.git",
                 "reference": "9f9a36af0bfb70a4a3008b443f35a63610e07dd6"
             },
             "dist": {
@@ -597,17 +597,17 @@
         },
         {
             "name": "greenpeace/planet4-master-theme",
-            "version": "0.2.5",
+            "version": "0.2.6",
             "source": {
                 "type": "git",
                 "url": "git@github.com:greenpeace/planet4-master-theme.git",
-                "reference": "a4bfd29ceccd8e96a7c808ca85d0254e96c32777"
+                "reference": "b4a7b312ba95b7cf1e6f849c3fa84ba96bc69d98"
             },
             "dist": {
                 "type": "tar",
-                "url": "https://p4-composer-registry.greenpeace.org//dist/greenpeace/planet4-master-theme/greenpeace-planet4-master-theme-a4bfd29ceccd8e96a7c808ca85d0254e96c32777-zip-13a557.tar",
-                "reference": "a4bfd29ceccd8e96a7c808ca85d0254e96c32777",
-                "shasum": "ee6344bce938fc2d3e20c1983b715e02a1382cc9"
+                "url": "https://p4-composer-registry.greenpeace.org//dist/greenpeace/planet4-master-theme/greenpeace-planet4-master-theme-b4a7b312ba95b7cf1e6f849c3fa84ba96bc69d98-zip-3d736c.tar",
+                "reference": "b4a7b312ba95b7cf1e6f849c3fa84ba96bc69d98",
+                "shasum": "1064ddcb0b107cfdf8572195b14131216264a69b"
             },
             "require": {
                 "wpackagist-plugin/timber-library": "1.3.*"
@@ -633,6 +633,11 @@
                     "name": "Anselm Hannemann",
                     "email": "ahannema@greenpeace.org",
                     "role": "Front-End Developer"
+                },
+                {
+                    "name": "Ashish Singh",
+                    "email": "ashish.singh@greenpeace.org",
+                    "role": "Front-End Developer"
                 }
             ],
             "description": "Master theme for the Planet 4 Wordpress project",
@@ -641,21 +646,21 @@
                 "wiki": "https://github.com/greenpeace/planet4-master-theme/wiki",
                 "source": "https://github.com/greenpeace/planet4-master-theme"
             },
-            "time": "2017-09-25T14:19:42+00:00"
+            "time": "2017-09-26T08:29:18+00:00"
         },
         {
             "name": "greenpeace/planet4-plugin-blocks",
-            "version": "0.1.6",
+            "version": "0.1.8",
             "source": {
                 "type": "git",
-                "url": "https://github.com/greenpeace/planet4-plugin-blocks.git",
-                "reference": "d418065091d1243d52f8f97eb4ef7569ddf5540b"
+                "url": "git@github.com:greenpeace/planet4-plugin-blocks.git",
+                "reference": "04313c7ca16417bdb22f88ebd48924ccb2e4aa1d"
             },
             "dist": {
                 "type": "tar",
-                "url": "https://p4-composer-registry.greenpeace.org//dist/greenpeace/planet4-plugin-blocks/greenpeace-planet4-plugin-blocks-d418065091d1243d52f8f97eb4ef7569ddf5540b-zip-5e35aa.tar",
-                "reference": "d418065091d1243d52f8f97eb4ef7569ddf5540b",
-                "shasum": "de7949902abb814f7e701ead704f42b110beb8e3"
+                "url": "https://p4-composer-registry.greenpeace.org//dist/greenpeace/planet4-plugin-blocks/greenpeace-planet4-plugin-blocks-04313c7ca16417bdb22f88ebd48924ccb2e4aa1d-zip-0c6d66.tar",
+                "reference": "04313c7ca16417bdb22f88ebd48924ccb2e4aa1d",
+                "shasum": "da457ac3dcb73565495d25da154fc978735bc719"
             },
             "require-dev": {
                 "dealerdirect/phpcodesniffer-composer-installer": "^0.4.0",
@@ -682,11 +687,7 @@
                 }
             ],
             "description": "This repository contains the WordPress plugin that provides the blocks to be used with Shortcake UI plugin.",
-            "support": {
-                "source": "https://github.com/greenpeace/planet4-plugin-blocks/tree/v0.1.6",
-                "issues": "https://github.com/greenpeace/planet4-plugin-blocks/issues"
-            },
-            "time": "2017-09-22T10:33:17+00:00"
+            "time": "2017-09-26T12:03:49+00:00"
         },
         {
             "name": "greenpeace/planet4-plugin-engagingnetworks",
@@ -728,10 +729,6 @@
                 }
             ],
             "description": "This repository contains the wordpress plugin that connects Planet 4 with the Engaging Networks platform.",
-            "support": {
-                "source": "https://github.com/greenpeace/planet4-plugin-engagingnetworks/tree/v0.2.8",
-                "issues": "https://github.com/greenpeace/planet4-plugin-engagingnetworks/issues"
-            },
             "time": "2017-09-01T07:14:21+00:00"
         },
         {
