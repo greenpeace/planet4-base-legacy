@@ -22,7 +22,7 @@ composer install
 
 If you want to add more dependencies to this project, you should also always
 add them to the composer file. No manual copying of plugins or themes should be
-necessary and any time.
+necessary and any time. 
 
 ## Configuration
 You need to create a [Wordpress command line](http://wp-cli.org/) configuration file.
