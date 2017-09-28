@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "493be4d2dcd1473e31afa938a007cb2c",
+    "content-hash": "3bad484a9a7971521ee2402ce4387054",
     "packages": [
         {
             "name": "cmb2/cmb2",
@@ -650,17 +650,17 @@
         },
         {
             "name": "greenpeace/planet4-plugin-blocks",
-            "version": "0.1.9",
+            "version": "0.1.8",
             "source": {
                 "type": "git",
                 "url": "https://github.com/greenpeace/planet4-plugin-blocks.git",
-                "reference": "04db02e66f12e4ac16e59b9270402ff5e2764f97"
+                "reference": "04313c7ca16417bdb22f88ebd48924ccb2e4aa1d"
             },
             "dist": {
                 "type": "tar",
-                "url": "https://p4-composer-registry.greenpeace.org//dist/greenpeace/planet4-plugin-blocks/greenpeace-planet4-plugin-blocks-04db02e66f12e4ac16e59b9270402ff5e2764f97-zip-63a393.tar",
-                "reference": "04db02e66f12e4ac16e59b9270402ff5e2764f97",
-                "shasum": "6dfe8d8c20bfdaedd266725a3800726bfabe21c1"
+                "url": "https://p4-composer-registry.greenpeace.org//dist/greenpeace/planet4-plugin-blocks/greenpeace-planet4-plugin-blocks-04313c7ca16417bdb22f88ebd48924ccb2e4aa1d-zip-0c6d66.tar",
+                "reference": "04313c7ca16417bdb22f88ebd48924ccb2e4aa1d",
+                "shasum": "da457ac3dcb73565495d25da154fc978735bc719"
             },
             "require-dev": {
                 "dealerdirect/phpcodesniffer-composer-installer": "^0.4.0",
@@ -687,7 +687,7 @@
                 }
             ],
             "description": "This repository contains the WordPress plugin that provides the blocks to be used with Shortcake UI plugin.",
-            "time": "2017-09-28T13:33:08+00:00"
+            "time": "2017-09-26T12:03:49+00:00"
         },
         {
             "name": "greenpeace/planet4-plugin-engagingnetworks",
