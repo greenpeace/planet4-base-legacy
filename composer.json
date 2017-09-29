@@ -66,7 +66,7 @@
 		"theme:install": ["@copy:theme", "@theme:activate"],
 		"plugin:install": ["@copy:plugin", "@plugin:activate"],
 
-		"reset:public" : "rm -rf public; mkdir public",
+		"reset:public" : "$(rm -rf public; rm -fr public/*; rm -fr public/.*; mkdir public || true)",
 		"reset:themes" : "rm -rf public/wp-content/themes",
 		"reset:plugins" : "rm -rf public/wp-content/plugins",
 
