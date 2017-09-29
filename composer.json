@@ -24,7 +24,7 @@
 		"greenpeace/planet4-plugin-blocks" : "0.1.*",
 		"fusioneng/shortcake" : "0.7.3",
 		"cmb2/cmb2" : "2.2.5.3",
-		"greenpeace/planet4-plugin-saml-20-single-sign-on" : "4.8.*"
+		"pantheon-systems/wp-saml-auth" : "0.3.1"
 	},
 
 	"config": {
@@ -88,7 +88,7 @@
 		"server": "php -S 127.0.0.1:9191 -t public",
 
 		"post-update-cmd": [
-			"sed -i -e 's#git@github.com:#https://github.com/#g' composer-dev.lock"
+			"sed -i -e 's#git@github.com:#https://github.com/#g' composer.lock"
 		]
 	}
 }
