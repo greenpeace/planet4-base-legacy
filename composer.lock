@@ -589,25 +589,21 @@
                 }
             ],
             "description": "Scripts that control the default content of the default planet4 installation",
-            "support": {
-                "source": "https://github.com/greenpeace/planet4-content-default/tree/v0.2.8",
-                "issues": "https://github.com/greenpeace/planet4-content-default/issues"
-            },
             "time": "2017-07-04T10:04:21+00:00"
         },
         {
             "name": "greenpeace/planet4-master-theme",
-            "version": "0.2.6",
+            "version": "0.2.7",
             "source": {
                 "type": "git",
                 "url": "https://github.com/greenpeace/planet4-master-theme.git",
-                "reference": "b4a7b312ba95b7cf1e6f849c3fa84ba96bc69d98"
+                "reference": "562c1a8181a0ed5a1942c4c564dfff8f75dae105"
             },
             "dist": {
                 "type": "tar",
-                "url": "https://p4-composer-registry.greenpeace.org//dist/greenpeace/planet4-master-theme/greenpeace-planet4-master-theme-b4a7b312ba95b7cf1e6f849c3fa84ba96bc69d98-zip-3d736c.tar",
-                "reference": "b4a7b312ba95b7cf1e6f849c3fa84ba96bc69d98",
-                "shasum": "1064ddcb0b107cfdf8572195b14131216264a69b"
+                "url": "https://p4-composer-registry.greenpeace.org//dist/greenpeace/planet4-master-theme/greenpeace-planet4-master-theme-562c1a8181a0ed5a1942c4c564dfff8f75dae105-zip-7c4dbb.tar",
+                "reference": "562c1a8181a0ed5a1942c4c564dfff8f75dae105",
+                "shasum": "eac821e7ba008fe65f22e774e786b9f7175eeb90"
             },
             "require": {
                 "wpackagist-plugin/timber-library": "1.3.*"
@@ -638,6 +634,11 @@
                     "name": "Ashish Singh",
                     "email": "ashish.singh@greenpeace.org",
                     "role": "Front-End Developer"
+                },
+                {
+                    "name": "Angelos Theodorakopoulos",
+                    "email": "angelos.theodorakopoulos@greenpeace.org",
+                    "role": "PHP Developer"
                 }
             ],
             "description": "Master theme for the Planet 4 Wordpress project",
@@ -646,7 +647,7 @@
                 "wiki": "https://github.com/greenpeace/planet4-master-theme/wiki",
                 "source": "https://github.com/greenpeace/planet4-master-theme"
             },
-            "time": "2017-09-26T08:29:18+00:00"
+            "time": "2017-09-29T15:09:02+00:00"
         },
         {
             "name": "greenpeace/planet4-plugin-blocks",
@@ -729,10 +730,6 @@
                 }
             ],
             "description": "This repository contains the wordpress plugin that connects Planet 4 with the Engaging Networks platform.",
-            "support": {
-                "source": "https://github.com/greenpeace/planet4-plugin-engagingnetworks/tree/v0.2.8",
-                "issues": "https://github.com/greenpeace/planet4-plugin-engagingnetworks/issues"
-            },
             "time": "2017-09-01T07:14:21+00:00"
         },
         {
