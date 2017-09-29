@@ -108,7 +108,7 @@
 
 		"server": "php -S 127.0.0.1:9191 -t public",
 
-		"post-install-cmd": [
+		"post-update-cmd": [
 			"sed -i -e 's#git@github.com:#https://github.com/#g' composer-dev.lock"
 		]
 	}
