@@ -492,7 +492,7 @@
             "version": "dev-develop",
             "source": {
                 "type": "git",
-                "url": "git@github.com:greenpeace/planet4-child-theme.git",
+                "url": "https://github.com/greenpeace/planet4-child-theme.git",
                 "reference": "d70c0516a92600bd76308840383ced26bf7de321"
             },
             "dist": {
@@ -604,7 +604,7 @@
             "version": "dev-develop",
             "source": {
                 "type": "git",
-                "url": "git@github.com:greenpeace/planet4-master-theme.git",
+                "url": "https://github.com/greenpeace/planet4-master-theme.git",
                 "reference": "956149180e516434512a433c41cbfadcb3012f94"
             },
             "dist": {
