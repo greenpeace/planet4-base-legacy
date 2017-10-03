@@ -22,7 +22,7 @@
 		"greenpeace/planet4-content-default": "0.2.*",
 		"greenpeace/planet4-plugin-engagingnetworks" : "0.*",
 		"greenpeace/planet4-plugin-blocks" : "0.1.*",
-		"greenpeace/planet4-plugin-searchwp" : "2.8.15",
+		"greenpeace/planet4-plugin-searchwp-upstream" : "2.8.15",
 		"fusioneng/shortcake" : "0.7.3",
 		"cmb2/cmb2" : "2.2.5.3"
 	},
@@ -71,10 +71,7 @@
 		"reset:plugins" : "rm -rf public/wp-content/plugins",
 
 		"copy:wordpress": "rsync --recursive vendor/greenpeace/planet4-wordpress-upstream/* public",
-		"copy:plugins" : [
-			"cp -rf vendor/plugins public/wp-content",
-			"tar -xvzf public/wp-content/plugins/planet4-plugin-searchwp/searchwp.tar.gz --directory public/wp-content/plugins/planet4-plugin-searchwp/ --strip-components=1 searchwp  && rm public/wp-content/plugins/planet4-plugin-searchwp/searchwp.tar.gz"
-		],
+		"copy:plugins" : "cp -rf vendor/plugins public/wp-content",
 		"copy:themes" : "cp -rf vendor/themes public/wp-content",
 		"copy:assets" : "cp -rf vendor/greenpeace/planet4-content-default/assets public/wp-content/themes/planet4-master-theme",
 
