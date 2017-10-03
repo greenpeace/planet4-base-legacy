@@ -1,0 +1,28 @@
+steps:
+- id: 'configure-p4-gpi-app'
+  name: 'ubuntu'
+  dir: './environments/stage/p4-gpi-app'
+  args:
+    - '/bin/sed'
+    - '-i'
+    - '-r'
+    - '-e'
+    - 's;FROM.*;FROM gcr.io/${PROJECT_ID}/p4-onbuild:latest;g'
+    - 'Dockerfile'
+
+- id: 'p4-gpi-app'
+  name: 'gcr.io/cloud-builders/docker'
+  args:
+    - 'build'
+    - '--build-arg'
+    - 'GIT_REF=master'
+    - '--tag=gcr.io/${PROJECT_ID}/p4-gpi-app:${TAG_NAME}'
+    - '--tag=gcr.io/${PROJECT_ID}/p4-gpi-app:latest'
+    - './environments/stage/p4-gpi-app'
+  waitFor:
+    - 'configure-p4-gpi-app'
+  tags:
+   - "gpi"
+   - "planet4"
+   - "wordpress"
+   - "prod"
