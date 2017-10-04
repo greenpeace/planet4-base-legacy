@@ -22,6 +22,7 @@
 		"greenpeace/planet4-content-default": "0.2.*",
 		"greenpeace/planet4-plugin-engagingnetworks" : "0.*",
 		"greenpeace/planet4-plugin-blocks" : "0.1.*",
+		"greenpeace/planet4-plugin-searchwp-upstream" : "2.8.15",
 		"fusioneng/shortcake" : "0.7.3",
 		"cmb2/cmb2" : "2.2.5.3"
 	},
