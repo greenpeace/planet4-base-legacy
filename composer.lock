@@ -593,17 +593,17 @@
         },
         {
             "name": "greenpeace/planet4-master-theme",
-            "version": "0.2.7",
+            "version": "0.2.9",
             "source": {
                 "type": "git",
                 "url": "https://github.com/greenpeace/planet4-master-theme.git",
-                "reference": "562c1a8181a0ed5a1942c4c564dfff8f75dae105"
+                "reference": "feaf5056c16024d75c1002fa8ffe32887e12f0d9"
             },
             "dist": {
                 "type": "tar",
-                "url": "https://p4-composer-registry.greenpeace.org//dist/greenpeace/planet4-master-theme/greenpeace-planet4-master-theme-562c1a8181a0ed5a1942c4c564dfff8f75dae105-zip-7c4dbb.tar",
-                "reference": "562c1a8181a0ed5a1942c4c564dfff8f75dae105",
-                "shasum": "eac821e7ba008fe65f22e774e786b9f7175eeb90"
+                "url": "https://p4-composer-registry.greenpeace.org//dist/greenpeace/planet4-master-theme/greenpeace-planet4-master-theme-feaf5056c16024d75c1002fa8ffe32887e12f0d9-zip-9e2664.tar",
+                "reference": "feaf5056c16024d75c1002fa8ffe32887e12f0d9",
+                "shasum": "1d5bc31014df6898ed37a50368a40dc25f864e9a"
             },
             "require": {
                 "wpackagist-plugin/timber-library": "1.3.*"
@@ -647,7 +647,7 @@
                 "wiki": "https://github.com/greenpeace/planet4-master-theme/wiki",
                 "source": "https://github.com/greenpeace/planet4-master-theme"
             },
-            "time": "2017-09-29T15:09:02+00:00"
+            "time": "2017-10-04T10:52:21+00:00"
         },
         {
             "name": "greenpeace/planet4-plugin-blocks",
@@ -2981,16 +2981,16 @@
         },
         {
             "name": "wp-cli/scaffold-command",
-            "version": "v1.0.7",
+            "version": "v1.0.8",
             "source": {
                 "type": "git",
                 "url": "https://github.com/wp-cli/scaffold-command.git",
-                "reference": "9ed0d96967a84ebe21764aa30b162717bc45c6ef"
+                "reference": "2483ee1a062f3fe78acf6ee3f53a77d686b5ac61"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/wp-cli/scaffold-command/zipball/9ed0d96967a84ebe21764aa30b162717bc45c6ef",
-                "reference": "9ed0d96967a84ebe21764aa30b162717bc45c6ef",
+                "url": "https://api.github.com/repos/wp-cli/scaffold-command/zipball/2483ee1a062f3fe78acf6ee3f53a77d686b5ac61",
+                "reference": "2483ee1a062f3fe78acf6ee3f53a77d686b5ac61",
                 "shasum": ""
             },
             "require-dev": {
@@ -3035,7 +3035,7 @@
             ],
             "description": "Generate code for post types, taxonomies, plugins, child themes, etc.",
             "homepage": "https://github.com/wp-cli/scaffold-command",
-            "time": "2017-08-23T13:06:41+00:00"
+            "time": "2017-10-03T12:53:14+00:00"
         },
         {
             "name": "wp-cli/search-replace-command",
