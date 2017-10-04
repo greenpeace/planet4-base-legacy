@@ -14,17 +14,17 @@
 	],
 
 	"require": {
+		"cmb2/cmb2" : "2.2.5.3",
 		"composer/installers": "~1.0",
-		"wp-cli/wp-cli": "^1.1",
-		"greenpeace/planet4-wordpress": "4.8.2",
-		"greenpeace/planet4-master-theme" : "0.2.*",
+		"fusioneng/shortcake" : "0.7.3",
 		"greenpeace/planet4-child-theme" : "0.2.*",
 		"greenpeace/planet4-content-default": "0.2.*",
-		"greenpeace/planet4-plugin-engagingnetworks" : "0.*",
+		"greenpeace/planet4-master-theme" : "0.2.*",
 		"greenpeace/planet4-plugin-blocks" : "0.1.*",
-		"fusioneng/shortcake" : "0.7.3",
-		"cmb2/cmb2" : "2.2.5.3",
-		"greenpeace/planet4-plugin-saml-20-single-sign-on" : "4.8.*"
+		"greenpeace/planet4-plugin-engagingnetworks" : "0.*",
+		"greenpeace/planet4-plugin-searchwp-upstream" : "2.8.15",
+		"greenpeace/planet4-wordpress": "4.8.2",
+		"wp-cli/wp-cli": "^1.1"
 	},
 
 	"config": {
