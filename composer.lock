@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "dd518094bad4bf1e1a4ac7c73dda7ccc",
+    "content-hash": "c6465b567991f1aa8790369415de1346",
     "packages": [
         {
             "name": "cmb2/cmb2",
@@ -651,17 +651,17 @@
         },
         {
             "name": "greenpeace/planet4-plugin-blocks",
-            "version": "0.1.10",
+            "version": "0.1.11",
             "source": {
                 "type": "git",
                 "url": "https://github.com/greenpeace/planet4-plugin-blocks.git",
-                "reference": "03ae3dff9cfd97de4959ec06642686482cc08a64"
+                "reference": "6c4997b6f1f8cd218e514f67b22d8e72cd34c88c"
             },
             "dist": {
                 "type": "tar",
-                "url": "https://p4-composer-registry.greenpeace.org//dist/greenpeace/planet4-plugin-blocks/greenpeace-planet4-plugin-blocks-03ae3dff9cfd97de4959ec06642686482cc08a64-zip-3f7ec0.tar",
-                "reference": "03ae3dff9cfd97de4959ec06642686482cc08a64",
-                "shasum": "1e1cf5ed90ed08c328093064a217385371bf87fe"
+                "url": "https://p4-composer-registry.greenpeace.org//dist/greenpeace/planet4-plugin-blocks/greenpeace-planet4-plugin-blocks-6c4997b6f1f8cd218e514f67b22d8e72cd34c88c-zip-107676.tar",
+                "reference": "6c4997b6f1f8cd218e514f67b22d8e72cd34c88c",
+                "shasum": "1b66eeb104c711d0cc59bd21bfb0bbed0003ac97"
             },
             "require-dev": {
                 "dealerdirect/phpcodesniffer-composer-installer": "^0.4.0",
@@ -688,7 +688,7 @@
                 }
             ],
             "description": "This repository contains the WordPress plugin that provides the blocks to be used with Shortcake UI plugin.",
-            "time": "2017-09-28T14:45:42+00:00"
+            "time": "2017-10-05T06:18:51+00:00"
         },
         {
             "name": "greenpeace/planet4-plugin-engagingnetworks",
@@ -781,16 +781,16 @@
         },
         {
             "name": "justinrainbow/json-schema",
-            "version": "5.2.2",
+            "version": "5.2.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/justinrainbow/json-schema.git",
-                "reference": "b80053b620826810b38211b3c5f935ba9cddf6b3"
+                "reference": "7ccb0e67ea8ace0f84c40900ca3c8a234467628c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/justinrainbow/json-schema/zipball/b80053b620826810b38211b3c5f935ba9cddf6b3",
-                "reference": "b80053b620826810b38211b3c5f935ba9cddf6b3",
+                "url": "https://api.github.com/repos/justinrainbow/json-schema/zipball/7ccb0e67ea8ace0f84c40900ca3c8a234467628c",
+                "reference": "7ccb0e67ea8ace0f84c40900ca3c8a234467628c",
                 "shasum": ""
             },
             "require": {
@@ -843,7 +843,7 @@
                 "json",
                 "schema"
             ],
-            "time": "2017-10-03T00:49:49+00:00"
+            "time": "2017-10-04T20:57:36+00:00"
         },
         {
             "name": "mustache/mustache",
