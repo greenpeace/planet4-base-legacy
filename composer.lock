@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "c6465b567991f1aa8790369415de1346",
+    "content-hash": "6464c440ed2559a378838d6501f6eda7",
     "packages": [
         {
             "name": "cmb2/cmb2",
@@ -744,6 +744,17 @@
                 "url": "https://p4-composer-registry.greenpeace.org//dist/greenpeace/planet4-plugin-searchwp-upstream/greenpeace-planet4-plugin-searchwp-upstream-2.8.15.tar",
                 "reference": null,
                 "shasum": "1f8ed3fa48a6b8d50f60b7994be31eb4d882c964"
+            },
+            "type": "wordpress-plugin"
+        },
+        {
+            "name": "greenpeace/planet4-plugin-wpimport-upstream",
+            "version": "4.4.9",
+            "dist": {
+                "type": "tar",
+                "url": "https://p4-composer-registry.greenpeace.org//dist/greenpeace/planet4-plugin-wpimport-upstream/greenpeace-planet4-plugin-wpimport-upstream-4.4.9.tar",
+                "reference": null,
+                "shasum": "c484157f527d96aa05557e3f8e5faae8fae2f8b6"
             },
             "type": "wordpress-plugin"
         },
