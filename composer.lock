@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "1dd3addbd4d23aacf7f4a9a830784afb",
+    "content-hash": "89b55b757fd4975fcbbf04f947e243ff",
     "packages": [
         {
             "name": "cmb2/cmb2",
@@ -485,17 +485,17 @@
         },
         {
             "name": "greenpeace/planet4-child-theme",
-            "version": "0.2.4",
+            "version": "dev-features-all-demo",
             "source": {
                 "type": "git",
                 "url": "https://github.com/greenpeace/planet4-child-theme.git",
-                "reference": "c20784994e3c085c2fce903ab42c4c647e814809"
+                "reference": "5a3ad44db8e91fdd3b6344128d379b82c3627496"
             },
             "dist": {
                 "type": "tar",
-                "url": "https://p4-composer-registry.greenpeace.org//dist/greenpeace/planet4-child-theme/greenpeace-planet4-child-theme-c20784994e3c085c2fce903ab42c4c647e814809-zip-a27b85.tar",
-                "reference": "c20784994e3c085c2fce903ab42c4c647e814809",
-                "shasum": "6069ca645c73c02306241f9683ef4fa165ff60ef"
+                "url": "https://p4-composer-registry.greenpeace.org//dist/greenpeace/planet4-child-theme/greenpeace-planet4-child-theme-5a3ad44db8e91fdd3b6344128d379b82c3627496-zip-334e71.tar",
+                "reference": "5a3ad44db8e91fdd3b6344128d379b82c3627496",
+                "shasum": "57e604d9becb47010cbc2706720e6c4e3a384891"
             },
             "require": {
                 "wpackagist-plugin/timber-library": "1.5.*"
@@ -525,7 +525,7 @@
                 "wiki": "https://github.com/greenpeace/planet4-child-theme/wiki",
                 "source": "https://github.com/greenpeace/planet4-child-theme"
             },
-            "time": "2017-10-09T13:26:19+00:00"
+            "time": "2017-10-09T13:27:57+00:00"
         },
         {
             "name": "greenpeace/planet4-content-default",
@@ -597,13 +597,13 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/greenpeace/planet4-master-theme.git",
-                "reference": "73605fce7c5baa8faf555128806b2650e707062f"
+                "reference": "6bd9c47d1d345f42e3d974fd1ce99098409cbd52"
             },
             "dist": {
                 "type": "tar",
-                "url": "https://p4-composer-registry.greenpeace.org//dist/greenpeace/planet4-master-theme/greenpeace-planet4-master-theme-73605fce7c5baa8faf555128806b2650e707062f-zip-76db2f.tar",
-                "reference": "73605fce7c5baa8faf555128806b2650e707062f",
-                "shasum": "c3e895f79563accaf2c355f4497126feface698d"
+                "url": "https://p4-composer-registry.greenpeace.org//dist/greenpeace/planet4-master-theme/greenpeace-planet4-master-theme-6bd9c47d1d345f42e3d974fd1ce99098409cbd52-zip-1cabe6.tar",
+                "reference": "6bd9c47d1d345f42e3d974fd1ce99098409cbd52",
+                "shasum": "6c0a4bf8d1a50c97d51d4ea3de01a30a859ac9ea"
             },
             "require": {
                 "wpackagist-plugin/timber-library": "1.5.*"
@@ -647,7 +647,7 @@
                 "wiki": "https://github.com/greenpeace/planet4-master-theme/wiki",
                 "source": "https://github.com/greenpeace/planet4-master-theme"
             },
-            "time": "2017-10-09T12:28:08+00:00"
+            "time": "2017-10-09T14:24:01+00:00"
         },
         {
             "name": "greenpeace/planet4-plugin-blocks",
@@ -3442,6 +3442,7 @@
     "aliases": [],
     "minimum-stability": "stable",
     "stability-flags": {
+        "greenpeace/planet4-child-theme": 20,
         "greenpeace/planet4-master-theme": 20,
         "greenpeace/planet4-plugin-blocks": 20
     },
