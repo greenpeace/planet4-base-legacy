@@ -655,13 +655,13 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/greenpeace/planet4-plugin-blocks.git",
-                "reference": "0067d44c5a2cbdbf88350784d9c079de712f9e12"
+                "reference": "bd80a7d17a48d4691324dd747086e2ba714baa14"
             },
             "dist": {
                 "type": "tar",
-                "url": "https://p4-composer-registry.greenpeace.org//dist/greenpeace/planet4-plugin-blocks/greenpeace-planet4-plugin-blocks-0067d44c5a2cbdbf88350784d9c079de712f9e12-zip-63e3ca.tar",
-                "reference": "0067d44c5a2cbdbf88350784d9c079de712f9e12",
-                "shasum": "75b1790894b47d6209477600cd4a7cabf63263a3"
+                "url": "https://p4-composer-registry.greenpeace.org//dist/greenpeace/planet4-plugin-blocks/greenpeace-planet4-plugin-blocks-bd80a7d17a48d4691324dd747086e2ba714baa14-zip-70c537.tar",
+                "reference": "bd80a7d17a48d4691324dd747086e2ba714baa14",
+                "shasum": "cd8cabc394fd0693334abb7c13fca3b6aca7b0d6"
             },
             "require-dev": {
                 "dealerdirect/phpcodesniffer-composer-installer": "^0.4.0",
@@ -688,7 +688,7 @@
                 }
             ],
             "description": "This repository contains the WordPress plugin that provides the blocks to be used with Shortcake UI plugin.",
-            "time": "2017-10-10T08:02:37+00:00"
+            "time": "2017-10-10T13:12:02+00:00"
         },
         {
             "name": "greenpeace/planet4-plugin-engagingnetworks",
@@ -792,16 +792,16 @@
         },
         {
             "name": "justinrainbow/json-schema",
-            "version": "5.2.4",
+            "version": "5.2.5",
             "source": {
                 "type": "git",
                 "url": "https://github.com/justinrainbow/json-schema.git",
-                "reference": "7ccb0e67ea8ace0f84c40900ca3c8a234467628c"
+                "reference": "0d4fda8efdf216ade084a7f0aad5637572ce9835"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/justinrainbow/json-schema/zipball/7ccb0e67ea8ace0f84c40900ca3c8a234467628c",
-                "reference": "7ccb0e67ea8ace0f84c40900ca3c8a234467628c",
+                "url": "https://api.github.com/repos/justinrainbow/json-schema/zipball/0d4fda8efdf216ade084a7f0aad5637572ce9835",
+                "reference": "0d4fda8efdf216ade084a7f0aad5637572ce9835",
                 "shasum": ""
             },
             "require": {
@@ -854,7 +854,7 @@
                 "json",
                 "schema"
             ],
-            "time": "2017-10-04T20:57:36+00:00"
+            "time": "2017-10-10T13:22:37+00:00"
         },
         {
             "name": "mustache/mustache",
