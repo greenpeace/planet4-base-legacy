@@ -23,8 +23,3 @@ steps:
     - './sites/${PROJECT_ID}/p4-gpi-app'
   waitFor:
     - 'configure-p4-gpi-app-dev'
-  tags:
-   - "gpi"
-   - "planet4"
-   - "wordpress"
-   - "dev"

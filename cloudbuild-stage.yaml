@@ -21,8 +21,3 @@ steps:
     - './environments/stage/p4-gpi-app'
   waitFor:
     - 'configure-p4-gpi-app'
-  tags:
-   - "gpi"
-   - "planet4"
-   - "wordpress"
-   - "prod"
