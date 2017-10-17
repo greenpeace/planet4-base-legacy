@@ -601,13 +601,13 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/greenpeace/planet4-master-theme.git",
-                "reference": "c2c07fd55ba41e52bf8f8a746cf49df296863042"
+                "reference": "09f3c197da854da5af9c47db3beeebbfc93b4796"
             },
             "dist": {
                 "type": "tar",
-                "url": "https://p4-composer-registry.greenpeace.org//dist/greenpeace/planet4-master-theme/greenpeace-planet4-master-theme-c2c07fd55ba41e52bf8f8a746cf49df296863042-zip-265995.tar",
-                "reference": "c2c07fd55ba41e52bf8f8a746cf49df296863042",
-                "shasum": "53e0cadc0dd797ff9d6e0c3eea277a2569ba9110"
+                "url": "https://p4-composer-registry.greenpeace.org//dist/greenpeace/planet4-master-theme/greenpeace-planet4-master-theme-09f3c197da854da5af9c47db3beeebbfc93b4796-zip-7351ab.tar",
+                "reference": "09f3c197da854da5af9c47db3beeebbfc93b4796",
+                "shasum": "5701bbe870071e78fdd50026a1b9353c6e673ed8"
             },
             "require": {
                 "wpackagist-plugin/timber-library": "1.5.*"
@@ -651,7 +651,7 @@
                 "wiki": "https://github.com/greenpeace/planet4-master-theme/wiki",
                 "source": "https://github.com/greenpeace/planet4-master-theme"
             },
-            "time": "2017-10-17T06:46:13+00:00"
+            "time": "2017-10-17T18:53:03+00:00"
         },
         {
             "name": "greenpeace/planet4-plugin-blocks",
@@ -659,13 +659,13 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/greenpeace/planet4-plugin-blocks.git",
-                "reference": "e429e420fc3ceac89e697d30b15d0e33cbcc369c"
+                "reference": "143ef5ae3e51d6f5c1543f3bba92cf6f91a35b26"
             },
             "dist": {
                 "type": "tar",
-                "url": "https://p4-composer-registry.greenpeace.org//dist/greenpeace/planet4-plugin-blocks/greenpeace-planet4-plugin-blocks-e429e420fc3ceac89e697d30b15d0e33cbcc369c-zip-95f7bc.tar",
-                "reference": "e429e420fc3ceac89e697d30b15d0e33cbcc369c",
-                "shasum": "b4c6621be3ef3ef1f753eb33ba7800603321c058"
+                "url": "https://p4-composer-registry.greenpeace.org//dist/greenpeace/planet4-plugin-blocks/greenpeace-planet4-plugin-blocks-143ef5ae3e51d6f5c1543f3bba92cf6f91a35b26-zip-e5f3cb.tar",
+                "reference": "143ef5ae3e51d6f5c1543f3bba92cf6f91a35b26",
+                "shasum": "40b9d16e2ffbcece9e5cd91291b51240f2a979ce"
             },
             "require-dev": {
                 "dealerdirect/phpcodesniffer-composer-installer": "^0.4.0",
@@ -692,7 +692,7 @@
                 }
             ],
             "description": "This repository contains the WordPress plugin that provides the blocks to be used with Shortcake UI plugin.",
-            "time": "2017-10-17T07:39:37+00:00"
+            "time": "2017-10-17T16:13:17+00:00"
         },
         {
             "name": "greenpeace/planet4-plugin-engagingnetworks",
@@ -3325,21 +3325,22 @@
         },
         {
             "name": "wp-cli/wp-cli",
-            "version": "v1.3.0",
+            "version": "v1.4.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/wp-cli/wp-cli.git",
-                "reference": "4ab0d99da0ad5e6ca39453ff5c82d4f06aecb086"
+                "reference": "b1cdbcf52ca57aaecac1e9b531540bfe0e58650f"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/wp-cli/wp-cli/zipball/4ab0d99da0ad5e6ca39453ff5c82d4f06aecb086",
-                "reference": "4ab0d99da0ad5e6ca39453ff5c82d4f06aecb086",
+                "url": "https://api.github.com/repos/wp-cli/wp-cli/zipball/b1cdbcf52ca57aaecac1e9b531540bfe0e58650f",
+                "reference": "b1cdbcf52ca57aaecac1e9b531540bfe0e58650f",
                 "shasum": ""
             },
             "require": {
                 "composer/composer": "^1.2.0",
                 "composer/semver": "~1.0",
+                "justinrainbow/json-schema": "~5.2.5",
                 "mustache/mustache": "~2.4",
                 "php": ">=5.3.29",
                 "ramsey/array_column": "~1.1",
@@ -3382,8 +3383,11 @@
             },
             "require-dev": {
                 "behat/behat": "2.5.*",
+                "dealerdirect/phpcodesniffer-composer-installer": "^0.4.3",
                 "phpunit/phpunit": "3.7.*",
-                "roave/security-advisories": "dev-master"
+                "roave/security-advisories": "dev-master",
+                "wimg/php-compatibility": "^8.0",
+                "wp-coding-standards/wpcs": "^0.13.1"
             },
             "suggest": {
                 "psy/psysh": "Enhanced `wp shell` functionality"
@@ -3419,7 +3423,7 @@
                 "cli",
                 "wordpress"
             ],
-            "time": "2017-08-08T14:28:58+00:00"
+            "time": "2017-10-17T12:43:24+00:00"
         },
         {
             "name": "wpackagist-plugin/timber-library",
