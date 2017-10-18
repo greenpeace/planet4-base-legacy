@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "369b378ca8d14ddc50d3dbe028d7f66a",
+    "content-hash": "8cdd718c81fce9476aff40497318e89c",
     "packages": [
         {
             "name": "cmb2/cmb2",
@@ -485,17 +485,17 @@
         },
         {
             "name": "greenpeace/planet4-child-theme",
-            "version": "0.2.4",
+            "version": "dev-develop",
             "source": {
                 "type": "git",
                 "url": "https://github.com/greenpeace/planet4-child-theme.git",
-                "reference": "c20784994e3c085c2fce903ab42c4c647e814809"
+                "reference": "4907c7982e76d4a0719bcb2ca059140dff574164"
             },
             "dist": {
                 "type": "tar",
-                "url": "https://p4-composer-registry.greenpeace.org//dist/greenpeace/planet4-child-theme/greenpeace-planet4-child-theme-c20784994e3c085c2fce903ab42c4c647e814809-zip-a27b85.tar",
-                "reference": "c20784994e3c085c2fce903ab42c4c647e814809",
-                "shasum": "6069ca645c73c02306241f9683ef4fa165ff60ef"
+                "url": "https://p4-composer-registry.greenpeace.org//dist/greenpeace/planet4-child-theme/greenpeace-planet4-child-theme-4907c7982e76d4a0719bcb2ca059140dff574164-zip-2f58ad.tar",
+                "reference": "4907c7982e76d4a0719bcb2ca059140dff574164",
+                "shasum": "fd08614a58df010034061a550dfafc6a944baafe"
             },
             "require": {
                 "wpackagist-plugin/timber-library": "1.5.*"
@@ -525,7 +525,7 @@
                 "wiki": "https://github.com/greenpeace/planet4-child-theme/wiki",
                 "source": "https://github.com/greenpeace/planet4-child-theme"
             },
-            "time": "2017-10-09T13:26:19+00:00"
+            "time": "2017-10-18T16:59:44+00:00"
         },
         {
             "name": "greenpeace/planet4-content-default",
@@ -593,7 +593,7 @@
         },
         {
             "name": "greenpeace/planet4-master-theme",
-            "version": "0.2.11",
+            "version": "dev-develop",
             "source": {
                 "type": "git",
                 "url": "https://github.com/greenpeace/planet4-master-theme.git",
@@ -651,7 +651,7 @@
         },
         {
             "name": "greenpeace/planet4-plugin-blocks",
-            "version": "0.1.13",
+            "version": "dev-develop",
             "source": {
                 "type": "git",
                 "url": "https://github.com/greenpeace/planet4-plugin-blocks.git",
@@ -688,6 +688,10 @@
                 }
             ],
             "description": "This repository contains the WordPress plugin that provides the blocks to be used with Shortcake UI plugin.",
+            "support": {
+                "source": "https://github.com/greenpeace/planet4-plugin-blocks/tree/v0.1.13",
+                "issues": "https://github.com/greenpeace/planet4-plugin-blocks/issues"
+            },
             "time": "2017-10-18T11:45:16+00:00"
         },
         {
@@ -740,6 +744,17 @@
                 "url": "https://p4-composer-registry.greenpeace.org//dist/greenpeace/planet4-plugin-searchwp-upstream/greenpeace-planet4-plugin-searchwp-upstream-2.8.17.tar",
                 "reference": null,
                 "shasum": "16ce7aadae2476aba273cb9c49a0b4157c76cff2"
+            },
+            "type": "wordpress-plugin"
+        },
+        {
+            "name": "greenpeace/planet4-plugin-wpimport-upstream",
+            "version": "4.4.9",
+            "dist": {
+                "type": "tar",
+                "url": "https://p4-composer-registry.greenpeace.org//dist/greenpeace/planet4-plugin-wpimport-upstream/greenpeace-planet4-plugin-wpimport-upstream-4.4.9.tar",
+                "reference": null,
+                "shasum": "c484157f527d96aa05557e3f8e5faae8fae2f8b6"
             },
             "type": "wordpress-plugin"
         },
@@ -3434,7 +3449,11 @@
     "packages-dev": [],
     "aliases": [],
     "minimum-stability": "stable",
-    "stability-flags": [],
+    "stability-flags": {
+        "greenpeace/planet4-child-theme": 20,
+        "greenpeace/planet4-master-theme": 20,
+        "greenpeace/planet4-plugin-blocks": 20
+    },
     "prefer-stable": false,
     "prefer-lowest": false,
     "platform": [],
