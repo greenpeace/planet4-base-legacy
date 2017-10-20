@@ -7,19 +7,25 @@ steps:
     - '-i'
     - '-r'
     - '-e'
-    - 's;FROM.*;FROM gcr.io/${PROJECT_ID}/p4-onbuild:develop;g'
+    - 's;FROM.*;FROM ${_BUILD_NAMESPACE}/${PROJECT_ID}/p4-onbuild:develop;g'
     - 'Dockerfile'
 
 - id: 'p4-gpi-app-dev'
-  name: 'gcr.io/cloud-builders/docker'
+  name: '${_BUILD_NAMESPACE}/cloud-builders/docker'
   args:
     - 'build'
     - '--build-arg'
-    - 'GIT_REF=${BRANCH_NAME}'
+    - 'GIT_REF=${_BRANCH_NAME}'
     - '--build-arg'
     - 'COMPOSER=composer-dev.json'
-    - '--tag=gcr.io/${PROJECT_ID}/p4-gpi-app-dev:${BRANCH_NAME}'
-    - '--tag=gcr.io/${PROJECT_ID}/p4-gpi-app-dev:${SHORT_SHA}'
-    - './sites/${PROJECT_ID}/p4-gpi-app'
+    - '--tag=${_BUILD_NAMESPACE}/${PROJECT_ID}/p4-gpi-app-dev:${_BRANCH_NAME}'
+    - '--tag=${_BUILD_NAMESPACE}/${PROJECT_ID}/p4-gpi-app-dev:${_SHORT_SHA}'
+    - '--tag=${_BUILD_NAMESPACE}/${PROJECT_ID}/p4-gpi-app-dev:${_BUILD_NUM}'
+    - './environments/${PROJECT_ID}/p4-gpi-app'
   waitFor:
     - 'configure-p4-gpi-app-dev'
+
+images:
+  - ${_BUILD_NAMESPACE}/${PROJECT_ID}/p4-gpi-app-dev:${_BRANCH_NAME}
+  - ${_BUILD_NAMESPACE}/${PROJECT_ID}/p4-gpi-app-dev:${_SHORT_SHA}
+  - ${_BUILD_NAMESPACE}/${PROJECT_ID}/p4-gpi-app-dev:${_BUILD_NUM}

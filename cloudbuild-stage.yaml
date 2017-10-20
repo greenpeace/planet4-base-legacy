@@ -7,17 +7,23 @@ steps:
     - '-i'
     - '-r'
     - '-e'
-    - 's;FROM.*;FROM gcr.io/${PROJECT_ID}/p4-onbuild:latest;g'
+    - 's;FROM.*;FROM ${_BUILD_NAMESPACE}/${PROJECT_ID}/p4-onbuild:latest;g'
     - 'Dockerfile'
 
 - id: 'p4-gpi-app'
-  name: 'gcr.io/cloud-builders/docker'
+  name: '${_BUILD_NAMESPACE}/cloud-builders/docker'
   args:
     - 'build'
     - '--build-arg'
     - 'GIT_REF=master'
-    - '--tag=gcr.io/${PROJECT_ID}/p4-gpi-app:${TAG_NAME}'
-    - '--tag=gcr.io/${PROJECT_ID}/p4-gpi-app:latest'
+    - '--tag=${_BUILD_NAMESPACE}/${PROJECT_ID}/p4-gpi-app:${_BUILD_TAG}'
+    - '--tag=${_BUILD_NAMESPACE}/${PROJECT_ID}/p4-gpi-app:${_BUILD_NUM}'
+    - '--tag=${_BUILD_NAMESPACE}/${PROJECT_ID}/p4-gpi-app:latest'
     - './environments/stage/p4-gpi-app'
   waitFor:
     - 'configure-p4-gpi-app'
+
+images:
+  - ${_BUILD_NAMESPACE}/${PROJECT_ID}/p4-gpi-app:${_BUILD_TAG}
+  - ${_BUILD_NAMESPACE}/${PROJECT_ID}/p4-gpi-app:${_BUILD_NUM}
+  - ${_BUILD_NAMESPACE}/${PROJECT_ID}/p4-gpi-app:latest
