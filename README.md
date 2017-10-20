@@ -6,10 +6,10 @@ To create a new project, that is powered by Planet 4, fork this repository.
 
 ## Prerequisite
 
-- You will need to have PHP and composer available on your system.
-- You will also need both git and subversion (since some core wordpress components are
+-   You will need to have PHP and composer available on your system.
+-   You will also need both git and subversion (since some core wordpress components are
 using svn).
-- You will also need mysql or mariadb installed as well.
+-   You will also need mysql or mariadb installed as well.
 
 ## Installation
 
@@ -22,7 +22,7 @@ composer install
 
 If you want to add more dependencies to this project, you should also always
 add them to the composer file. No manual copying of plugins or themes should be
-necessary and any time. 
+necessary and any time.
 
 ## Configuration
 You need to create a [Wordpress command line](http://wp-cli.org/) configuration file.
@@ -54,7 +54,7 @@ theme activate:
 ```
 
 NOTE: your website will be installed on the subdirectory "public" of the current
-directory. Make sure that the "url" in the above configuration points to the 
+directory. Make sure that the "url" in the above configuration points to the
 directory "public" so that wordpress sets up its live_site configurations correctly.
 
 ## Database setup
@@ -65,25 +65,25 @@ command:
 echo "CREATE DATABASE wordpress;" | mysql
 ```
 It might be necessary to pass a username (`-u`) and a password (`-p`) to the
-mysql command. 
-More information about this is available in the man page of `mysql` or 
+mysql command.
+More information about this is available in the man page of `mysql` or
 [online](https://dev.mysql.com/doc/refman/5.7/en/mysql-command-options.html).
 
 
 ## Install and active plugins and themes
-After the database is created, the new Wordpress installation is installed with 
+After the database is created, the new Wordpress installation is installed with
 one simple composer command:
 ```
 composer run-script site-install
 ```
 
 This will perform multiple steps:
-- Create a public directy and copy the Wordpress core in it
-- Create a `wp-config.php` file with default values from the `wp-cli.yml`.
-- Create the initial database structure and insert the default data
-- Copy themes and plugins listed as dependencies in `composer.json`.
-- Activate all the plugins listed as dependencies.
-- Activate the theme that is configured inside the `wp-cli.yml`
+-   Create a public directy and copy the Wordpress core in it
+-   Create a `wp-config.php` file with default values from the `wp-cli.yml`.
+-   Create the initial database structure and insert the default data
+-   Copy themes and plugins listed as dependencies in `composer.json`.
+-   Activate all the plugins listed as dependencies.
+-   Activate the theme that is configured inside the `wp-cli.yml`
 
 ## Updating
 In case a new version of the Wordpress core (a theme or plugin) is published and
@@ -95,14 +95,14 @@ composer run-script site-update
 ```
 
 This will perform multiple steps:
-- Fetch the new versions and dependencies
-- Merge the new wordpress core in the public directory without deleting your added files
-- Copy all the themes and plugins
-- Run Wordpress core database udpates if any
-- Deactivate and reactivate all the plugins
+-   Fetch the new versions and dependencies
+-   Merge the new wordpress core in the public directory without deleting your added files
+-   Copy all the themes and plugins
+-   Run Wordpress core database udpates if any
+-   Deactivate and reactivate all the plugins
 
 ## Installing an alternate theme
-Themes should never be changed inside the web front-end. 
+Themes should never be changed inside the web front-end.
 
 _Please note that only the themes that in greenpeace composer repository will be
 available by default. You will need to add another repository if it is not a
