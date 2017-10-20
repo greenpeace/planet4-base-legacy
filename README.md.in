@@ -1,5 +1,8 @@
 # Greenpeace Planet 4
 
+ [![CircleCI](https://circleci.com/gh/greenpeace/planet4-base/tree/${BRANCH_NAME}.svg?style=shield)](https://circleci.com/gh/greenpeace/planet4-docker/tree/${BRANCH_NAME})
+
+
 This project provides the base for all Planet 4 sites.
 
 To create a new project, that is powered by Planet 4, fork this repository.
