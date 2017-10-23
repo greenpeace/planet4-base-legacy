@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "b019137d57d727056d21cc98a2873f69",
+    "content-hash": "f41eb953904fbae83d3060b4b84a0042",
     "packages": [
         {
             "name": "cmb2/cmb2",
@@ -597,13 +597,13 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/greenpeace/planet4-master-theme.git",
-                "reference": "af3c1fd4173fb2d5143685174f2ef41c19873f78"
+                "reference": "6067a412e67c38e3cbce1cf42945854976800c74"
             },
             "dist": {
                 "type": "tar",
-                "url": "https://p4-composer-registry.greenpeace.org//dist/greenpeace/planet4-master-theme/greenpeace-planet4-master-theme-af3c1fd4173fb2d5143685174f2ef41c19873f78-zip-bd09e9.tar",
-                "reference": "af3c1fd4173fb2d5143685174f2ef41c19873f78",
-                "shasum": "5f74836159dc9cf8c8cd4b2832c5c1eead3c1cfd"
+                "url": "https://p4-composer-registry.greenpeace.org//dist/greenpeace/planet4-master-theme/greenpeace-planet4-master-theme-6067a412e67c38e3cbce1cf42945854976800c74-zip-c7575e.tar",
+                "reference": "6067a412e67c38e3cbce1cf42945854976800c74",
+                "shasum": "a4ce03ba0ac03afe486603cb0d91a7bcc1ba114b"
             },
             "require": {
                 "wpackagist-plugin/timber-library": "1.5.*"
@@ -647,7 +647,7 @@
                 "wiki": "https://github.com/greenpeace/planet4-master-theme/wiki",
                 "source": "https://github.com/greenpeace/planet4-master-theme"
             },
-            "time": "2017-10-18T07:56:18+00:00"
+            "time": "2017-10-23T12:00:01+00:00"
         },
         {
             "name": "greenpeace/planet4-plugin-blocks",
@@ -655,13 +655,13 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/greenpeace/planet4-plugin-blocks.git",
-                "reference": "3eb77be18880752f86585de4669c441d9e51bc16"
+                "reference": "baeaa170f085ab455cd614033473767a3a475c2f"
             },
             "dist": {
                 "type": "tar",
-                "url": "https://p4-composer-registry.greenpeace.org//dist/greenpeace/planet4-plugin-blocks/greenpeace-planet4-plugin-blocks-3eb77be18880752f86585de4669c441d9e51bc16-zip-aaa9b0.tar",
-                "reference": "3eb77be18880752f86585de4669c441d9e51bc16",
-                "shasum": "9f8bcf6169a78bd4c2605cc161803d625a6b1de9"
+                "url": "https://p4-composer-registry.greenpeace.org//dist/greenpeace/planet4-plugin-blocks/greenpeace-planet4-plugin-blocks-baeaa170f085ab455cd614033473767a3a475c2f-zip-267af6.tar",
+                "reference": "baeaa170f085ab455cd614033473767a3a475c2f",
+                "shasum": "94e5a76a9ef599263a0281bcb3af0f3b5aa9c1a7"
             },
             "require-dev": {
                 "dealerdirect/phpcodesniffer-composer-installer": "^0.4.0",
@@ -688,7 +688,11 @@
                 }
             ],
             "description": "This repository contains the WordPress plugin that provides the blocks to be used with Shortcake UI plugin.",
-            "time": "2017-10-18T07:55:47+00:00"
+            "support": {
+                "source": "https://github.com/greenpeace/planet4-plugin-blocks/tree/features-all-demo",
+                "issues": "https://github.com/greenpeace/planet4-plugin-blocks/issues"
+            },
+            "time": "2017-10-21T16:35:09+00:00"
         },
         {
             "name": "greenpeace/planet4-plugin-engagingnetworks",
@@ -731,6 +735,33 @@
             ],
             "description": "This repository contains the wordpress plugin that connects Planet 4 with the Engaging Networks platform.",
             "time": "2017-09-01T07:14:21+00:00"
+        },
+        {
+            "name": "greenpeace/planet4-plugin-migrated-urls",
+            "version": "0.0.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/greenpeace/planet4-plugin-migrated-urls.git",
+                "reference": "cbff917c31147e320eaf1ac8cf9ab0d4762e19c0"
+            },
+            "dist": {
+                "type": "tar",
+                "url": "https://p4-composer-registry.greenpeace.org//dist/greenpeace/planet4-plugin-migrated-urls/greenpeace-planet4-plugin-migrated-urls-cbff917c31147e320eaf1ac8cf9ab0d4762e19c0-zip-faf3da.tar",
+                "reference": "cbff917c31147e320eaf1ac8cf9ab0d4762e19c0",
+                "shasum": "9087a3894a5ab7b450c088e03c66ed46336c37a3"
+            },
+            "type": "wordpress-plugin",
+            "license": [
+                "GPL-3"
+            ],
+            "authors": [
+                {
+                    "name": "Greenpeace International",
+                    "email": "planet4-group@greenpeace.org"
+                }
+            ],
+            "description": "This repository contains the WordPress plugin that provides the old and new urls from migrated content from p3 to p4.",
+            "time": "2017-10-23T11:56:54+00:00"
         },
         {
             "name": "greenpeace/planet4-plugin-searchwp-upstream",
@@ -792,16 +823,16 @@
         },
         {
             "name": "justinrainbow/json-schema",
-            "version": "5.2.5",
+            "version": "5.2.6",
             "source": {
                 "type": "git",
                 "url": "https://github.com/justinrainbow/json-schema.git",
-                "reference": "0d4fda8efdf216ade084a7f0aad5637572ce9835"
+                "reference": "d283e11b6e14c6f4664cf080415c4341293e5bbd"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/justinrainbow/json-schema/zipball/0d4fda8efdf216ade084a7f0aad5637572ce9835",
-                "reference": "0d4fda8efdf216ade084a7f0aad5637572ce9835",
+                "url": "https://api.github.com/repos/justinrainbow/json-schema/zipball/d283e11b6e14c6f4664cf080415c4341293e5bbd",
+                "reference": "d283e11b6e14c6f4664cf080415c4341293e5bbd",
                 "shasum": ""
             },
             "require": {
@@ -854,7 +885,7 @@
                 "json",
                 "schema"
             ],
-            "time": "2017-10-10T13:22:37+00:00"
+            "time": "2017-10-21T13:15:38+00:00"
         },
         {
             "name": "mustache/mustache",
