@@ -681,13 +681,13 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/greenpeace/planet4-master-theme.git",
-                "reference": "6017440e2d71cade52d7adf43de0c7234a420130"
+                "reference": "4c27e9bdfee14d97fa776587818580777147838b"
             },
             "dist": {
                 "type": "tar",
-                "url": "https://p4-composer-registry.greenpeace.org//dist/greenpeace/planet4-master-theme/greenpeace-planet4-master-theme-6017440e2d71cade52d7adf43de0c7234a420130-zip-f17b59.tar",
-                "reference": "6017440e2d71cade52d7adf43de0c7234a420130",
-                "shasum": "ed44ca659c5c76f7d3b081faa84b9e060f672690"
+                "url": "https://p4-composer-registry.greenpeace.org//dist/greenpeace/planet4-master-theme/greenpeace-planet4-master-theme-4c27e9bdfee14d97fa776587818580777147838b-zip-68f2c9.tar",
+                "reference": "4c27e9bdfee14d97fa776587818580777147838b",
+                "shasum": "b62f2453478a0b0d375b624ff2b9dd10d4bd7e2a"
             },
             "require": {
                 "wpackagist-plugin/timber-library": "1.5.*"
@@ -731,7 +731,7 @@
                 "wiki": "https://github.com/greenpeace/planet4-master-theme/wiki",
                 "source": "https://github.com/greenpeace/planet4-master-theme"
             },
-            "time": "2017-10-24T07:11:59+00:00"
+            "time": "2017-10-24T14:59:29+00:00"
         },
         {
             "name": "greenpeace/planet4-plugin-blocks",
@@ -1099,6 +1099,10 @@
                 }
             ],
             "description": "SAML authentication for WordPress, using SimpleSAMLphp.",
+            "support": {
+                "source": "https://github.com/pantheon-systems/wp-saml-auth/tree/v0.3.1",
+                "issues": "https://github.com/pantheon-systems/wp-saml-auth/issues"
+            },
             "time": "2017-07-12T18:42:13+00:00"
         },
         {
