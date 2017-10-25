@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "a46226a248183d02c43e4fbbd3a28b2f",
+    "content-hash": "27e8ce982ac2094e9efebe1fd1b93014",
     "packages": [
         {
             "name": "cmb2/cmb2",
@@ -529,17 +529,17 @@
         },
         {
             "name": "greenpeace/planet4-content-default",
-            "version": "0.2.8",
+            "version": "0.2.10",
             "source": {
                 "type": "git",
                 "url": "https://github.com/greenpeace/planet4-content-default.git",
-                "reference": "fa6e425e4e230d96798618bede372bd2e00f7ae7"
+                "reference": "7d21c2f299650c735c710e658ea2180205d54df1"
             },
             "dist": {
                 "type": "tar",
-                "url": "https://p4-composer-registry.greenpeace.org//dist/greenpeace/planet4-content-default/greenpeace-planet4-content-default-fa6e425e4e230d96798618bede372bd2e00f7ae7-zip-ab6a07.tar",
-                "reference": "fa6e425e4e230d96798618bede372bd2e00f7ae7",
-                "shasum": "c98e9700317978eea8df56a08343a2b0ce17fb3f"
+                "url": "https://p4-composer-registry.greenpeace.org//dist/greenpeace/planet4-content-default/greenpeace-planet4-content-default-7d21c2f299650c735c710e658ea2180205d54df1-zip-26e869.tar",
+                "reference": "7d21c2f299650c735c710e658ea2180205d54df1",
+                "shasum": "d59c547911cd82e454705a01a1c435e9fda0b293"
             },
             "type": "library",
             "scripts": {
@@ -552,34 +552,118 @@
                     "@core:initial-content-6",
                     "@core:initial-content-7",
                     "@core:initial-content-8",
-                    "@core:initial-content-9"
+                    "@core:initial-content-9",
+                    "@core:initial-content-10",
+                    "@core:initial-content-11",
+                    "@core:initial-content-12",
+                    "@core:initial-content-13",
+                    "@core:initial-content-14",
+                    "@core:initial-content-15",
+                    "@core:initial-content-16",
+                    "@core:initial-content-17",
+                    "@core:initial-content-18",
+                    "@core:initial-content-19",
+                    "@core:initial-content-20",
+                    "@core:initial-content-21",
+                    "@core:initial-content-22",
+                    "@core:initial-content-23",
+                    "@core:initial-content-24",
+                    "@core:initial-content-25",
+                    "@core:initial-content-26",
+                    "@core:initial-content-27",
+                    "@core:initial-content-28",
+                    "@core:initial-content-29",
+                    "@core:initial-content-30"
                 ],
                 "core:initial-content-1": [
-                    "wp post update 2 --post_title='Tech' page-tech.html"
+                    "wp post create --post_type=page --post_title=ACT --post_name=act --post_status=publish page-act.html"
                 ],
                 "core:initial-content-2": [
-                    "wp post create --post_type=page --post_status=draft --post_title='Design' page-design.html"
+                    "wp post create --post_type=page --post_title=EXPLORE --post_name=explore --post_status=publish page-explore.html"
                 ],
                 "core:initial-content-3": [
-                    "wp post create --post_type=page --post_status=draft --post_title='Front' page-front.html"
+                    "wp menu create \"Navigation Bar Menu\""
                 ],
                 "core:initial-content-4": [
-                    "wp post create --post_type=page --post_status=draft --post_title='Content' page-content.html"
+                    "wp menu location assign navigation-bar-menu navigation-bar-menu"
                 ],
                 "core:initial-content-5": [
-                    "wp option update show_on_front page"
+                    "idd=$(wp post list --post_type=page --title=act --field=ID | head -1); wp menu item add-post navigation-bar-menu $idd --classes=\"hidden-md-down hidden-lg-down\""
                 ],
                 "core:initial-content-6": [
-                    "wp option update page_on_front 5"
+                    "idd=$(wp post list --post_type=page --title=explore --field=ID | head -1); wp menu item add-post navigation-bar-menu $idd --classes=\"hidden-md-down hidden-lg-down\""
                 ],
                 "core:initial-content-7": [
-                    "wp post update 4 --post_status=publish"
+                    "wp menu create \"Footer Social\""
                 ],
                 "core:initial-content-8": [
-                    "wp post update 5 --post_status=publish"
+                    "wp menu item add-custom \"Footer Social\" Twitter http://twitter.com --position=1 --classes=\"fa fa-twitter\""
                 ],
                 "core:initial-content-9": [
-                    "wp post update 6 --post_status=publish"
+                    "wp menu item add-custom \"Footer Social\" Facebook http://facebook.com --position=2 --classes=\"fa fa-facebook-official\""
+                ],
+                "core:initial-content-10": [
+                    "wp menu item add-custom \"Footer Social\" Youtube http://youtube.com --position=3 --classes=\"fa fa-youtube-play\""
+                ],
+                "core:initial-content-11": [
+                    "wp menu item add-custom \"Footer Social\" Instagram http://instagram.com --position=4 --classes=\"fa fa-instagram\""
+                ],
+                "core:initial-content-12": [
+                    "wp post create --post_type=page --post_title=NEWS --post_name=news --post_status=publish page-news.html"
+                ],
+                "core:initial-content-13": [
+                    "wp post create --post_type=page --post_title=ABOUT --post_name=about --post_status=publish page-about.html"
+                ],
+                "core:initial-content-14": [
+                    "wp post create --post_type=page --post_title=FAQ --post_name=faq --post_status=publish page-faq.html"
+                ],
+                "core:initial-content-15": [
+                    "wp post create --post_type=page --post_title=PRESS --post_name=press --post_status=publish page-press.html"
+                ],
+                "core:initial-content-16": [
+                    "wp post create --post_type=page --post_title=TERMS --post_name=terms --post_status=publish page-terms.html"
+                ],
+                "core:initial-content-17": [
+                    "wp menu create \"Footer Primary\""
+                ],
+                "core:initial-content-18": [
+                    "idd=$(wp post list --post_type=page --title=news --field=ID | head -1);wp menu item add-post \"Footer Primary\" $idd --title=\"NEWS\" --position=1"
+                ],
+                "core:initial-content-19": [
+                    "idd=$(wp post list --post_type=page --title=about --field=ID | head -1);wp menu item add-post \"Footer Primary\" $idd --title=\"ABOUT\" --position=2"
+                ],
+                "core:initial-content-20": [
+                    "idd=$(wp post list --post_type=page --title=faq --field=ID | head -1);wp menu item add-post \"Footer Primary\" $idd --title=\"FAQ\" --position=3"
+                ],
+                "core:initial-content-21": [
+                    "idd=$(wp post list --post_type=page --title=press --field=ID | head -1);wp menu item add-post \"Footer Primary\" $idd --title=\"PRESS\" --position=4"
+                ],
+                "core:initial-content-22": [
+                    "idd=$(wp post list --post_type=page --title=terms --field=ID | head -1);wp menu item add-post \"Footer Primary\" $idd --title=\"TERMS\" --position=5"
+                ],
+                "core:initial-content-23": [
+                    "wp post create --post_type=page --post_title=PRIVACY --post_name=privacy --post_status=publish page-privacy.html"
+                ],
+                "core:initial-content-24": [
+                    "wp post create --post_type=page --post_title=\"CODE OF CONDUCT\" --post_name=codeofconduct --post_status=publish page-code-of-conduct.html"
+                ],
+                "core:initial-content-25": [
+                    "wp post create --post_type=page --post_title=JOBS --post_name=jobs --post_status=publish page-jobs.html"
+                ],
+                "core:initial-content-26": [
+                    "wp menu create \"Footer Secondary\""
+                ],
+                "core:initial-content-27": [
+                    "idd=$(wp post list --post_type=page --title=privacy --field=ID | head -1);wp menu item add-post \"Footer Secondary\" $idd --title=\"PRIVACY\" --position=1"
+                ],
+                "core:initial-content-28": [
+                    "idd=$(wp post list --post_type=page --name=codeofconduct --field=ID | head -1);wp menu item add-post \"Footer Secondary\" $idd --title=\"CODE OF CONDUCT\" --position=2"
+                ],
+                "core:initial-content-29": [
+                    "idd=$(wp post list --post_type=page --title=jobs --field=ID | head -1);wp menu item add-post \"Footer Secondary\" $idd --title=\"JOBS\" --position=3"
+                ],
+                "core:initial-content-30": [
+                    "wp option update copyright \"Unless otherwise stated, the content on this website is licensed under a <a href=\"#\">CC-BY-SA International License</a>\""
                 ]
             },
             "authors": [
@@ -589,7 +673,7 @@
                 }
             ],
             "description": "Scripts that control the default content of the default planet4 installation",
-            "time": "2017-07-04T10:04:21+00:00"
+            "time": "2017-10-24T12:35:39+00:00"
         },
         {
             "name": "greenpeace/planet4-master-theme",
@@ -655,13 +739,13 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/greenpeace/planet4-plugin-blocks.git",
-                "reference": "0038924c3a281f45599d1a945df48826733715e6"
+                "reference": "ed14d74ff39e17a64837f8243c04bba2feb22c41"
             },
             "dist": {
                 "type": "tar",
-                "url": "https://p4-composer-registry.greenpeace.org//dist/greenpeace/planet4-plugin-blocks/greenpeace-planet4-plugin-blocks-0038924c3a281f45599d1a945df48826733715e6-zip-1e5a44.tar",
-                "reference": "0038924c3a281f45599d1a945df48826733715e6",
-                "shasum": "d15e6f21625a2c1073ad26bc6eda9e1c63f9ab10"
+                "url": "https://p4-composer-registry.greenpeace.org//dist/greenpeace/planet4-plugin-blocks/greenpeace-planet4-plugin-blocks-ed14d74ff39e17a64837f8243c04bba2feb22c41-zip-44fc03.tar",
+                "reference": "ed14d74ff39e17a64837f8243c04bba2feb22c41",
+                "shasum": "f61d6c502814326908baf8bc78d9e3dfa028da60"
             },
             "require-dev": {
                 "dealerdirect/phpcodesniffer-composer-installer": "^0.4.0",
@@ -692,7 +776,7 @@
                 "source": "https://github.com/greenpeace/planet4-plugin-blocks/tree/develop",
                 "issues": "https://github.com/greenpeace/planet4-plugin-blocks/issues"
             },
-            "time": "2017-10-24T10:16:56+00:00"
+            "time": "2017-10-25T10:57:24+00:00"
         },
         {
             "name": "greenpeace/planet4-plugin-engagingnetworks",
@@ -735,6 +819,17 @@
             ],
             "description": "This repository contains the wordpress plugin that connects Planet 4 with the Engaging Networks platform.",
             "time": "2017-09-01T07:14:21+00:00"
+        },
+        {
+            "name": "greenpeace/planet4-plugin-google-apps-login-upstream",
+            "version": "3.0",
+            "dist": {
+                "type": "tar",
+                "url": "https://p4-composer-registry.greenpeace.org//dist/greenpeace/planet4-plugin-google-apps-login-upstream/greenpeace-planet4-plugin-google-apps-login-upstream-3.0.tar",
+                "reference": null,
+                "shasum": "3b56b813a93212e508e2df443ee1c36a6f3c4c31"
+            },
+            "type": "wordpress-plugin"
         },
         {
             "name": "greenpeace/planet4-plugin-migrated-urls",
