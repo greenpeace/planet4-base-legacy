@@ -739,13 +739,13 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/greenpeace/planet4-plugin-blocks.git",
-                "reference": "a31ce10b200cd2e6dacee4b17fcb5ced29f7e4df"
+                "reference": "62ec0edcafdb6dbe803a8ab1c249cb48cd74061f"
             },
             "dist": {
                 "type": "tar",
-                "url": "https://p4-composer-registry.greenpeace.org//dist/greenpeace/planet4-plugin-blocks/greenpeace-planet4-plugin-blocks-a31ce10b200cd2e6dacee4b17fcb5ced29f7e4df-zip-d33045.tar",
-                "reference": "a31ce10b200cd2e6dacee4b17fcb5ced29f7e4df",
-                "shasum": "348fff82e15cb99e683d5cf477e44b342fc51c4f"
+                "url": "https://p4-composer-registry.greenpeace.org//dist/greenpeace/planet4-plugin-blocks/greenpeace-planet4-plugin-blocks-62ec0edcafdb6dbe803a8ab1c249cb48cd74061f-zip-6bed1c.tar",
+                "reference": "62ec0edcafdb6dbe803a8ab1c249cb48cd74061f",
+                "shasum": "b3c1972b0b329b83cde056cbb9df3fac5a7d68cb"
             },
             "require-dev": {
                 "dealerdirect/phpcodesniffer-composer-installer": "^0.4.0",
@@ -772,7 +772,7 @@
                 }
             ],
             "description": "This repository contains the WordPress plugin that provides the blocks to be used with Shortcake UI plugin.",
-            "time": "2017-10-30T08:16:25+00:00"
+            "time": "2017-10-30T11:26:01+00:00"
         },
         {
             "name": "greenpeace/planet4-plugin-engagingnetworks",
