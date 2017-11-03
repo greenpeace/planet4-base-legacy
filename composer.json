@@ -22,7 +22,7 @@
 		"greenpeace/planet4-master-theme" : "dev-develop",
 		"greenpeace/planet4-plugin-blocks" : "dev-develop",
 		"greenpeace/planet4-plugin-engagingnetworks" : "0.*",
-		"greenpeace/planet4-plugin-google-apps-login-upstream" : "3.0",
+		"greenpeace/planet4-plugin-google-apps-login-upstream" : "3.2",
 		"greenpeace/planet4-plugin-migrated-urls" : "0.0.1",
 		"greenpeace/planet4-plugin-searchwp-upstream" : "2.8.17",
 		"greenpeace/planet4-plugin-wpimport-upstream" : "4.4.9",
