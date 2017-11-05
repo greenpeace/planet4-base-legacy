@@ -18,6 +18,8 @@ steps:
     - 'GIT_REF=${_BRANCH_NAME}'
     - '--build-arg'
     - 'COMPOSER=composer-dev.json'
+    - '--build-arg'
+    - 'GITHUB_OAUTH_TOKEN=${_GITHUB_OAUTH_TOKEN}'
     - '--tag=${_BUILD_NAMESPACE}/${PROJECT_ID}/p4-gpi-app-dev:${_BRANCH_NAME}'
     - '--tag=${_BUILD_NAMESPACE}/${PROJECT_ID}/p4-gpi-app-dev:${_SHORT_SHA}'
     - '--tag=${_BUILD_NAMESPACE}/${PROJECT_ID}/p4-gpi-app-dev:${_BUILD_NUM}'
