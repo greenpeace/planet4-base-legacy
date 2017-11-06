@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "477e0d0b7c7ef562c998f66bb30f85ac",
+    "content-hash": "c3206cdeffd5a949cea30f4aacb2dce0",
     "packages": [
         {
             "name": "cmb2/cmb2",
@@ -1064,6 +1064,35 @@
                 "xml"
             ],
             "time": "2013-02-24T15:01:54+00:00"
+        },
+        {
+            "name": "pantheon-systems/wp-redis",
+            "version": "v0.7.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/pantheon-systems/wp-redis.git",
+                "reference": "ac5f4e62a298ea784f682c3ea5dc8061aedf525e"
+            },
+            "dist": {
+                "type": "tar",
+                "url": "https://p4-composer-registry.greenpeace.org//dist/pantheon-systems/wp-redis/pantheon-systems-wp-redis-ac5f4e62a298ea784f682c3ea5dc8061aedf525e-zip-40b148.tar",
+                "reference": "ac5f4e62a298ea784f682c3ea5dc8061aedf525e",
+                "shasum": "c3224978777b0c76811d51f472188cc1d19028e2"
+            },
+            "require-dev": {
+                "behat/behat": "^3.1",
+                "behat/mink-extension": "^2.2",
+                "behat/mink-goutte-driver": "^1.2",
+                "pantheon-systems/pantheon-wordpress-upstream-tests": "dev-master"
+            },
+            "type": "wordpress-plugin",
+            "authors": [
+                {
+                    "name": "Pantheon",
+                    "email": "noreply@pantheon.io"
+                }
+            ],
+            "time": "2017-08-22T20:30:20+00:00"
         },
         {
             "name": "psr/container",
@@ -2356,16 +2385,16 @@
         },
         {
             "name": "wp-cli/db-command",
-            "version": "v1.2.4",
+            "version": "v1.3.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/wp-cli/db-command.git",
-                "reference": "1379a28df5e3da3827d40aa6a208f7abcd63805e"
+                "reference": "7121cfdc0a8e8783ae46e91485f288d7bd0431f5"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/wp-cli/db-command/zipball/1379a28df5e3da3827d40aa6a208f7abcd63805e",
-                "reference": "1379a28df5e3da3827d40aa6a208f7abcd63805e",
+                "url": "https://api.github.com/repos/wp-cli/db-command/zipball/7121cfdc0a8e8783ae46e91485f288d7bd0431f5",
+                "reference": "7121cfdc0a8e8783ae46e91485f288d7bd0431f5",
                 "shasum": ""
             },
             "require": {
@@ -2418,7 +2447,7 @@
             ],
             "description": "Perform basic database operations using credentials stored in wp-config.php.",
             "homepage": "https://github.com/wp-cli/db-command",
-            "time": "2017-10-13T19:18:06+00:00"
+            "time": "2017-11-06T15:03:59+00:00"
         },
         {
             "name": "wp-cli/entity-command",
