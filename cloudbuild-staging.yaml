@@ -1,15 +1,4 @@
 steps:
-- id: 'configure-p4-gpi-app'
-  name: 'ubuntu'
-  dir: './environments/stage/p4-gpi-app'
-  args:
-    - '/bin/sed'
-    - '-i'
-    - '-r'
-    - '-e'
-    - 's;FROM.*;FROM ${_BUILD_NAMESPACE}/${PROJECT_ID}/p4-onbuild:latest;g'
-    - 'Dockerfile'
-
 - id: 'p4-gpi-app'
   name: '${_BUILD_NAMESPACE}/cloud-builders/docker'
   args:
@@ -21,9 +10,7 @@ steps:
     - '--tag=${_BUILD_NAMESPACE}/${PROJECT_ID}/p4-gpi-app:${_BUILD_TAG}'
     - '--tag=${_BUILD_NAMESPACE}/${PROJECT_ID}/p4-gpi-app:${_BUILD_NUM}'
     - '--tag=${_BUILD_NAMESPACE}/${PROJECT_ID}/p4-gpi-app:latest'
-    - './environments/stage/p4-gpi-app'
-  waitFor:
-    - 'configure-p4-gpi-app'
+    - './app/${PROJECT_ID}/staging/p4-gpi-app'
 
 images:
   - ${_BUILD_NAMESPACE}/${PROJECT_ID}/p4-gpi-app:${_BUILD_TAG}
