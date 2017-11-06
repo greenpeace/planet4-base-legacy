@@ -1,0 +1,9 @@
+FROM ${IMAGE_FROM}
+
+MAINTAINER ${IMAGE_MAINTAINER}
+
+ENV APP_HOSTNAME "test.planet4.dev"
+ENV COMPOSER="composer-dev.json"
+ENV GIT_REF="${GIT_REF}"
+ENV SSL_ENABLED "false"
+ENV WP_TITLE="Greenpeace International - Development Site"

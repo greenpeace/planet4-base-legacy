@@ -1,0 +1,6 @@
+#!/usr/bin/env bash
+set -a
+
+GIT_REF="dev-feature/gitrepositories"
+
+export GIT_REF

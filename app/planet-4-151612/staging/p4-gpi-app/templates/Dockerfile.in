@@ -1,0 +1,7 @@
+FROM ${IMAGE_FROM}
+
+MAINTAINER ${IMAGE_MAINTAINER}
+
+ENV WP_TITLE="Greenpeace International"
+ENV APP_HOSTNAME "p4.greenpeace.org"
+ENV SSL_ENABLED "false"
