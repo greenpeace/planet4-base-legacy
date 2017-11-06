@@ -11,7 +11,7 @@
             "version": "v2.2.5.3",
             "source": {
                 "type": "git",
-                "url": "https://github.com/CMB2/CMB2.git",
+                "url": "git@github.com:CMB2/CMB2.git",
                 "reference": "5c9bdb6e99e17e4dad71ebbc68dab5def3c64e12"
             },
             "dist": {
@@ -447,7 +447,7 @@
             "version": "v0.7.3",
             "source": {
                 "type": "git",
-                "url": "https://github.com/wp-shortcake/shortcake.git",
+                "url": "git@github.com:wp-shortcake/shortcake.git",
                 "reference": "9f9a36af0bfb70a4a3008b443f35a63610e07dd6"
             },
             "dist": {
@@ -488,7 +488,7 @@
             "version": "dev-develop",
             "source": {
                 "type": "git",
-                "url": "https://github.com/greenpeace/planet4-child-theme.git",
+                "url": "git@github.com:greenpeace/planet4-child-theme.git",
                 "reference": "4907c7982e76d4a0719bcb2ca059140dff574164"
             },
             "dist": {
@@ -532,7 +532,7 @@
             "version": "0.2.10",
             "source": {
                 "type": "git",
-                "url": "https://github.com/greenpeace/planet4-content-default.git",
+                "url": "git@github.com:greenpeace/planet4-content-default.git",
                 "reference": "7d21c2f299650c735c710e658ea2180205d54df1"
             },
             "dist": {
@@ -680,7 +680,7 @@
             "version": "dev-develop",
             "source": {
                 "type": "git",
-                "url": "https://github.com/greenpeace/planet4-master-theme.git",
+                "url": "git@github.com:greenpeace/planet4-master-theme.git",
                 "reference": "5cd1b33d17653055796f85fe3e58a2d65e643f2b"
             },
             "dist": {
@@ -738,14 +738,14 @@
             "version": "dev-develop",
             "source": {
                 "type": "git",
-                "url": "https://github.com/greenpeace/planet4-plugin-blocks.git",
-                "reference": "b6d411013d42e6c67b399d89627b593c146e5a9a"
+                "url": "git@github.com:greenpeace/planet4-plugin-blocks.git",
+                "reference": "280da5a2035b8cdda024652bc3e81a2289648a40"
             },
             "dist": {
                 "type": "tar",
-                "url": "https://p4-composer-registry.greenpeace.org//dist/greenpeace/planet4-plugin-blocks/greenpeace-planet4-plugin-blocks-b6d411013d42e6c67b399d89627b593c146e5a9a-zip-621311.tar",
-                "reference": "b6d411013d42e6c67b399d89627b593c146e5a9a",
-                "shasum": "8c3e3bf4eb8923618f9cc155f89acf430ec45f22"
+                "url": "https://p4-composer-registry.greenpeace.org//dist/greenpeace/planet4-plugin-blocks/greenpeace-planet4-plugin-blocks-280da5a2035b8cdda024652bc3e81a2289648a40-zip-e95242.tar",
+                "reference": "280da5a2035b8cdda024652bc3e81a2289648a40",
+                "shasum": "e79a49af483864108583b215cd6df5ea6d0148c5"
             },
             "require-dev": {
                 "dealerdirect/phpcodesniffer-composer-installer": "^0.4.0",
@@ -772,14 +772,14 @@
                 }
             ],
             "description": "This repository contains the WordPress plugin that provides the blocks to be used with Shortcake UI plugin.",
-            "time": "2017-11-06T10:51:12+00:00"
+            "time": "2017-11-06T11:08:59+00:00"
         },
         {
             "name": "greenpeace/planet4-plugin-engagingnetworks",
             "version": "0.2.8",
             "source": {
                 "type": "git",
-                "url": "https://github.com/greenpeace/planet4-plugin-engagingnetworks.git",
+                "url": "git@github.com:greenpeace/planet4-plugin-engagingnetworks.git",
                 "reference": "cf1648b70ca8fa9619e917486635c2e3ab6cd201"
             },
             "dist": {
@@ -832,7 +832,7 @@
             "version": "0.0.1",
             "source": {
                 "type": "git",
-                "url": "https://github.com/greenpeace/planet4-plugin-migrated-urls.git",
+                "url": "git@github.com:greenpeace/planet4-plugin-migrated-urls.git",
                 "reference": "cbff917c31147e320eaf1ac8cf9ab0d4762e19c0"
             },
             "dist": {
