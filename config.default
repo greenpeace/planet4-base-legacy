@@ -1,0 +1,37 @@
+#!/usr/bin/env sh
+# shellcheck disable=SC2034
+set -a
+
+# !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+#  DO NOT MAKE EDITS IN THIS FILE
+
+# Changing any of the follow values is NOT RECOMMENDED
+# The below are defaults which are only used if custom values are not set
+#
+
+# How to customise the build configuration:
+# -----------------------------------------
+# Create a custom file and set values are described above, and pass it to the
+# build binary as a parameter, like so:
+
+# $ ./build.sh -c config.custom
+
+# Any values defined in a custom configuration file will overwrite the defaults
+
+# !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+# Application environment
+DEFAULT_APPLICATION_NAME="Greenpeace Planet 4 Application Base"
+DEFAULT_BUILD_ENVIRONMENT="develop"
+DEFAULT_GIT_REF="develop"
+DEFAULT_GOOGLE_PROJECT_ID="planet-4-151612"
+DEFAULT_MAINTAINER="Raymond Walker <raymond.walker@greenpeace.org>"
+
+# Container registry
+DEFAULT_BUILD_NAMESPACE="gcr.io"
+
+# Upstream image
+DEFAULT_BASE_IMAGE="p4-onbuild"
+DEFAULT_BASE_NAMESPACE="gcr.io"
+DEFAULT_BASE_TAG="0.3.1"
