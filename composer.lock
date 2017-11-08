@@ -681,13 +681,13 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/greenpeace/planet4-master-theme.git",
-                "reference": "89032f923d43a8a6611550a7c76494e843d02735"
+                "reference": "148c54d8aaaea53d7c37a1202883ee9922be6761"
             },
             "dist": {
                 "type": "tar",
-                "url": "https://p4-composer-registry.greenpeace.org//dist/greenpeace/planet4-master-theme/greenpeace-planet4-master-theme-89032f923d43a8a6611550a7c76494e843d02735-zip-8dfabe.tar",
-                "reference": "89032f923d43a8a6611550a7c76494e843d02735",
-                "shasum": "213e3c81f976cfb5eafa25cf4381c159659190b6"
+                "url": "https://p4-composer-registry.greenpeace.org//dist/greenpeace/planet4-master-theme/greenpeace-planet4-master-theme-148c54d8aaaea53d7c37a1202883ee9922be6761-zip-f98f28.tar",
+                "reference": "148c54d8aaaea53d7c37a1202883ee9922be6761",
+                "shasum": "e722a567121be9e7b3d1c32c26148cae15f3614e"
             },
             "require": {
                 "wpackagist-plugin/timber-library": "1.5.*"
@@ -731,7 +731,7 @@
                 "wiki": "https://github.com/greenpeace/planet4-master-theme/wiki",
                 "source": "https://github.com/greenpeace/planet4-master-theme"
             },
-            "time": "2017-11-08T12:43:04+00:00"
+            "time": "2017-11-08T15:05:12+00:00"
         },
         {
             "name": "greenpeace/planet4-plugin-blocks",
@@ -739,13 +739,13 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/greenpeace/planet4-plugin-blocks.git",
-                "reference": "da72dd69a214f829de635314ee68eded5c13a618"
+                "reference": "7faa206ef36d6f38900c6fdf5cff9ff2596eb104"
             },
             "dist": {
                 "type": "tar",
-                "url": "https://p4-composer-registry.greenpeace.org//dist/greenpeace/planet4-plugin-blocks/greenpeace-planet4-plugin-blocks-da72dd69a214f829de635314ee68eded5c13a618-zip-10a4ec.tar",
-                "reference": "da72dd69a214f829de635314ee68eded5c13a618",
-                "shasum": "f3031b20bf9bb6474a93970afdef1e2517538d0f"
+                "url": "https://p4-composer-registry.greenpeace.org//dist/greenpeace/planet4-plugin-blocks/greenpeace-planet4-plugin-blocks-7faa206ef36d6f38900c6fdf5cff9ff2596eb104-zip-634899.tar",
+                "reference": "7faa206ef36d6f38900c6fdf5cff9ff2596eb104",
+                "shasum": "cf6dde36f8c11b555f95226f84492b8292602f4f"
             },
             "require-dev": {
                 "dealerdirect/phpcodesniffer-composer-installer": "^0.4.0",
@@ -772,7 +772,7 @@
                 }
             ],
             "description": "This repository contains the WordPress plugin that provides the blocks to be used with Shortcake UI plugin.",
-            "time": "2017-11-08T12:41:01+00:00"
+            "time": "2017-11-08T14:09:39+00:00"
         },
         {
             "name": "greenpeace/planet4-plugin-engagingnetworks",
