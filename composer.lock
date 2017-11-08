@@ -681,13 +681,13 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/greenpeace/planet4-master-theme.git",
-                "reference": "cca552baa75d3a4283ceb9c33f97c8a8c65b09b9"
+                "reference": "8d042766cb566fe9fb0587200e4cfd66e0c8a709"
             },
             "dist": {
                 "type": "tar",
-                "url": "https://p4-composer-registry.greenpeace.org//dist/greenpeace/planet4-master-theme/greenpeace-planet4-master-theme-cca552baa75d3a4283ceb9c33f97c8a8c65b09b9-zip-90103a.tar",
-                "reference": "cca552baa75d3a4283ceb9c33f97c8a8c65b09b9",
-                "shasum": "85c613471f3579bb5ba1f66dd17671b945d488c1"
+                "url": "https://p4-composer-registry.greenpeace.org//dist/greenpeace/planet4-master-theme/greenpeace-planet4-master-theme-8d042766cb566fe9fb0587200e4cfd66e0c8a709-zip-7ecf0b.tar",
+                "reference": "8d042766cb566fe9fb0587200e4cfd66e0c8a709",
+                "shasum": "fd2c9a97b8dc1cc4efb4ba2f265bcf612e795482"
             },
             "require": {
                 "wpackagist-plugin/timber-library": "1.5.*"
@@ -731,7 +731,7 @@
                 "wiki": "https://github.com/greenpeace/planet4-master-theme/wiki",
                 "source": "https://github.com/greenpeace/planet4-master-theme"
             },
-            "time": "2017-11-08T05:56:21+00:00"
+            "time": "2017-11-08T07:59:10+00:00"
         },
         {
             "name": "greenpeace/planet4-plugin-blocks",
@@ -739,13 +739,13 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/greenpeace/planet4-plugin-blocks.git",
-                "reference": "bf89942adf4c744579a618247ec6995818e8f886"
+                "reference": "f4646856ff1dfa57b17d35300582113e0923c983"
             },
             "dist": {
                 "type": "tar",
-                "url": "https://p4-composer-registry.greenpeace.org//dist/greenpeace/planet4-plugin-blocks/greenpeace-planet4-plugin-blocks-bf89942adf4c744579a618247ec6995818e8f886-zip-c480a6.tar",
-                "reference": "bf89942adf4c744579a618247ec6995818e8f886",
-                "shasum": "ae5c462e7beff605c643a756ba78c44c7564cec8"
+                "url": "https://p4-composer-registry.greenpeace.org//dist/greenpeace/planet4-plugin-blocks/greenpeace-planet4-plugin-blocks-f4646856ff1dfa57b17d35300582113e0923c983-zip-347522.tar",
+                "reference": "f4646856ff1dfa57b17d35300582113e0923c983",
+                "shasum": "200e4f543daef045293144f437cf3475e0cfda60"
             },
             "require-dev": {
                 "dealerdirect/phpcodesniffer-composer-installer": "^0.4.0",
@@ -772,7 +772,7 @@
                 }
             ],
             "description": "This repository contains the WordPress plugin that provides the blocks to be used with Shortcake UI plugin.",
-            "time": "2017-11-07T15:04:45+00:00"
+            "time": "2017-11-08T08:58:04+00:00"
         },
         {
             "name": "greenpeace/planet4-plugin-engagingnetworks",
@@ -2895,16 +2895,16 @@
         },
         {
             "name": "wp-cli/package-command",
-            "version": "v1.0.7",
+            "version": "v1.0.8",
             "source": {
                 "type": "git",
                 "url": "https://github.com/wp-cli/package-command.git",
-                "reference": "d19d506065cf954deef0fe71a0867dacedf97674"
+                "reference": "b069ec3bb85a0dffd0db18e9d4c4e689ff4eec42"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/wp-cli/package-command/zipball/d19d506065cf954deef0fe71a0867dacedf97674",
-                "reference": "d19d506065cf954deef0fe71a0867dacedf97674",
+                "url": "https://api.github.com/repos/wp-cli/package-command/zipball/b069ec3bb85a0dffd0db18e9d4c4e689ff4eec42",
+                "reference": "b069ec3bb85a0dffd0db18e9d4c4e689ff4eec42",
                 "shasum": ""
             },
             "require": {
@@ -2949,7 +2949,7 @@
             ],
             "description": "Manage WP-CLI packages.",
             "homepage": "https://github.com/wp-cli/package-command",
-            "time": "2017-10-15T11:43:12+00:00"
+            "time": "2017-11-07T16:40:44+00:00"
         },
         {
             "name": "wp-cli/php-cli-tools",
