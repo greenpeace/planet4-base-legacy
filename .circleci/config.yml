@@ -16,8 +16,9 @@ jobs:
       - setup_remote_docker
 
       - run:
-          name: Determine branch
+          name: Determine branch from tag
           command: |
+            mkdir -p /tmp/workspace/var
             if [[ -z "${CIRCLE_BRANCH}" ]] && [[ "${CIRCLE_TAG}" ]]
             then
               # Find which remote branch contains the current commit
