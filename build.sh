@@ -16,6 +16,7 @@ Options:
           \$ $(basename "$0") -c config
   -e    Envornment to build
   -l    Perform the CircleCI task locally (requires circlecli)
+  -p    Pull images after build
   -r    Submits a build request to Google Container Builder
   -v    Verbose
 "
@@ -26,7 +27,7 @@ function fatal() {
  exit 1
 }
 
-OPTIONS=':c:e:lrv'
+OPTIONS=':c:e:lprv'
 while getopts $OPTIONS option
 do
     case $option in
@@ -34,6 +35,7 @@ do
                 CONFIG_FILE=$OPTARG;;
         e  )    BUILD_ENVIRONMENT=$OPTARG;;
         l  )    BUILD_LOCALLY='true';;
+        p  )    PULL_IMAGES='true';;
         r  )    BUILD_REMOTELY='true';;
         v  )    VERBOSITY='debug'
                 set -x;;
@@ -203,3 +205,15 @@ then
     rm -fr "${TMPDIR}"
 
 fi
+
+if [[ "${PULL_IMAGES}" = "true" ]]
+then
+  for IMAGE in "${SOURCE_DIRECTORY[@]}"
+  do
+    IMAGE=${IMAGE%/}
+    echo -e "Pull ->> ${GOOGLE_PROJECT_ID}/${IMAGE}:${BUILD_NUM}"
+    docker pull "${BUILD_NAMESPACE}/${GOOGLE_PROJECT_ID}/${IMAGE}:${BUILD_NUM}" &
+  done
+fi
+
+wait # until image pulls are complete
