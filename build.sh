@@ -168,7 +168,7 @@ then
   GCLOUD="${HOME}/google-cloud-sdk/bin/gcloud"
 else
   # Hope for the best
-  GCLOUD=gcloud
+  GCLOUD=$(type -P gcloud)
 fi
 
 # Submit the build
