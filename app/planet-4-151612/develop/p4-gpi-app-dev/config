@@ -1,8 +1,10 @@
 #!/usr/bin/env bash
 set -a
 
-GIT_REF="dev-feature/gitrepositories"
 COMPOSER="composer-dev.json"
+FROM_TAG="develop"
+GIT_REF="dev-feature/gitrepositories"
 
-export GIT_REF
 export COMPOSER
+export FROM_TAG
+export GIT_REF
