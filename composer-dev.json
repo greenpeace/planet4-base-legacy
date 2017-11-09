@@ -42,8 +42,10 @@
 		"greenpeace/planet4-master-theme" : "dev-develop",
 		"greenpeace/planet4-plugin-blocks" : "dev-develop",
 		"greenpeace/planet4-plugin-engagingnetworks" : "dev-develop",
-		"greenpeace/planet4-plugin-saml-20-single-sign-on" : "4.8.28",
-		"greenpeace/planet4-wordpress": "4.8.*",
+		"greenpeace/planet4-plugin-migrated-urls" : "dev-master",
+		"greenpeace/planet4-plugin-searchwp-upstream" : "2.8.*",
+		"greenpeace/planet4-plugin-wpimport-upstream" : "4.4.9",
+		"greenpeace/planet4-wordpress": "4.8.3",
 		"wp-cli/wp-cli": "^1.1"
 	},
 
@@ -61,16 +63,16 @@
 
 	"scripts": {
 		"site-install": [
-			"@copy:wordpress",
+			"@reset:public", "@copy:wordpress",
 			"@reset:themes", "@reset:plugins", "@copy:themes", "@copy:assets", "@copy:plugins",
-			"@core:install", "@plugin:activate", "@theme:activate",
+			"@core:config", "@core:install", "@plugin:activate", "@theme:activate",
 			"@core:initial-content"
 		],
 
 		"site-update": [
 			"@copy:wordpress",
 			"@reset:themes", "@reset:plugins", "@copy:themes", "@copy:assets", "@copy:plugins",
-			"@core:updatedb", "@core:updatedb", "@plugin:deactivate", "@plugin:activate", "@theme:activate"
+			"@core:updatedb", "@plugin:deactivate", "@plugin:activate", "@theme:activate"
 		],
 
 		"site-dev": [
@@ -91,10 +93,10 @@
 		"reset:themes" : "rm -rf public/wp-content/themes",
 		"reset:plugins" : "rm -rf public/wp-content/plugins",
 
-		"copy:wordpress": "rsync -r vendor/greenpeace/planet4-wordpress-upstream/* public",
-		"copy:plugins" : "rsync -r vendor/plugins public/wp-content",
-		"copy:themes" : "rsync -r vendor/themes public/wp-content",
-		"copy:assets" : "rsync -r vendor/greenpeace/planet4-content-default/assets public/wp-content/themes/planet4-master-theme",
+		"copy:wordpress": "rsync -arP vendor/greenpeace/planet4-wordpress-upstream/* public",
+		"copy:plugins" : "rsync -arP vendor/plugins public/wp-content",
+		"copy:themes" : "rsync -arP vendor/themes public/wp-content",
+		"copy:assets" : "rsync -arP vendor/greenpeace/planet4-content-default/assets public/wp-content/themes/planet4-master-theme",
 
 		"core:config": "wp core config --skip-check --force",
 		"core:install": "wp core install",
@@ -106,10 +108,6 @@
 		"plugin:activate": "wp plugin activate --all",
 		"theme:activate": "wp theme activate",
 
-		"server": "php -S 127.0.0.1:9191 -t public",
-
-		"post-update-cmd": [
-			"sed -i -e 's#git@github.com:#https://github.com/#g' composer-dev.lock"
-		]
+		"server": "php -S 127.0.0.1:9191 -t public"
 	}
 }
