@@ -107,6 +107,9 @@ do
     . "${current_dir}/config"
   fi
 
+  # shellcheck disable=2034
+  IMAGE_FROM="${FROM_NAMESPACE}/${GOOGLE_PROJECT_ID}/${FROM_IMAGE}:${FROM_TAG}"
+
   # Rewrite only the cloudbuild variables we want to change
   envvars_array=(
     '${APPLICATION_NAME}' \
