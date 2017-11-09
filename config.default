@@ -32,6 +32,6 @@ DEFAULT_MAINTAINER="Raymond Walker <raymond.walker@greenpeace.org>"
 DEFAULT_BUILD_NAMESPACE="gcr.io"
 
 # Upstream image
-DEFAULT_BASE_IMAGE="p4-onbuild"
-DEFAULT_BASE_NAMESPACE="gcr.io"
-DEFAULT_BASE_TAG="0.3.1"
+DEFAULT_FROM_IMAGE="p4-onbuild"
+DEFAULT_FROM_NAMESPACE="gcr.io"
+DEFAULT_FROM_TAG="0.3.1"
