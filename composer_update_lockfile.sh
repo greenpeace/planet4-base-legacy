@@ -8,6 +8,11 @@ then
   >&2 echo "       Attempting to continue ..."
 fi
 
+if [[ $1 = 'dev' ]]
+then
+  COMPOSER="composer-dev.json"
+fi
+
 if [[ "${COMPOSER}" ]]
 then
   echo "Using COMPOSER=${COMPOSER}"
