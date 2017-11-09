@@ -8,4 +8,4 @@ ENV GIT_REF="${GIT_REF}"
 ENV SSL_ENABLED "false"
 ENV WP_TITLE="Greenpeace International - Development Site"
 
-COPY . /app
+COPY . /app/
