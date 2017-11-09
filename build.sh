@@ -57,7 +57,9 @@ while [[ -h "$source" ]]
 do # resolve $source until the file is no longer a symlink
   dir="$( cd -P "$( dirname "$source" )" && pwd )"
   source="$(readlink "$source")"
-  [[ $source != /* ]] && source="$dir/$source" # if $source was a relative symlink, we need to resolve it relative to the path where the symlink file was located
+  # if $source was a relative symlink, we need to resolve it relative to the
+  # path where the symlink file was located
+  [[ $source != /* ]] && source="$dir/$source"
 done
 BUILD_DIR="$( cd -P "$( dirname "$source" )" && pwd )"
 
