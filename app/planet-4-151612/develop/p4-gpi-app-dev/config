@@ -2,5 +2,7 @@
 set -a
 
 GIT_REF="dev-feature/gitrepositories"
+COMPOSER="composer-dev.json"
 
 export GIT_REF
+export COMPOSER
