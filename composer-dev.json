@@ -93,10 +93,10 @@
 		"reset:themes" : "rm -rf public/wp-content/themes",
 		"reset:plugins" : "rm -rf public/wp-content/plugins",
 
-		"copy:wordpress": "rsync -arP vendor/greenpeace/planet4-wordpress-upstream/* public",
-		"copy:plugins" : "rsync -arP vendor/plugins public/wp-content",
-		"copy:themes" : "rsync -arP vendor/themes public/wp-content",
-		"copy:assets" : "rsync -arP vendor/greenpeace/planet4-content-default/assets public/wp-content/themes/planet4-master-theme",
+		"copy:wordpress": "rsync -ar vendor/greenpeace/planet4-wordpress-upstream/* public",
+		"copy:plugins" : "rsync -ar vendor/plugins public/wp-content",
+		"copy:themes" : "rsync -ar vendor/themes public/wp-content",
+		"copy:assets" : "rsync -ar vendor/greenpeace/planet4-content-default/assets public/wp-content/themes/planet4-master-theme",
 
 		"core:config": "wp core config --skip-check --force",
 		"core:install": "wp core install",
