@@ -7,3 +7,5 @@ ENV COMPOSER="composer-dev.json"
 ENV GIT_REF="${GIT_REF}"
 ENV SSL_ENABLED "false"
 ENV WP_TITLE="Greenpeace International - Development Site"
+
+COPY . /app
