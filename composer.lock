@@ -564,17 +564,17 @@
         },
         {
             "name": "greenpeace/planet4-content-default",
-            "version": "0.2.10",
+            "version": "0.2.11",
             "source": {
                 "type": "git",
                 "url": "https://github.com/greenpeace/planet4-content-default.git",
-                "reference": "7d21c2f299650c735c710e658ea2180205d54df1"
+                "reference": "b44db3e3a53c88a90f8d473a3e1cd46c8768bba4"
             },
             "dist": {
                 "type": "tar",
-                "url": "https://p4-composer-registry.greenpeace.org//dist/greenpeace/planet4-content-default/greenpeace-planet4-content-default-7d21c2f299650c735c710e658ea2180205d54df1-zip-26e869.tar",
-                "reference": "7d21c2f299650c735c710e658ea2180205d54df1",
-                "shasum": "d59c547911cd82e454705a01a1c435e9fda0b293"
+                "url": "https://p4-composer-registry.greenpeace.org//dist/greenpeace/planet4-content-default/greenpeace-planet4-content-default-b44db3e3a53c88a90f8d473a3e1cd46c8768bba4-zip-deb6ff.tar",
+                "reference": "b44db3e3a53c88a90f8d473a3e1cd46c8768bba4",
+                "shasum": "42c109088cddaa96dfb41118c5ba66223cb02bd6"
             },
             "type": "library",
             "scripts": {
@@ -608,7 +608,8 @@
                     "@core:initial-content-27",
                     "@core:initial-content-28",
                     "@core:initial-content-29",
-                    "@core:initial-content-30"
+                    "@core:initial-content-30",
+                    "@core:initial-content-31"
                 ],
                 "core:initial-content-1": [
                     "wp post create --post_type=page --post_title=ACT --post_name=act --post_status=publish page-act.html"
@@ -668,13 +669,13 @@
                     "idd=$(wp post list --post_type=page --title=about --field=ID | head -1);wp menu item add-post \"Footer Primary\" $idd --title=\"ABOUT\" --position=2"
                 ],
                 "core:initial-content-20": [
-                    "idd=$(wp post list --post_type=page --title=faq --field=ID | head -1);wp menu item add-post \"Footer Primary\" $idd --title=\"FAQ\" --position=3"
+                    "idd=$(wp post list --post_type=page --title=faq --field=ID | head -1);wp menu item add-post \"Footer Primary\" $idd --title=\"JOBS\" --position=3"
                 ],
                 "core:initial-content-21": [
-                    "idd=$(wp post list --post_type=page --title=press --field=ID | head -1);wp menu item add-post \"Footer Primary\" $idd --title=\"PRESS\" --position=4"
+                    "idd=$(wp post list --post_type=page --title=press --field=ID | head -1);wp menu item add-post \"Footer Primary\" $idd --title=\"FAQ\" --position=4"
                 ],
                 "core:initial-content-22": [
-                    "idd=$(wp post list --post_type=page --title=terms --field=ID | head -1);wp menu item add-post \"Footer Primary\" $idd --title=\"TERMS\" --position=5"
+                    "idd=$(wp post list --post_type=page --title=terms --field=ID | head -1);wp menu item add-post \"Footer Primary\" $idd --title=\"PRESS\" --position=5"
                 ],
                 "core:initial-content-23": [
                     "wp post create --post_type=page --post_title=PRIVACY --post_name=privacy --post_status=publish page-privacy.html"
@@ -694,11 +695,11 @@
                 "core:initial-content-28": [
                     "idd=$(wp post list --post_type=page --name=codeofconduct --field=ID | head -1);wp menu item add-post \"Footer Secondary\" $idd --title=\"CODE OF CONDUCT\" --position=2"
                 ],
-                "core:initial-content-29": [
-                    "idd=$(wp post list --post_type=page --title=jobs --field=ID | head -1);wp menu item add-post \"Footer Secondary\" $idd --title=\"JOBS\" --position=3"
-                ],
                 "core:initial-content-30": [
-                    "wp option update copyright \"Unless otherwise stated, the content on this website is licensed under a <a href=\"#\">CC-BY-SA International License</a>\""
+                    "wp option update copyright \"Unless otherwise stated, the content on this website is licensed under a <a href=\"https://creativecommons.org/share-your-work/public-domain/cc0\">CC0 International License</a>\""
+                ],
+                "core:initial-content-31": [
+                    "wp option update date_format 'j F Y'"
                 ]
             },
             "authors": [
@@ -708,7 +709,11 @@
                 }
             ],
             "description": "Scripts that control the default content of the default planet4 installation",
-            "time": "2017-10-24T12:35:39+00:00"
+            "support": {
+                "source": "https://github.com/greenpeace/planet4-content-default/tree/v0.2.11",
+                "issues": "https://github.com/greenpeace/planet4-content-default/issues"
+            },
+            "time": "2017-11-14T12:56:02+00:00"
         },
         {
             "name": "greenpeace/planet4-master-theme",
@@ -716,13 +721,13 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/greenpeace/planet4-master-theme.git",
-                "reference": "5154f73d8337a51a5ed6391a1527174982ccafb4"
+                "reference": "4b5786b4ae2a670688f4da76135b17ab702840b9"
             },
             "dist": {
                 "type": "tar",
-                "url": "https://p4-composer-registry.greenpeace.org//dist/greenpeace/planet4-master-theme/greenpeace-planet4-master-theme-5154f73d8337a51a5ed6391a1527174982ccafb4-zip-4f6f4a.tar",
-                "reference": "5154f73d8337a51a5ed6391a1527174982ccafb4",
-                "shasum": "68384ab7aa6ab4f2be946765d2f19a6b7b1ebd97"
+                "url": "https://p4-composer-registry.greenpeace.org//dist/greenpeace/planet4-master-theme/greenpeace-planet4-master-theme-4b5786b4ae2a670688f4da76135b17ab702840b9-zip-28f0e2.tar",
+                "reference": "4b5786b4ae2a670688f4da76135b17ab702840b9",
+                "shasum": "408e55eafd286608951dc74448a91c8e72c8c0e8"
             },
             "require": {
                 "wpackagist-plugin/timber-library": "1.5.*"
@@ -766,7 +771,7 @@
                 "wiki": "https://github.com/greenpeace/planet4-master-theme/wiki",
                 "source": "https://github.com/greenpeace/planet4-master-theme"
             },
-            "time": "2017-11-06T14:14:58+00:00"
+            "time": "2017-11-14T15:20:55+00:00"
         },
         {
             "name": "greenpeace/planet4-plugin-blocks",
