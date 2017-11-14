@@ -24,7 +24,7 @@
 		"greenpeace/planet4-plugin-engagingnetworks" : "0.*",
 		"greenpeace/planet4-plugin-google-apps-login-upstream" : "3.2",
 		"greenpeace/planet4-plugin-migrated-urls" : "0.0.1",
-		"greenpeace/planet4-plugin-searchwp-upstream" : "2.8.17",
+		"greenpeace/planet4-plugin-searchwp-upstream" : "2.8.17.2",
 		"greenpeace/planet4-plugin-wpimport-upstream" : "4.4.9",
 		"greenpeace/planet4-wordpress": "4.8.3",
 		"wp-cli/wp-cli": "^1.1"
