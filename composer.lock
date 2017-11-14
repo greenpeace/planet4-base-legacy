@@ -68,16 +68,16 @@
         },
         {
             "name": "composer/ca-bundle",
-            "version": "1.0.8",
+            "version": "1.0.9",
             "source": {
                 "type": "git",
                 "url": "https://github.com/composer/ca-bundle.git",
-                "reference": "9dd73a03951357922d8aee6cc084500de93e2343"
+                "reference": "36344aeffdc37711335563e6108cda86566432a6"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/composer/ca-bundle/zipball/9dd73a03951357922d8aee6cc084500de93e2343",
-                "reference": "9dd73a03951357922d8aee6cc084500de93e2343",
+                "url": "https://api.github.com/repos/composer/ca-bundle/zipball/36344aeffdc37711335563e6108cda86566432a6",
+                "reference": "36344aeffdc37711335563e6108cda86566432a6",
                 "shasum": ""
             },
             "require": {
@@ -123,7 +123,7 @@
                 "ssl",
                 "tls"
             ],
-            "time": "2017-09-11T07:24:36+00:00"
+            "time": "2017-11-13T15:51:25+00:00"
         },
         {
             "name": "composer/composer",
@@ -1402,7 +1402,7 @@
         },
         {
             "name": "symfony/config",
-            "version": "v3.3.11",
+            "version": "v3.3.12",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/config.git",
@@ -1464,16 +1464,16 @@
         },
         {
             "name": "symfony/console",
-            "version": "v3.3.11",
+            "version": "v3.3.12",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/console.git",
-                "reference": "fd684d68f83568d8293564b4971928a2c4bdfc5c"
+                "reference": "099302cc53e57cbb7414fd9f3ace40e5e2767c0b"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/console/zipball/fd684d68f83568d8293564b4971928a2c4bdfc5c",
-                "reference": "fd684d68f83568d8293564b4971928a2c4bdfc5c",
+                "url": "https://api.github.com/repos/symfony/console/zipball/099302cc53e57cbb7414fd9f3ace40e5e2767c0b",
+                "reference": "099302cc53e57cbb7414fd9f3ace40e5e2767c0b",
                 "shasum": ""
             },
             "require": {
@@ -1528,11 +1528,11 @@
             ],
             "description": "Symfony Console Component",
             "homepage": "https://symfony.com",
-            "time": "2017-11-07T14:16:22+00:00"
+            "time": "2017-11-12T16:53:41+00:00"
         },
         {
             "name": "symfony/debug",
-            "version": "v3.3.11",
+            "version": "v3.3.12",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/debug.git",
@@ -1588,16 +1588,16 @@
         },
         {
             "name": "symfony/dependency-injection",
-            "version": "v3.3.11",
+            "version": "v3.3.12",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/dependency-injection.git",
-                "reference": "50cdc753c61a4268608226647b0ce72e33a4a2b1"
+                "reference": "4e84f5af2c2d51ee3dee72df40b7fc08f49b4ab8"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/dependency-injection/zipball/50cdc753c61a4268608226647b0ce72e33a4a2b1",
-                "reference": "50cdc753c61a4268608226647b0ce72e33a4a2b1",
+                "url": "https://api.github.com/repos/symfony/dependency-injection/zipball/4e84f5af2c2d51ee3dee72df40b7fc08f49b4ab8",
+                "reference": "4e84f5af2c2d51ee3dee72df40b7fc08f49b4ab8",
                 "shasum": ""
             },
             "require": {
@@ -1654,11 +1654,11 @@
             ],
             "description": "Symfony DependencyInjection Component",
             "homepage": "https://symfony.com",
-            "time": "2017-11-07T14:12:55+00:00"
+            "time": "2017-11-13T18:10:32+00:00"
         },
         {
             "name": "symfony/event-dispatcher",
-            "version": "v3.3.11",
+            "version": "v3.3.12",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/event-dispatcher.git",
@@ -1721,7 +1721,7 @@
         },
         {
             "name": "symfony/filesystem",
-            "version": "v3.3.11",
+            "version": "v3.3.12",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/filesystem.git",
@@ -1770,7 +1770,7 @@
         },
         {
             "name": "symfony/finder",
-            "version": "v3.3.11",
+            "version": "v3.3.12",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/finder.git",
@@ -1878,16 +1878,16 @@
         },
         {
             "name": "symfony/process",
-            "version": "v3.3.11",
+            "version": "v3.3.12",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/process.git",
-                "reference": "e14bb64d7559e6923fb13ee3b3d8fa763a2c0930"
+                "reference": "a56a3989fb762d7b19a0cf8e7693ee99a6ffb78d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/process/zipball/e14bb64d7559e6923fb13ee3b3d8fa763a2c0930",
-                "reference": "e14bb64d7559e6923fb13ee3b3d8fa763a2c0930",
+                "url": "https://api.github.com/repos/symfony/process/zipball/a56a3989fb762d7b19a0cf8e7693ee99a6ffb78d",
+                "reference": "a56a3989fb762d7b19a0cf8e7693ee99a6ffb78d",
                 "shasum": ""
             },
             "require": {
@@ -1923,11 +1923,11 @@
             ],
             "description": "Symfony Process Component",
             "homepage": "https://symfony.com",
-            "time": "2017-11-05T15:47:03+00:00"
+            "time": "2017-11-13T15:31:11+00:00"
         },
         {
             "name": "symfony/translation",
-            "version": "v3.3.11",
+            "version": "v3.3.12",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/translation.git",
@@ -1992,7 +1992,7 @@
         },
         {
             "name": "symfony/yaml",
-            "version": "v3.3.11",
+            "version": "v3.3.12",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/yaml.git",
@@ -3447,16 +3447,16 @@
         },
         {
             "name": "wp-cli/wp-cli",
-            "version": "v1.4.0",
+            "version": "v1.4.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/wp-cli/wp-cli.git",
-                "reference": "b1cdbcf52ca57aaecac1e9b531540bfe0e58650f"
+                "reference": "13d12281f76ec023f8978a0368b102fe40a117b6"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/wp-cli/wp-cli/zipball/b1cdbcf52ca57aaecac1e9b531540bfe0e58650f",
-                "reference": "b1cdbcf52ca57aaecac1e9b531540bfe0e58650f",
+                "url": "https://api.github.com/repos/wp-cli/wp-cli/zipball/13d12281f76ec023f8978a0368b102fe40a117b6",
+                "reference": "13d12281f76ec023f8978a0368b102fe40a117b6",
                 "shasum": ""
             },
             "require": {
@@ -3539,13 +3539,13 @@
             "license": [
                 "MIT"
             ],
-            "description": "A command line interface for WordPress",
-            "homepage": "http://wp-cli.org",
+            "description": "The command line interface for WordPress",
+            "homepage": "https://wp-cli.org",
             "keywords": [
                 "cli",
                 "wordpress"
             ],
-            "time": "2017-10-17T12:43:24+00:00"
+            "time": "2017-11-13T12:35:49+00:00"
         },
         {
             "name": "wpackagist-plugin/timber-library",
