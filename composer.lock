@@ -4,21 +4,21 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "ca47638845953c0ba14e41578ad7fb95",
+    "content-hash": "50ee2169290f0bc88510cfb2412fe389",
     "packages": [
         {
             "name": "cmb2/cmb2",
-            "version": "v2.2.5.3",
+            "version": "v2.2.6",
             "source": {
                 "type": "git",
                 "url": "https://github.com/CMB2/CMB2.git",
-                "reference": "5c9bdb6e99e17e4dad71ebbc68dab5def3c64e12"
+                "reference": "f608b53ad5085d79dc02a46176bbdcff703b8edf"
             },
             "dist": {
                 "type": "tar",
-                "url": "https://p4-composer-registry.greenpeace.org//dist/cmb2/cmb2/cmb2-cmb2-5c9bdb6e99e17e4dad71ebbc68dab5def3c64e12-zip-39fd0f.tar",
-                "reference": "5c9bdb6e99e17e4dad71ebbc68dab5def3c64e12",
-                "shasum": "860017c4cf5113362b0883eef03c8a7d9cf93625"
+                "url": "https://p4-composer-registry.greenpeace.org//dist/cmb2/cmb2/cmb2-cmb2-f608b53ad5085d79dc02a46176bbdcff703b8edf-zip-867757.tar",
+                "reference": "f608b53ad5085d79dc02a46176bbdcff703b8edf",
+                "shasum": "1a6ea1fb415d04032185d2d41f30ae35f4d9e7d7"
             },
             "require": {
                 "php": ">5.2.4"
@@ -64,7 +64,7 @@
                 "issues": "https://github.com/CMB2/CMB2/issues",
                 "source": "http://wordpress.org/support/plugin/cmb2"
             },
-            "time": "2017-08-22T18:14:34+00:00"
+            "time": "2017-11-14T18:09:46+00:00"
         },
         {
             "name": "composer/ca-bundle",
@@ -779,13 +779,13 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/greenpeace/planet4-plugin-blocks.git",
-                "reference": "3e93e0b3f95bb59fcd3a08c8850760f9752a173c"
+                "reference": "1d46d6862035647b0dc04f1f3b4a4b3572aa63e8"
             },
             "dist": {
                 "type": "tar",
-                "url": "https://p4-composer-registry.greenpeace.org//dist/greenpeace/planet4-plugin-blocks/greenpeace-planet4-plugin-blocks-3e93e0b3f95bb59fcd3a08c8850760f9752a173c-zip-cfaa13.tar",
-                "reference": "3e93e0b3f95bb59fcd3a08c8850760f9752a173c",
-                "shasum": "421f915e8eed2d8d01db5fa76b20e787e3b47f7e"
+                "url": "https://p4-composer-registry.greenpeace.org//dist/greenpeace/planet4-plugin-blocks/greenpeace-planet4-plugin-blocks-1d46d6862035647b0dc04f1f3b4a4b3572aa63e8-zip-6af12a.tar",
+                "reference": "1d46d6862035647b0dc04f1f3b4a4b3572aa63e8",
+                "shasum": "d50bf698bca7e4e1b7b206eb455fbb5420ef61e1"
             },
             "require-dev": {
                 "dealerdirect/phpcodesniffer-composer-installer": "^0.4.0",
@@ -816,7 +816,7 @@
                 "source": "https://github.com/greenpeace/planet4-plugin-blocks/tree/develop",
                 "issues": "https://github.com/greenpeace/planet4-plugin-blocks/issues"
             },
-            "time": "2017-11-15T15:33:07+00:00"
+            "time": "2017-11-16T10:22:19+00:00"
         },
         {
             "name": "greenpeace/planet4-plugin-engagingnetworks",
