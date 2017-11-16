@@ -156,7 +156,7 @@ cloudbuild_substitutions_array=(
   "_BRANCH_NAME=${BRANCH_NAME//[^[:alnum:]_]/-}" \
   "_COMPOSER=${COMPOSER}" \
   "_GIT_REF=${GIT_REF:-${DEFAULT_GIT_REF}}" \
-  "_GITHUB_OAUTH_TOKEN=${GITHUB_OAUTH_TOKEN:-${DEFAULT_GITHUB_OAUTH_TOKEN}}" \
+  "_GITHUB_OAUTH_TOKEN=${GITHUB_OAUTH_TOKEN}" \
   "_SHORT_SHA=${SHORT_SHA:-$(git rev-parse --short HEAD)}" \
 )
 cloudbuild_substitutions=$(getSubstitutions "${cloudbuild_substitutions_array[@]}")
