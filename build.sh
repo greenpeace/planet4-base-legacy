@@ -216,8 +216,8 @@ then
   for IMAGE in "${SOURCE_DIRECTORY[@]}"
   do
     IMAGE=${IMAGE%/}
-    echo -e "Pull ->> ${GOOGLE_PROJECT_ID}/${IMAGE}:${BUILD_NUM}"
-    docker pull "${BUILD_NAMESPACE}/${GOOGLE_PROJECT_ID}/${IMAGE}:${BUILD_NUM}" &
+    echo -e "Pull ->> ${GOOGLE_PROJECT_ID}/${IMAGE}:build-${BUILD_NUM}"
+    docker pull "${BUILD_NAMESPACE}/${GOOGLE_PROJECT_ID}/${IMAGE}:build-${BUILD_NUM}" &
   done
 fi
 
