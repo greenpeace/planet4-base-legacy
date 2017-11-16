@@ -46,7 +46,8 @@ fi
 
 if [[ -z "${GITHUB_OAUTH_TOKEN}" ]]
 then
-  >&2 echo "GITHUB_OAUTH_TOKEN environment variable not set"
+  >&2 echo "ERROR: GITHUB_OAUTH_TOKEN environment variable not set"
+  exit 1
 fi
 
 # Envsubst and cloudbuild.yaml variable consolidation
