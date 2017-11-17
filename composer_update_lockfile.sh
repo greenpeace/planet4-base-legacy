@@ -18,4 +18,4 @@ then
   echo "Using COMPOSER=${COMPOSER}"
 fi
 
-composer --profile -vvv update
+composer --profile -vv update
