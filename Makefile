@@ -1,4 +1,6 @@
-COMPOSER?=composer.json
+COMPOSER?=composer-dev.json
+FROM_TAG?=latest
+BUILD_FLAGS?=-r
 
 .DEFAULT_GOAL := all
 
@@ -10,8 +12,8 @@ test:
 
 .PHONY : update
 update:
-		./composer_update_lockfile.sh
+		./composer_update_lockfile.sh COMPOSER=$(COMPOSER)
 
 .PHONY : build
 build:
-		./build.sh -rp
+		./build.sh $(BUILD_FLAGS) COMPOSER=$(COMPOSER) FROM_TAG=$(FROM_TAG)
