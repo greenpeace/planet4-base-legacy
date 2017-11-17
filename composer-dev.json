@@ -99,7 +99,7 @@
 		"copy:themes" : "rsync -ar vendor/themes public/wp-content",
 		"copy:assets" : "rsync -ar vendor/greenpeace/planet4-content-default/assets public/wp-content/themes/planet4-master-theme",
 
-		"core:config": "if [[ ! -f /app/source/public/wp-config.php ]]; then wp core config --skip-check --force",
+		"core:config": "if [[ ! -f /app/source/public/wp-config.php ]]; then wp core config --skip-check --force; fi",
 		"core:install": "wp core install",
 		"core:updatedb": "wp core update-db",
 		"core:initial-content": "composer run-script content-default -d vendor/greenpeace/planet4-content-default ",
