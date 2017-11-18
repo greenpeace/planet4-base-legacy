@@ -47,7 +47,8 @@
 		"greenpeace/planet4-plugin-wpimport-upstream" : "4.4.9",
 		"greenpeace/planet4-wordpress": "4.8.3",
 		"wpackagist-plugin/wp-redis": "^0.7.0",
-		"wpackagist-plugin/wp-stateless": "^2.1"
+		"wpackagist-plugin/wp-stateless": "^2.1",
+		"wpackagist-plugin/nginx-helper": "^1.9"
 	},
 
 	"config": {
