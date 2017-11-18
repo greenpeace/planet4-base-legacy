@@ -83,7 +83,7 @@
 		"core:config": "wp core config --force",
 		"core:install": "wp core install",
 		"core:updatedb": "wp core update-db",
-		"core:initial-content": "composer run-script content-default -d vendor/greenpeace/planet4-content-default ",
+		"core:initial-content": "composer run-script content-default -d vendor/greenpeace/planet4-content-default",
 		"core:add-super-admin-user": "wp user create dev p4-dev@greenpeace.org --role=administrator --user_pass=u3vsREsvjwo",
 
 		"plugin:deactivate": "wp plugin deactivate --all",
