@@ -1,6 +1,10 @@
 #!/usr/bin/env bash
 set -exo pipefail
 
+# Description: FROM_TAG is the version of p4-onbuild from which to build this application
+#              This script attempts to determine the correct version to use
+
+
 # Find real file path of current script
 # https://stackoverflow.com/questions/59895/getting-the-source-directory-of-a-bash-script-from-within
 source="${BASH_SOURCE[0]}"
@@ -31,7 +35,6 @@ else
   gcloud_binary=$(type -P gcloud)
 fi
 
-# Base image FROM tag is the version of p4-onbuild from which to build this application
 
 # If it's set, use that
 if [[ "${FROM_TAG}" ]]
