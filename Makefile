@@ -1,6 +1,6 @@
 COMPOSER?=composer-dev.json
 FROM_TAG?=latest
-BUILD_FLAGS?=-r
+BUILD_FLAGS?=-rp
 
 .DEFAULT_GOAL := all
 
