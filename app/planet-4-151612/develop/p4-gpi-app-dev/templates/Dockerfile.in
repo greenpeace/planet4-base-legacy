@@ -11,7 +11,7 @@ ENV \
     WP_CLI_CACHE_DIR="/app/.wp-cli/cache" \
     WP_CLI_CONFIG_PATH="/app/source/wp-config.yml" \
     WP_CLI_DISABLE_AUTO_CHECK_UPDATE="true" \
-    WP_EXTRA_CONFIG="\$redis_server=array('host' => 'redis','port' => 6379,'auth' => '12345','database' => 0);" \
+    WP_EXTRA_CONFIG="\$redis_server=array('host' => 'redis','port' => 6379,'database' => 0);" \
     WP_TITLE="Greenpeace International - Development Site"
 
 COPY . /app/
