@@ -14,7 +14,7 @@
 	],
 
 	"require": {
-		"cmb2/cmb2" : "2.2.5.3",
+		"cmb2/cmb2" : "^2.2",
 		"composer/installers": "~1.0",
 		"fusioneng/shortcake" : "0.7.3",
 		"greenpeace/planet4-child-theme" : "dev-features-all-demo",
@@ -25,8 +25,9 @@
 		"greenpeace/planet4-plugin-migrated-urls" : "0.0.1",
 		"greenpeace/planet4-plugin-searchwp-upstream" : "2.8.*",
 		"greenpeace/planet4-plugin-wpimport-upstream" : "4.4.9",
-		"greenpeace/planet4-wordpress": "4.8.3",
+		"greenpeace/planet4-wordpress": "^4.9",
 		"wp-cli/wp-cli": "^1.1",
+		"wpackagist-plugin/nginx-helper": "^1.9",
 		"wpackagist-plugin/wp-redis": "^0.7.0",
 		"wpackagist-plugin/wp-stateless": "^2.1"
 	},

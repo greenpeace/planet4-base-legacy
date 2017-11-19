@@ -4,21 +4,21 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "2e74f052a1f4e7af11c8a37150412a43",
+    "content-hash": "809016f738d6b13727017f0f02aa6447",
     "packages": [
         {
             "name": "cmb2/cmb2",
-            "version": "v2.2.5.3",
+            "version": "v2.2.6",
             "source": {
                 "type": "git",
                 "url": "https://github.com/CMB2/CMB2.git",
-                "reference": "5c9bdb6e99e17e4dad71ebbc68dab5def3c64e12"
+                "reference": "f608b53ad5085d79dc02a46176bbdcff703b8edf"
             },
             "dist": {
                 "type": "tar",
-                "url": "https://p4-composer-registry.greenpeace.org//dist/cmb2/cmb2/cmb2-cmb2-5c9bdb6e99e17e4dad71ebbc68dab5def3c64e12-zip-39fd0f.tar",
-                "reference": "5c9bdb6e99e17e4dad71ebbc68dab5def3c64e12",
-                "shasum": "860017c4cf5113362b0883eef03c8a7d9cf93625"
+                "url": "https://p4-composer-registry.greenpeace.org//dist/cmb2/cmb2/cmb2-cmb2-f608b53ad5085d79dc02a46176bbdcff703b8edf-zip-867757.tar",
+                "reference": "f608b53ad5085d79dc02a46176bbdcff703b8edf",
+                "shasum": "1a6ea1fb415d04032185d2d41f30ae35f4d9e7d7"
             },
             "require": {
                 "php": ">5.2.4"
@@ -64,7 +64,7 @@
                 "issues": "https://github.com/CMB2/CMB2/issues",
                 "source": "http://wordpress.org/support/plugin/cmb2"
             },
-            "time": "2017-08-22T18:14:34+00:00"
+            "time": "2017-11-14T18:09:46+00:00"
         },
         {
             "name": "composer/installers",
@@ -485,13 +485,13 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/greenpeace/planet4-plugin-blocks.git",
-                "reference": "4774ef2216b97ed4d64823f5e1909dcc613abb9f"
+                "reference": "b841db895de4ed5db573b7f6b88e53366280942f"
             },
             "dist": {
                 "type": "tar",
-                "url": "https://p4-composer-registry.greenpeace.org//dist/greenpeace/planet4-plugin-blocks/greenpeace-planet4-plugin-blocks-4774ef2216b97ed4d64823f5e1909dcc613abb9f-zip-971f8e.tar",
-                "reference": "4774ef2216b97ed4d64823f5e1909dcc613abb9f",
-                "shasum": "2a3dff16c64fdca4ef34a68fedd57aab081270b2"
+                "url": "https://p4-composer-registry.greenpeace.org//dist/greenpeace/planet4-plugin-blocks/greenpeace-planet4-plugin-blocks-b841db895de4ed5db573b7f6b88e53366280942f-zip-6acc00.tar",
+                "reference": "b841db895de4ed5db573b7f6b88e53366280942f",
+                "shasum": "a11de6c52b62b5c8c53e5f8cf8c593fd8074dda0"
             },
             "require-dev": {
                 "dealerdirect/phpcodesniffer-composer-installer": "^0.4.0",
@@ -522,7 +522,7 @@
                 "source": "https://github.com/greenpeace/planet4-plugin-blocks/tree/features-all-demo",
                 "issues": "https://github.com/greenpeace/planet4-plugin-blocks/issues"
             },
-            "time": "2017-11-06T11:16:04+00:00"
+            "time": "2017-11-17T11:21:15+00:00"
         },
         {
             "name": "greenpeace/planet4-plugin-engagingnetworks",
@@ -625,37 +625,37 @@
         },
         {
             "name": "greenpeace/planet4-wordpress",
-            "version": "4.8.3",
+            "version": "4.9",
             "source": {
                 "type": "git",
                 "url": "repositories/planet4-wordpress",
-                "reference": "37341804d85f1a7fcfd409f4b796593e537e0d53"
+                "reference": "ec2a6f589e9eb60524ac38eee74d9d7abadbcdb3"
             },
             "dist": {
                 "type": "tar",
-                "url": "https://p4-composer-registry.greenpeace.org//dist/greenpeace/planet4-wordpress/greenpeace-planet4-wordpress-4.8.3-d04106.tar",
-                "reference": "37341804d85f1a7fcfd409f4b796593e537e0d53",
-                "shasum": "dd9b70e7ef1bc92f67020f28f225e999189340fb"
+                "url": "https://p4-composer-registry.greenpeace.org//dist/greenpeace/planet4-wordpress/greenpeace-planet4-wordpress-4.9-8f4f5a.tar",
+                "reference": "ec2a6f589e9eb60524ac38eee74d9d7abadbcdb3",
+                "shasum": "bebd8bf5b00b61af668d439335dfb53d64d67a3a"
             },
             "require": {
-                "greenpeace/planet4-wordpress-upstream": "4.8.3"
+                "greenpeace/planet4-wordpress-upstream": "4.9"
             },
             "type": "library",
-            "time": "2017-10-31T14:45:34+00:00"
+            "time": "2017-11-16T07:47:43+00:00"
         },
         {
             "name": "greenpeace/planet4-wordpress-upstream",
-            "version": "4.8.3",
+            "version": "4.9",
             "source": {
                 "type": "svn",
                 "url": "https://core.svn.wordpress.org/",
-                "reference": "tags/4.8.2"
+                "reference": "tags/4.9"
             },
             "dist": {
                 "type": "tar",
-                "url": "https://p4-composer-registry.greenpeace.org//dist/greenpeace/planet4-wordpress-upstream/greenpeace-planet4-wordpress-upstream-4.8.3-a79843.tar",
-                "reference": "tags/4.8.2",
-                "shasum": "563693082d630ea1c5d0ed4945df55b7d9f73ba9"
+                "url": "https://p4-composer-registry.greenpeace.org//dist/greenpeace/planet4-wordpress-upstream/greenpeace-planet4-wordpress-upstream-4.9-8a7a14.tar",
+                "reference": "tags/4.9",
+                "shasum": "d4245873235f0a855f318db0b7f857eaacc0d70c"
             },
             "type": "library"
         },
@@ -721,15 +721,15 @@
         },
         {
             "name": "wpackagist-plugin/wp-stateless",
-            "version": "2.1.0",
+            "version": "2.1.1",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/wp-stateless/",
-                "reference": "tags/2.1.0"
+                "reference": "tags/2.1.1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/wp-stateless.2.1.0.zip",
+                "url": "https://downloads.wordpress.org/plugin/wp-stateless.2.1.1.zip",
                 "reference": null,
                 "shasum": null
             },
