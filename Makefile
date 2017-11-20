@@ -1,5 +1,5 @@
 COMPOSER?=composer-dev.json
-FROM_TAG?=latest
+FROM_TAG?=develop
 BUILD_FLAGS?=-rp
 
 .DEFAULT_GOAL := all
@@ -16,4 +16,4 @@ update:
 
 .PHONY : build
 build:
-		./build.sh $(BUILD_FLAGS) COMPOSER=$(COMPOSER) FROM_TAG=$(FROM_TAG)
+		COMPOSER=$(COMPOSER) FROM_TAG=$(FROM_TAG) ./build.sh $(BUILD_FLAGS)
