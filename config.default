@@ -22,12 +22,14 @@ set -a
 # !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 
 # Application environment
-DEFAULT_APPLICATION_NAME="Greenpeace Planet 4 Application Base"
+DEFAULT_APP_HOSTNAME="test.planet4.dev"
+DEFAULT_APP_NAME="Greenpeace Planet 4 Application Base"
 DEFAULT_BUILD_ENVIRONMENT="develop"
 DEFAULT_COMPOSER="composer.json"
 DEFAULT_GIT_REF="develop"
 DEFAULT_GOOGLE_PROJECT_ID="planet-4-151612"
 DEFAULT_MAINTAINER="Raymond Walker <raymond.walker@greenpeace.org>"
+DEFAULT_WP_TITLE="Greenpeace International"
 
 # Container registry
 DEFAULT_BUILD_NAMESPACE="gcr.io"
