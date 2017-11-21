@@ -4,7 +4,4 @@ set -a
 COMPOSER="composer-dev.json"
 FROM_TAG="develop"
 GIT_REF="dev-feature/gitrepositories"
-
-export COMPOSER
-export FROM_TAG
-export GIT_REF
+WP_TITLE="Greenpeace International Development Site"
