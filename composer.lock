@@ -779,13 +779,13 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/greenpeace/planet4-plugin-blocks.git",
-                "reference": "1d46d6862035647b0dc04f1f3b4a4b3572aa63e8"
+                "reference": "9411193f32bc4b7b6bbbe5ef747dd7d7b2d8a1be"
             },
             "dist": {
                 "type": "tar",
-                "url": "https://p4-composer-registry.greenpeace.org//dist/greenpeace/planet4-plugin-blocks/greenpeace-planet4-plugin-blocks-1d46d6862035647b0dc04f1f3b4a4b3572aa63e8-zip-6af12a.tar",
-                "reference": "1d46d6862035647b0dc04f1f3b4a4b3572aa63e8",
-                "shasum": "d50bf698bca7e4e1b7b206eb455fbb5420ef61e1"
+                "url": "https://p4-composer-registry.greenpeace.org//dist/greenpeace/planet4-plugin-blocks/greenpeace-planet4-plugin-blocks-9411193f32bc4b7b6bbbe5ef747dd7d7b2d8a1be-zip-b7a0f2.tar",
+                "reference": "9411193f32bc4b7b6bbbe5ef747dd7d7b2d8a1be",
+                "shasum": "17f8f186c5ff048ebf246bc20a77b63081272e73"
             },
             "require-dev": {
                 "dealerdirect/phpcodesniffer-composer-installer": "^0.4.0",
@@ -816,7 +816,7 @@
                 "source": "https://github.com/greenpeace/planet4-plugin-blocks/tree/develop",
                 "issues": "https://github.com/greenpeace/planet4-plugin-blocks/issues"
             },
-            "time": "2017-11-16T10:22:19+00:00"
+            "time": "2017-11-21T08:37:23+00:00"
         },
         {
             "name": "greenpeace/planet4-plugin-engagingnetworks",
@@ -2334,16 +2334,16 @@
         },
         {
             "name": "wp-cli/core-command",
-            "version": "v1.0.4",
+            "version": "v1.0.5",
             "source": {
                 "type": "git",
                 "url": "https://github.com/wp-cli/core-command.git",
-                "reference": "63e90c8b95b7df1a04e4e048c0ce2e8340b5063b"
+                "reference": "f302ad901aa119136684610f91087c592503150b"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/wp-cli/core-command/zipball/63e90c8b95b7df1a04e4e048c0ce2e8340b5063b",
-                "reference": "63e90c8b95b7df1a04e4e048c0ce2e8340b5063b",
+                "url": "https://api.github.com/repos/wp-cli/core-command/zipball/f302ad901aa119136684610f91087c592503150b",
+                "reference": "f302ad901aa119136684610f91087c592503150b",
                 "shasum": ""
             },
             "require-dev": {
@@ -2389,7 +2389,7 @@
             ],
             "description": "Download, install, update and manage a WordPress install.",
             "homepage": "https://github.com/wp-cli/core-command",
-            "time": "2017-10-15T15:26:49+00:00"
+            "time": "2017-11-20T15:25:52+00:00"
         },
         {
             "name": "wp-cli/cron-command",
