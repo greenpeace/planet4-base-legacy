@@ -779,13 +779,13 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/greenpeace/planet4-plugin-blocks.git",
-                "reference": "b841db895de4ed5db573b7f6b88e53366280942f"
+                "reference": "8773bab23872607ff5159d9a352591cd958f34c6"
             },
             "dist": {
                 "type": "tar",
-                "url": "https://p4-composer-registry.greenpeace.org//dist/greenpeace/planet4-plugin-blocks/greenpeace-planet4-plugin-blocks-b841db895de4ed5db573b7f6b88e53366280942f-zip-6acc00.tar",
-                "reference": "b841db895de4ed5db573b7f6b88e53366280942f",
-                "shasum": "a11de6c52b62b5c8c53e5f8cf8c593fd8074dda0"
+                "url": "https://p4-composer-registry.greenpeace.org//dist/greenpeace/planet4-plugin-blocks/greenpeace-planet4-plugin-blocks-8773bab23872607ff5159d9a352591cd958f34c6-zip-9623dd.tar",
+                "reference": "8773bab23872607ff5159d9a352591cd958f34c6",
+                "shasum": "bfed0ac427e4728d415f7d4652453dcdf48d011b"
             },
             "require-dev": {
                 "dealerdirect/phpcodesniffer-composer-installer": "^0.4.0",
@@ -816,7 +816,7 @@
                 "source": "https://github.com/greenpeace/planet4-plugin-blocks/tree/features-all-demo",
                 "issues": "https://github.com/greenpeace/planet4-plugin-blocks/issues"
             },
-            "time": "2017-11-17T11:21:15+00:00"
+            "time": "2017-11-21T09:41:41+00:00"
         },
         {
             "name": "greenpeace/planet4-plugin-engagingnetworks",
@@ -866,13 +866,13 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/greenpeace/planet4-plugin-images.git",
-                "reference": "f954b35bfed244f04c69f94c987d7e4947ecd160"
+                "reference": "cafbf22159c825faf2f2c93e78b0e0da67490c36"
             },
             "dist": {
                 "type": "tar",
-                "url": "https://p4-composer-registry.greenpeace.org//dist/greenpeace/planet4-plugin-images/greenpeace-planet4-plugin-images-f954b35bfed244f04c69f94c987d7e4947ecd160-zip-88450d.tar",
-                "reference": "f954b35bfed244f04c69f94c987d7e4947ecd160",
-                "shasum": "ffcdec325e8b80bd85f4205e6ec2cf9cc4381aec"
+                "url": "https://p4-composer-registry.greenpeace.org//dist/greenpeace/planet4-plugin-images/greenpeace-planet4-plugin-images-cafbf22159c825faf2f2c93e78b0e0da67490c36-zip-7d4ed4.tar",
+                "reference": "cafbf22159c825faf2f2c93e78b0e0da67490c36",
+                "shasum": "3ab43987a88bba461184c4e3a7aa1863e01bf6ec"
             },
             "type": "wordpress-plugin",
             "license": [
@@ -883,7 +883,7 @@
                 "source": "https://github.com/greenpeace/planet4-plugin-images/tree/feature/1415-handle-image-versions",
                 "issues": "https://github.com/greenpeace/planet4-plugin-images/issues"
             },
-            "time": "2017-11-17T11:52:03+00:00"
+            "time": "2017-11-21T09:07:25+00:00"
         },
         {
             "name": "greenpeace/planet4-plugin-migrated-urls",
@@ -2323,16 +2323,16 @@
         },
         {
             "name": "wp-cli/core-command",
-            "version": "v1.0.4",
+            "version": "v1.0.5",
             "source": {
                 "type": "git",
                 "url": "https://github.com/wp-cli/core-command.git",
-                "reference": "63e90c8b95b7df1a04e4e048c0ce2e8340b5063b"
+                "reference": "f302ad901aa119136684610f91087c592503150b"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/wp-cli/core-command/zipball/63e90c8b95b7df1a04e4e048c0ce2e8340b5063b",
-                "reference": "63e90c8b95b7df1a04e4e048c0ce2e8340b5063b",
+                "url": "https://api.github.com/repos/wp-cli/core-command/zipball/f302ad901aa119136684610f91087c592503150b",
+                "reference": "f302ad901aa119136684610f91087c592503150b",
                 "shasum": ""
             },
             "require-dev": {
@@ -2378,7 +2378,7 @@
             ],
             "description": "Download, install, update and manage a WordPress install.",
             "homepage": "https://github.com/wp-cli/core-command",
-            "time": "2017-10-15T15:26:49+00:00"
+            "time": "2017-11-20T15:25:52+00:00"
         },
         {
             "name": "wp-cli/cron-command",
