@@ -5,7 +5,7 @@ set -eo pipefail
 # Description:  Configures and submits container builds on Google Container Registry
 # Author:       Raymond Walker <raymond.walker@greenpeace.org>
 
-function usage {
+function usage() {
   echo "Usage: $0 [-l|r|v] [-c <configfile>] ...
 
 Build and test artifacts in this repository. By default this script will only
@@ -22,10 +22,18 @@ Options:
 "
 }
 
-function fatal() {
- >&2 echo -e "ERROR: $1"
- exit 1
+# Clean up on exit
+function finish() {
+  rm -fr "$TMPDIR"
 }
+trap finish EXIT
+
+TMPDIR=$(mktemp -d "${TMPDIR:-/tmp/}$(basename 0).XXXXXXXXXXXX")
+
+# Pretty printing
+wget -q -O ${TMPDIR}/pretty-print.sh https://gist.githubusercontent.com/27Bslash6/ffa9cfb92c25ef27cad2900c74e2f6dc/raw/7142ba210765899f5027d9660998b59b5faa500a/bash-pretty-print.sh
+# shellcheck disable=SC1090
+. ${TMPDIR}/pretty-print.sh
 
 OPTIONS=':c:e:lprv'
 while getopts $OPTIONS option
@@ -46,10 +54,6 @@ do
 done
 shift $((OPTIND - 1))
 
-#
-#   ----------- NO USER SERVICEABLE PARTS BELOW -----------
-#
-
 # Find real file path of current script
 # https://stackoverflow.com/questions/59895/getting-the-source-directory-of-a-bash-script-from-within
 source="${BASH_SOURCE[0]}"
@@ -63,14 +67,17 @@ do # resolve $source until the file is no longer a symlink
 done
 BUILD_DIR="$( cd -P "$( dirname "$source" )" && pwd )"
 
-[[ $VERBOSITY == 'debug' ]] && echo "Building in $BUILD_DIR"
+_verbose "Building in $BUILD_DIR"
 
-[[ $(shellcheck -x "$(ack --ignore-dir=vendor --shell -l "" "${BUILD_DIR}")") -ne 0 ]] && exit $?
+# [[ $(shellcheck -x "$(ack --ignore-dir=vendor --shell -l "" "${BUILD_DIR}")") -ne 0 ]] && exit $?
 
 # Setup environment variables
 # shellcheck source=/dev/null
 . ${BUILD_DIR}/bin/env.sh
 
+_build "Building environment: ${BUILD_ENVIRONMENT}"
+
+[[ -d "${BUILD_DIR}/app/${GOOGLE_PROJECT_ID}/${BUILD_ENVIRONMENT}" ]] || _fatal "Directory not found: ./app/${GOOGLE_PROJECT_ID}/${BUILD_ENVIRONMENT}"
 
 if [[ "$1" = "test" ]]
 then
@@ -79,6 +86,7 @@ fi
 
 # Get all the project subdirectories
 shopt -s nullglob
+
 cd "${BUILD_DIR}/app/${GOOGLE_PROJECT_ID}/${BUILD_ENVIRONMENT}"
 SOURCE_DIRECTORY=(*/)
 cd "${BUILD_DIR}"
@@ -88,23 +96,35 @@ for IMAGE in "${SOURCE_DIRECTORY[@]}"
 do
 
   IMAGE=${IMAGE%/}
-  echo -e "->> ${BUILD_ENVIRONMENT}/${IMAGE}"
   current_dir="${BUILD_DIR}/app/${GOOGLE_PROJECT_ID}/${BUILD_ENVIRONMENT}/${IMAGE}"
-  # Check the source directory exists and contains a Dockerfile template
-  if [ ! -d "${current_dir}/templates" ]; then
-    fatal "Directory not found: ${current_dir}/templates/"
+
+  # Default templates
+  dockerfile_template="${BUILD_DIR}/app/_templates/Dockerfile.in"
+  readme_template="${BUILD_DIR}/app/_templates/README.md.in"
+
+  _build "${BUILD_NAMESPACE}/${GOOGLE_PROJECT_ID}/${IMAGE}:${BRANCH_NAME//[^[:alnum:]_]/-}"
+
+  # Use any custom templates for this project/image
+  if [ -d "${current_dir}/_templates" ]
+  then
+    if [ -f "${current_dir}/_templates/Dockerfile.in" ]
+    then
+      dockerfile_template="${current_dir}/_templates/Dockerfile.in"
+    fi
+
+    if [ -f "${current_dir}/_templates/README.md.in" ]
+    then
+      readme_template="${current_dir}/_templates/README.md.in"
+    fi
   fi
-  if [ ! -f "${current_dir}/templates/Dockerfile.in" ]; then
-    fatal "Dockerfile not found: ${current_dir}/templates/Dockerfile.in"
-  fi
-  if [ ! -f "${current_dir}/templates/README.md.in" ]; then
-    fatal "README not found: ${current_dir}/templates/README.md.in"
-  fi
+
+  _build " - Dockerfile.in:  .${dockerfile_template//${BUILD_DIR}}"
+  _build " - README.md.in:   .${readme_template//${BUILD_DIR}}"
 
   # Merge any project-specific configuration variables
   if [[ -f "${current_dir}/config" ]]
   then
-    echo "Including config file: ${current_dir}/config"
+    _build " - Config:         .${current_dir//${BUILD_DIR}}/config"
     # shellcheck source=/dev/null
     . "${current_dir}/config"
   fi
@@ -112,24 +132,31 @@ do
   # shellcheck disable=2034
   IMAGE_FROM="${FROM_NAMESPACE}/${GOOGLE_PROJECT_ID}/${FROM_IMAGE}:${FROM_TAG}"
 
+
   # Rewrite only the cloudbuild variables we want to change
   envvars_array=(
-    '${APPLICATION_NAME}' \
+    '${APP_HOSTNAME}' \
+    '${APP_NAME}' \
+    '${BUILD_DATE}' \
+    '${COMPOSER}' \
     '${GIT_REF}' \
     '${IMAGE_FROM}' \
     '${IMAGE_MAINTAINER}' \
+    '${WP_EXTRA_CONFIG}' \
+    '${WP_TITLE}'
   )
 
   envvars="$(printf "%s:" "${envvars_array[@]}")"
   envvars="${envvars%:}"
 
-  envsubst "${envvars}" < "${current_dir}/templates/Dockerfile.in" > "${current_dir}/Dockerfile"
-  envsubst "${envvars}" < "${current_dir}/templates/README.md.in" > "${current_dir}/README.md"
+  envsubst "${envvars}" < "${dockerfile_template}" > "${current_dir}/Dockerfile"
+  envsubst "${envvars}" < "${readme_template}" > "${current_dir}/README.md"
 
-  docker_build_string="# ${APPLICATION_NAME}
+  docker_build_string="# ${APP_NAME}
 # Branch: ${BRANCH_NAME}
 # Commit: ${CIRCLE_SHA1:-$(git rev-parse HEAD)}
 # Build:  ${CIRCLE_BUILD_URL:-"(local)"}
+# Date:   ${BUILD_DATE}
 # ------------------------------------------------------------------------
 #                     DO NOT MAKE CHANGES HERE
 # This file is built automatically from ./templates/Dockerfile.in
@@ -178,7 +205,7 @@ if [[ "$BUILD_LOCALLY" = 'true' ]]
 then
   if [[ -z "$GOOGLE_APPLICATION_CREDENTIALS" ]]
   then
-    fatal "GOOGLE_APPLICATION_CREDENTIALS environment variable not set.
+    _fatal "GOOGLE_APPLICATION_CREDENTIALS environment variable not set.
 
 Please set GOOGLE_APPLICATION_CREDENTIALS to the path of your GCP service key and try again.
 "
@@ -186,18 +213,19 @@ Please set GOOGLE_APPLICATION_CREDENTIALS to the path of your GCP service key an
 
   if [[ $(type -P "circleci") ]]
   then
+    _build "Building locally ..."
     circleci build . -e "GCLOUD_SERVICE_KEY=$(base64 "${GOOGLE_APPLICATION_CREDENTIALS}")"
   else
-    fatal "circlecli not found in PATH. Please install from https://circleci.com/docs/2.0/local-jobs/"
+    _fatal "circlecli not found in PATH. Please install from https://circleci.com/docs/2.0/local-jobs/"
   fi
 fi
 
 if [[ "${BUILD_REMOTELY}" = 'true' ]]
 then
+  _build "Sending build request to GCR ..."
   # Avoid sending entire .git history as build context to save some time and bandwidth
   # Since git builtin substitutions aren't available unless triggered
   # https://cloud.google.com/container-builder/docs/concepts/build-requests#substitutions
-  TMPDIR=$(mktemp -d "${TMPDIR:-/tmp/}$(basename 0).XXXXXXXXXXXX")
   tar --exclude='.git/' --exclude='.circleci/' --exclude='vendor/' -zcf "${TMPDIR}/docker-source.tar.gz" .
 
   time ${GCLOUD} container builds submit \
@@ -206,9 +234,11 @@ then
     --config cloudbuild-${BUILD_ENVIRONMENT}.yaml \
     --substitutions "${cloudbuild_substitutions}" \
     "${TMPDIR}/docker-source.tar.gz"
+fi
 
-    rm -fr "${TMPDIR}"
-
+if [[ -z ${BUILD_REMOTELY} ]] && [[ -z ${BUILD_LOCALLY} ]]
+then
+  _notice "No build option specified"
 fi
 
 if [[ "${PULL_IMAGES}" = "true" ]]
@@ -216,9 +246,10 @@ then
   for IMAGE in "${SOURCE_DIRECTORY[@]}"
   do
     IMAGE=${IMAGE%/}
-    echo -e "Pull ->> ${GOOGLE_PROJECT_ID}/${IMAGE}:build-${BUILD_NUM}"
-    docker pull "${BUILD_NAMESPACE}/${GOOGLE_PROJECT_ID}/${IMAGE}:build-${BUILD_NUM}" &
+    _pull "${GOOGLE_PROJECT_ID}/${IMAGE}:build-${BUILD_NUM}"
+    docker pull "${BUILD_NAMESPACE}/${GOOGLE_PROJECT_ID}/${IMAGE}:build-${BUILD_NUM}" >/dev/null &
   done
 fi
 
 wait # until image pulls are complete
+exit 0
