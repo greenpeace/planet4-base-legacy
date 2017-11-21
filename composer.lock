@@ -222,6 +222,10 @@
             ],
             "description": "Shortcake makes using WordPress shortcodes a piece of cake.",
             "homepage": "https://github.com/fusioneng/Shortcake",
+            "support": {
+                "source": "https://github.com/wp-shortcake/shortcake/tree/v0.7.3",
+                "issues": "https://github.com/wp-shortcake/shortcake/issues"
+            },
             "time": "2017-09-12T20:39:15+00:00"
         },
         {
