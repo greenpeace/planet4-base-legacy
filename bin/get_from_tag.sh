@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-set -exo pipefail
+set -eo pipefail
 
 # Description: FROM_TAG is the version of p4-onbuild from which to build this application
 #              This script attempts to determine the correct version to use
