@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "bd265b69084b12c4a9c5483a37fddcb2",
+    "content-hash": "50ee2169290f0bc88510cfb2412fe389",
     "packages": [
         {
             "name": "cmb2/cmb2",
@@ -484,18 +484,53 @@
             "time": "2017-09-12T20:39:15+00:00"
         },
         {
-            "name": "greenpeace/planet4-child-theme",
-            "version": "dev-features-all-demo",
+            "name": "greenpeace/planet4-automatic-jetpack",
+            "version": "5.5",
             "source": {
                 "type": "git",
-                "url": "https://github.com/greenpeace/planet4-child-theme.git",
-                "reference": "5a3ad44db8e91fdd3b6344128d379b82c3627496"
+                "url": "repositories/planet4-automatic-jetpack",
+                "reference": "efbb809f39e3a228bcb360c663cdddf90e551f8b"
             },
             "dist": {
                 "type": "tar",
-                "url": "https://p4-composer-registry.greenpeace.org//dist/greenpeace/planet4-child-theme/greenpeace-planet4-child-theme-5a3ad44db8e91fdd3b6344128d379b82c3627496-zip-334e71.tar",
-                "reference": "5a3ad44db8e91fdd3b6344128d379b82c3627496",
-                "shasum": "57e604d9becb47010cbc2706720e6c4e3a384891"
+                "url": "https://p4-composer-registry.greenpeace.org//dist/greenpeace/planet4-automatic-jetpack/greenpeace-planet4-automatic-jetpack-5.5-a4c758.tar",
+                "reference": "efbb809f39e3a228bcb360c663cdddf90e551f8b",
+                "shasum": "14100f713655166e3b784e26ec679cc619ce1fb2"
+            },
+            "require": {
+                "greenpeace/planet4-automatic-jetpack-upstream": "5.5"
+            },
+            "type": "library",
+            "license": [
+                "GPL-2"
+            ],
+            "description": "This repository contains the 3rd party plugin automatic jetpack. Its full repository is at https://github.com/Automattic/jetpack/",
+            "time": "2017-11-10T10:47:13+00:00"
+        },
+        {
+            "name": "greenpeace/planet4-automatic-jetpack-upstream",
+            "version": "5.5",
+            "dist": {
+                "type": "tar",
+                "url": "https://p4-composer-registry.greenpeace.org//dist/greenpeace/planet4-automatic-jetpack-upstream/greenpeace-planet4-automatic-jetpack-upstream-5.5.tar",
+                "reference": null,
+                "shasum": "3e37f1ce2b6734cae36146c6c2c81963c1d11c02"
+            },
+            "type": "wordpress-plugin"
+        },
+        {
+            "name": "greenpeace/planet4-child-theme",
+            "version": "dev-develop",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/greenpeace/planet4-child-theme.git",
+                "reference": "4907c7982e76d4a0719bcb2ca059140dff574164"
+            },
+            "dist": {
+                "type": "tar",
+                "url": "https://p4-composer-registry.greenpeace.org//dist/greenpeace/planet4-child-theme/greenpeace-planet4-child-theme-4907c7982e76d4a0719bcb2ca059140dff574164-zip-2f58ad.tar",
+                "reference": "4907c7982e76d4a0719bcb2ca059140dff574164",
+                "shasum": "fd08614a58df010034061a550dfafc6a944baafe"
             },
             "require": {
                 "wpackagist-plugin/timber-library": "1.5.*"
@@ -525,7 +560,7 @@
                 "wiki": "https://github.com/greenpeace/planet4-child-theme/wiki",
                 "source": "https://github.com/greenpeace/planet4-child-theme"
             },
-            "time": "2017-10-09T13:27:57+00:00"
+            "time": "2017-10-18T16:59:44+00:00"
         },
         {
             "name": "greenpeace/planet4-content-default",
@@ -682,17 +717,17 @@
         },
         {
             "name": "greenpeace/planet4-master-theme",
-            "version": "dev-features-all-demo",
+            "version": "dev-develop",
             "source": {
                 "type": "git",
                 "url": "https://github.com/greenpeace/planet4-master-theme.git",
-                "reference": "3a2891f6beacbb034a064f1b1b1ab3d2f01741b4"
+                "reference": "7fe9f84b7e3fc26c33eb20b9a0d7bb41d9e316e7"
             },
             "dist": {
                 "type": "tar",
-                "url": "https://p4-composer-registry.greenpeace.org//dist/greenpeace/planet4-master-theme/greenpeace-planet4-master-theme-3a2891f6beacbb034a064f1b1b1ab3d2f01741b4-zip-156eb8.tar",
-                "reference": "3a2891f6beacbb034a064f1b1b1ab3d2f01741b4",
-                "shasum": "8752ab89cf1ac7073bfdb51dcc8dc51b922f79de"
+                "url": "https://p4-composer-registry.greenpeace.org//dist/greenpeace/planet4-master-theme/greenpeace-planet4-master-theme-7fe9f84b7e3fc26c33eb20b9a0d7bb41d9e316e7-zip-426a3a.tar",
+                "reference": "7fe9f84b7e3fc26c33eb20b9a0d7bb41d9e316e7",
+                "shasum": "c11b0ba6cb55bed67bd2b45179d8ed3518ecd563"
             },
             "require": {
                 "wpackagist-plugin/timber-library": "1.5.*"
@@ -736,21 +771,21 @@
                 "wiki": "https://github.com/greenpeace/planet4-master-theme/wiki",
                 "source": "https://github.com/greenpeace/planet4-master-theme"
             },
-            "time": "2017-11-15T16:02:43+00:00"
+            "time": "2017-11-20T15:11:24+00:00"
         },
         {
             "name": "greenpeace/planet4-plugin-blocks",
-            "version": "dev-features-all-demo",
+            "version": "dev-develop",
             "source": {
                 "type": "git",
                 "url": "https://github.com/greenpeace/planet4-plugin-blocks.git",
-                "reference": "b841db895de4ed5db573b7f6b88e53366280942f"
+                "reference": "1d46d6862035647b0dc04f1f3b4a4b3572aa63e8"
             },
             "dist": {
                 "type": "tar",
-                "url": "https://p4-composer-registry.greenpeace.org//dist/greenpeace/planet4-plugin-blocks/greenpeace-planet4-plugin-blocks-b841db895de4ed5db573b7f6b88e53366280942f-zip-6acc00.tar",
-                "reference": "b841db895de4ed5db573b7f6b88e53366280942f",
-                "shasum": "a11de6c52b62b5c8c53e5f8cf8c593fd8074dda0"
+                "url": "https://p4-composer-registry.greenpeace.org//dist/greenpeace/planet4-plugin-blocks/greenpeace-planet4-plugin-blocks-1d46d6862035647b0dc04f1f3b4a4b3572aa63e8-zip-6af12a.tar",
+                "reference": "1d46d6862035647b0dc04f1f3b4a4b3572aa63e8",
+                "shasum": "d50bf698bca7e4e1b7b206eb455fbb5420ef61e1"
             },
             "require-dev": {
                 "dealerdirect/phpcodesniffer-composer-installer": "^0.4.0",
@@ -778,10 +813,10 @@
             ],
             "description": "This repository contains the WordPress plugin that provides the blocks to be used with Shortcake UI plugin.",
             "support": {
-                "source": "https://github.com/greenpeace/planet4-plugin-blocks/tree/features-all-demo",
+                "source": "https://github.com/greenpeace/planet4-plugin-blocks/tree/develop",
                 "issues": "https://github.com/greenpeace/planet4-plugin-blocks/issues"
             },
-            "time": "2017-11-17T11:21:15+00:00"
+            "time": "2017-11-16T10:22:19+00:00"
         },
         {
             "name": "greenpeace/planet4-plugin-engagingnetworks",
@@ -823,11 +858,43 @@
                 }
             ],
             "description": "This repository contains the wordpress plugin that connects Planet 4 with the Engaging Networks platform.",
-            "support": {
-                "source": "https://github.com/greenpeace/planet4-plugin-engagingnetworks/tree/v0.2.8",
-                "issues": "https://github.com/greenpeace/planet4-plugin-engagingnetworks/issues"
-            },
             "time": "2017-09-01T07:14:21+00:00"
+        },
+        {
+            "name": "greenpeace/planet4-plugin-google-apps-login-upstream",
+            "version": "3.2",
+            "dist": {
+                "type": "tar",
+                "url": "https://p4-composer-registry.greenpeace.org//dist/greenpeace/planet4-plugin-google-apps-login-upstream/greenpeace-planet4-plugin-google-apps-login-upstream-3.2.tar",
+                "reference": null,
+                "shasum": "df0d56eef81c6e9625853ccde41587a14671130e"
+            },
+            "type": "wordpress-plugin"
+        },
+        {
+            "name": "greenpeace/planet4-plugin-images",
+            "version": "v0.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/greenpeace/planet4-plugin-images.git",
+                "reference": "3e461afd0242f07159b3d448a3d807acff0e7860"
+            },
+            "dist": {
+                "type": "tar",
+                "url": "https://p4-composer-registry.greenpeace.org//dist/greenpeace/planet4-plugin-images/greenpeace-planet4-plugin-images-3e461afd0242f07159b3d448a3d807acff0e7860-zip-f98bac.tar",
+                "reference": "3e461afd0242f07159b3d448a3d807acff0e7860",
+                "shasum": "5ec1f25dba996821c2027a7221bd71c3fa4fbe76"
+            },
+            "type": "wordpress-plugin",
+            "license": [
+                "GPL-3.0"
+            ],
+            "description": "This plugin defines the different sizes of the images to be generated by automatic/jetpack thumbnail generator.",
+            "support": {
+                "source": "https://github.com/greenpeace/planet4-plugin-images/tree/v0.1",
+                "issues": "https://github.com/greenpeace/planet4-plugin-images/issues"
+            },
+            "time": "2017-11-09T10:02:55+00:00"
         },
         {
             "name": "greenpeace/planet4-plugin-migrated-urls",
@@ -854,10 +921,6 @@
                 }
             ],
             "description": "This repository contains the WordPress plugin that provides the old and new urls from migrated content from p3 to p4.",
-            "support": {
-                "source": "https://github.com/greenpeace/planet4-plugin-migrated-urls/tree/v0.0.1",
-                "issues": "https://github.com/greenpeace/planet4-plugin-migrated-urls/issues"
-            },
             "time": "2017-10-23T11:56:54+00:00"
         },
         {
@@ -917,6 +980,30 @@
                 "shasum": "d4245873235f0a855f318db0b7f857eaacc0d70c"
             },
             "type": "library"
+        },
+        {
+            "name": "greenpeace/planet4-wpcom-thumbnail-editor",
+            "version": "v0.0.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/greenpeace/planet4-wpcom-thumbnail-editor.git",
+                "reference": "29d39475d4a593dd7b38e1d6f61d43457e971c2c"
+            },
+            "dist": {
+                "type": "tar",
+                "url": "https://p4-composer-registry.greenpeace.org//dist/greenpeace/planet4-wpcom-thumbnail-editor/greenpeace-planet4-wpcom-thumbnail-editor-29d39475d4a593dd7b38e1d6f61d43457e971c2c-zip-504e3e.tar",
+                "reference": "29d39475d4a593dd7b38e1d6f61d43457e971c2c",
+                "shasum": "a5c00f463a72cb19d9321e0028eda018bed89008"
+            },
+            "type": "wordpress-plugin",
+            "license": [
+                "GPL-3.0"
+            ],
+            "description": "This repository is a fork of the automatic/wpcom-thumbnail-editor used in wordpress.com.",
+            "support": {
+                "source": "https://github.com/greenpeace/planet4-wpcom-thumbnail-editor/tree/v0.0.1"
+            },
+            "time": "2017-11-09T09:14:50+00:00"
         },
         {
             "name": "justinrainbow/json-schema",
@@ -3541,33 +3628,13 @@
             "license": [
                 "MIT"
             ],
-            "description": "A command line interface for WordPress",
-            "homepage": "http://wp-cli.org",
+            "description": "The command line interface for WordPress",
+            "homepage": "https://wp-cli.org",
             "keywords": [
                 "cli",
                 "wordpress"
             ],
-            "time": "2017-11-13T15:28:04+00:00"
-        },
-        {
-            "name": "wpackagist-plugin/nginx-helper",
-            "version": "1.9.10",
-            "source": {
-                "type": "svn",
-                "url": "https://plugins.svn.wordpress.org/nginx-helper/",
-                "reference": "tags/1.9.10"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/nginx-helper.1.9.10.zip",
-                "reference": null,
-                "shasum": null
-            },
-            "require": {
-                "composer/installers": "~1.0"
-            },
-            "type": "wordpress-plugin",
-            "homepage": "https://wordpress.org/plugins/nginx-helper/"
+            "time": "2017-11-13T12:35:49+00:00"
         },
         {
             "name": "wpackagist-plugin/timber-library",
@@ -3588,46 +3655,6 @@
             },
             "type": "wordpress-plugin",
             "homepage": "https://wordpress.org/plugins/timber-library/"
-        },
-        {
-            "name": "wpackagist-plugin/wp-redis",
-            "version": "0.7.0",
-            "source": {
-                "type": "svn",
-                "url": "https://plugins.svn.wordpress.org/wp-redis/",
-                "reference": "tags/0.7.0"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/wp-redis.0.7.0.zip",
-                "reference": null,
-                "shasum": null
-            },
-            "require": {
-                "composer/installers": "~1.0"
-            },
-            "type": "wordpress-plugin",
-            "homepage": "https://wordpress.org/plugins/wp-redis/"
-        },
-        {
-            "name": "wpackagist-plugin/wp-stateless",
-            "version": "2.1.1",
-            "source": {
-                "type": "svn",
-                "url": "https://plugins.svn.wordpress.org/wp-stateless/",
-                "reference": "tags/2.1.1"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/wp-stateless.2.1.1.zip",
-                "reference": null,
-                "shasum": null
-            },
-            "require": {
-                "composer/installers": "~1.0"
-            },
-            "type": "wordpress-plugin",
-            "homepage": "https://wordpress.org/plugins/wp-stateless/"
         }
     ],
     "packages-dev": [],
