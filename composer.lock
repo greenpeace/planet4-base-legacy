@@ -779,13 +779,13 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/greenpeace/planet4-plugin-blocks.git",
-                "reference": "07e32019cd3a131449a6ae3c30ffb1ffa2fbc662"
+                "reference": "5362748aeaf40454b9b4b69b43f7b3e52a4cf494"
             },
             "dist": {
                 "type": "tar",
-                "url": "https://p4-composer-registry.greenpeace.org//dist/greenpeace/planet4-plugin-blocks/greenpeace-planet4-plugin-blocks-07e32019cd3a131449a6ae3c30ffb1ffa2fbc662-zip-22fd39.tar",
-                "reference": "07e32019cd3a131449a6ae3c30ffb1ffa2fbc662",
-                "shasum": "afd48b69219ec0891e5d3d4aea14c0eb72567184"
+                "url": "https://p4-composer-registry.greenpeace.org//dist/greenpeace/planet4-plugin-blocks/greenpeace-planet4-plugin-blocks-5362748aeaf40454b9b4b69b43f7b3e52a4cf494-zip-4005c0.tar",
+                "reference": "5362748aeaf40454b9b4b69b43f7b3e52a4cf494",
+                "shasum": "fc3d374384e02aa0c4caf16e9dc3ed9242d9ad68"
             },
             "require-dev": {
                 "dealerdirect/phpcodesniffer-composer-installer": "^0.4.0",
@@ -816,7 +816,7 @@
                 "source": "https://github.com/greenpeace/planet4-plugin-blocks/tree/develop",
                 "issues": "https://github.com/greenpeace/planet4-plugin-blocks/issues"
             },
-            "time": "2017-11-21T14:48:47+00:00"
+            "time": "2017-11-22T08:07:30+00:00"
         },
         {
             "name": "greenpeace/planet4-plugin-engagingnetworks",
@@ -2347,16 +2347,16 @@
         },
         {
             "name": "wp-cli/core-command",
-            "version": "v1.0.5",
+            "version": "v1.0.6",
             "source": {
                 "type": "git",
                 "url": "https://github.com/wp-cli/core-command.git",
-                "reference": "f302ad901aa119136684610f91087c592503150b"
+                "reference": "6662f259f949ab69adb81ff8a1904cf00cd38135"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/wp-cli/core-command/zipball/f302ad901aa119136684610f91087c592503150b",
-                "reference": "f302ad901aa119136684610f91087c592503150b",
+                "url": "https://api.github.com/repos/wp-cli/core-command/zipball/6662f259f949ab69adb81ff8a1904cf00cd38135",
+                "reference": "6662f259f949ab69adb81ff8a1904cf00cd38135",
                 "shasum": ""
             },
             "require-dev": {
@@ -2402,7 +2402,7 @@
             ],
             "description": "Download, install, update and manage a WordPress install.",
             "homepage": "https://github.com/wp-cli/core-command",
-            "time": "2017-11-20T15:25:52+00:00"
+            "time": "2017-11-21T16:01:01+00:00"
         },
         {
             "name": "wp-cli/cron-command",
@@ -2843,16 +2843,16 @@
         },
         {
             "name": "wp-cli/language-command",
-            "version": "v1.0.4",
+            "version": "v1.0.5",
             "source": {
                 "type": "git",
                 "url": "https://github.com/wp-cli/language-command.git",
-                "reference": "1cf9cb34894294fa25ae3c0a5b2e910bbaa47bb8"
+                "reference": "b089274b7288bb0ec0ae3fda1a8b74c141c7dee2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/wp-cli/language-command/zipball/1cf9cb34894294fa25ae3c0a5b2e910bbaa47bb8",
-                "reference": "1cf9cb34894294fa25ae3c0a5b2e910bbaa47bb8",
+                "url": "https://api.github.com/repos/wp-cli/language-command/zipball/b089274b7288bb0ec0ae3fda1a8b74c141c7dee2",
+                "reference": "b089274b7288bb0ec0ae3fda1a8b74c141c7dee2",
                 "shasum": ""
             },
             "require-dev": {
@@ -2865,6 +2865,7 @@
                     "dev-master": "1.x-dev"
                 },
                 "commands": [
+                    "language",
                     "language core activate",
                     "language core install",
                     "language core list",
@@ -2894,7 +2895,7 @@
             ],
             "description": "Manage language packs.",
             "homepage": "https://github.com/wp-cli/language-command",
-            "time": "2017-09-29T14:43:24+00:00"
+            "time": "2017-11-21T15:04:33+00:00"
         },
         {
             "name": "wp-cli/media-command",
@@ -3438,16 +3439,16 @@
         },
         {
             "name": "wp-cli/super-admin-command",
-            "version": "v1.0.4",
+            "version": "v1.0.5",
             "source": {
                 "type": "git",
                 "url": "https://github.com/wp-cli/super-admin-command.git",
-                "reference": "8ad8446a1b2f931e32af3681ad0ac0816411be4b"
+                "reference": "314a3f7b02a04fb5e842ef15d15b58dd1295a320"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/wp-cli/super-admin-command/zipball/8ad8446a1b2f931e32af3681ad0ac0816411be4b",
-                "reference": "8ad8446a1b2f931e32af3681ad0ac0816411be4b",
+                "url": "https://api.github.com/repos/wp-cli/super-admin-command/zipball/314a3f7b02a04fb5e842ef15d15b58dd1295a320",
+                "reference": "314a3f7b02a04fb5e842ef15d15b58dd1295a320",
                 "shasum": ""
             },
             "require-dev": {
@@ -3487,7 +3488,7 @@
             ],
             "description": "Lists, adds, or removes super admin users on a multisite install.",
             "homepage": "https://github.com/wp-cli/super-admin-command",
-            "time": "2017-11-21T00:37:22+00:00"
+            "time": "2017-11-21T22:11:13+00:00"
         },
         {
             "name": "wp-cli/widget-command",
