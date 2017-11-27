@@ -858,6 +858,10 @@
                 }
             ],
             "description": "This repository contains the wordpress plugin that connects Planet 4 with the Engaging Networks platform.",
+            "support": {
+                "source": "https://github.com/greenpeace/planet4-plugin-engagingnetworks/tree/v0.2.8",
+                "issues": "https://github.com/greenpeace/planet4-plugin-engagingnetworks/issues"
+            },
             "time": "2017-09-01T07:14:21+00:00"
         },
         {
