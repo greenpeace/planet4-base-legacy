@@ -721,13 +721,13 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/greenpeace/planet4-master-theme.git",
-                "reference": "db3d7bda03cee9cfabae162c2751438740b77965"
+                "reference": "e47feb26cd247f5059e83f8653eba16079bd33c4"
             },
             "dist": {
                 "type": "tar",
-                "url": "https://p4-composer-registry.greenpeace.org//dist/greenpeace/planet4-master-theme/greenpeace-planet4-master-theme-db3d7bda03cee9cfabae162c2751438740b77965-zip-bcaec7.tar",
-                "reference": "db3d7bda03cee9cfabae162c2751438740b77965",
-                "shasum": "48d66ca066b30bdee2806e92317ab8334b018f4b"
+                "url": "https://p4-composer-registry.greenpeace.org//dist/greenpeace/planet4-master-theme/greenpeace-planet4-master-theme-e47feb26cd247f5059e83f8653eba16079bd33c4-zip-6d5101.tar",
+                "reference": "e47feb26cd247f5059e83f8653eba16079bd33c4",
+                "shasum": "12a0baf38e1db681235d47d28e849964a3f2205a"
             },
             "require": {
                 "wpackagist-plugin/timber-library": "1.5.*"
@@ -771,7 +771,7 @@
                 "wiki": "https://github.com/greenpeace/planet4-master-theme/wiki",
                 "source": "https://github.com/greenpeace/planet4-master-theme"
             },
-            "time": "2017-11-23T11:48:28+00:00"
+            "time": "2017-11-28T07:32:09+00:00"
         },
         {
             "name": "greenpeace/planet4-plugin-blocks",
@@ -820,17 +820,17 @@
         },
         {
             "name": "greenpeace/planet4-plugin-engagingnetworks",
-            "version": "0.2.8",
+            "version": "0.2.9",
             "source": {
                 "type": "git",
                 "url": "https://github.com/greenpeace/planet4-plugin-engagingnetworks.git",
-                "reference": "cf1648b70ca8fa9619e917486635c2e3ab6cd201"
+                "reference": "10f7ad66d1d0ad072198580cbe5bd12f6908d95c"
             },
             "dist": {
                 "type": "tar",
-                "url": "https://p4-composer-registry.greenpeace.org//dist/greenpeace/planet4-plugin-engagingnetworks/greenpeace-planet4-plugin-engagingnetworks-cf1648b70ca8fa9619e917486635c2e3ab6cd201-zip-22610b.tar",
-                "reference": "cf1648b70ca8fa9619e917486635c2e3ab6cd201",
-                "shasum": "34a6841b176ac7df91b8f0a93fc55b78ca270ccd"
+                "url": "https://p4-composer-registry.greenpeace.org//dist/greenpeace/planet4-plugin-engagingnetworks/greenpeace-planet4-plugin-engagingnetworks-10f7ad66d1d0ad072198580cbe5bd12f6908d95c-zip-8116cf.tar",
+                "reference": "10f7ad66d1d0ad072198580cbe5bd12f6908d95c",
+                "shasum": "8802400b470b6f9933648cfb8e9840bcf150b8eb"
             },
             "require-dev": {
                 "dealerdirect/phpcodesniffer-composer-installer": "^0.4.0",
@@ -859,10 +859,10 @@
             ],
             "description": "This repository contains the wordpress plugin that connects Planet 4 with the Engaging Networks platform.",
             "support": {
-                "source": "https://github.com/greenpeace/planet4-plugin-engagingnetworks/tree/v0.2.8",
+                "source": "https://github.com/greenpeace/planet4-plugin-engagingnetworks/tree/master",
                 "issues": "https://github.com/greenpeace/planet4-plugin-engagingnetworks/issues"
             },
-            "time": "2017-09-01T07:14:21+00:00"
+            "time": "2017-11-28T07:56:38+00:00"
         },
         {
             "name": "greenpeace/planet4-plugin-google-apps-login-upstream",
