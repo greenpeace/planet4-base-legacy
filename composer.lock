@@ -68,16 +68,16 @@
         },
         {
             "name": "composer/ca-bundle",
-            "version": "1.0.9",
+            "version": "1.1.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/composer/ca-bundle.git",
-                "reference": "36344aeffdc37711335563e6108cda86566432a6"
+                "reference": "943b2c4fcad1ef178d16a713c2468bf7e579c288"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/composer/ca-bundle/zipball/36344aeffdc37711335563e6108cda86566432a6",
-                "reference": "36344aeffdc37711335563e6108cda86566432a6",
+                "url": "https://api.github.com/repos/composer/ca-bundle/zipball/943b2c4fcad1ef178d16a713c2468bf7e579c288",
+                "reference": "943b2c4fcad1ef178d16a713c2468bf7e579c288",
                 "shasum": ""
             },
             "require": {
@@ -86,12 +86,9 @@
                 "php": "^5.3.2 || ^7.0"
             },
             "require-dev": {
-                "phpunit/phpunit": "^4.5",
+                "phpunit/phpunit": "^4.8.35",
                 "psr/log": "^1.0",
-                "symfony/process": "^2.5 || ^3.0"
-            },
-            "suggest": {
-                "symfony/process": "This is necessary to reliably check whether openssl_x509_parse is vulnerable on older php versions, but can be ignored on PHP 5.5.6+"
+                "symfony/process": "^2.5 || ^3.0 || ^4.0"
             },
             "type": "library",
             "extra": {
@@ -123,7 +120,7 @@
                 "ssl",
                 "tls"
             ],
-            "time": "2017-11-13T15:51:25+00:00"
+            "time": "2017-11-29T09:37:33+00:00"
         },
         {
             "name": "composer/composer",
@@ -721,13 +718,13 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/greenpeace/planet4-master-theme.git",
-                "reference": "e47feb26cd247f5059e83f8653eba16079bd33c4"
+                "reference": "3b7b1f28dcdd4bf5f74f83b86d7c3eacd8358d0e"
             },
             "dist": {
                 "type": "tar",
-                "url": "https://p4-composer-registry.greenpeace.org//dist/greenpeace/planet4-master-theme/greenpeace-planet4-master-theme-e47feb26cd247f5059e83f8653eba16079bd33c4-zip-6d5101.tar",
-                "reference": "e47feb26cd247f5059e83f8653eba16079bd33c4",
-                "shasum": "12a0baf38e1db681235d47d28e849964a3f2205a"
+                "url": "https://p4-composer-registry.greenpeace.org//dist/greenpeace/planet4-master-theme/greenpeace-planet4-master-theme-3b7b1f28dcdd4bf5f74f83b86d7c3eacd8358d0e-zip-3cb528.tar",
+                "reference": "3b7b1f28dcdd4bf5f74f83b86d7c3eacd8358d0e",
+                "shasum": "fbc2cb87f571237256aa7f378eaa8945b13349c8"
             },
             "require": {
                 "wpackagist-plugin/timber-library": "1.5.*"
@@ -771,7 +768,7 @@
                 "wiki": "https://github.com/greenpeace/planet4-master-theme/wiki",
                 "source": "https://github.com/greenpeace/planet4-master-theme"
             },
-            "time": "2017-11-28T07:32:09+00:00"
+            "time": "2017-11-29T11:47:57+00:00"
         },
         {
             "name": "greenpeace/planet4-plugin-blocks",
@@ -779,13 +776,13 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/greenpeace/planet4-plugin-blocks.git",
-                "reference": "c4075204faab961633b01a02c292fdee9603d504"
+                "reference": "8bbd53e2d9630f51e8df3bb8120cbc36b4f9feb8"
             },
             "dist": {
                 "type": "tar",
-                "url": "https://p4-composer-registry.greenpeace.org//dist/greenpeace/planet4-plugin-blocks/greenpeace-planet4-plugin-blocks-c4075204faab961633b01a02c292fdee9603d504-zip-e99386.tar",
-                "reference": "c4075204faab961633b01a02c292fdee9603d504",
-                "shasum": "c1480c163fee9a21924736b12dd2703105957d8b"
+                "url": "https://p4-composer-registry.greenpeace.org//dist/greenpeace/planet4-plugin-blocks/greenpeace-planet4-plugin-blocks-8bbd53e2d9630f51e8df3bb8120cbc36b4f9feb8-zip-2032fd.tar",
+                "reference": "8bbd53e2d9630f51e8df3bb8120cbc36b4f9feb8",
+                "shasum": "d043b23cd1ca31b7c0575e110a12c4498cfd22e0"
             },
             "require-dev": {
                 "dealerdirect/phpcodesniffer-composer-installer": "^0.4.0",
@@ -816,7 +813,7 @@
                 "source": "https://github.com/greenpeace/planet4-plugin-blocks/tree/develop",
                 "issues": "https://github.com/greenpeace/planet4-plugin-blocks/issues"
             },
-            "time": "2017-11-23T07:56:20+00:00"
+            "time": "2017-11-29T13:51:35+00:00"
         },
         {
             "name": "greenpeace/planet4-plugin-engagingnetworks",
@@ -3225,16 +3222,16 @@
         },
         {
             "name": "wp-cli/scaffold-command",
-            "version": "v1.0.12",
+            "version": "v1.1.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/wp-cli/scaffold-command.git",
-                "reference": "d6ed1d24580662c063deab4cf7202ed3970f9987"
+                "reference": "f174112ae3dd88df3b29a68b71b6d72171ba62c3"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/wp-cli/scaffold-command/zipball/d6ed1d24580662c063deab4cf7202ed3970f9987",
-                "reference": "d6ed1d24580662c063deab4cf7202ed3970f9987",
+                "url": "https://api.github.com/repos/wp-cli/scaffold-command/zipball/f174112ae3dd88df3b29a68b71b6d72171ba62c3",
+                "reference": "f174112ae3dd88df3b29a68b71b6d72171ba62c3",
                 "shasum": ""
             },
             "require-dev": {
@@ -3249,6 +3246,7 @@
                 "commands": [
                     "scaffold",
                     "scaffold _s",
+                    "scaffold block",
                     "scaffold child-theme",
                     "scaffold plugin",
                     "scaffold plugin-tests",
@@ -3279,7 +3277,7 @@
             ],
             "description": "Generate code for post types, taxonomies, plugins, child themes, etc.",
             "homepage": "https://github.com/wp-cli/scaffold-command",
-            "time": "2017-11-21T01:01:19+00:00"
+            "time": "2017-11-28T13:27:30+00:00"
         },
         {
             "name": "wp-cli/search-replace-command",
