@@ -1,7 +1,15 @@
-#!/usr/bin/env bash
-set -a
-
-COMPOSER="composer-dev.json"
+# Application config
+APP_ENV=develop
+APP_HOSTNAME=
+COMPOSER="composer.json"
 FROM_TAG="develop"
 GIT_REF="dev-feature/gitrepositories"
+IMAGE_FROM="gcr.io/planet-4-151612/p4-onbuild:develop"
+PAGESPEED_ENABLED=false
+PHP_PROCESS_MANAGER_MAX_CHILDREN=20
+PHP_SESSION_SAVE_HANDLER=redis
+PHP_SESSION_SAVE_PATH=tcp://redis:6379
+REDIS_FASTCGI_CACHE_ENABLED=true
+WP_DB_HOST=db
+WP_EXTRA_CONFIG="\$redis_server = array('host'=>'redis','port'=> 6379,'database' => 0);"
 WP_TITLE="Greenpeace International Development Site"
