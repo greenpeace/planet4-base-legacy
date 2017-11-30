@@ -1,5 +1,6 @@
 #!/usr/bin/env bash
-# shellcheck disable=SC2016
+#shellcheck disable=2034,2016,1090
+
 set -eo pipefail
 
 # Description:  Configures and submits container builds on Google Container Registry
@@ -28,19 +29,35 @@ function finish() {
 }
 trap finish EXIT
 
+function set_vars() {
+  while read -r line
+  do
+    # Skip comments
+    [[ $line == \#* ]] && continue
+    # Set value
+    _build " -- $line"
+    export "$(echo "$line" | cut -d'=' -f1)"
+    eval "$line"
+  done < "$1"
+}
+
+function get_var_array() {
+  declare -x var_array
+  var_array=( $(grep '=' "$1" | awk -F '=' '{if ($0!="" && $0 !~ /#/) print $1}' | sed -e "s/^/\"\${/" | sed -e "s/$/}\" \\\/" | tr -s '}') )
+  echo "${var_array[@]}"
+}
+
 TMPDIR=$(mktemp -d "${TMPDIR:-/tmp/}$(basename 0).XXXXXXXXXXXX")
 
 # Pretty printing
-wget -q -O ${TMPDIR}/pretty-print.sh https://gist.githubusercontent.com/27Bslash6/ffa9cfb92c25ef27cad2900c74e2f6dc/raw/7142ba210765899f5027d9660998b59b5faa500a/bash-pretty-print.sh
-# shellcheck disable=SC1090
-. ${TMPDIR}/pretty-print.sh
+wget -q -O "${TMPDIR}/pretty-print.sh" https://gist.githubusercontent.com/27Bslash6/ffa9cfb92c25ef27cad2900c74e2f6dc/raw/7142ba210765899f5027d9660998b59b5faa500a/bash-pretty-print.sh
+. "${TMPDIR}/pretty-print.sh"
 
 OPTIONS=':c:e:lprv'
 while getopts $OPTIONS option
 do
     case $option in
-        c  )    # shellcheck disable=SC2034
-                CONFIG_FILE=$OPTARG;;
+        c  )    CONFIG_FILE=$OPTARG;;
         e  )    BUILD_ENVIRONMENT=$OPTARG;;
         l  )    BUILD_LOCALLY='true';;
         p  )    PULL_IMAGES='true';;
@@ -72,8 +89,7 @@ _verbose "Building in $BUILD_DIR"
 # [[ $(shellcheck -x "$(ack --ignore-dir=vendor --shell -l "" "${BUILD_DIR}")") -ne 0 ]] && exit $?
 
 # Setup environment variables
-# shellcheck source=/dev/null
-. ${BUILD_DIR}/bin/env.sh
+. "${BUILD_DIR}/bin/env.sh"
 
 _build "Building environment: ${BUILD_ENVIRONMENT}"
 
@@ -125,27 +141,13 @@ do
   if [[ -f "${current_dir}/config" ]]
   then
     _build " - Config:         .${current_dir//${BUILD_DIR}}/config"
-    # shellcheck source=/dev/null
-    . "${current_dir}/config"
+    set_vars "${current_dir}/config"
   fi
 
-  # shellcheck disable=2034
-  IMAGE_FROM="${FROM_NAMESPACE}/${GOOGLE_PROJECT_ID}/${FROM_IMAGE}:${FROM_TAG}"
-
+  # IMAGE_FROM="${FROM_NAMESPACE}/${GOOGLE_PROJECT_ID}/${FROM_IMAGE}:${FROM_TAG}"
 
   # Rewrite only the cloudbuild variables we want to change
-  envvars_array=(
-    '${APP_HOSTNAME}' \
-    '${APP_NAME}' \
-    '${BUILD_DATE}' \
-    '${COMPOSER}' \
-    '${GIT_REF}' \
-    '${IMAGE_FROM}' \
-    '${IMAGE_MAINTAINER}' \
-    '${WP_EXTRA_CONFIG}' \
-    '${WP_TITLE}'
-  )
-
+  envvars_array=($(get_var_array config.default))
   envvars="$(printf "%s:" "${envvars_array[@]}")"
   envvars="${envvars%:}"
 
