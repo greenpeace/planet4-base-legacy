@@ -28,7 +28,7 @@
 		"greenpeace/planet4-plugin-migrated-urls" : "0.0.1",
 		"greenpeace/planet4-plugin-searchwp-upstream" : "2.8.17.2",
 		"greenpeace/planet4-plugin-wpimport-upstream" : "4.4.9",
-		"greenpeace/planet4-wordpress": "4.9",
+		"greenpeace/planet4-wordpress": "4.9.1",
 		"greenpeace/planet4-wpcom-thumbnail-editor" : "0.*",
 		"wp-cli/wp-cli": "^1.1"
 	},
