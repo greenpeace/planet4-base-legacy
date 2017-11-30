@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "c6487198b10049e2f5471486a9cf6cf0",
+    "content-hash": "128868da57ee31ea473b53a095007840",
     "packages": [
         {
             "name": "cmb2/cmb2",
@@ -700,37 +700,37 @@
         },
         {
             "name": "greenpeace/planet4-wordpress",
-            "version": "4.9",
+            "version": "4.9.1",
             "source": {
                 "type": "git",
                 "url": "repositories/planet4-wordpress",
-                "reference": "ec2a6f589e9eb60524ac38eee74d9d7abadbcdb3"
+                "reference": "c7a03f81a4160f2409674907e1c11779eef62d05"
             },
             "dist": {
                 "type": "tar",
-                "url": "https://p4-composer-registry.greenpeace.org//dist/greenpeace/planet4-wordpress/greenpeace-planet4-wordpress-4.9-8f4f5a.tar",
-                "reference": "ec2a6f589e9eb60524ac38eee74d9d7abadbcdb3",
-                "shasum": "bebd8bf5b00b61af668d439335dfb53d64d67a3a"
+                "url": "https://p4-composer-registry.greenpeace.org//dist/greenpeace/planet4-wordpress/greenpeace-planet4-wordpress-4.9.1-f643d9.tar",
+                "reference": "c7a03f81a4160f2409674907e1c11779eef62d05",
+                "shasum": "485a1462af4277c3cb9d4713cd22c967fd987843"
             },
             "require": {
-                "greenpeace/planet4-wordpress-upstream": "4.9"
+                "greenpeace/planet4-wordpress-upstream": "4.9.1"
             },
             "type": "library",
-            "time": "2017-11-16T07:47:43+00:00"
+            "time": "2017-11-30T09:02:34+00:00"
         },
         {
             "name": "greenpeace/planet4-wordpress-upstream",
-            "version": "4.9",
+            "version": "4.9.1",
             "source": {
                 "type": "svn",
                 "url": "https://core.svn.wordpress.org/",
-                "reference": "tags/4.9"
+                "reference": "tags/4.9.1"
             },
             "dist": {
                 "type": "tar",
-                "url": "https://p4-composer-registry.greenpeace.org//dist/greenpeace/planet4-wordpress-upstream/greenpeace-planet4-wordpress-upstream-4.9-8a7a14.tar",
-                "reference": "tags/4.9",
-                "shasum": "d4245873235f0a855f318db0b7f857eaacc0d70c"
+                "url": "https://p4-composer-registry.greenpeace.org//dist/greenpeace/planet4-wordpress-upstream/greenpeace-planet4-wordpress-upstream-4.9.1-169bfd.tar",
+                "reference": "tags/4.9.1",
+                "shasum": "eedf544551ea1efa03f06bfdea2d3c0ca517842e"
             },
             "type": "library"
         },
