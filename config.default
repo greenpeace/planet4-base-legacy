@@ -19,7 +19,3 @@ VIRTUAL_HOST=""
 WP_DB_HOST="db"
 WP_EXTRA_CONFIG=""
 WP_TITLE="Greenpeace International"
-
-# Container registry
-
-# Upstream image
