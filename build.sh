@@ -29,21 +29,32 @@ function finish() {
 }
 trap finish EXIT
 
+# Reads key-value file as function argument, assigns variable to environment
 function set_vars() {
+  set -eu
+  local file
+  file="${1}"
   while read -r line
   do
     # Skip comments
     [[ $line == \#* ]] && continue
+    # Skip lines that don't include an assignment =
+    [[ $line =~ = ]] || continue
     # Set value
     _build " -- $line"
-    export "$(echo "$line" | cut -d'=' -f1)"
+    key="$(echo "$line" | cut -d'=' -f1)"
+
     eval "$line"
-  done < "$1"
+  done < "${file}"
 }
 
+# Reads key-value file as functionargument, extracts and wraps key with ${..} for use in envsubst
 function get_var_array() {
-  declare -x var_array
-  var_array=( $(grep '=' "$1" | awk -F '=' '{if ($0!="" && $0 !~ /#/) print $1}' | sed -e "s/^/\"\${/" | sed -e "s/$/}\" \\\/" | tr -s '}') )
+  set -eu
+  local file
+  file="$1"
+  declare -a var_array
+  var_array=( $(grep '=' "${file}" | awk -F '=' '{if ($0!="" && $0 !~ /#/) print $1}' | sed -e "s/^/\"\${/" | sed -e "s/$/}\" \\\/" | tr -s '}') )
   echo "${var_array[@]}"
 }
 
@@ -191,7 +202,7 @@ cloudbuild_substitutions_array=(
 cloudbuild_substitutions=$(getSubstitutions "${cloudbuild_substitutions_array[@]}")
 
 # Check if we're running on CircleCI
-if [[ ! -z "${CIRCLECI}" ]]
+if [[ ! -z "${CIRCLECI:-}" ]]
 then
   # Expect gcloud to be configured under the home directory
   GCLOUD="${HOME}/google-cloud-sdk/bin/gcloud"
@@ -203,7 +214,7 @@ fi
 # Submit the build
 # @todo Implement local build
 # $ circleci build . -e GCLOUD_SERVICE_KEY=$(base64 ~/.config/gcloud/Planet-4-circleci.json)
-if [[ "$BUILD_LOCALLY" = 'true' ]]
+if [[ "${BUILD_LOCALLY:-}" = 'true' ]]
 then
   if [[ -z "$GOOGLE_APPLICATION_CREDENTIALS" ]]
   then
@@ -222,7 +233,7 @@ Please set GOOGLE_APPLICATION_CREDENTIALS to the path of your GCP service key an
   fi
 fi
 
-if [[ "${BUILD_REMOTELY}" = 'true' ]]
+if [[ "${BUILD_REMOTELY:-}" = 'true' ]]
 then
   _build "Sending build request to GCR ..."
   # Avoid sending entire .git history as build context to save some time and bandwidth
@@ -230,7 +241,7 @@ then
   # https://cloud.google.com/container-builder/docs/concepts/build-requests#substitutions
   tar --exclude='.git/' --exclude='.circleci/' --exclude='vendor/' -zcf "${TMPDIR}/docker-source.tar.gz" .
 
-  time ${GCLOUD} container builds submit \
+  time "${GCLOUD}" container builds submit \
     --verbosity=${VERBOSITY:-"warning"} \
     --timeout=10m \
     --config cloudbuild-${BUILD_ENVIRONMENT}.yaml \
@@ -238,16 +249,16 @@ then
     "${TMPDIR}/docker-source.tar.gz"
 fi
 
-if [[ -z ${BUILD_REMOTELY} ]] && [[ -z ${BUILD_LOCALLY} ]]
+if [[ -z "${BUILD_REMOTELY:-}" ]] && [[ -z "${BUILD_LOCALLY:-}" ]]
 then
   _notice "No build option specified"
 fi
 
-if [[ "${PULL_IMAGES}" = "true" ]]
+if [[ "${PULL_IMAGES:-}" = "true" ]]
 then
   for IMAGE in "${SOURCE_DIRECTORY[@]}"
   do
-    IMAGE=${IMAGE%/}
+    IMAGE="${IMAGE%/}"
     _pull "${GOOGLE_PROJECT_ID}/${IMAGE}:build-${BUILD_NUM}"
     docker pull "${BUILD_NAMESPACE}/${GOOGLE_PROJECT_ID}/${IMAGE}:build-${BUILD_NUM}" >/dev/null &
   done
