@@ -8,6 +8,10 @@ all : test update build
 .PHONY : test
 test:
 
+.PHONY : clean
+clean:
+		./bin/clean.sh
+
 .PHONY : update
 update:
 		./composer_update_lockfile.sh
