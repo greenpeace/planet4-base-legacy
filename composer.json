@@ -30,7 +30,8 @@
 		"greenpeace/planet4-wpcom-thumbnail-editor" : "0.*",
 		"wp-cli/wp-cli": "^1.1",
 		"wpackagist-plugin/google-apps-login": "3.2",
-		"wpackagist-plugin/jetpack": "5.5.1"
+		"wpackagist-plugin/jetpack": "5.5.1",
+		"wpackagist-plugin/wp-redis": "0.7.0"
 	},
 
 	"config": {
