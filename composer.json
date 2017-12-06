@@ -14,7 +14,9 @@
 	],
 
 	"require": {
+		"cmb2/cmb2" : "2.2.6",
 		"composer/installers": "~1.0",
+		"fusioneng/shortcake" : "0.7.3",
 		"greenpeace/planet4-child-theme" : "dev-develop",
 		"greenpeace/planet4-content-default": "0.2.*",
 		"greenpeace/planet4-master-theme" : "dev-develop",
@@ -30,7 +32,6 @@
 		"wpackagist-plugin/cmb2": "2.2.6.2",
 		"wpackagist-plugin/google-apps-login": "3.2",
 		"wpackagist-plugin/jetpack": "5.5.1",
-		"wpackagist-plugin/shortcode-ui": "0.7.3",
 		"wpackagist-plugin/wp-redis": "0.7.0"
 	},
 
