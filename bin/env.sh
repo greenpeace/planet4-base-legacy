@@ -44,7 +44,7 @@ then
   . "${CONFIG_FILE}"
 fi
 
-if [[ -z "${GITHUB_OAUTH_TOKEN}" ]]
+if [[ -z "${GITHUB_OAUTH_TOKEN}" ]] && [[ -z "${CI:-}" ]]
 then
   _build "GITHUB_OAUTH_TOKEN not found in environment. Please enter token now:"
   read GITHUB_OAUTH_TOKEN

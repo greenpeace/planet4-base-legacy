@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 set -e
 
-if [[ -z "${GITHUB_OAUTH_TOKEN}" ]]
+if [[ -z "${GITHUB_OAUTH_TOKEN}" ]] && [[ -z "${CI:-}" ]]
 then
   echo "GITHUB_OAUTH_TOKEN not found in environment."
   printf "%s " "Please enter token now:"
