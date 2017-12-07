@@ -14,25 +14,25 @@
 	],
 
 	"require": {
-		"cmb2/cmb2" : "2.2.6",
 		"composer/installers": "~1.0",
 		"fusioneng/shortcake" : "0.7.3",
-		"greenpeace/planet4-automatic-jetpack": "5.5",
 		"greenpeace/planet4-child-theme" : "dev-develop",
 		"greenpeace/planet4-content-default": "0.2.*",
 		"greenpeace/planet4-master-theme" : "dev-develop",
 		"greenpeace/planet4-plugin-blocks" : "dev-develop",
 		"greenpeace/planet4-plugin-engagingnetworks" : "0.*",
-		"greenpeace/planet4-plugin-google-apps-login-upstream" : "3.2",
 		"greenpeace/planet4-plugin-images" : "0.*",
 		"greenpeace/planet4-plugin-migrated-urls" : "0.0.1",
 		"greenpeace/planet4-plugin-searchwp-upstream" : "2.8.17.2",
 		"greenpeace/planet4-plugin-wpimport-upstream" : "4.4.9",
 		"greenpeace/planet4-wordpress": "4.9.1",
 		"greenpeace/planet4-wpcom-thumbnail-editor" : "0.*",
-		"wpackagist-plugin/nginx-helper": "^1.9",
+		"wpackagist-plugin/cmb2": "2.2.6.2",
+		"wpackagist-plugin/google-apps-login": "3.2",
+		"wpackagist-plugin/jetpack": "5.6",
+		"wpackagist-plugin/wp-redis": "0.7.0"
 		"wpackagist-plugin/wordfence": "^6.3",
-		"wpackagist-plugin/wp-redis": "^0.7.0",
+		"wpackagist-plugin/nginx-helper": "^1.9",
 		"wpackagist-plugin/wp-stateless": "^2.1"
 	},
 
@@ -53,13 +53,13 @@
 			"@reset:public", "@copy:wordpress",
 			"@reset:themes", "@reset:plugins", "@copy:themes", "@copy:assets", "@copy:plugins",
 			"@core:config", "@core:install", "@plugin:activate", "@theme:activate",
-			"@core:initial-content"
+			"@core:initial-content", "@core:add-author-capabilities"
 		],
 
 		"site-update": [
 			"@copy:wordpress",
 			"@reset:themes", "@reset:plugins", "@copy:themes", "@copy:assets", "@copy:plugins",
-			"@core:updatedb", "@plugin:activate-only-inactive", "@theme:activate"
+			"@core:updatedb", "@plugin:activate-only-inactive", "@theme:activate", "@core:add-author-capabilities"
 		],
 
 		"site-dev": [
@@ -88,8 +88,9 @@
 		"core:config": "wp core config --force",
 		"core:install": "wp core install",
 		"core:updatedb": "wp core update-db",
-		"core:initial-content": "composer run-script content-default -d vendor/greenpeace/planet4-content-default",
-		"core:add-super-admin-user": "wp user create dev p4-dev@greenpeace.org --role=administrator --user_pass=u3vsREsvjwo",
+		"core:initial-content": "composer run-script content-default -d vendor/greenpeace/planet4-content-default ",
+		"core:add-author-capabilities": "wp cap add author edit_others_posts; wp cap add author delete_others_posts; wp cap add author delete_private_posts;wp cap add author edit_private_posts;wp cap add author read_private_posts;",
+
 
 		"plugin:deactivate": "wp plugin deactivate --all",
 		"plugin:activate": "wp plugin activate --all",
