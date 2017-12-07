@@ -46,6 +46,12 @@ fi
 
 if [[ -z "${GITHUB_OAUTH_TOKEN}" ]]
 then
+  _build "GITHUB_OAUTH_TOKEN not found in environment. Please enter token now:"
+  read GITHUB_OAUTH_TOKEN
+fi
+
+if [[ -z "${GITHUB_OAUTH_TOKEN}" ]]
+then
   >&2 echo "ERROR: GITHUB_OAUTH_TOKEN environment variable not set"
   exit 1
 fi
