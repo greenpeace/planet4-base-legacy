@@ -24,15 +24,18 @@
 		"greenpeace/planet4-plugin-searchwp-upstream" : "2.9.1",
 		"greenpeace/planet4-plugin-wpimport-upstream" : "4.4.9",
 		"greenpeace/planet4-wordpress": "4.9.1",
-		"wp-cli/wp-cli": "^1.1",
 		"wpackagist-plugin/cmb2": "2.2.6.2",
 		"wpackagist-plugin/google-apps-login": "3.2",
+		"wpackagist-plugin/nginx-helper": "^1.9",
 		"wpackagist-plugin/shortcode-ui": "0.7.3",
-		"wpackagist-plugin/wp-redis": "0.7.0"
+		"wpackagist-plugin/wordfence": "^6.3",
+		"wpackagist-plugin/wp-redis": "0.7.0",
+		"wpackagist-plugin/wp-stateless": "^2.1"
 	},
 
 	"config": {
-		"secure-http": false
+		"secure-http": false,
+		"github-protocols": ["https"]
 	},
 
 	"extra": {
@@ -74,12 +77,12 @@
 		"reset:themes" : "rm -rf public/wp-content/themes",
 		"reset:plugins" : "rm -rf public/wp-content/plugins",
 
-		"copy:wordpress": "rsync --recursive vendor/greenpeace/planet4-wordpress-upstream/* public",
-		"copy:plugins" : "cp -rf vendor/plugins public/wp-content",
-		"copy:themes" : "cp -rf vendor/themes public/wp-content",
-		"copy:assets" : "cp -rf vendor/greenpeace/planet4-content-default/assets public/wp-content/themes/planet4-master-theme",
+		"copy:wordpress": "rsync -ar vendor/greenpeace/planet4-wordpress-upstream/* public",
+		"copy:plugins" : "rsync -ar vendor/plugins public/wp-content",
+		"copy:themes" : "rsync -ar vendor/themes public/wp-content",
+		"copy:assets" : "rsync -ar vendor/greenpeace/planet4-content-default/assets public/wp-content/themes/planet4-master-theme",
 
-		"core:config": "wp core config --skip-check --force",
+		"core:config": "wp core config --force",
 		"core:install": "wp core install",
 		"core:updatedb": "wp core update-db",
 		"core:initial-content": "composer run-script content-default -d vendor/greenpeace/planet4-content-default ",
@@ -91,10 +94,7 @@
 		"plugin:activate-only-inactive": "inactive_plugins=$(wp plugin list --field=name --status=inactive --format=csv); wp plugin activate $inactive_plugins;",
 		"theme:activate": "wp theme activate",
 
-		"server": "php -S 127.0.0.1:9191 -t public",
+		"server": "php -S 127.0.0.1:9191 -t public"
 
-		"post-update-cmd": [
-			"sed -i -e 's#git@github.com:#https://github.com/#g' composer.lock"
-		]
 	}
 }

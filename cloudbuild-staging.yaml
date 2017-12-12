@@ -1,0 +1,18 @@
+steps:
+- id: 'p4-gpi-app'
+  name: '${_BUILD_NAMESPACE}/cloud-builders/docker'
+  args:
+    - 'build'
+    - '--build-arg'
+    - 'GIT_REF=master'
+    - '--build-arg'
+    - 'GITHUB_OAUTH_TOKEN=${_GITHUB_OAUTH_TOKEN}'
+    - '--tag=${_BUILD_NAMESPACE}/${PROJECT_ID}/p4-gpi-app:${_BUILD_TAG}'
+    - '--tag=${_BUILD_NAMESPACE}/${PROJECT_ID}/p4-gpi-app:${_BUILD_NUM}'
+    - '--tag=${_BUILD_NAMESPACE}/${PROJECT_ID}/p4-gpi-app:latest'
+    - './app/${PROJECT_ID}/staging/p4-gpi-app'
+
+images:
+  - ${_BUILD_NAMESPACE}/${PROJECT_ID}/p4-gpi-app:${_BUILD_TAG}
+  - ${_BUILD_NAMESPACE}/${PROJECT_ID}/p4-gpi-app:${_BUILD_NUM}
+  - ${_BUILD_NAMESPACE}/${PROJECT_ID}/p4-gpi-app:latest
