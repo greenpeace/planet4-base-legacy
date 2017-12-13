@@ -177,7 +177,7 @@
             },
             "dist": {
                 "type": "tar",
-                "url": "https://p4-composer-registry.greenpeace.org//dist/greenpeace/planet4-content-default/greenpeace-planet4-content-default-bdf974111f9bcb8f917e30b7d6e3651fbbfbc984-zip-b2cd55.tar",
+                "url": "https://api.github.com/repos/greenpeace/planet4-content-default/zipball/bdf974111f9bcb8f917e30b7d6e3651fbbfbc984",
                 "reference": "bdf974111f9bcb8f917e30b7d6e3651fbbfbc984",
                 "shasum": "92509be82d71ea936db19401fd5e5abd4bc19728"
             },
@@ -206,13 +206,13 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/greenpeace/planet4-master-theme.git",
-                "reference": "fd773afc58a266e61f7be33d11d077be60b5dede"
+                "reference": "995415ab6fcbc7e774fad82e1264769b8a4284c6"
             },
             "dist": {
                 "type": "tar",
-                "url": "https://p4-composer-registry.greenpeace.org//dist/greenpeace/planet4-master-theme/greenpeace-planet4-master-theme-fd773afc58a266e61f7be33d11d077be60b5dede-zip-9e5a4f.tar",
-                "reference": "fd773afc58a266e61f7be33d11d077be60b5dede",
-                "shasum": "52b98826d4d4f1f7fb227aa7ad8076a7a090214c"
+                "url": "https://p4-composer-registry.greenpeace.org//dist/greenpeace/planet4-master-theme/greenpeace-planet4-master-theme-995415ab6fcbc7e774fad82e1264769b8a4284c6-zip-a66282.tar",
+                "reference": "995415ab6fcbc7e774fad82e1264769b8a4284c6",
+                "shasum": "b6b2d1dc8772c549d65be872cb7186533f5a3c28"
             },
             "require": {
                 "wpackagist-plugin/timber-library": "1.5.*"
@@ -256,7 +256,7 @@
                 "wiki": "https://github.com/greenpeace/planet4-master-theme/wiki",
                 "source": "https://github.com/greenpeace/planet4-master-theme"
             },
-            "time": "2017-12-12T12:01:39+00:00"
+            "time": "2017-12-13T08:07:21+00:00"
         },
         {
             "name": "greenpeace/planet4-plugin-blocks",
@@ -374,10 +374,6 @@
                 }
             ],
             "description": "This repository contains the WordPress plugin that provides the old and new urls from migrated content from p3 to p4.",
-            "support": {
-                "source": "https://github.com/greenpeace/planet4-plugin-migrated-urls/tree/v0.0.1",
-                "issues": "https://github.com/greenpeace/planet4-plugin-migrated-urls/issues"
-            },
             "time": "2017-10-23T11:56:54+00:00"
         },
         {
