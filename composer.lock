@@ -177,7 +177,7 @@
             },
             "dist": {
                 "type": "tar",
-                "url": "https://api.github.com/repos/greenpeace/planet4-content-default/zipball/bdf974111f9bcb8f917e30b7d6e3651fbbfbc984",
+                "url": "https://p4-composer-registry.greenpeace.org//dist/greenpeace/planet4-content-default/greenpeace-planet4-content-default-bdf974111f9bcb8f917e30b7d6e3651fbbfbc984-zip-b2cd55.tar",
                 "reference": "bdf974111f9bcb8f917e30b7d6e3651fbbfbc984",
                 "shasum": "92509be82d71ea936db19401fd5e5abd4bc19728"
             },
@@ -264,13 +264,13 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/greenpeace/planet4-plugin-blocks.git",
-                "reference": "33bc7c6e02c03a76d5dd7f984fbf172c0708ccc1"
+                "reference": "4181a6d5849449a94dcd404964ba5fefa25140e7"
             },
             "dist": {
                 "type": "tar",
-                "url": "https://p4-composer-registry.greenpeace.org//dist/greenpeace/planet4-plugin-blocks/greenpeace-planet4-plugin-blocks-33bc7c6e02c03a76d5dd7f984fbf172c0708ccc1-zip-1fd115.tar",
-                "reference": "33bc7c6e02c03a76d5dd7f984fbf172c0708ccc1",
-                "shasum": "e3e6010d88da361a50befec6cef1ff2d4437e78d"
+                "url": "https://p4-composer-registry.greenpeace.org//dist/greenpeace/planet4-plugin-blocks/greenpeace-planet4-plugin-blocks-4181a6d5849449a94dcd404964ba5fefa25140e7-zip-941713.tar",
+                "reference": "4181a6d5849449a94dcd404964ba5fefa25140e7",
+                "shasum": "d33dd0615ec5144a13dd521262d39fd6e39e3e94"
             },
             "require-dev": {
                 "dealerdirect/phpcodesniffer-composer-installer": "^0.4.0",
@@ -301,7 +301,7 @@
                 "source": "https://github.com/greenpeace/planet4-plugin-blocks/tree/develop",
                 "issues": "https://github.com/greenpeace/planet4-plugin-blocks/issues"
             },
-            "time": "2017-12-12T12:39:37+00:00"
+            "time": "2017-12-13T09:01:11+00:00"
         },
         {
             "name": "greenpeace/planet4-plugin-engagingnetworks",
