@@ -1,14 +1,6 @@
 # Application config
 APP_ENV=develop
 APP_HOSTNAME="docker.p4.greenpeace.org"
-COMPOSER="composer.json"
-GIT_REF="develop"
 IMAGE_FROM="gcr.io/planet-4-151612/p4-onbuild:develop"
 PAGESPEED_ENABLED=false
-PHP_PROCESS_MANAGER_MAX_CHILDREN=20
-PHP_SESSION_SAVE_HANDLER=redis
-PHP_SESSION_SAVE_PATH=tcp://redis:6379
-REDIS_FASTCGI_CACHE_ENABLED=true
-WP_DB_HOST=db
-WP_REDIS_ENABLED=true
 WP_TITLE="Greenpeace International Development Site"
