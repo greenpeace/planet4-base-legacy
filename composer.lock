@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "d3ae2640e5daf3e14079081c88c1ff15",
+    "content-hash": "641a91db9545157aa496dbc79c4a455a",
     "packages": [
         {
             "name": "composer/installers",
@@ -374,6 +374,10 @@
                 }
             ],
             "description": "This repository contains the WordPress plugin that provides the old and new urls from migrated content from p3 to p4.",
+            "support": {
+                "source": "https://github.com/greenpeace/planet4-plugin-migrated-urls/tree/v0.0.1",
+                "issues": "https://github.com/greenpeace/planet4-plugin-migrated-urls/issues"
+            },
             "time": "2017-10-23T11:56:54+00:00"
         },
         {
@@ -533,26 +537,6 @@
             },
             "type": "wordpress-plugin",
             "homepage": "https://wordpress.org/plugins/timber-library/"
-        },
-        {
-            "name": "wpackagist-plugin/wordfence",
-            "version": "6.3.22",
-            "source": {
-                "type": "svn",
-                "url": "https://plugins.svn.wordpress.org/wordfence/",
-                "reference": "tags/6.3.22"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/wordfence.6.3.22.zip",
-                "reference": null,
-                "shasum": null
-            },
-            "require": {
-                "composer/installers": "~1.0"
-            },
-            "type": "wordpress-plugin",
-            "homepage": "https://wordpress.org/plugins/wordfence/"
         },
         {
             "name": "wpackagist-plugin/wp-redis",
