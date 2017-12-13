@@ -1,6 +1,6 @@
 # Application config
 APP_ENV=develop
-APP_HOSTNAME=
+APP_HOSTNAME="docker.p4.greenpeace.org"
 COMPOSER="composer.json"
 FROM_TAG="develop"
 GIT_REF="develop"
