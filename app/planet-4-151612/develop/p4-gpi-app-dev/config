@@ -10,5 +10,5 @@ PHP_SESSION_SAVE_HANDLER=redis
 PHP_SESSION_SAVE_PATH=tcp://redis:6379
 REDIS_FASTCGI_CACHE_ENABLED=true
 WP_DB_HOST=db
-WP_EXTRA_CONFIG="\$redis_server = array('host'=>'redis','port'=> 6379,'database' => 0);"
+WP_REDIS_ENABLED=true
 WP_TITLE="Greenpeace International Development Site"
