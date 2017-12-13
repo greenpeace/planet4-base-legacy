@@ -29,23 +29,69 @@ function finish() {
 }
 trap finish EXIT
 
+bash_version=$(bash --version | head -n 1| cut -d' ' -f4 | cut -d '.' -f 1)
+
+env_parameters=()
+config_pass=0
+
+function contains() {
+    local n=$#
+    local value=${!n}
+    for ((i=1;i < $#;i++)) {
+        if [ "${!i}" == "${value}" ]; then
+            echo "y"
+            return 0
+        fi
+    }
+    echo "n"
+    return 1
+}
+
 # Reads key-value file as function argument, assigns variable to environment
 function set_vars() {
-  set -eu
   local file
   file="${1}"
+  _build "Config pass #$config_pass"
   while read -r line
   do
     # Skip comments
     [[ $line == \#* ]] && continue
     # Skip lines that don't include an assignment =
     [[ $line =~ = ]] || continue
-    # Set value
-    _build " -- $line"
-    key="$(echo "$line" | cut -d'=' -f1)"
+    # Fetch the key, whitespace trimmed
+    key="$(echo "$line" | cut -d'=' -f1 | xargs)"
+    # Fetch the value, whitespace trimmed
+    value="$(echo "$line" | cut -d'=' -f2- | xargs)"
+    # Current value
+    current="${!key}"
 
-    eval "$line"
+    if [[ -z "$current" ]] || [[ $config_pass -gt 0 ]]
+    then
+      # Skip any variables set in the environment
+      [[ $(contains "${env_parameters[@]}" $key) == "y" ]] && _build "[ENV] $key=${!key}" && continue
+      # This key is not set yet
+      if [[ $bash_version -lt 4 ]]
+      then
+        # Urgh, eval is evil
+        eval "${line}"
+      else
+        declare -g "$key=$value"
+      fi
+
+      if [[ ! -z "$current" ]] && [[ $value != "${current}" ]]
+      then
+        _notice " ++ $key=$value"
+      else
+        _notice " -- $key=$value"
+      fi
+    else
+      _notice "[ENV] $key=${!key}"
+      env_parameters+=($key)
+    fi
   done < "${file}"
+  let config_pass+=1
+  export config_pass
+  printf "\n"
 }
 
 # Reads key-value file as functionargument, extracts and wraps key with ${..} for use in envsubst
@@ -259,8 +305,8 @@ then
   for IMAGE in "${SOURCE_DIRECTORY[@]}"
   do
     IMAGE="${IMAGE%/}"
-    _pull "${GOOGLE_PROJECT_ID}/${IMAGE}:build-${BUILD_NUM}"
-    docker pull "${BUILD_NAMESPACE}/${GOOGLE_PROJECT_ID}/${IMAGE}:build-${BUILD_NUM}" >/dev/null &
+    _pull "${GOOGLE_PROJECT_ID}/${IMAGE}:${BRANCH_NAME//[^[:alnum:]_]/-}"
+    docker pull "${BUILD_NAMESPACE}/${GOOGLE_PROJECT_ID}/${IMAGE}:${BRANCH_NAME//[^[:alnum:]_]/-}" >/dev/null &
   done
 fi
 

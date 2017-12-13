@@ -26,12 +26,12 @@ if [[ ! -f "${DEFAULT_CONFIG_FILE}" ]]
 then
   >&2 echo "Default configuration file not found: ${DEFAULT_CONFIG_FILE}"
 fi
-# shellcheck source=/dev/null
-. "${DEFAULT_CONFIG_FILE}"
+set_vars "$DEFAULT_CONFIG_FILE"
 
 # Read from custom config file from command line parameter
 if [[ "${CONFIG_FILE}" ]]
 then
+
   if [[ ! -f "${CONFIG_FILE}" ]]
   then
     >&2 echo "Custom config file not found: ${CONFIG_FILE}"
@@ -41,7 +41,7 @@ then
 
   # https://github.com/koalaman/shellcheck/wiki/SC1090
   # shellcheck source=/dev/null
-  . "${CONFIG_FILE}"
+  set_vars "${CONFIG_FILE}"
 fi
 
 if [[ -z "${GITHUB_OAUTH_TOKEN}" ]] && [[ -z "${CI:-}" ]]
