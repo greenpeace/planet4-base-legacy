@@ -256,6 +256,7 @@ else
   # Hope for the best
   GCLOUD=$(type -P gcloud)
 fi
+[[ -x "$GCLOUD" ]] || _fatal "gcloud binary not found in PATH"
 
 # Submit the build
 # @todo Implement local build
