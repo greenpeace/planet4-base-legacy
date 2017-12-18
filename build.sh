@@ -303,10 +303,11 @@ fi
 
 if [[ "${PULL_IMAGES:-}" = "true" ]]
 then
+  _pull "Pulling images ..."
   for IMAGE in "${SOURCE_DIRECTORY[@]}"
   do
     IMAGE="${IMAGE%/}"
-    _pull "${GOOGLE_PROJECT_ID}/${IMAGE}:${BRANCH_NAME//[^[:alnum:]_]/-}"
+    _pull " - ${BUILD_NAMESPACE}/${GOOGLE_PROJECT_ID}/${IMAGE}:${BRANCH_NAME//[^[:alnum:]_]/-}"
     docker pull "${BUILD_NAMESPACE}/${GOOGLE_PROJECT_ID}/${IMAGE}:${BRANCH_NAME//[^[:alnum:]_]/-}" >/dev/null &
   done
 fi
