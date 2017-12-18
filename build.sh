@@ -78,7 +78,7 @@ function set_vars() {
         declare -g "$key=$value"
       fi
 
-      if [[ ! -z "$current" ]] && [[ $value != "${current}" ]]
+      if [[ $value != "${current}" ]]
       then
         _notice " ++ $key=$value"
       else
