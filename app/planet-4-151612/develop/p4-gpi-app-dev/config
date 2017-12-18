@@ -1,6 +1,6 @@
 # Application config
 APP_ENV="develop"
 APP_HOSTNAME="docker.p4.greenpeace.org"
-IMAGE_FROM="gcr.io/planet-4-151612/p4-onbuild:develop"
+IMAGE_FROM_APP="gcr.io/planet-4-151612/p4-onbuild:develop"
 PAGESPEED_ENABLED="false"
 WP_TITLE="Greenpeace International Development Site"

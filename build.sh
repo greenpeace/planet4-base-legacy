@@ -201,8 +201,6 @@ do
     set_vars "${current_dir}/config"
   fi
 
-  # IMAGE_FROM="${FROM_NAMESPACE}/${GOOGLE_PROJECT_ID}/${FROM_IMAGE}:${FROM_TAG}"
-
   # Rewrite only the cloudbuild variables we want to change
   envvars_array=($(get_var_array config.default))
   envvars="$(printf "%s:" "${envvars_array[@]}")"
