@@ -20,6 +20,13 @@ do # resolve $source until the file is no longer a symlink
 done
 current_dir="$( cd -P "$( dirname "$source" )" && pwd )"
 
+# Envsubst and cloudbuild.yaml variable consolidation
+BRANCH_NAME="${CIRCLE_BRANCH:-$(git rev-parse --abbrev-ref HEAD)}"
+BRANCH_TAG="${CIRCLE_TAG:-$(git tag -l --points-at HEAD)}"
+BUCKET_NAME="${BRANCH_TAG:-${BRANCH_NAME}}"
+BUILD_NUM="${BUILD_NUM:-${CIRCLE_BUILD_NUM:-"local"}}"
+BUILD_DATE="$(date)"
+
 DEFAULT_CONFIG_FILE="${current_dir}/../config.default"
 
 if [[ ! -f "${DEFAULT_CONFIG_FILE}" ]]
@@ -44,6 +51,8 @@ then
   set_vars "${CONFIG_FILE}"
 fi
 
+[[ -z "${WP_STATELESS_MEDIA_ROOT_DIR}" ]] && WP_STATELESS_MEDIA_ROOT_DIR=${BUCKET_NAME:-}
+
 if [[ -z "${GITHUB_OAUTH_TOKEN}" ]] && [[ -z "${CI:-}" ]]
 then
   _build "GITHUB_OAUTH_TOKEN not found in environment. Please enter token now:"
@@ -56,7 +65,7 @@ then
   exit 1
 fi
 
-# Envsubst and cloudbuild.yaml variable consolidation
-BRANCH_NAME="${CIRCLE_BRANCH:-$(git rev-parse --abbrev-ref HEAD)}"
-BUILD_NUM="${BUILD_NUM:-${CIRCLE_BUILD_NUM:-"local"}}"
-BUILD_DATE="$(date)"
+# Clean variables before set -a automatically exports them
+unset current_dir
+unset dir
+unset source
