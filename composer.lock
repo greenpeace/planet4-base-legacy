@@ -206,13 +206,13 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/greenpeace/planet4-master-theme.git",
-                "reference": "b7fd71b684197e3926c24fa3547a151571e2ae41"
+                "reference": "cb826c65bc6a88c95ce85deac872aa4893368410"
             },
             "dist": {
                 "type": "tar",
-                "url": "https://p4-composer-registry.greenpeace.org//dist/greenpeace/planet4-master-theme/greenpeace-planet4-master-theme-b7fd71b684197e3926c24fa3547a151571e2ae41-zip-726536.tar",
-                "reference": "b7fd71b684197e3926c24fa3547a151571e2ae41",
-                "shasum": "4de1af83df2aa2b56b1745fc88373d656f5d2a70"
+                "url": "https://p4-composer-registry.greenpeace.org//dist/greenpeace/planet4-master-theme/greenpeace-planet4-master-theme-cb826c65bc6a88c95ce85deac872aa4893368410-zip-badc4e.tar",
+                "reference": "cb826c65bc6a88c95ce85deac872aa4893368410",
+                "shasum": "882ffd73239e2277cafa3bcdf79d330d49c34a15"
             },
             "require": {
                 "wpackagist-plugin/timber-library": "1.5.*"
@@ -256,7 +256,7 @@
                 "wiki": "https://github.com/greenpeace/planet4-master-theme/wiki",
                 "source": "https://github.com/greenpeace/planet4-master-theme"
             },
-            "time": "2017-12-21T11:07:55+00:00"
+            "time": "2017-12-21T13:30:53+00:00"
         },
         {
             "name": "greenpeace/planet4-plugin-blocks",
