@@ -42,7 +42,7 @@
 			"vendor/themes/{$name}/": ["type:wordpress-theme"]
 		},
 		"merge-plugin": {
-			"require": "app/gpi/develop/composer.json",
+			"require": "app/international/develop/composer.json",
 			"recurse": true,
 			"replace": false,
 			"ignore-duplicates": true,
