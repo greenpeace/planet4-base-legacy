@@ -14,7 +14,7 @@
 	],
 
 	"require": {
-		"wpackagist-plugin/cmb2": "2.3.0",
-		"wpackagist-plugin/google-apps-login": "3.2"
+		"greenpeace/planet4-plugin-migrated-urls" : "0.0.1",
+		"greenpeace/planet4-plugin-wpimport-upstream" : "4.4.9"
 	}
 }
