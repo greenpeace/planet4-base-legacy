@@ -20,10 +20,9 @@
 		"greenpeace/planet4-master-theme" : "dev-develop",
 		"greenpeace/planet4-plugin-blocks" : "dev-develop",
 		"greenpeace/planet4-plugin-engagingnetworks" : "0.*",
-		"greenpeace/planet4-plugin-migrated-urls" : "0.0.1",
 		"greenpeace/planet4-plugin-searchwp-upstream" : "2.9.2",
-		"greenpeace/planet4-plugin-wpimport-upstream" : "4.4.9",
 		"greenpeace/planet4-wordpress": "4.9.1",
+		"wikimedia/composer-merge-plugin": "1.4.1",
 		"wpackagist-plugin/cmb2": "2.3.0",
 		"wpackagist-plugin/google-apps-login": "3.2",
 		"wpackagist-plugin/nginx-helper": "^1.9",
@@ -41,7 +40,18 @@
 		"installer-paths": {
 			"vendor/plugins/{$name}/": ["type:wordpress-plugin"],
 			"vendor/themes/{$name}/": ["type:wordpress-theme"]
+		},
+		"merge-plugin": {
+			"require": "app/gpi/develop/composer.json",
+			"recurse": true,
+			"replace": false,
+			"ignore-duplicates": true,
+			"merge-dev": true,
+			"merge-extra": false,
+			"merge-extra-deep": false,
+			"merge-scripts": false
 		}
+
 	},
 
 	"scripts": {
