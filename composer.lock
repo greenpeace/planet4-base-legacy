@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "81e60a29367ddc97647705f74c434d3b",
+    "content-hash": "7307b8910483b37f38dccf12f52c3f13",
     "packages": [
         {
             "name": "composer/installers",
@@ -209,13 +209,13 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/greenpeace/planet4-master-theme.git",
-                "reference": "49213d42ec46aafc275710804b5fbf53a604a937"
+                "reference": "5b1671d18899547035f2aeb15aad38c70e01a105"
             },
             "dist": {
                 "type": "tar",
-                "url": "https://p4-composer-registry.greenpeace.org//dist/greenpeace/planet4-master-theme/greenpeace-planet4-master-theme-49213d42ec46aafc275710804b5fbf53a604a937-zip-3f1dfe.tar",
-                "reference": "49213d42ec46aafc275710804b5fbf53a604a937",
-                "shasum": "7e5286697f8b9f3aabf10d0f0d0d81268d909f2d"
+                "url": "https://p4-composer-registry.greenpeace.org//dist/greenpeace/planet4-master-theme/greenpeace-planet4-master-theme-5b1671d18899547035f2aeb15aad38c70e01a105-zip-a6ad60.tar",
+                "reference": "5b1671d18899547035f2aeb15aad38c70e01a105",
+                "shasum": "adfa8cac7de81156909613d0949b2ef2c14a0d8b"
             },
             "require": {
                 "wpackagist-plugin/timber-library": "1.5.*"
@@ -259,7 +259,7 @@
                 "wiki": "https://github.com/greenpeace/planet4-master-theme/wiki",
                 "source": "https://github.com/greenpeace/planet4-master-theme"
             },
-            "time": "2018-01-05T09:43:20+00:00"
+            "time": "2018-01-05T10:48:07+00:00"
         },
         {
             "name": "greenpeace/planet4-plugin-blocks",
@@ -267,13 +267,13 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/greenpeace/planet4-plugin-blocks.git",
-                "reference": "cfa5115d8f9e38a6894c9a14348320a8aa5839d5"
+                "reference": "1fa8e67ee3e216aea3f830e9f1c240e42574c44a"
             },
             "dist": {
                 "type": "tar",
-                "url": "https://p4-composer-registry.greenpeace.org//dist/greenpeace/planet4-plugin-blocks/greenpeace-planet4-plugin-blocks-cfa5115d8f9e38a6894c9a14348320a8aa5839d5-zip-ab79fe.tar",
-                "reference": "cfa5115d8f9e38a6894c9a14348320a8aa5839d5",
-                "shasum": "afcaa92f1b94e7881488981f88aa351db52f1e53"
+                "url": "https://p4-composer-registry.greenpeace.org//dist/greenpeace/planet4-plugin-blocks/greenpeace-planet4-plugin-blocks-1fa8e67ee3e216aea3f830e9f1c240e42574c44a-zip-529cb6.tar",
+                "reference": "1fa8e67ee3e216aea3f830e9f1c240e42574c44a",
+                "shasum": "f7403dbc7155678c2f12551d0853a941459f7bda"
             },
             "require-dev": {
                 "dealerdirect/phpcodesniffer-composer-installer": "^0.4.0",
@@ -304,7 +304,7 @@
                 "source": "https://github.com/greenpeace/planet4-plugin-blocks/tree/develop",
                 "issues": "https://github.com/greenpeace/planet4-plugin-blocks/issues"
             },
-            "time": "2018-01-05T09:05:11+00:00"
+            "time": "2018-01-05T10:49:33+00:00"
         },
         {
             "name": "greenpeace/planet4-plugin-engagingnetworks",
@@ -631,9 +631,9 @@
     "aliases": [],
     "minimum-stability": "stable",
     "stability-flags": {
-        "greenpeace/planet4-child-theme": 20,
         "greenpeace/planet4-master-theme": 20,
-        "greenpeace/planet4-plugin-blocks": 20
+        "greenpeace/planet4-plugin-blocks": 20,
+        "greenpeace/planet4-child-theme": 20
     },
     "prefer-stable": false,
     "prefer-lowest": false,
