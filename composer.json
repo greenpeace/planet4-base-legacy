@@ -15,7 +15,6 @@
 
 	"require": {
 		"composer/installers": "~1.0",
-		"greenpeace/planet4-child-theme" : "0.2.*",
 		"greenpeace/planet4-content-default": "0.2.*",
 		"greenpeace/planet4-master-theme" : "0.2.*",
 		"greenpeace/planet4-plugin-blocks" : "0.1.*",
