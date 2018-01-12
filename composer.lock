@@ -267,13 +267,13 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/greenpeace/planet4-plugin-blocks.git",
-                "reference": "37ad8f9cf18bf4c3b8383bf9aad1306dd8a67fc7"
+                "reference": "dd84d8beaa436d4ec22a3a4b5c49ce57c99b7c37"
             },
             "dist": {
                 "type": "tar",
-                "url": "https://p4-composer-registry.greenpeace.org//dist/greenpeace/planet4-plugin-blocks/greenpeace-planet4-plugin-blocks-37ad8f9cf18bf4c3b8383bf9aad1306dd8a67fc7-zip-2448aa.tar",
-                "reference": "37ad8f9cf18bf4c3b8383bf9aad1306dd8a67fc7",
-                "shasum": "094857357da5427f9793d9b134d247935c860803"
+                "url": "https://p4-composer-registry.greenpeace.org//dist/greenpeace/planet4-plugin-blocks/greenpeace-planet4-plugin-blocks-dd84d8beaa436d4ec22a3a4b5c49ce57c99b7c37-zip-96523f.tar",
+                "reference": "dd84d8beaa436d4ec22a3a4b5c49ce57c99b7c37",
+                "shasum": "fd77277000b65b12d7b9d1c609dc1d217bdaa872"
             },
             "require-dev": {
                 "dealerdirect/phpcodesniffer-composer-installer": "^0.4.0",
@@ -304,7 +304,7 @@
                 "source": "https://github.com/greenpeace/planet4-plugin-blocks/tree/develop",
                 "issues": "https://github.com/greenpeace/planet4-plugin-blocks/issues"
             },
-            "time": "2018-01-12T08:22:02+00:00"
+            "time": "2018-01-12T09:54:18+00:00"
         },
         {
             "name": "greenpeace/planet4-plugin-engagingnetworks",
