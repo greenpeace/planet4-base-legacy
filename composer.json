@@ -1,6 +1,6 @@
 {
 	"name": "greenpeace/planet4-base",
-	"version": "0.2.6",
+	"version": "0.2.7",
 
 	"repositories": [
 		{
@@ -19,12 +19,12 @@
 		"greenpeace/planet4-master-theme" : "0.2.*",
 		"greenpeace/planet4-plugin-blocks" : "0.1.*",
 		"greenpeace/planet4-plugin-engagingnetworks" : "0.*",
-		"greenpeace/planet4-plugin-images" : "0.*",
 		"greenpeace/planet4-plugin-searchwp-upstream" : "2.9.2",
 		"greenpeace/planet4-wordpress": "4.9.1",
 		"wikimedia/composer-merge-plugin": "1.4.1",
 		"wpackagist-plugin/cmb2": "2.3.0",
 		"wpackagist-plugin/google-apps-login": "3.2",
+		"wpackagist-plugin/nginx-helper": "^1.9",
 		"wpackagist-plugin/shortcode-ui": "0.7.3",
 		"wpackagist-plugin/wp-redis": "0.7.0",
 		"wpackagist-plugin/wp-stateless": "^2.1"

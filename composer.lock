@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "c659e492ddff040c1df0f27f87f25e5a",
+    "content-hash": "45b7cd4801dfd7c0b46b2825944defa8",
     "packages": [
         {
             "name": "composer/installers",
@@ -205,17 +205,17 @@
         },
         {
             "name": "greenpeace/planet4-master-theme",
-            "version": "0.2.20",
+            "version": "0.2.21",
             "source": {
                 "type": "git",
                 "url": "https://github.com/greenpeace/planet4-master-theme.git",
-                "reference": "a245ec1946a4e16c06ceeac74165fd8712e32294"
+                "reference": "345d3fa885da5076a2e09dcbb32ef1b6f5866844"
             },
             "dist": {
                 "type": "tar",
-                "url": "https://p4-composer-registry.greenpeace.org//dist/greenpeace/planet4-master-theme/greenpeace-planet4-master-theme-a245ec1946a4e16c06ceeac74165fd8712e32294-zip-684589.tar",
-                "reference": "a245ec1946a4e16c06ceeac74165fd8712e32294",
-                "shasum": "b57f28c7dbaa2f6d21e911ed071b09b6bd949d62"
+                "url": "https://p4-composer-registry.greenpeace.org//dist/greenpeace/planet4-master-theme/greenpeace-planet4-master-theme-345d3fa885da5076a2e09dcbb32ef1b6f5866844-zip-cf097a.tar",
+                "reference": "345d3fa885da5076a2e09dcbb32ef1b6f5866844",
+                "shasum": "92af7c83c2fb354f2e745e7281ab1b662686f306"
             },
             "require": {
                 "webdevstudios/cmb2": "^2",
@@ -260,21 +260,21 @@
                 "wiki": "https://github.com/greenpeace/planet4-master-theme/wiki",
                 "source": "https://github.com/greenpeace/planet4-master-theme"
             },
-            "time": "2018-01-15T18:30:22+00:00"
+            "time": "2018-01-16T20:22:37+00:00"
         },
         {
             "name": "greenpeace/planet4-plugin-blocks",
-            "version": "0.1.21",
+            "version": "0.1.22",
             "source": {
                 "type": "git",
                 "url": "https://github.com/greenpeace/planet4-plugin-blocks.git",
-                "reference": "354e9d426bc5cad2b2cc32ef775fb85b93094c57"
+                "reference": "db79c932c7d77b74fe0d1449394cee9883181913"
             },
             "dist": {
                 "type": "tar",
-                "url": "https://p4-composer-registry.greenpeace.org//dist/greenpeace/planet4-plugin-blocks/greenpeace-planet4-plugin-blocks-354e9d426bc5cad2b2cc32ef775fb85b93094c57-zip-3bbaae.tar",
-                "reference": "354e9d426bc5cad2b2cc32ef775fb85b93094c57",
-                "shasum": "825e3e45ab4c2cde80c57b2648c378c890b1ab04"
+                "url": "https://p4-composer-registry.greenpeace.org//dist/greenpeace/planet4-plugin-blocks/greenpeace-planet4-plugin-blocks-db79c932c7d77b74fe0d1449394cee9883181913-zip-968f03.tar",
+                "reference": "db79c932c7d77b74fe0d1449394cee9883181913",
+                "shasum": "c9ba8a61299d00073d13a3dfedabd890792fc60e"
             },
             "require-dev": {
                 "dealerdirect/phpcodesniffer-composer-installer": "^0.4.0",
@@ -302,10 +302,10 @@
             ],
             "description": "This repository contains the WordPress plugin that provides the blocks to be used with Shortcake UI plugin.",
             "support": {
-                "source": "https://github.com/greenpeace/planet4-plugin-blocks/tree/v0.1.21",
+                "source": "https://github.com/greenpeace/planet4-plugin-blocks/tree/v0.1.22",
                 "issues": "https://github.com/greenpeace/planet4-plugin-blocks/issues"
             },
-            "time": "2018-01-15T18:31:51+00:00"
+            "time": "2018-01-16T20:20:55+00:00"
         },
         {
             "name": "greenpeace/planet4-plugin-engagingnetworks",
@@ -352,31 +352,6 @@
                 "issues": "https://github.com/greenpeace/planet4-plugin-engagingnetworks/issues"
             },
             "time": "2017-11-28T07:56:38+00:00"
-        },
-        {
-            "name": "greenpeace/planet4-plugin-images",
-            "version": "v0.1",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/greenpeace/planet4-plugin-images.git",
-                "reference": "3e461afd0242f07159b3d448a3d807acff0e7860"
-            },
-            "dist": {
-                "type": "tar",
-                "url": "https://p4-composer-registry.greenpeace.org//dist/greenpeace/planet4-plugin-images/greenpeace-planet4-plugin-images-3e461afd0242f07159b3d448a3d807acff0e7860-zip-f98bac.tar",
-                "reference": "3e461afd0242f07159b3d448a3d807acff0e7860",
-                "shasum": "5ec1f25dba996821c2027a7221bd71c3fa4fbe76"
-            },
-            "type": "wordpress-plugin",
-            "license": [
-                "GPL-3.0"
-            ],
-            "description": "This plugin defines the different sizes of the images to be generated by automatic/jetpack thumbnail generator.",
-            "support": {
-                "source": "https://github.com/greenpeace/planet4-plugin-images/tree/v0.1",
-                "issues": "https://github.com/greenpeace/planet4-plugin-images/issues"
-            },
-            "time": "2017-11-09T10:02:55+00:00"
         },
         {
             "name": "greenpeace/planet4-plugin-migrated-urls",
@@ -608,6 +583,26 @@
             },
             "type": "wordpress-plugin",
             "homepage": "https://wordpress.org/plugins/google-apps-login/"
+        },
+        {
+            "name": "wpackagist-plugin/nginx-helper",
+            "version": "1.9.10",
+            "source": {
+                "type": "svn",
+                "url": "https://plugins.svn.wordpress.org/nginx-helper/",
+                "reference": "tags/1.9.10"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://downloads.wordpress.org/plugin/nginx-helper.1.9.10.zip",
+                "reference": null,
+                "shasum": null
+            },
+            "require": {
+                "composer/installers": "~1.0"
+            },
+            "type": "wordpress-plugin",
+            "homepage": "https://wordpress.org/plugins/nginx-helper/"
         },
         {
             "name": "wpackagist-plugin/shortcode-ui",
