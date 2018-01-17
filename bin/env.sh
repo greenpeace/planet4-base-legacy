@@ -51,7 +51,7 @@ then
   set_vars "${CONFIG_FILE}"
 fi
 
-[[ -z "${WP_STATELESS_MEDIA_ROOT_DIR}" ]] && WP_STATELESS_MEDIA_ROOT_DIR=${BUCKET_NAME:-}
+[[ -z "${WP_STATELESS_MEDIA_ROOT_DIR}" ]] && WP_STATELESS_MEDIA_ROOT_DIR="${BUCKET_NAME:-}"
 
 if [[ -z "${GITHUB_OAUTH_TOKEN}" ]] && [[ -z "${CI:-}" ]]
 then
