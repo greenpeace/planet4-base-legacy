@@ -209,13 +209,13 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/greenpeace/planet4-master-theme.git",
-                "reference": "ba101eb1135a4b3eed32cf9db1b356d7df11a5b2"
+                "reference": "446de5a10cf7efcbeb68617c5818d0783d138f41"
             },
             "dist": {
                 "type": "tar",
-                "url": "https://p4-composer-registry.greenpeace.org//dist/greenpeace/planet4-master-theme/greenpeace-planet4-master-theme-ba101eb1135a4b3eed32cf9db1b356d7df11a5b2-zip-b3aded.tar",
-                "reference": "ba101eb1135a4b3eed32cf9db1b356d7df11a5b2",
-                "shasum": "03f86deb9847d605cef49beecad32c81bd6185c4"
+                "url": "https://p4-composer-registry.greenpeace.org//dist/greenpeace/planet4-master-theme/greenpeace-planet4-master-theme-446de5a10cf7efcbeb68617c5818d0783d138f41-zip-cbf9dd.tar",
+                "reference": "446de5a10cf7efcbeb68617c5818d0783d138f41",
+                "shasum": "8441be98fe85c7ae7dcf74229e299a209ce8022a"
             },
             "require": {
                 "wpackagist-plugin/timber-library": "1.5.*"
@@ -259,7 +259,7 @@
                 "wiki": "https://github.com/greenpeace/planet4-master-theme/wiki",
                 "source": "https://github.com/greenpeace/planet4-master-theme"
             },
-            "time": "2018-01-16T15:09:21+00:00"
+            "time": "2018-01-16T20:19:25+00:00"
         },
         {
             "name": "greenpeace/planet4-plugin-blocks",
@@ -267,13 +267,13 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/greenpeace/planet4-plugin-blocks.git",
-                "reference": "ca2e4af810346f615c84d4eebe5c1602e0d3a4c4"
+                "reference": "e2e9d958d70fa63679ee2be7828840e2b3753ef2"
             },
             "dist": {
                 "type": "tar",
-                "url": "https://p4-composer-registry.greenpeace.org//dist/greenpeace/planet4-plugin-blocks/greenpeace-planet4-plugin-blocks-ca2e4af810346f615c84d4eebe5c1602e0d3a4c4-zip-8c716b.tar",
-                "reference": "ca2e4af810346f615c84d4eebe5c1602e0d3a4c4",
-                "shasum": "9b7f84e8b3cea3eeb0d1315bd2f26cd294032b84"
+                "url": "https://p4-composer-registry.greenpeace.org//dist/greenpeace/planet4-plugin-blocks/greenpeace-planet4-plugin-blocks-e2e9d958d70fa63679ee2be7828840e2b3753ef2-zip-a45593.tar",
+                "reference": "e2e9d958d70fa63679ee2be7828840e2b3753ef2",
+                "shasum": "a89d1c3d072dd91eef1497d2ea89c75c4b4763a5"
             },
             "require-dev": {
                 "dealerdirect/phpcodesniffer-composer-installer": "^0.4.0",
@@ -304,7 +304,7 @@
                 "source": "https://github.com/greenpeace/planet4-plugin-blocks/tree/develop",
                 "issues": "https://github.com/greenpeace/planet4-plugin-blocks/issues"
             },
-            "time": "2018-01-16T14:27:21+00:00"
+            "time": "2018-01-16T20:20:41+00:00"
         },
         {
             "name": "greenpeace/planet4-plugin-engagingnetworks",
@@ -377,6 +377,10 @@
                 }
             ],
             "description": "This repository contains the WordPress plugin that provides the old and new urls from migrated content from p3 to p4.",
+            "support": {
+                "source": "https://github.com/greenpeace/planet4-plugin-migrated-urls/tree/v0.0.1",
+                "issues": "https://github.com/greenpeace/planet4-plugin-migrated-urls/issues"
+            },
             "time": "2017-10-23T11:56:54+00:00"
         },
         {
