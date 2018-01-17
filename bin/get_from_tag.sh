@@ -19,7 +19,7 @@ done
 current_dir="$( cd -P "$( dirname "$source" )" && pwd )"
 
 # If the environment isn't already configured, source env.sh
-if [[ -z "${BUILD_NAMESPACE:-${DEFAULT_BUILD_NAMESPACE}}" ]] || [[ -z "${GOOGLE_PROJECT_ID:-${DEFAULT_GOOGLE_PROJECT_ID}}" ]]
+if [[ -z "${BUILD_NAMESPACE}" ]] || [[ -z "${GOOGLE_PROJECT_ID}" ]]
 then
   # shellcheck disable=SC1090
   . "$current_dir/env.sh"
@@ -35,7 +35,6 @@ else
   gcloud_binary=$(type -P gcloud)
 fi
 
-
 # If it's set, use that
 if [[ "${FROM_TAG}" ]]
 then
@@ -44,12 +43,11 @@ then
 fi
 
 # Search gcloud container registry for p4-onbuild images with the current branch
-if [[ "$(${gcloud_binary} container images list-tags ${BUILD_NAMESPACE:-${DEFAULT_BUILD_NAMESPACE}}/${GOOGLE_PROJECT_ID:-${DEFAULT_GOOGLE_PROJECT_ID}}/p4-onbuild --filter="tags=${BRANCH_NAME:-$(git rev-parse --abbrev-ref HEAD)}" --format="table[no-heading](tags, timestamp)" 2>/dev/null)" != "" ]]
+if [[ "$(${gcloud_binary} container images list-tags ${BUILD_NAMESPACE}/${GOOGLE_PROJECT_ID}/p4-onbuild --filter="tags=${BRANCH_NAME:-$(git rev-parse --abbrev-ref HEAD)}" --format="table[no-heading](tags, timestamp)" 2>/dev/null)" != "" ]]
 then
   >&2 echo "Found image with current branch: ${BRANCH_NAME}"
   echo "${BRANCH_NAME}"
   exit 0
 fi
 
-# Fall back to the default specified in config.default
-echo "${DEFAULT_FROM_TAG}"
+exit 1
