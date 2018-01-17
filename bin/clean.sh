@@ -15,5 +15,16 @@ do # resolve $source until the file is no longer a symlink
 done
 git_root_dir="$( cd -P "$( dirname "$source" )/.." && pwd )"
 
+set -x
+
+# Remove generated composer lock files
+[[ -f "${git_root_dir}/composer.lock" ]] && rm "${git_root_dir}/composer.lock"
+
+# Remove vendor directory
+rm -fr "${git_root_dir}/vendor"
+
+# Remove generated Dockerfiles
 find "${git_root_dir}/app" -name "Dockerfile" -exec rm -r "{}" \;
 # find "${git_root_dir}/app" -name "README.md" -exec rm -r "{}" \;
+
+set +x
