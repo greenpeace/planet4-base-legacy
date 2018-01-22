@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "93226517f835cbd677416fc682e25291",
+    "content-hash": "724a07ef881b2d6b44fe34bef07fbdf0",
     "packages": [
         {
             "name": "composer/installers",
@@ -209,13 +209,13 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/greenpeace/planet4-master-theme.git",
-                "reference": "41bdb33d819c735870ddd7c95c77c41d7ff9b2f7"
+                "reference": "b232e05fafeefecabf8c09d6deb6cc963a6155c5"
             },
             "dist": {
                 "type": "tar",
-                "url": "https://p4-composer-registry.greenpeace.org//dist/greenpeace/planet4-master-theme/greenpeace-planet4-master-theme-41bdb33d819c735870ddd7c95c77c41d7ff9b2f7-zip-70c583.tar",
-                "reference": "41bdb33d819c735870ddd7c95c77c41d7ff9b2f7",
-                "shasum": "3a75b8c010a9afd44006d8060c84fc1143c06d93"
+                "url": "https://p4-composer-registry.greenpeace.org//dist/greenpeace/planet4-master-theme/greenpeace-planet4-master-theme-b232e05fafeefecabf8c09d6deb6cc963a6155c5-zip-b3f4ce.tar",
+                "reference": "b232e05fafeefecabf8c09d6deb6cc963a6155c5",
+                "shasum": "c697af8fd6848f9bbd3d76201f522b5e9a34a618"
             },
             "require": {
                 "wpackagist-plugin/timber-library": "1.5.*"
@@ -259,7 +259,7 @@
                 "wiki": "https://github.com/greenpeace/planet4-master-theme/wiki",
                 "source": "https://github.com/greenpeace/planet4-master-theme"
             },
-            "time": "2018-01-22T08:21:48+00:00"
+            "time": "2018-01-22T09:10:09+00:00"
         },
         {
             "name": "greenpeace/planet4-plugin-blocks",
@@ -267,13 +267,13 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/greenpeace/planet4-plugin-blocks.git",
-                "reference": "c8880eefd640335f907c664877ca83e912f3f2fc"
+                "reference": "005a433b0b23b94d0b533e3bd189df58fd9469b8"
             },
             "dist": {
                 "type": "tar",
-                "url": "https://p4-composer-registry.greenpeace.org//dist/greenpeace/planet4-plugin-blocks/greenpeace-planet4-plugin-blocks-c8880eefd640335f907c664877ca83e912f3f2fc-zip-58e5a7.tar",
-                "reference": "c8880eefd640335f907c664877ca83e912f3f2fc",
-                "shasum": "870f3adb65c06c1099334bed9e1eb0ddc3907597"
+                "url": "https://p4-composer-registry.greenpeace.org//dist/greenpeace/planet4-plugin-blocks/greenpeace-planet4-plugin-blocks-005a433b0b23b94d0b533e3bd189df58fd9469b8-zip-cc3acd.tar",
+                "reference": "005a433b0b23b94d0b533e3bd189df58fd9469b8",
+                "shasum": "92d785df44434a420c18ca53b3ca1279f0be22f5"
             },
             "require-dev": {
                 "dealerdirect/phpcodesniffer-composer-installer": "^0.4.0",
@@ -304,7 +304,7 @@
                 "source": "https://github.com/greenpeace/planet4-plugin-blocks/tree/develop",
                 "issues": "https://github.com/greenpeace/planet4-plugin-blocks/issues"
             },
-            "time": "2018-01-19T11:01:33+00:00"
+            "time": "2018-01-22T09:13:30+00:00"
         },
         {
             "name": "greenpeace/planet4-plugin-engagingnetworks",
@@ -381,12 +381,12 @@
         },
         {
             "name": "greenpeace/planet4-plugin-searchwp-upstream",
-            "version": "2.9.2",
+            "version": "2.9.5",
             "dist": {
                 "type": "tar",
-                "url": "https://p4-composer-registry.greenpeace.org//dist/greenpeace/planet4-plugin-searchwp-upstream/greenpeace-planet4-plugin-searchwp-upstream-2.9.2.tar",
+                "url": "https://p4-composer-registry.greenpeace.org//dist/greenpeace/planet4-plugin-searchwp-upstream/greenpeace-planet4-plugin-searchwp-upstream-2.9.5.tar",
                 "reference": null,
-                "shasum": "2e48e9c6f79dbbf1f690caea9a1dec6255ad6361"
+                "shasum": "f77ce92bbd8cf11f92e2c83e89c2376cc7c73c65"
             },
             "type": "wordpress-plugin"
         },
