@@ -209,13 +209,13 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/greenpeace/planet4-master-theme.git",
-                "reference": "fbbdc5bff22dcfebd397dc0d0dff48ed6ec6706b"
+                "reference": "c594311fb060069683a59714ea6ebdd037c16ef9"
             },
             "dist": {
                 "type": "tar",
-                "url": "https://p4-composer-registry.greenpeace.org//dist/greenpeace/planet4-master-theme/greenpeace-planet4-master-theme-fbbdc5bff22dcfebd397dc0d0dff48ed6ec6706b-zip-332a20.tar",
-                "reference": "fbbdc5bff22dcfebd397dc0d0dff48ed6ec6706b",
-                "shasum": "485ce1af7b0662919543c90e3b7ff4516b422053"
+                "url": "https://p4-composer-registry.greenpeace.org//dist/greenpeace/planet4-master-theme/greenpeace-planet4-master-theme-c594311fb060069683a59714ea6ebdd037c16ef9-zip-e9bf31.tar",
+                "reference": "c594311fb060069683a59714ea6ebdd037c16ef9",
+                "shasum": "bea82748d4a5b5800d2f0bb1c2b92504481cd2c4"
             },
             "require": {
                 "wpackagist-plugin/timber-library": "1.5.*"
@@ -259,7 +259,7 @@
                 "wiki": "https://github.com/greenpeace/planet4-master-theme/wiki",
                 "source": "https://github.com/greenpeace/planet4-master-theme"
             },
-            "time": "2018-01-23T07:23:49+00:00"
+            "time": "2018-01-23T08:34:29+00:00"
         },
         {
             "name": "greenpeace/planet4-plugin-blocks",
@@ -267,13 +267,13 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/greenpeace/planet4-plugin-blocks.git",
-                "reference": "cc38c014493c458ab871ea8a8202cc285dfc5253"
+                "reference": "c0aaf404f206f58c1bacd126a716f6f6e9d79657"
             },
             "dist": {
                 "type": "tar",
-                "url": "https://p4-composer-registry.greenpeace.org//dist/greenpeace/planet4-plugin-blocks/greenpeace-planet4-plugin-blocks-cc38c014493c458ab871ea8a8202cc285dfc5253-zip-561811.tar",
-                "reference": "cc38c014493c458ab871ea8a8202cc285dfc5253",
-                "shasum": "e6f44aefb1adcfcd0b309ca84015e4635240feb1"
+                "url": "https://p4-composer-registry.greenpeace.org//dist/greenpeace/planet4-plugin-blocks/greenpeace-planet4-plugin-blocks-c0aaf404f206f58c1bacd126a716f6f6e9d79657-zip-de4517.tar",
+                "reference": "c0aaf404f206f58c1bacd126a716f6f6e9d79657",
+                "shasum": "26372ba3f14b42fae6cb04057a99549828412d88"
             },
             "require-dev": {
                 "dealerdirect/phpcodesniffer-composer-installer": "^0.4.0",
@@ -304,7 +304,7 @@
                 "source": "https://github.com/greenpeace/planet4-plugin-blocks/tree/develop",
                 "issues": "https://github.com/greenpeace/planet4-plugin-blocks/issues"
             },
-            "time": "2018-01-23T07:20:47+00:00"
+            "time": "2018-01-23T08:32:07+00:00"
         },
         {
             "name": "greenpeace/planet4-plugin-engagingnetworks",
