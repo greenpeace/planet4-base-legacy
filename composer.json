@@ -29,7 +29,8 @@
 		"wpackagist-plugin/nginx-helper": "^1.9",
 		"wpackagist-plugin/shortcode-ui": "0.7.3",
 		"wpackagist-plugin/wp-redis": "0.7.0",
-		"wpackagist-plugin/wp-stateless": "^2.1"
+		"wpackagist-plugin/wp-stateless": "^2.1",
+		"leafo/scssphp": "^0.7.4"
 	},
 
 	"config": {
@@ -55,7 +56,8 @@
 		"site-update": [
 			"@copy:wordpress",
 			"@reset:themes", "@reset:plugins", "@copy:themes", "@copy:assets", "@copy:plugins",
-			"@core:updatedb", "@plugin:activate-only-inactive", "@theme:activate", "@core:add-author-capabilities", "@redis:enable"
+			"@core:updatedb", "@plugin:activate-only-inactive", "@theme:activate", "@core:add-author-capabilities", "@redis:enable",
+			"@core:style"
 		],
 
 		"site-dev": [
@@ -80,6 +82,8 @@
 		"copy:plugins" : "rsync -ar vendor/plugins public/wp-content",
 		"copy:themes" : "rsync -ar vendor/themes public/wp-content",
 		"copy:assets" : "rsync -ar vendor/greenpeace/planet4-content-default/assets public/wp-content/themes/planet4-master-theme",
+
+		"core:style" : "pscss -f=compressed public/wp-content/themes/planet4-master-theme/assets/scss/style.scss > public/wp-content/themes/planet4-master-theme/style.css",
 
 		"redis:enable" : "wp redis enable",
 
