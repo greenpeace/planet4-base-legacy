@@ -84,7 +84,7 @@
 		"copy:themes" : "rsync -ar vendor/themes public/wp-content",
 		"copy:assets" : "rsync -ar vendor/greenpeace/planet4-content-default/assets public/wp-content/themes/planet4-master-theme",
 
-		"core:style" : "pscss -f=compressed public/wp-content/themes/planet4-master-theme/assets/scss/style.scss > public/wp-content/themes/planet4-master-theme/style.css",
+		"core:style" : "pscss -f=compressed public/wp-content/themes/planet4-master-theme/assets/scss/style.scss > public/wp-content/themes/planet4-master-theme/src/css/style.css",
 
 		"redis:enable" : "wp redis enable",
 
