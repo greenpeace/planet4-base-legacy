@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "44800c0612d26c12fc1ae6176dbccd43",
+    "content-hash": "26027a2ecb1d53b1189c5d92eff48d87",
     "packages": [
         {
             "name": "composer/installers",
@@ -205,17 +205,17 @@
         },
         {
             "name": "greenpeace/planet4-master-theme",
-            "version": "0.2.24",
+            "version": "0.2.26",
             "source": {
                 "type": "git",
                 "url": "https://github.com/greenpeace/planet4-master-theme.git",
-                "reference": "3bf8db9082cd3d03025253b1fac0a3ae73681aa2"
+                "reference": "e53390a61c76cb2015e51cd33bb196942eb7a1ce"
             },
             "dist": {
                 "type": "tar",
-                "url": "https://p4-composer-registry.greenpeace.org//dist/greenpeace/planet4-master-theme/greenpeace-planet4-master-theme-3bf8db9082cd3d03025253b1fac0a3ae73681aa2-zip-aec091.tar",
-                "reference": "3bf8db9082cd3d03025253b1fac0a3ae73681aa2",
-                "shasum": "27db0dd0e17709727090295dedd1b208fb4103b9"
+                "url": "https://p4-composer-registry.greenpeace.org//dist/greenpeace/planet4-master-theme/greenpeace-planet4-master-theme-e53390a61c76cb2015e51cd33bb196942eb7a1ce-zip-ca3400.tar",
+                "reference": "e53390a61c76cb2015e51cd33bb196942eb7a1ce",
+                "shasum": "8eb1106e17998f825d0373335a6d8a695a452c3a"
             },
             "require": {
                 "webdevstudios/cmb2": "^2",
@@ -260,21 +260,21 @@
                 "wiki": "https://github.com/greenpeace/planet4-master-theme/wiki",
                 "source": "https://github.com/greenpeace/planet4-master-theme"
             },
-            "time": "2018-01-24T11:41:19+00:00"
+            "time": "2018-01-29T11:13:04+00:00"
         },
         {
             "name": "greenpeace/planet4-plugin-blocks",
-            "version": "0.1.26",
+            "version": "0.1.28",
             "source": {
                 "type": "git",
                 "url": "https://github.com/greenpeace/planet4-plugin-blocks.git",
-                "reference": "40726176368cf90211e494348cda88162b8b6ab3"
+                "reference": "b0c5f597a2a48ff1d1e5c22e8ae269e46875a6c4"
             },
             "dist": {
                 "type": "tar",
-                "url": "https://p4-composer-registry.greenpeace.org//dist/greenpeace/planet4-plugin-blocks/greenpeace-planet4-plugin-blocks-40726176368cf90211e494348cda88162b8b6ab3-zip-a961bc.tar",
-                "reference": "40726176368cf90211e494348cda88162b8b6ab3",
-                "shasum": "a84833d68183779e5fa56f78f41571e20a4c6790"
+                "url": "https://p4-composer-registry.greenpeace.org//dist/greenpeace/planet4-plugin-blocks/greenpeace-planet4-plugin-blocks-b0c5f597a2a48ff1d1e5c22e8ae269e46875a6c4-zip-bef4a2.tar",
+                "reference": "b0c5f597a2a48ff1d1e5c22e8ae269e46875a6c4",
+                "shasum": "8c9fb009ad2cf34dcf80f92c42e33afe33dc2066"
             },
             "require-dev": {
                 "dealerdirect/phpcodesniffer-composer-installer": "^0.4.0",
@@ -302,10 +302,10 @@
             ],
             "description": "This repository contains the WordPress plugin that provides the blocks to be used with Shortcake UI plugin.",
             "support": {
-                "source": "https://github.com/greenpeace/planet4-plugin-blocks/tree/master",
+                "source": "https://github.com/greenpeace/planet4-plugin-blocks/tree/v0.1.28",
                 "issues": "https://github.com/greenpeace/planet4-plugin-blocks/issues"
             },
-            "time": "2018-01-24T11:59:59+00:00"
+            "time": "2018-01-29T11:16:34+00:00"
         },
         {
             "name": "greenpeace/planet4-plugin-engagingnetworks",
@@ -378,16 +378,20 @@
                 }
             ],
             "description": "This repository contains the WordPress plugin that provides the old and new urls from migrated content from p3 to p4.",
+            "support": {
+                "source": "https://github.com/greenpeace/planet4-plugin-migrated-urls/tree/v0.0.1",
+                "issues": "https://github.com/greenpeace/planet4-plugin-migrated-urls/issues"
+            },
             "time": "2017-10-23T11:56:54+00:00"
         },
         {
             "name": "greenpeace/planet4-plugin-searchwp-upstream",
-            "version": "2.9.2",
+            "version": "2.9.5",
             "dist": {
                 "type": "tar",
-                "url": "https://p4-composer-registry.greenpeace.org//dist/greenpeace/planet4-plugin-searchwp-upstream/greenpeace-planet4-plugin-searchwp-upstream-2.9.2.tar",
+                "url": "https://p4-composer-registry.greenpeace.org//dist/greenpeace/planet4-plugin-searchwp-upstream/greenpeace-planet4-plugin-searchwp-upstream-2.9.5.tar",
                 "reference": null,
-                "shasum": "2e48e9c6f79dbbf1f690caea9a1dec6255ad6361"
+                "shasum": "f77ce92bbd8cf11f92e2c83e89c2376cc7c73c65"
             },
             "type": "wordpress-plugin"
         },
@@ -426,6 +430,58 @@
                 "shasum": "9f47997fe88fe96eb24c2f7ff406d52e232ae5d2"
             },
             "type": "library"
+        },
+        {
+            "name": "leafo/scssphp",
+            "version": "v0.7.4",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/leafo/scssphp.git",
+                "reference": "d7296256bd1bfacb8bd24e69030fd5e187181835"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/leafo/scssphp/zipball/d7296256bd1bfacb8bd24e69030fd5e187181835",
+                "reference": "d7296256bd1bfacb8bd24e69030fd5e187181835",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.4.0"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "~4.6",
+                "squizlabs/php_codesniffer": "~2.5"
+            },
+            "bin": [
+                "bin/pscss"
+            ],
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Leafo\\ScssPhp\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Leaf Corcoran",
+                    "email": "leafot@gmail.com",
+                    "homepage": "http://leafo.net"
+                }
+            ],
+            "description": "scssphp is a compiler for SCSS written in PHP.",
+            "homepage": "http://leafo.github.io/scssphp/",
+            "keywords": [
+                "css",
+                "less",
+                "sass",
+                "scss",
+                "stylesheet"
+            ],
+            "time": "2017-12-21T00:18:53+00:00"
         },
         {
             "name": "webdevstudios/cmb2",
