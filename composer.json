@@ -28,8 +28,7 @@
 		"wpackagist-plugin/nginx-helper": "^1.9",
 		"wpackagist-plugin/shortcode-ui": "0.7.3",
 		"wpackagist-plugin/wp-redis": "0.7.0",
-		"wpackagist-plugin/wp-stateless": "^2.1",
-		"leafo/scssphp": "^0.7.4"
+		"wpackagist-plugin/wp-stateless": "^2.1"
 	},
 
 	"config": {
