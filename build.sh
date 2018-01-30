@@ -68,7 +68,7 @@ function set_vars() {
     if [[ -z "$current" ]] || [[ $config_pass -gt 0 ]]
     then
       # Skip any variables set in the environment
-      [[ $(contains "${env_parameters[@]}" $key) == "y" ]] && _build "[ENV] $key=${!key}" && continue
+      [[ $(contains "${env_parameters[@]}" "$key") == "y" ]] && _build "[ENV] $key=${!key}" && continue
       # This key is not set yet
       if [[ $bash_version -lt 4 ]]
       then
@@ -220,8 +220,10 @@ do
 # ------------------------------------------------------------------------
 "
 
-  echo -e "${docker_build_string}\n$(cat "${current_dir}/Dockerfile")" > "${current_dir}/Dockerfile"
-  echo -e "$(cat "${current_dir}/README.md")\nBuild: ${CIRCLE_BUILD_URL:-"(local)"}" > "${current_dir}/README.md"
+  current_dockerfile=$(cat "${current_dir}/Dockerfile")
+  echo -e "${docker_build_string}\n${current_dockerfile}" > "${current_dir}/Dockerfile"
+  current_readme=$(cat "${current_dir}/README.md")
+  echo -e "${current_readme}\nBuild: ${CIRCLE_BUILD_URL:-"(local)"}" > "${current_dir}/README.md"
 
 done
 
@@ -289,7 +291,7 @@ then
   time "${GCLOUD}" container builds submit \
     --verbosity=${VERBOSITY:-"warning"} \
     --timeout=10m \
-    --config cloudbuild-${BUILD_ENVIRONMENT}.yaml \
+    --config "cloudbuild-${BUILD_ENVIRONMENT}.yaml" \
     --substitutions "${cloudbuild_substitutions}" \
     "${TMPDIR}/docker-source.tar.gz"
 fi
