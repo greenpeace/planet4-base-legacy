@@ -1,8 +1,10 @@
+SHELL := /bin/bash
+
 BUILD_FLAGS?=-rp
 
 .DEFAULT_GOAL := all
 
-all : test update build
+all : clean test update build
 .PHONY : all
 
 .PHONY : test
