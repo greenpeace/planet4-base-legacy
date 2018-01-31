@@ -66,7 +66,7 @@
 		"site-update": [
 			"@copy:wordpress",
 			"@reset:themes", "@reset:plugins", "@copy:themes", "@copy:assets", "@copy:plugins",
-			"@core:updatedb", "@plugin:activate-only-inactive", "@theme:activate", "@core:add-author-capabilities",
+			"@core:updatedb", "plugin:deactivate", "@plugin:activate", "@theme:activate", "@core:add-author-capabilities",
 			"@core:add-contributor-capabilities", "@redis:enable", "@core:style"
 		],
 
@@ -106,7 +106,7 @@
 
 		"plugin:deactivate": "wp plugin deactivate --all",
 		"plugin:activate": "wp plugin activate --all",
-		"plugin:activate-only-inactive": "inactive_plugins=$(wp plugin list --field=name --status=inactive --format=csv); wp plugin activate $inactive_plugins;",
+		"plugin:activate-only-inactive": "inactive_plugins=$(wp plugin list --field=name --status=inactive --format=csv); [ ! -z \"$inactive_plugins\" ] && wp plugin activate $inactive_plugins;",
 		"theme:activate": "wp theme activate",
 
 		"server": "php -S 127.0.0.1:9191 -t public"
