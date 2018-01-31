@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "26027a2ecb1d53b1189c5d92eff48d87",
+    "content-hash": "0e8ac63386be96728b64942a11bb77ba",
     "packages": [
         {
             "name": "composer/installers",
@@ -628,26 +628,6 @@
             },
             "type": "wordpress-plugin",
             "homepage": "https://wordpress.org/plugins/google-apps-login/"
-        },
-        {
-            "name": "wpackagist-plugin/nginx-helper",
-            "version": "1.9.10",
-            "source": {
-                "type": "svn",
-                "url": "https://plugins.svn.wordpress.org/nginx-helper/",
-                "reference": "tags/1.9.10"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/nginx-helper.1.9.10.zip",
-                "reference": null,
-                "shasum": null
-            },
-            "require": {
-                "composer/installers": "~1.0"
-            },
-            "type": "wordpress-plugin",
-            "homepage": "https://wordpress.org/plugins/nginx-helper/"
         },
         {
             "name": "wpackagist-plugin/shortcode-ui",
