@@ -34,8 +34,8 @@ jobs:
                 >&2 echo "Found the wrong commit!"
                 >&2 echo "Wanted: ${CIRCLE_SHA1}"
                 >&2 echo "Found:  $(git rev-parse HEAD)"
-                >&2 echo "Could not reliably determine branch for tag ${CIRCLE_TAG}, attempting to continue ..."
-                exit 0
+                >&2 echo "Could not reliably determine branch for tag ${CIRCLE_TAG}"
+                exit 1
               fi
             fi
 
