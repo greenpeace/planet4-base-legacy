@@ -172,17 +172,17 @@
         },
         {
             "name": "greenpeace/planet4-content-default",
-            "version": "0.2.13",
+            "version": "0.2.14",
             "source": {
                 "type": "git",
                 "url": "https://github.com/greenpeace/planet4-content-default.git",
-                "reference": "af4d03b1669a8ad8e0314136c627e3ccf22d55ac"
+                "reference": "87f19efa476112b79d90248fbf3c8450d6bb87f4"
             },
             "dist": {
                 "type": "tar",
-                "url": "https://p4-composer-registry.greenpeace.org//dist/greenpeace/planet4-content-default/greenpeace-planet4-content-default-af4d03b1669a8ad8e0314136c627e3ccf22d55ac-zip-e42a43.tar",
-                "reference": "af4d03b1669a8ad8e0314136c627e3ccf22d55ac",
-                "shasum": "0aec8710dea82a1d967afce6c5459c2183e2bd9b"
+                "url": "https://p4-composer-registry.greenpeace.org//dist/greenpeace/planet4-content-default/greenpeace-planet4-content-default-87f19efa476112b79d90248fbf3c8450d6bb87f4-zip-b86d3e.tar",
+                "reference": "87f19efa476112b79d90248fbf3c8450d6bb87f4",
+                "shasum": "2da307a229237111c07e4f54f20ce057e0c760d9"
             },
             "type": "library",
             "scripts": {
@@ -198,10 +198,10 @@
             ],
             "description": "Scripts that control the default content of the default planet4 installation",
             "support": {
-                "source": "https://github.com/greenpeace/planet4-content-default/tree/v0.2.13",
+                "source": "https://github.com/greenpeace/planet4-content-default/tree/v0.2.14",
                 "issues": "https://github.com/greenpeace/planet4-content-default/issues"
             },
-            "time": "2018-01-15T13:41:59+00:00"
+            "time": "2018-02-01T12:23:14+00:00"
         },
         {
             "name": "greenpeace/planet4-master-theme",
