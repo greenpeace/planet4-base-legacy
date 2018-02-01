@@ -57,7 +57,7 @@
 			"@reset:public", "@copy:wordpress",
 			"@reset:themes", "@reset:plugins", "@copy:themes", "@copy:assets", "@copy:plugins",
 			"@core:config", "@core:install", "@plugin:activate", "@theme:activate",
-			"@core:add-author-capabilities", "@core:add-contributor-capabilities", "@redis:enable",
+			"@core:initial-content", "@core:add-author-capabilities", "@core:add-contributor-capabilities", "@redis:enable",
 			"@core:style"
 		],
 
