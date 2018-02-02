@@ -1,6 +1,6 @@
 # Greenpeace Planet 4
 
- [![CircleCI](https://circleci.com/gh/greenpeace/planet4-base/tree/dev-feature%2Fgitrepositories.svg?style=shield)](https://circleci.com/gh/greenpeace/planet4-docker/tree/dev-feature%2Fgitrepositories)
+ [![CircleCI](https://circleci.com/gh/greenpeace/planet4-base/tree/develop.svg?style=shield)](https://circleci.com/gh/greenpeace/planet4-docker/tree/develop)
 
 Testing.
 
