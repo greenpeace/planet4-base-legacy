@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "0e8ac63386be96728b64942a11bb77ba",
+    "content-hash": "4b9b225e74affd20d12a6c6a6691398b",
     "packages": [
         {
             "name": "composer/installers",
@@ -205,17 +205,17 @@
         },
         {
             "name": "greenpeace/planet4-master-theme",
-            "version": "0.2.29",
+            "version": "0.2.30",
             "source": {
                 "type": "git",
                 "url": "https://github.com/greenpeace/planet4-master-theme.git",
-                "reference": "271307baffd49f469e132df8280f35d8e23a5c05"
+                "reference": "af7183b2b6e24a21d532de017fd39867f9da6619"
             },
             "dist": {
                 "type": "tar",
-                "url": "https://p4-composer-registry.greenpeace.org//dist/greenpeace/planet4-master-theme/greenpeace-planet4-master-theme-271307baffd49f469e132df8280f35d8e23a5c05-zip-10f182.tar",
-                "reference": "271307baffd49f469e132df8280f35d8e23a5c05",
-                "shasum": "b32165b92d27f7ba37c89ab127974577ab527125"
+                "url": "https://p4-composer-registry.greenpeace.org//dist/greenpeace/planet4-master-theme/greenpeace-planet4-master-theme-af7183b2b6e24a21d532de017fd39867f9da6619-zip-951b7e.tar",
+                "reference": "af7183b2b6e24a21d532de017fd39867f9da6619",
+                "shasum": "ccf428c25f5c59cf76639556e5512dac870137a8"
             },
             "require": {
                 "webdevstudios/cmb2": "^2",
@@ -260,21 +260,21 @@
                 "wiki": "https://github.com/greenpeace/planet4-master-theme/wiki",
                 "source": "https://github.com/greenpeace/planet4-master-theme"
             },
-            "time": "2018-02-01T10:28:22+00:00"
+            "time": "2018-02-05T14:40:26+00:00"
         },
         {
             "name": "greenpeace/planet4-plugin-blocks",
-            "version": "0.1.31",
+            "version": "0.1.32",
             "source": {
                 "type": "git",
                 "url": "https://github.com/greenpeace/planet4-plugin-blocks.git",
-                "reference": "52213c777bba9167d0436038a37d538edaef57e7"
+                "reference": "4851bb17a460e8216529ae4577061db601454183"
             },
             "dist": {
                 "type": "tar",
-                "url": "https://p4-composer-registry.greenpeace.org//dist/greenpeace/planet4-plugin-blocks/greenpeace-planet4-plugin-blocks-52213c777bba9167d0436038a37d538edaef57e7-zip-42629e.tar",
-                "reference": "52213c777bba9167d0436038a37d538edaef57e7",
-                "shasum": "4c51e30027c321cb2fa2c317642a3a5a867a64d5"
+                "url": "https://p4-composer-registry.greenpeace.org//dist/greenpeace/planet4-plugin-blocks/greenpeace-planet4-plugin-blocks-4851bb17a460e8216529ae4577061db601454183-zip-1bfa72.tar",
+                "reference": "4851bb17a460e8216529ae4577061db601454183",
+                "shasum": "77eaacac8ea281a417572cf959dee47f614497cd"
             },
             "require-dev": {
                 "dealerdirect/phpcodesniffer-composer-installer": "^0.4.0",
@@ -302,10 +302,10 @@
             ],
             "description": "This repository contains the WordPress plugin that provides the blocks to be used with Shortcake UI plugin.",
             "support": {
-                "source": "https://github.com/greenpeace/planet4-plugin-blocks/tree/master",
+                "source": "https://github.com/greenpeace/planet4-plugin-blocks/tree/v0.1.32",
                 "issues": "https://github.com/greenpeace/planet4-plugin-blocks/issues"
             },
-            "time": "2018-02-01T10:30:24+00:00"
+            "time": "2018-02-05T14:37:24+00:00"
         },
         {
             "name": "greenpeace/planet4-plugin-engagingnetworks",
@@ -628,6 +628,26 @@
             },
             "type": "wordpress-plugin",
             "homepage": "https://wordpress.org/plugins/google-apps-login/"
+        },
+        {
+            "name": "wpackagist-plugin/redirection",
+            "version": "3.1.1",
+            "source": {
+                "type": "svn",
+                "url": "https://plugins.svn.wordpress.org/redirection/",
+                "reference": "tags/3.1.1"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://downloads.wordpress.org/plugin/redirection.3.1.1.zip",
+                "reference": null,
+                "shasum": null
+            },
+            "require": {
+                "composer/installers": "~1.0"
+            },
+            "type": "wordpress-plugin",
+            "homepage": "https://wordpress.org/plugins/redirection/"
         },
         {
             "name": "wpackagist-plugin/shortcode-ui",
