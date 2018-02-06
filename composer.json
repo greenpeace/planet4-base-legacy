@@ -20,7 +20,7 @@
 		"greenpeace/planet4-plugin-blocks" : "dev-develop",
 		"greenpeace/planet4-plugin-engagingnetworks" : "0.*",
 		"greenpeace/planet4-plugin-searchwp-upstream" : "2.9.5",
-		"greenpeace/planet4-wordpress": "4.9.2",
+		"greenpeace/planet4-wordpress": "4.9.3",
 		"leafo/scssphp": "^0.7.4",
 		"wikimedia/composer-merge-plugin": "1.4.1",
 		"wpackagist-plugin/cmb2": "2.3.0",
