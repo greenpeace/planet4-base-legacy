@@ -1,0 +1,20 @@
+{
+	"name": "greenpeace/planet4-base-gpi",
+	"version": "0.2.1",
+
+	"repositories": [
+		{
+			"type": "composer",
+			"url": "https://p4-composer-registry.greenpeace.org/"
+		},
+		{
+			"type": "composer",
+			"url": "https://wpackagist.org"
+		}
+	],
+
+	"require": {
+		"greenpeace/planet4-child-theme" : "0.2.*",
+		"wpackagist-plugin/loco-translate": "2.0.17"
+	}
+}
