@@ -265,7 +265,6 @@ cloudbuild_substitutions_array=(
   "_BUILD_NUM=${BUILD_NUM}" \
   "_BRANCH_NAME=${BRANCH_NAME//[^[:alnum:]_]/-}" \
   "_BRANCH_TAG=${BRANCH_TAG}" \
-  "_COMPOSER=${COMPOSER}" \
   "_GIT_REF=${GIT_REF}" \
   "_GITHUB_OAUTH_TOKEN=${GITHUB_OAUTH_TOKEN}" \
   "_SHORT_SHA=${SHORT_SHA:-$(git rev-parse --short HEAD)}" \
