@@ -76,6 +76,11 @@ jobs:
       - setup_remote_docker
 
       - run:
+          name: Configure gcloud
+          command: |
+            ${HOME}/scripts/activate-gcloud-account.sh
+
+      - run:
           name: Build production
           command: |
             make build
