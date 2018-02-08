@@ -47,7 +47,7 @@ jobs:
       - run:
           name: Build application
           command: |
-            ./build.sh -r
+            make build
 
       - persist_to_workspace:
           root: /tmp/workspace
