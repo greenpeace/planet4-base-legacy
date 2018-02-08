@@ -65,13 +65,13 @@ fi
 echo "Image:  $1"
 echo "Output: $output_dir"
 
-BRANCH_NAME_SANITIZED=${BRANCH_NAME//[^[:alnum:]_]/-}
+SOURCE_BRANCH_SANITIZED=${SOURCE_BRANCH//[^[:alnum:]_]/-}
 
-docker run -e "WP_BAKE=true" "gcr.io/${GOOGLE_PROJECT_ID}/${image_name}:${BRANCH_NAME_SANITIZED}" || true
+docker run -e "WP_BAKE=true" "gcr.io/${GOOGLE_PROJECT_ID}/${image_name}:${SOURCE_BRANCH_SANITIZED}" || true
 
 # docker commit docker "$(docker ps -alq)" gcr.io/planet-4-151612/p4-gpi-app:latest
 # docker tag gcr.io/planet-4-151612/p4-gpi-app:latest "gcr.io/planet-4-151612/p4-gpi-app:${APP_VERSION}"
 container="$(docker ps -alq)"
-docker cp $container:/app/source/public "$output_dir"
+docker cp "$container:/app/source/public" "$output_dir"
 
-docker rm $container
+docker rm "$container"
