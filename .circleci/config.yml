@@ -1,6 +1,7 @@
 defaults: &defaults
   environment:
     GOOGLE_PROJECT_ID: planet-4-151612
+    BUILD_FLAGS: -r
   docker:
     - image: gcr.io/planet-4-151612/circleci-base:0.3.3
   working_directory:  /home/circleci/app
@@ -67,15 +68,18 @@ jobs:
 
   deploy:
     <<: *defaults
+    environment:
+      BUILD_ENVIRONMENT: production
     steps:
+      - checkout
+
+      - setup_remote_docker
 
       - run:
-          name: Placeholder
+          name: Build production
           command: |
-            echo "Branch: ${CIRCLE_BRANCH}"
-            echo "Build:  ${CIRCLE_BUILD_NUM}"
-            echo "Tag:    ${CIRCLE_TAG}"
-            echo "Deploy not yet implemented"
+            make build
+
 
 workflows:
   version: 2
