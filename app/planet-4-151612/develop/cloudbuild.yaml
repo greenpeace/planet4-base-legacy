@@ -6,8 +6,6 @@ steps:
     - '--build-arg'
     - 'GIT_REF=${_GIT_REF}'
     - '--build-arg'
-    - 'COMPOSER=${_COMPOSER}'
-    - '--build-arg'
     - 'GITHUB_OAUTH_TOKEN=${_GITHUB_OAUTH_TOKEN}'
     - '--tag=${_BUILD_NAMESPACE}/${PROJECT_ID}/p4-gpi-app-dev:${_BRANCH_NAME}'
     - '--tag=${_BUILD_NAMESPACE}/${PROJECT_ID}/p4-gpi-app-dev:${_BRANCH_TAG}'

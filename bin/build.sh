@@ -316,7 +316,7 @@ then
   time "${GCLOUD}" container builds submit \
     --verbosity=${VERBOSITY:-"warning"} \
     --timeout=10m \
-    --config "cloudbuild-${BUILD_ENVIRONMENT}.yaml" \
+    --config "app/${GOOGLE_PROJECT_ID}/${BUILD_ENVIRONMENT}/cloudbuild.yaml" \
     --substitutions "${cloudbuild_substitutions}" \
     "${TMPDIR}/docker-source.tar.gz"
 fi

@@ -2,7 +2,7 @@ steps:
 - id: 'bake-app'
   name: 'gcr.io/planet-4-151612/p4-cloudbuilder:develop'
   env:
-    - BRANCH_NAME=develop
+    - SOURCE_BRANCH=feature/bake
   entrypoint: './bin/bake.sh'
   args: ['-e', '${_BUILD_ENVIRONMENT}', 'p4-gpi-app-dev', './app/${PROJECT_ID}/${_BUILD_ENVIRONMENT}/p4-gpi-app/www']
 - id: 'p4-gpi-app'
@@ -12,8 +12,6 @@ steps:
     - 'build'
     - '--build-arg'
     - 'GIT_REF=${_GIT_REF}'
-    - '--build-arg'
-    - 'COMPOSER=${_COMPOSER}'
     - '--build-arg'
     - 'GITHUB_OAUTH_TOKEN=${_GITHUB_OAUTH_TOKEN}'
     - '--tag=${_BUILD_NAMESPACE}/${PROJECT_ID}/p4-gpi-app:${_BRANCH_NAME}'
