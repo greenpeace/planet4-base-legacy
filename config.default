@@ -3,6 +3,7 @@
 APP_ENV="production"
 APP_HOSTNAME="greenpeace.org"
 APP_NAME="Greenpeace Planet 4 Application Base"
+APP_VERSION="0.1.0"
 BRANCH_NAME=""
 BUILD_ENVIRONMENT="develop"
 BUILD_NAMESPACE="gcr.io"

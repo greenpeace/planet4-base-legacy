@@ -1,0 +1,52 @@
+steps:
+- id: 'bake-app'
+  name: 'gcr.io/planet-4-151612/p4-cloudbuilder:develop'
+  env:
+    - BRANCH_NAME=develop
+  entrypoint: './bin/bake.sh'
+  args: ['-e', '${_BUILD_ENVIRONMENT}', 'p4-gpi-app-dev', './app/${PROJECT_ID}/${_BUILD_ENVIRONMENT}/p4-gpi-app/www']
+- id: 'p4-gpi-app'
+  waitFor: 'bake-app'
+  name: '${_BUILD_NAMESPACE}/cloud-builders/docker'
+  args:
+    - 'build'
+    - '--build-arg'
+    - 'GIT_REF=${_GIT_REF}'
+    - '--build-arg'
+    - 'COMPOSER=${_COMPOSER}'
+    - '--build-arg'
+    - 'GITHUB_OAUTH_TOKEN=${_GITHUB_OAUTH_TOKEN}'
+    - '--tag=${_BUILD_NAMESPACE}/${PROJECT_ID}/p4-gpi-app:${_BRANCH_NAME}'
+    - '--tag=${_BUILD_NAMESPACE}/${PROJECT_ID}/p4-gpi-app:${_BRANCH_TAG}'
+    - '--tag=${_BUILD_NAMESPACE}/${PROJECT_ID}/p4-gpi-app:${_SHORT_SHA}'
+    - '--tag=${_BUILD_NAMESPACE}/${PROJECT_ID}/p4-gpi-app:${_BUILD_NUM}'
+    - '--tag=${_BUILD_NAMESPACE}/${PROJECT_ID}/p4-gpi-app:latest'
+    - './app/${PROJECT_ID}/${_BUILD_ENVIRONMENT}/p4-gpi-app'
+- id: 'bake-openresty'
+  waitFor: 'bake-app'
+  name: 'gcr.io/planet-4-151612/p4-cloudbuilder:develop'
+  entrypoint: 'rsync'
+  args: ['-a', './app/${PROJECT_ID}/${_BUILD_ENVIRONMENT}/p4-gpi-app/www/', './app/${PROJECT_ID}/${_BUILD_ENVIRONMENT}/p4-gpi-openresty/www']
+- id: 'p4-gpi-openresty'
+  waitFor: 'bake-openresty'
+  name: '${_BUILD_NAMESPACE}/cloud-builders/docker'
+  args:
+    - 'build'
+    - '--tag=${_BUILD_NAMESPACE}/${PROJECT_ID}/p4-gpi-openresty:${_BRANCH_NAME}'
+    - '--tag=${_BUILD_NAMESPACE}/${PROJECT_ID}/p4-gpi-openresty:${_BRANCH_TAG}'
+    - '--tag=${_BUILD_NAMESPACE}/${PROJECT_ID}/p4-gpi-openresty:${_SHORT_SHA}'
+    - '--tag=${_BUILD_NAMESPACE}/${PROJECT_ID}/p4-gpi-openresty:${_BUILD_NUM}'
+    - '--tag=${_BUILD_NAMESPACE}/${PROJECT_ID}/p4-gpi-openresty:latest'
+    - './app/${PROJECT_ID}/${_BUILD_ENVIRONMENT}/p4-gpi-openresty'
+
+images:
+  - ${_BUILD_NAMESPACE}/${PROJECT_ID}/p4-gpi-app:${_BRANCH_NAME}
+  - ${_BUILD_NAMESPACE}/${PROJECT_ID}/p4-gpi-app:${_BRANCH_TAG}
+  - ${_BUILD_NAMESPACE}/${PROJECT_ID}/p4-gpi-app:${_SHORT_SHA}
+  - ${_BUILD_NAMESPACE}/${PROJECT_ID}/p4-gpi-app:${_BUILD_NUM}
+  - ${_BUILD_NAMESPACE}/${PROJECT_ID}/p4-gpi-app:latest
+  - ${_BUILD_NAMESPACE}/${PROJECT_ID}/p4-gpi-openresty:${_BRANCH_NAME}
+  - ${_BUILD_NAMESPACE}/${PROJECT_ID}/p4-gpi-openresty:${_BRANCH_TAG}
+  - ${_BUILD_NAMESPACE}/${PROJECT_ID}/p4-gpi-openresty:${_SHORT_SHA}
+  - ${_BUILD_NAMESPACE}/${PROJECT_ID}/p4-gpi-openresty:${_BUILD_NUM}
+  - ${_BUILD_NAMESPACE}/${PROJECT_ID}/p4-gpi-openresty:latest
