@@ -28,8 +28,7 @@ current_dir="$( cd -P "$( dirname "$source" )" && pwd )"
 TMPDIR=$(mktemp -d "${TMPDIR:-/tmp/}$(basename 0).XXXXXXXXXXXX")
 
 # Pretty printing
-# curl -o "${TMPDIR}/pretty-print.sh" https://gist.githubusercontent.com/27Bslash6/ffa9cfb92c25ef27cad2900c74e2f6dc/raw/7142ba210765899f5027d9660998b59b5faa500a/bash-pretty-print.sh
-. "${current_dir}/pretty-print.sh"
+. "${current_dir}/pretty_print.sh"
 
 function contains() {
     local n=$#

@@ -35,9 +35,21 @@ trap finish EXIT
 
 TMPDIR=$(mktemp -d "${TMPDIR:-/tmp/}$(basename 0).XXXXXXXXXXXX")
 
+# Find real file path of current script
+# https://stackoverflow.com/questions/59895/getting-the-source-directory-of-a-bash-script-from-within
+source="${BASH_SOURCE[0]}"
+while [[ -h "$source" ]]
+do # resolve $source until the file is no longer a symlink
+  dir="$( cd -P "$( dirname "$source" )" && pwd )"
+  source="$(readlink "$source")"
+  # if $source was a relative symlink, we need to resolve it relative to the
+  # path where the symlink file was located
+  [[ $source != /* ]] && source="$dir/$source"
+done
+BUILD_DIR="$( cd -P "$( dirname "$source" )/.." && pwd )"
+
 # Pretty printing
-wget -q -O "${TMPDIR}/pretty-print.sh" https://gist.githubusercontent.com/27Bslash6/ffa9cfb92c25ef27cad2900c74e2f6dc/raw/7142ba210765899f5027d9660998b59b5faa500a/bash-pretty-print.sh
-. "${TMPDIR}/pretty-print.sh"
+. "${BUILD_DIR}/bin/pretty_print.sh"
 
 function contains() {
     local n=$#
@@ -137,18 +149,7 @@ do
 done
 shift $((OPTIND - 1))
 
-# Find real file path of current script
-# https://stackoverflow.com/questions/59895/getting-the-source-directory-of-a-bash-script-from-within
-source="${BASH_SOURCE[0]}"
-while [[ -h "$source" ]]
-do # resolve $source until the file is no longer a symlink
-  dir="$( cd -P "$( dirname "$source" )" && pwd )"
-  source="$(readlink "$source")"
-  # if $source was a relative symlink, we need to resolve it relative to the
-  # path where the symlink file was located
-  [[ $source != /* ]] && source="$dir/$source"
-done
-BUILD_DIR="$( cd -P "$( dirname "$source" )/.." && pwd )"
+
 
 _verbose "Building in $BUILD_DIR"
 
