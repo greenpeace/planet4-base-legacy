@@ -23,7 +23,7 @@ clean:
 
 .PHONY : update
 update:
-		./composer_update_lockfile.sh
+		./bin/update_composer_lockfile.sh
 
 .PHONY : build
 build:
