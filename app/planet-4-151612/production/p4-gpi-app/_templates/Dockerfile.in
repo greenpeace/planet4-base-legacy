@@ -1,0 +1,16 @@
+FROM ${IMAGE_FROM_APP}
+
+MAINTAINER ${IMAGE_MAINTAINER}
+
+ENV APP_ENV="${APP_ENV}" \
+    INSTALL_WORDPRESS="false" \
+    WP_SET_OPTIONS_ON_BOOT="false"
+
+
+RUN rm -fr /app/www \
+ && rm /app/etc/my_init.d/00_bake.sh \
+ && rm /app/etc/my_init.d/20_install_wordpress.sh
+
+COPY ./www/public/ /app/www
+
+RUN ln -s /app/www /app/source/public

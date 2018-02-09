@@ -1,6 +1,9 @@
 SHELL := /bin/bash
 
+BAKE_IMAGE?=p4-gpi-app-dev
+
 BUILD_FLAGS?=-rp
+BUILD_ENVIRONMENT?=develop
 
 .DEFAULT_GOAL := all
 
@@ -10,14 +13,18 @@ all : clean test update build
 .PHONY : test
 test:
 
+.PHONY : bake
+bake:
+		./bin/bake.sh -e $(BUILD_ENVIRONMENT) $(BAKE_IMAGE)
+
 .PHONY : clean
 clean:
 		./bin/clean.sh
 
 .PHONY : update
 update:
-		./composer_update_lockfile.sh
+		./bin/update_composer_lockfile.sh
 
 .PHONY : build
 build:
-		./build.sh $(BUILD_FLAGS)
+		./bin/build.sh -e $(BUILD_ENVIRONMENT) $(BUILD_FLAGS)

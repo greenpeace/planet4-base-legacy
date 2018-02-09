@@ -15,7 +15,7 @@ recreate a new Dockerfile from the Dockerfile.in template.  To initiate a build
 Options:
   -c    Config file for environment variables, eg:
           \$ $(basename "$0") -c config
-  -e    Envornment to build
+  -e    Environment to build
   -l    Perform the CircleCI task locally (requires circlecli)
   -p    Pull images after build
   -r    Submits a build request to Google Container Builder
@@ -23,16 +23,33 @@ Options:
 "
 }
 
+bash_version=$(bash --version | head -n 1| cut -d' ' -f4 | cut -d '.' -f 1)
+config_pass=0
+env_parameters=()
+
 # Clean up on exit
 function finish() {
   rm -fr "$TMPDIR"
 }
 trap finish EXIT
 
-bash_version=$(bash --version | head -n 1| cut -d' ' -f4 | cut -d '.' -f 1)
+TMPDIR=$(mktemp -d "${TMPDIR:-/tmp/}$(basename 0).XXXXXXXXXXXX")
 
-env_parameters=()
-config_pass=0
+# Find real file path of current script
+# https://stackoverflow.com/questions/59895/getting-the-source-directory-of-a-bash-script-from-within
+source="${BASH_SOURCE[0]}"
+while [[ -h "$source" ]]
+do # resolve $source until the file is no longer a symlink
+  dir="$( cd -P "$( dirname "$source" )" && pwd )"
+  source="$(readlink "$source")"
+  # if $source was a relative symlink, we need to resolve it relative to the
+  # path where the symlink file was located
+  [[ $source != /* ]] && source="$dir/$source"
+done
+BUILD_DIR="$( cd -P "$( dirname "$source" )/.." && pwd )"
+
+# Pretty printing
+. "${BUILD_DIR}/bin/pretty_print.sh"
 
 function contains() {
     local n=$#
@@ -62,14 +79,20 @@ function set_vars() {
     key="$(echo "$line" | cut -d'=' -f1 | xargs)"
     # Fetch the value, whitespace trimmed
     value="$(echo "$line" | cut -d'=' -f2- | xargs)"
-    # Current value
+    # Current value (if set)
     current="${!key}"
 
     if [[ -z "$current" ]] || [[ $config_pass -gt 0 ]]
     then
+
       # Skip any variables set in the environment
-      [[ $(contains "${env_parameters[@]}" "$key") == "y" ]] && _build "[ENV] $key=${!key}" && continue
+      [[ $(contains "${env_parameters[@]}" "$key") == "y" ]] \
+        && _build "[ENV] $key=${!key}" \
+        && continue
+
       # This key is not set yet
+
+      # The below darkmagick is required to build with default bash on OSX
       if [[ $bash_version -lt 4 ]]
       then
         # Urgh, eval is evil
@@ -78,6 +101,7 @@ function set_vars() {
         declare -g "$key=$value"
       fi
 
+      # Print the details to notice
       if [[ $value != "${current}" ]]
       then
         _notice " ++ $key=$value"
@@ -85,6 +109,7 @@ function set_vars() {
         _notice " -- $key=$value"
       fi
     else
+      # This var is set in the environment and has priority
       _notice "[ENV] $key=${!key}"
       env_parameters+=($key)
     fi
@@ -104,11 +129,7 @@ function get_var_array() {
   echo "${var_array[@]}"
 }
 
-TMPDIR=$(mktemp -d "${TMPDIR:-/tmp/}$(basename 0).XXXXXXXXXXXX")
 
-# Pretty printing
-wget -q -O "${TMPDIR}/pretty-print.sh" https://gist.githubusercontent.com/27Bslash6/ffa9cfb92c25ef27cad2900c74e2f6dc/raw/7142ba210765899f5027d9660998b59b5faa500a/bash-pretty-print.sh
-. "${TMPDIR}/pretty-print.sh"
 
 OPTIONS=':c:e:lprv'
 while getopts $OPTIONS option
@@ -128,18 +149,7 @@ do
 done
 shift $((OPTIND - 1))
 
-# Find real file path of current script
-# https://stackoverflow.com/questions/59895/getting-the-source-directory-of-a-bash-script-from-within
-source="${BASH_SOURCE[0]}"
-while [[ -h "$source" ]]
-do # resolve $source until the file is no longer a symlink
-  dir="$( cd -P "$( dirname "$source" )" && pwd )"
-  source="$(readlink "$source")"
-  # if $source was a relative symlink, we need to resolve it relative to the
-  # path where the symlink file was located
-  [[ $source != /* ]] && source="$dir/$source"
-done
-BUILD_DIR="$( cd -P "$( dirname "$source" )" && pwd )"
+
 
 _verbose "Building in $BUILD_DIR"
 
@@ -147,6 +157,18 @@ _verbose "Building in $BUILD_DIR"
 
 # Setup environment variables
 . "${BUILD_DIR}/bin/env.sh"
+
+if [[ -z "${GITHUB_OAUTH_TOKEN}" ]] && [[ -z "${CI:-}" ]]
+then
+  _build "GITHUB_OAUTH_TOKEN not found in environment. Please enter token now:"
+  read GITHUB_OAUTH_TOKEN
+fi
+
+if [[ -z "${GITHUB_OAUTH_TOKEN}" ]]
+then
+  >&2 echo "ERROR: GITHUB_OAUTH_TOKEN environment variable not set"
+  exit 1
+fi
 
 _build "Building environment: ${BUILD_ENVIRONMENT}"
 
@@ -170,6 +192,8 @@ do
 
   IMAGE=${IMAGE%/}
   current_dir="${BUILD_DIR}/app/${GOOGLE_PROJECT_ID}/${BUILD_ENVIRONMENT}/${IMAGE}"
+
+  [[ ! -f "$current_dir/config" ]] && _notice "No config in $current_dir, skipping..." && continue
 
   # Default templates
   dockerfile_template="${BUILD_DIR}/app/_templates/Dockerfile.in"
@@ -240,7 +264,7 @@ cloudbuild_substitutions_array=(
   "_BUILD_NAMESPACE=${BUILD_NAMESPACE}" \
   "_BUILD_NUM=${BUILD_NUM}" \
   "_BRANCH_NAME=${BRANCH_NAME//[^[:alnum:]_]/-}" \
-  "_COMPOSER=${COMPOSER}" \
+  "_BRANCH_TAG=${BRANCH_TAG}" \
   "_GIT_REF=${GIT_REF}" \
   "_GITHUB_OAUTH_TOKEN=${GITHUB_OAUTH_TOKEN}" \
   "_SHORT_SHA=${SHORT_SHA:-$(git rev-parse --short HEAD)}" \
@@ -291,7 +315,7 @@ then
   time "${GCLOUD}" container builds submit \
     --verbosity=${VERBOSITY:-"warning"} \
     --timeout=10m \
-    --config "cloudbuild-${BUILD_ENVIRONMENT}.yaml" \
+    --config "app/${GOOGLE_PROJECT_ID}/${BUILD_ENVIRONMENT}/cloudbuild.yaml" \
     --substitutions "${cloudbuild_substitutions}" \
     "${TMPDIR}/docker-source.tar.gz"
 fi

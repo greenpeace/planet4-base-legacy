@@ -1,6 +1,7 @@
 defaults: &defaults
   environment:
     GOOGLE_PROJECT_ID: planet-4-151612
+    BUILD_FLAGS: -r
   docker:
     - image: gcr.io/planet-4-151612/circleci-base:0.3.3
   working_directory:  /home/circleci/app
@@ -47,7 +48,7 @@ jobs:
       - run:
           name: Build application
           command: |
-            ./build.sh -r
+            make build
 
       - persist_to_workspace:
           root: /tmp/workspace
@@ -67,15 +68,25 @@ jobs:
 
   deploy:
     <<: *defaults
+    environment:
+      GOOGLE_PROJECT_ID: planet-4-151612
+      BUILD_FLAGS: -r
+      BUILD_ENVIRONMENT: production
     steps:
+      - checkout
+
+      - setup_remote_docker
 
       - run:
-          name: Placeholder
+          name: Configure gcloud
           command: |
-            echo "Branch: ${CIRCLE_BRANCH}"
-            echo "Build:  ${CIRCLE_BUILD_NUM}"
-            echo "Tag:    ${CIRCLE_TAG}"
-            echo "Deploy not yet implemented"
+            ${HOME}/scripts/activate-gcloud-account.sh
+
+      - run:
+          name: Build production
+          command: |
+            make build
+
 
 workflows:
   version: 2
