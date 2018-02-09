@@ -69,6 +69,8 @@ jobs:
   deploy:
     <<: *defaults
     environment:
+      GOOGLE_PROJECT_ID: planet-4-151612
+      BUILD_FLAGS: -r
       BUILD_ENVIRONMENT: production
     steps:
       - checkout
