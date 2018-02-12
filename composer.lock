@@ -209,13 +209,13 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/greenpeace/planet4-master-theme.git",
-                "reference": "412a7486c6c3044777c3949b1fa8bf7589036b3b"
+                "reference": "6f9bb102e8cd55f94df9a5cdae902830b6646b55"
             },
             "dist": {
                 "type": "tar",
-                "url": "https://p4-composer-registry.greenpeace.org//dist/greenpeace/planet4-master-theme/greenpeace-planet4-master-theme-412a7486c6c3044777c3949b1fa8bf7589036b3b-zip-1314dd.tar",
-                "reference": "412a7486c6c3044777c3949b1fa8bf7589036b3b",
-                "shasum": "e2a57d2118d561a2282af522d9bfe49633ae4609"
+                "url": "https://p4-composer-registry.greenpeace.org//dist/greenpeace/planet4-master-theme/greenpeace-planet4-master-theme-6f9bb102e8cd55f94df9a5cdae902830b6646b55-zip-6f6629.tar",
+                "reference": "6f9bb102e8cd55f94df9a5cdae902830b6646b55",
+                "shasum": "782a23b0ea6328f8db2c312726e5fbf624adf628"
             },
             "require": {
                 "wpackagist-plugin/cmb2": "2.3.0",
@@ -260,7 +260,7 @@
                 "wiki": "https://github.com/greenpeace/planet4-master-theme/wiki",
                 "source": "https://github.com/greenpeace/planet4-master-theme"
             },
-            "time": "2018-02-12T07:23:25+00:00"
+            "time": "2018-02-12T09:58:03+00:00"
         },
         {
             "name": "greenpeace/planet4-plugin-blocks",
