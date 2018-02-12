@@ -209,13 +209,13 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/greenpeace/planet4-master-theme.git",
-                "reference": "6c393a966a0b408bc4463f375457148189c2311c"
+                "reference": "9c9c21b38802e2dec8c390fcef73cb84e25c4ff9"
             },
             "dist": {
-                "type": "tar",
-                "url": "https://p4-composer-registry.greenpeace.org//dist/greenpeace/planet4-master-theme/greenpeace-planet4-master-theme-6c393a966a0b408bc4463f375457148189c2311c-zip-ff4d06.tar",
-                "reference": "6c393a966a0b408bc4463f375457148189c2311c",
-                "shasum": "098163de5b817449f01d31743c2beca46417abb6"
+                "type": "zip",
+                "url": "https://api.github.com/repos/greenpeace/planet4-master-theme/zipball/9c9c21b38802e2dec8c390fcef73cb84e25c4ff9",
+                "reference": "9c9c21b38802e2dec8c390fcef73cb84e25c4ff9",
+                "shasum": ""
             },
             "require": {
                 "wpackagist-plugin/cmb2": "2.3.0",
@@ -230,6 +230,7 @@
                     ]
                 }
             },
+            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "MIT"
             ],
@@ -255,12 +256,7 @@
                 }
             ],
             "description": "Master theme for the Planet 4 Wordpress project",
-            "support": {
-                "issues": "https://github.com/greenpeace/planet4-master-theme/issues",
-                "wiki": "https://github.com/greenpeace/planet4-master-theme/wiki",
-                "source": "https://github.com/greenpeace/planet4-master-theme"
-            },
-            "time": "2018-02-12T11:32:49+00:00"
+            "time": "2018-02-12T12:10:09+00:00"
         },
         {
             "name": "greenpeace/planet4-plugin-blocks",
