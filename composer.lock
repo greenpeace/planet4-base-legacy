@@ -209,12 +209,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/greenpeace/planet4-master-theme.git",
-                "reference": "dbe98b5cef87e6100c0166cb52bdbab72e326d07"
+                "reference": "624cc2c01fe05794925f6fcbd197844bd32e657c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/greenpeace/planet4-master-theme/zipball/dbe98b5cef87e6100c0166cb52bdbab72e326d07",
-                "reference": "dbe98b5cef87e6100c0166cb52bdbab72e326d07",
+                "url": "https://api.github.com/repos/greenpeace/planet4-master-theme/zipball/624cc2c01fe05794925f6fcbd197844bd32e657c",
+                "reference": "624cc2c01fe05794925f6fcbd197844bd32e657c",
                 "shasum": ""
             },
             "require": {
@@ -256,7 +256,7 @@
                 }
             ],
             "description": "Master theme for the Planet 4 Wordpress project",
-            "time": "2018-02-12T14:00:00+00:00"
+            "time": "2018-02-13T10:59:05+00:00"
         },
         {
             "name": "greenpeace/planet4-plugin-blocks",
