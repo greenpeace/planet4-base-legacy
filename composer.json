@@ -20,8 +20,8 @@
 	"require": {
 		"composer/installers": "~1.0",
 		"greenpeace/planet4-content-default": "0.2.*",
-		"greenpeace/planet4-master-theme" : "0.2.*",
-		"greenpeace/planet4-plugin-blocks" : "0.1.*",
+		"greenpeace/planet4-master-theme" : "0.2.31",
+		"greenpeace/planet4-plugin-blocks" : "0.1.33",
 		"greenpeace/planet4-plugin-engagingnetworks" : "0.*",
 		"greenpeace/planet4-plugin-searchwp-upstream" : "2.9.5",
 		"greenpeace/planet4-wordpress": "4.9.4",
