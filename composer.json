@@ -60,7 +60,7 @@
 
 	"scripts": {
 		"site-install": [
-			"@reset:public", "@download:wordpress",
+			"@reset:public", "@download:wordpress", "@copy:health-check"
 			"@reset:themes", "@reset:plugins", "@copy:themes", "@copy:assets", "@copy:plugins",
 			"@core:config", "@core:install", "@plugin:activate", "@theme:activate",
 			"@core:initial-content", "@core:add-author-capabilities", "@core:add-contributor-capabilities", "@redis:enable",
@@ -68,7 +68,7 @@
 		],
 
 		"site-update": [
-			"@download:wordpress",
+			"@download:wordpress", "@copy:health-check",
 			"@reset:themes", "@reset:plugins", "@copy:themes", "@copy:assets", "@copy:plugins",
 			"@core:updatedb", "@plugin:deactivate", "@plugin:activate", "@theme:activate", "@core:add-author-capabilities",
 			"@core:add-contributor-capabilities", "@redis:enable", "@core:style"
@@ -93,6 +93,7 @@
 		"reset:plugins" : "rm -rf public/wp-content/plugins",
 
 		"download:wordpress": "wp core download --version=4.9.4 --path=public",
+		"copy:health-check" : "rsync -ar health_db.php public/health_db.php; rsync -ar health_php.php public/health_php.php; rsync -ar health_redis.php public/health_redis.php",
 		"copy:plugins" : "rsync -ar vendor/plugins public/wp-content",
 		"copy:themes" : "rsync -ar vendor/themes public/wp-content",
 		"copy:assets" : "rsync -ar vendor/greenpeace/planet4-content-default/assets public/wp-content/themes/planet4-master-theme",
