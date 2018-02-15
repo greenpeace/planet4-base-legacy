@@ -60,7 +60,7 @@
 
 	"scripts": {
 		"site-install": [
-			"@reset:public", "@download:wordpress", "@copy:health-check"
+			"@reset:public", "@download:wordpress", "@copy:health-check",
 			"@reset:themes", "@reset:plugins", "@copy:themes", "@copy:assets", "@copy:plugins",
 			"@core:config", "@core:install", "@plugin:activate", "@theme:activate",
 			"@core:initial-content", "@core:add-author-capabilities", "@core:add-contributor-capabilities", "@redis:enable",
@@ -79,10 +79,10 @@
 		],
 
 		"docker-site-install": [
-			"@download:wordpress",
+			"@download:wordpress", "@copy:health-check",
 			"@reset:themes", "@copy:themes", "@copy:assets", "@copy:plugins",
 			"@core:config", "@core:install", "@plugin:activate", "@theme:activate",
-			"@core:initial-content"
+			"@core:initial-content", "@core:style"
 		],
 
 		"theme:install": ["@copy:theme", "@theme:activate"],
