@@ -20,11 +20,10 @@
 	"require": {
 		"composer/installers": "~1.0",
 		"greenpeace/planet4-content-default": "0.2.*",
-		"greenpeace/planet4-master-theme" : "0.2.33",
-		"greenpeace/planet4-plugin-blocks" : "0.1.33",
+		"greenpeace/planet4-master-theme" : "0.2.34",
+		"greenpeace/planet4-plugin-blocks" : "0.1.34",
 		"greenpeace/planet4-plugin-engagingnetworks" : "0.*",
 		"greenpeace/planet4-plugin-searchwp-upstream" : "2.9.5",
-		"greenpeace/planet4-wordpress": "4.9.4",
 		"leafo/scssphp": "^0.7.4",
 		"wikimedia/composer-merge-plugin": "1.4.1",
 		"wpackagist-plugin/cmb2": "2.3.0",
@@ -59,7 +58,7 @@
 
 	"scripts": {
 		"site-install": [
-			"@reset:public", "@copy:wordpress",
+			"@reset:public", "@download:wordpress", "@copy:health-check",
 			"@reset:themes", "@reset:plugins", "@copy:themes", "@copy:assets", "@copy:plugins",
 			"@core:config", "@core:install", "@plugin:activate", "@theme:activate",
 			"@core:initial-content", "@core:add-author-capabilities", "@core:add-contributor-capabilities", "@redis:enable",
@@ -67,16 +66,17 @@
 		],
 
 		"site-update": [
-			"@copy:wordpress",
+			"@download:wordpress", "@copy:health-check",
 			"@reset:themes", "@reset:plugins", "@copy:themes", "@copy:assets", "@copy:plugins",
 			"@core:updatedb", "@plugin:deactivate", "@plugin:activate", "@theme:activate", "@core:add-author-capabilities",
 			"@core:add-contributor-capabilities", "@redis:enable", "@core:style"
 		],
 
 		"docker-site-install": [
-			"@copy:wordpress",
+			"@download:wordpress", "@copy:health-check",
 			"@reset:themes", "@copy:themes", "@copy:assets", "@copy:plugins",
-			"@core:config", "@core:install", "@plugin:activate", "@theme:activate"
+			"@core:config", "@core:install", "@plugin:activate", "@theme:activate",
+			"@core:initial-content", "@core:style"
 		],
 
 		"theme:install": ["@copy:theme", "@theme:activate"],
@@ -86,7 +86,8 @@
 		"reset:themes" : "rm -rf public/wp-content/themes",
 		"reset:plugins" : "rm -rf public/wp-content/plugins",
 
-		"copy:wordpress": "rsync -ar vendor/greenpeace/planet4-wordpress-upstream/* public",
+		"download:wordpress": "wp core download --version=4.9.4 --path=public --force",
+		"copy:health-check" : "rsync -ar health_db.php public/health_db.php; rsync -ar health_php.php public/health_php.php; rsync -ar health_redis.php public/health_redis.php",
 		"copy:plugins" : "rsync -ar vendor/plugins public/wp-content",
 		"copy:themes" : "rsync -ar vendor/themes public/wp-content",
 		"copy:assets" : "rsync -ar vendor/greenpeace/planet4-content-default/assets public/wp-content/themes/planet4-master-theme",
