@@ -1,7 +1,11 @@
 <?php
 
+require "wp-config.php";
+
 $redis = new Redis();
-$con   = $redis->connect(WP_REDIS_HOST, WP_REDIS_PORT);
+
+$redis_port = ! empty( $redis_server['port'] ) ? $redis_server['port'] : 6379;
+$con   = $redis->connect($redis_server['host'], $redis_port);
 
 if ( !$con ) {
 	http_response_code(500);
