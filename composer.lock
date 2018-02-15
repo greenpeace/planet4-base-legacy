@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "c41ffa418e8285d414b19b42d10d2ae8",
+    "content-hash": "923ca9192ba107dbfa99d3eb69884fe7",
     "packages": [
         {
             "name": "composer/installers",
@@ -398,42 +398,6 @@
                 "shasum": "c3e09879353b1efefcd3137178256fad81b796a4"
             },
             "type": "wordpress-plugin"
-        },
-        {
-            "name": "greenpeace/planet4-wordpress",
-            "version": "4.9.4",
-            "source": {
-                "type": "git",
-                "url": "repositories/planet4-wordpress",
-                "reference": "4ca66e2dc11d1d7aea39d425cc563f765087eb3e"
-            },
-            "dist": {
-                "type": "tar",
-                "url": "https://p4-composer-registry.greenpeace.org//dist/greenpeace/planet4-wordpress/greenpeace-planet4-wordpress-4.9.4-c52305.tar",
-                "reference": "4ca66e2dc11d1d7aea39d425cc563f765087eb3e",
-                "shasum": "fe72184c6abcc454470717c8518462d8cf0e18fd"
-            },
-            "require": {
-                "greenpeace/planet4-wordpress-upstream": "4.9.4"
-            },
-            "type": "library",
-            "time": "2018-02-07T07:26:08+00:00"
-        },
-        {
-            "name": "greenpeace/planet4-wordpress-upstream",
-            "version": "4.9.4",
-            "source": {
-                "type": "svn",
-                "url": "https://core.svn.wordpress.org/",
-                "reference": "tags/4.9.4"
-            },
-            "dist": {
-                "type": "tar",
-                "url": "https://p4-composer-registry.greenpeace.org//dist/greenpeace/planet4-wordpress-upstream/greenpeace-planet4-wordpress-upstream-4.9.4-2454a0.tar",
-                "reference": "tags/4.9.4",
-                "shasum": "60381ada2f3fb407bad2abe7389c72d10737b701"
-            },
-            "type": "library"
         },
         {
             "name": "leafo/scssphp",
