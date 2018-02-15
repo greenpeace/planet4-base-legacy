@@ -1,10 +1,4 @@
 <?php
-/**
- * Created by PhpStorm.
- * User: kkokkoro
- * Date: 13/02/2018
- * Time: 15:28
- */
 
 require "wp-config.php";
 
@@ -19,4 +13,5 @@ if ($conn->connect_error) {
 }
 
 http_response_code(200);
+echo "ok";
 $conn->close();
