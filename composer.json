@@ -24,7 +24,6 @@
 		"greenpeace/planet4-plugin-blocks" : "dev-develop",
 		"greenpeace/planet4-plugin-engagingnetworks" : "0.*",
 		"greenpeace/planet4-plugin-searchwp-upstream" : "2.9.5",
-		"greenpeace/planet4-wordpress": "4.9.4",
 		"leafo/scssphp": "^0.7.4",
 		"wikimedia/composer-merge-plugin": "1.4.1",
 		"wpackagist-plugin/cmb2": "2.3.0",
@@ -61,7 +60,7 @@
 
 	"scripts": {
 		"site-install": [
-			"@reset:public", "@copy:wordpress", "@copy:health-check",
+			"@reset:public", "@download:wordpress", "@copy:health-check"
 			"@reset:themes", "@reset:plugins", "@copy:themes", "@copy:assets", "@copy:plugins",
 			"@core:config", "@core:install", "@plugin:activate", "@theme:activate",
 			"@core:initial-content", "@core:add-author-capabilities", "@core:add-contributor-capabilities", "@redis:enable",
@@ -69,7 +68,7 @@
 		],
 
 		"site-update": [
-			"@copy:wordpress", "@copy:health-check",
+			"@download:wordpress", "@copy:health-check",
 			"@reset:themes", "@reset:plugins", "@copy:themes", "@copy:assets", "@copy:plugins",
 			"@core:updatedb", "@plugin:deactivate", "@plugin:activate", "@theme:activate", "@core:add-author-capabilities",
 			"@core:add-contributor-capabilities", "@redis:enable", "@core:style"
@@ -80,7 +79,7 @@
 		],
 
 		"docker-site-install": [
-			"@copy:wordpress",
+			"@download:wordpress",
 			"@reset:themes", "@copy:themes", "@copy:assets", "@copy:plugins",
 			"@core:config", "@core:install", "@plugin:activate", "@theme:activate",
 			"@core:initial-content"
@@ -93,7 +92,7 @@
 		"reset:themes" : "rm -rf public/wp-content/themes",
 		"reset:plugins" : "rm -rf public/wp-content/plugins",
 
-		"copy:wordpress": "rsync -ar vendor/greenpeace/planet4-wordpress-upstream/* public",
+		"download:wordpress": "wp core download --version=4.9.4 --path=public",
 		"copy:health-check" : "rsync -ar health_db.php public/health_db.php; rsync -ar health_php.php public/health_php.php; rsync -ar health_redis.php public/health_redis.php",
 		"copy:plugins" : "rsync -ar vendor/plugins public/wp-content",
 		"copy:themes" : "rsync -ar vendor/themes public/wp-content",
