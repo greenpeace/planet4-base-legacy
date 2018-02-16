@@ -4,7 +4,6 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "5876ca012e8b42c2288df7d4da80594f",
     "content-hash": "dc34c6acb2a7cb05b0f0a89ad1f7a45b",
     "packages": [
         {
@@ -125,7 +124,7 @@
                 "zend",
                 "zikula"
             ],
-            "time": "2017-12-29 09:13:20"
+            "time": "2017-12-29T09:13:20+00:00"
         },
         {
             "name": "greenpeace/planet4-child-theme",
@@ -165,7 +164,7 @@
                 }
             ],
             "description": "Exemple child theme for the Planet 4 Wordpress project",
-            "time": "2018-02-12 10:57:30"
+            "time": "2018-02-16T10:05:29+00:00"
         },
         {
             "name": "greenpeace/planet4-content-default",
@@ -198,7 +197,7 @@
                 "source": "https://github.com/greenpeace/planet4-content-default/tree/v0.2.14",
                 "issues": "https://github.com/greenpeace/planet4-content-default/issues"
             },
-            "time": "2018-02-01 12:23:14"
+            "time": "2018-02-01T12:23:14+00:00"
         },
         {
             "name": "greenpeace/planet4-master-theme",
@@ -206,12 +205,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/greenpeace/planet4-master-theme.git",
-                "reference": "96160aa8c9fb4f308276c81ee121a90dc8b1452e"
+                "reference": "7d4960fe700db84004299b8fe5f59708a700f6fd"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/greenpeace/planet4-master-theme/zipball/96160aa8c9fb4f308276c81ee121a90dc8b1452e",
-                "reference": "96160aa8c9fb4f308276c81ee121a90dc8b1452e",
+                "url": "https://api.github.com/repos/greenpeace/planet4-master-theme/zipball/7d4960fe700db84004299b8fe5f59708a700f6fd",
+                "reference": "7d4960fe700db84004299b8fe5f59708a700f6fd",
                 "shasum": ""
             },
             "require": {
@@ -253,7 +252,7 @@
                 }
             ],
             "description": "Master theme for the Planet 4 Wordpress project",
-            "time": "2018-02-15 09:46:34"
+            "time": "2018-02-16T11:09:16+00:00"
         },
         {
             "name": "greenpeace/planet4-plugin-blocks",
@@ -341,7 +340,7 @@
                 "source": "https://github.com/greenpeace/planet4-plugin-engagingnetworks/tree/master",
                 "issues": "https://github.com/greenpeace/planet4-plugin-engagingnetworks/issues"
             },
-            "time": "2017-11-28 07:56:38"
+            "time": "2017-11-28T07:56:38+00:00"
         },
         {
             "name": "greenpeace/planet4-plugin-migrated-urls",
@@ -372,7 +371,7 @@
                 "source": "https://github.com/greenpeace/planet4-plugin-migrated-urls/tree/v0.0.1",
                 "issues": "https://github.com/greenpeace/planet4-plugin-migrated-urls/issues"
             },
-            "time": "2017-10-23 11:56:54"
+            "time": "2017-10-23T11:56:54+00:00"
         },
         {
             "name": "greenpeace/planet4-plugin-searchwp-upstream",
@@ -446,7 +445,7 @@
                 "scss",
                 "stylesheet"
             ],
-            "time": "2018-02-09 02:04:21"
+            "time": "2018-02-09T02:04:21+00:00"
         },
         {
             "name": "wikimedia/composer-merge-plugin",
@@ -495,7 +494,7 @@
                 }
             ],
             "description": "Composer plugin to merge multiple composer.json files",
-            "time": "2017-04-25 02:31:25"
+            "time": "2017-04-25T02:31:25+00:00"
         },
         {
             "name": "wpackagist-plugin/akismet",
