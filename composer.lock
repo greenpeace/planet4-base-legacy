@@ -132,16 +132,16 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/greenpeace/planet4-child-theme.git",
-                "reference": "988f275b418449eaa43ed31985a1fe43d41003ce"
+                "reference": "132b89b83e51a4c5231c772641b870763e3d6665"
             },
             "dist": {
-                "type": "tar",
-                "url": "https://api.github.com/repos/greenpeace/planet4-child-theme/zipball/988f275b418449eaa43ed31985a1fe43d41003ce",
-                "reference": "988f275b418449eaa43ed31985a1fe43d41003ce",
-                "shasum": "fb77ba6d9afcba81103eb20c880b371e9a14c31e"
+                "type": "zip",
+                "url": "https://api.github.com/repos/greenpeace/planet4-child-theme/zipball/132b89b83e51a4c5231c772641b870763e3d6665",
+                "reference": "132b89b83e51a4c5231c772641b870763e3d6665",
+                "shasum": ""
             },
             "require": {
-                "wpackagist-plugin/timber-library": "1.5.*"
+                "wpackagist-plugin/timber-library": "1.7.*"
             },
             "type": "wordpress-theme",
             "extra": {
@@ -152,6 +152,7 @@
                     ]
                 }
             },
+            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "GPL-3.0+"
             ],
@@ -163,12 +164,7 @@
                 }
             ],
             "description": "Exemple child theme for the Planet 4 Wordpress project",
-            "support": {
-                "issues": "https://github.com/greenpeace/planet4-child-theme/issues",
-                "wiki": "https://github.com/greenpeace/planet4-child-theme/wiki",
-                "source": "https://github.com/greenpeace/planet4-child-theme"
-            },
-            "time": "2018-02-12T10:57:30+00:00"
+            "time": "2018-02-16T10:05:29+00:00"
         },
         {
             "name": "greenpeace/planet4-content-default",
@@ -209,17 +205,17 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/greenpeace/planet4-master-theme.git",
-                "reference": "e6b1a8d74a2c3195492d99280e8e01276d8bfc25"
+                "reference": "96160aa8c9fb4f308276c81ee121a90dc8b1452e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/greenpeace/planet4-master-theme/zipball/e6b1a8d74a2c3195492d99280e8e01276d8bfc25",
-                "reference": "e6b1a8d74a2c3195492d99280e8e01276d8bfc25",
+                "url": "https://api.github.com/repos/greenpeace/planet4-master-theme/zipball/96160aa8c9fb4f308276c81ee121a90dc8b1452e",
+                "reference": "96160aa8c9fb4f308276c81ee121a90dc8b1452e",
                 "shasum": ""
             },
             "require": {
                 "wpackagist-plugin/cmb2": "2.3.0",
-                "wpackagist-plugin/timber-library": "1.5.*"
+                "wpackagist-plugin/timber-library": "1.7.0"
             },
             "type": "wordpress-theme",
             "extra": {
@@ -256,7 +252,7 @@
                 }
             ],
             "description": "Master theme for the Planet 4 Wordpress project",
-            "time": "2018-02-15T09:46:34+00:00"
+            "time": "2018-02-16T09:54:12+00:00"
         },
         {
             "name": "greenpeace/planet4-plugin-blocks",
@@ -264,12 +260,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/greenpeace/planet4-plugin-blocks.git",
-                "reference": "b8a69a38b997a4bf30592121106ef9ede0e75209"
+                "reference": "729007f814d958bc10bdb8d3808d9b2d355a4bf4"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/greenpeace/planet4-plugin-blocks/zipball/b8a69a38b997a4bf30592121106ef9ede0e75209",
-                "reference": "b8a69a38b997a4bf30592121106ef9ede0e75209",
+                "url": "https://api.github.com/repos/greenpeace/planet4-plugin-blocks/zipball/729007f814d958bc10bdb8d3808d9b2d355a4bf4",
+                "reference": "729007f814d958bc10bdb8d3808d9b2d355a4bf4",
                 "shasum": ""
             },
             "require-dev": {
@@ -298,7 +294,7 @@
                 }
             ],
             "description": "This repository contains the WordPress plugin that provides the blocks to be used with Shortcake UI plugin.",
-            "time": "2018-02-15T08:13:55+00:00"
+            "time": "2018-02-16T10:20:57+00:00"
         },
         {
             "name": "greenpeace/planet4-plugin-engagingnetworks",
@@ -602,15 +598,15 @@
         },
         {
             "name": "wpackagist-plugin/timber-library",
-            "version": "1.5.2",
+            "version": "1.7.0",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/timber-library/",
-                "reference": "tags/1.5.2"
+                "reference": "tags/1.7.0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/timber-library.1.5.2.zip",
+                "url": "https://downloads.wordpress.org/plugin/timber-library.1.7.0.zip",
                 "reference": null,
                 "shasum": null
             },
