@@ -260,12 +260,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/greenpeace/planet4-plugin-blocks.git",
-                "reference": "6b907e3f76c74b74b6a0abba5b1311a265e1ac2c"
+                "reference": "fc2ab2ca79c39135da25fc73df8a7ca4e1e5185c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/greenpeace/planet4-plugin-blocks/zipball/6b907e3f76c74b74b6a0abba5b1311a265e1ac2c",
-                "reference": "6b907e3f76c74b74b6a0abba5b1311a265e1ac2c",
+                "url": "https://api.github.com/repos/greenpeace/planet4-plugin-blocks/zipball/fc2ab2ca79c39135da25fc73df8a7ca4e1e5185c",
+                "reference": "fc2ab2ca79c39135da25fc73df8a7ca4e1e5185c",
                 "shasum": ""
             },
             "require-dev": {
@@ -294,7 +294,7 @@
                 }
             ],
             "description": "This repository contains the WordPress plugin that provides the blocks to be used with Shortcake UI plugin.",
-            "time": "2018-02-20T09:08:26+00:00"
+            "time": "2018-02-20T13:37:09+00:00"
         },
         {
             "name": "greenpeace/planet4-plugin-engagingnetworks",
