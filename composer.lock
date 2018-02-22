@@ -205,12 +205,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/greenpeace/planet4-master-theme.git",
-                "reference": "57eecbe573bd6598652842aab003b62452529e88"
+                "reference": "17d09b198e79ec527d4421abdb1093fe9d2c9059"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/greenpeace/planet4-master-theme/zipball/57eecbe573bd6598652842aab003b62452529e88",
-                "reference": "57eecbe573bd6598652842aab003b62452529e88",
+                "url": "https://api.github.com/repos/greenpeace/planet4-master-theme/zipball/17d09b198e79ec527d4421abdb1093fe9d2c9059",
+                "reference": "17d09b198e79ec527d4421abdb1093fe9d2c9059",
                 "shasum": ""
             },
             "require": {
@@ -252,7 +252,7 @@
                 }
             ],
             "description": "Master theme for the Planet 4 Wordpress project",
-            "time": "2018-02-20T11:22:09+00:00"
+            "time": "2018-02-21T14:05:08+00:00"
         },
         {
             "name": "greenpeace/planet4-plugin-blocks",
@@ -260,12 +260,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/greenpeace/planet4-plugin-blocks.git",
-                "reference": "fc2ab2ca79c39135da25fc73df8a7ca4e1e5185c"
+                "reference": "0880fd87d4b32a08216fb8e3683ba607d3298735"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/greenpeace/planet4-plugin-blocks/zipball/fc2ab2ca79c39135da25fc73df8a7ca4e1e5185c",
-                "reference": "fc2ab2ca79c39135da25fc73df8a7ca4e1e5185c",
+                "url": "https://api.github.com/repos/greenpeace/planet4-plugin-blocks/zipball/0880fd87d4b32a08216fb8e3683ba607d3298735",
+                "reference": "0880fd87d4b32a08216fb8e3683ba607d3298735",
                 "shasum": ""
             },
             "require-dev": {
@@ -294,7 +294,7 @@
                 }
             ],
             "description": "This repository contains the WordPress plugin that provides the blocks to be used with Shortcake UI plugin.",
-            "time": "2018-02-20T13:37:09+00:00"
+            "time": "2018-02-21T14:03:20+00:00"
         },
         {
             "name": "greenpeace/planet4-plugin-engagingnetworks",
