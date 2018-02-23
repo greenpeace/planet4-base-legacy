@@ -47,7 +47,7 @@
 			"vendor/themes/{$name}/": ["type:wordpress-theme"]
 		},
 		"merge-plugin": {
-			"require": "app/planet-4-151612/staging/composer.json",
+			"require": "app/planet-4-151612/develop/composer.json",
 			"recurse": true,
 			"replace": false,
 			"ignore-duplicates": true,
