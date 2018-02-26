@@ -50,7 +50,7 @@
 			"require": "app/planet-4-151612/develop/composer.json",
 			"recurse": true,
 			"replace": true,
-			"ignore-duplicates": true,
+			"ignore-duplicates": false,
 			"merge-dev": true,
 			"merge-extra": false,
 			"merge-extra-deep": false,
