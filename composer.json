@@ -49,12 +49,12 @@
 		"merge-plugin": {
 			"require": "app/planet-4-151612/develop/composer.json",
 			"recurse": true,
-			"replace": false,
-			"ignore-duplicates": true,
+			"replace": true,
+			"ignore-duplicates": false,
 			"merge-dev": true,
 			"merge-extra": false,
 			"merge-extra-deep": false,
-			"merge-scripts": false
+			"merge-scripts": true
 		}
 
 	},
@@ -65,14 +65,14 @@
 			"@reset:themes", "@reset:plugins", "@copy:themes", "@copy:assets", "@copy:plugins",
 			"@core:config", "@core:install", "@plugin:activate", "@theme:activate",
 			"@core:initial-content", "@core:add-author-capabilities", "@core:add-contributor-capabilities", "@redis:enable",
-			"@core:style"
+			"@core:style", "@site:custom"
 		],
 
 		"site-update": [
 			"@download:wordpress", "@copy:health-check",
 			"@reset:themes", "@reset:plugins", "@copy:themes", "@copy:assets", "@copy:plugins",
 			"@core:updatedb", "@plugin:deactivate", "@plugin:activate", "@theme:activate", "@core:add-author-capabilities",
-			"@core:add-contributor-capabilities", "@redis:enable", "@core:style"
+			"@core:add-contributor-capabilities", "@redis:enable", "@core:style", "@site:custom"
 		],
 
 		"site-dev": [
@@ -83,7 +83,7 @@
 			"@download:wordpress", "@copy:health-check",
 			"@reset:themes", "@copy:themes", "@copy:assets", "@copy:plugins",
 			"@core:config", "@core:install", "@plugin:activate", "@theme:activate",
-			"@core:initial-content", "@core:style"
+			"@core:initial-content", "@core:style", "@site:custom"
 		],
 
 		"theme:install": ["@copy:theme", "@theme:activate"],
@@ -115,7 +115,8 @@
 		"plugin:activate-only-inactive": "inactive_plugins=$(wp plugin list --field=name --status=inactive --format=csv); [ ! -z \"$inactive_plugins\" ] && wp plugin activate $inactive_plugins;",
 		"theme:activate": "wp theme activate",
 
-		"server": "php -S 127.0.0.1:9191 -t public"
+		"server": "php -S 127.0.0.1:9191 -t public",
+		"site:custom" : ""
 
 	}
 }
