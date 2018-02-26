@@ -49,7 +49,7 @@
 		"merge-plugin": {
 			"require": "app/planet-4-151612/develop/composer.json",
 			"recurse": true,
-			"replace": false,
+			"replace": true,
 			"ignore-duplicates": true,
 			"merge-dev": true,
 			"merge-extra": false,
@@ -115,7 +115,8 @@
 		"plugin:activate-only-inactive": "inactive_plugins=$(wp plugin list --field=name --status=inactive --format=csv); [ ! -z \"$inactive_plugins\" ] && wp plugin activate $inactive_plugins;",
 		"theme:activate": "wp theme activate",
 
-		"server": "php -S 127.0.0.1:9191 -t public"
+		"server": "php -S 127.0.0.1:9191 -t public",
+		"site:custom" : ""
 
 	}
 }
