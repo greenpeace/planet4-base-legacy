@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "2fc0496fdd3db85d84c47fadb18b9be2",
+    "content-hash": "564f53c8aa7856d7bc96cb3b1e70de45",
     "packages": [
         {
             "name": "composer/installers",
@@ -352,7 +352,7 @@
             },
             "dist": {
                 "type": "tar",
-                "url": "https://p4-composer-registry.greenpeace.org//dist/greenpeace/planet4-plugin-migrated-urls/greenpeace-planet4-plugin-migrated-urls-cbff917c31147e320eaf1ac8cf9ab0d4762e19c0-zip-faf3da.tar",
+                "url": "https://api.github.com/repos/greenpeace/planet4-plugin-migrated-urls/zipball/cbff917c31147e320eaf1ac8cf9ab0d4762e19c0",
                 "reference": "cbff917c31147e320eaf1ac8cf9ab0d4762e19c0",
                 "shasum": "9087a3894a5ab7b450c088e03c66ed46336c37a3"
             },
