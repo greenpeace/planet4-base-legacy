@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "dc34c6acb2a7cb05b0f0a89ad1f7a45b",
+    "content-hash": "d05883d977cc0ea67ecbfe7248b0aa62",
     "packages": [
         {
             "name": "composer/installers",
@@ -132,12 +132,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/greenpeace/planet4-child-theme.git",
-                "reference": "132b89b83e51a4c5231c772641b870763e3d6665"
+                "reference": "5dbabd8ac51390b465ad1bc9d29528ac0c62ee22"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/greenpeace/planet4-child-theme/zipball/132b89b83e51a4c5231c772641b870763e3d6665",
-                "reference": "132b89b83e51a4c5231c772641b870763e3d6665",
+                "url": "https://api.github.com/repos/greenpeace/planet4-child-theme/zipball/5dbabd8ac51390b465ad1bc9d29528ac0c62ee22",
+                "reference": "5dbabd8ac51390b465ad1bc9d29528ac0c62ee22",
                 "shasum": ""
             },
             "require": {
@@ -164,7 +164,7 @@
                 }
             ],
             "description": "Exemple child theme for the Planet 4 Wordpress project",
-            "time": "2018-02-16T10:05:29+00:00"
+            "time": "2018-02-23T11:25:23+00:00"
         },
         {
             "name": "greenpeace/planet4-content-default",
@@ -205,12 +205,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/greenpeace/planet4-master-theme.git",
-                "reference": "28a5f54d3fe02b3d0cf24d1a1f8f8e724b5a87cf"
+                "reference": "5b4d0c52cda29161ed52f145b6fb30662349bd85"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/greenpeace/planet4-master-theme/zipball/28a5f54d3fe02b3d0cf24d1a1f8f8e724b5a87cf",
-                "reference": "28a5f54d3fe02b3d0cf24d1a1f8f8e724b5a87cf",
+                "url": "https://api.github.com/repos/greenpeace/planet4-master-theme/zipball/5b4d0c52cda29161ed52f145b6fb30662349bd85",
+                "reference": "5b4d0c52cda29161ed52f145b6fb30662349bd85",
                 "shasum": ""
             },
             "require": {
@@ -252,7 +252,7 @@
                 }
             ],
             "description": "Master theme for the Planet 4 Wordpress project",
-            "time": "2018-02-23T10:20:02+00:00"
+            "time": "2018-02-26T10:26:59+00:00"
         },
         {
             "name": "greenpeace/planet4-plugin-blocks",
@@ -260,12 +260,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/greenpeace/planet4-plugin-blocks.git",
-                "reference": "e5ad8ee853e12c6e642c3be21398c8b94becf21f"
+                "reference": "2fd93cbddcb90efa6637911d939d3759217a8b03"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/greenpeace/planet4-plugin-blocks/zipball/e5ad8ee853e12c6e642c3be21398c8b94becf21f",
-                "reference": "e5ad8ee853e12c6e642c3be21398c8b94becf21f",
+                "url": "https://api.github.com/repos/greenpeace/planet4-plugin-blocks/zipball/2fd93cbddcb90efa6637911d939d3759217a8b03",
+                "reference": "2fd93cbddcb90efa6637911d939d3759217a8b03",
                 "shasum": ""
             },
             "require-dev": {
@@ -294,7 +294,7 @@
                 }
             ],
             "description": "This repository contains the WordPress plugin that provides the blocks to be used with Shortcake UI plugin.",
-            "time": "2018-02-22T09:49:20+00:00"
+            "time": "2018-02-27T08:33:32+00:00"
         },
         {
             "name": "greenpeace/planet4-plugin-engagingnetworks",
