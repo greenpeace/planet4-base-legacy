@@ -10,12 +10,19 @@
 		{
 			"type": "composer",
 			"url": "https://wpackagist.org"
+		},
+		{
+			"type": "composer",
+			"url": "https://packagist.org"
 		}
 	],
 
 	"require": {
 		"greenpeace/planet4-child-theme" : "dev-develop",
+		"greenpeace/planet4-master-theme" : "dev-develop",
+		"greenpeace/planet4-plugin-blocks" : "dev-develop",
 		"greenpeace/planet4-plugin-migrated-urls" : "0.0.1",
-		"greenpeace/planet4-plugin-wpimport-upstream" : "4.5.0"
+		"greenpeace/planet4-plugin-wpimport-upstream" : "4.5.0",
+		"wpackagist-plugin/nginx-helper": "^1.9"
 	}
 }
