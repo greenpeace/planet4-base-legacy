@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "d05883d977cc0ea67ecbfe7248b0aa62",
+    "content-hash": "2fc0496fdd3db85d84c47fadb18b9be2",
     "packages": [
         {
             "name": "composer/installers",
@@ -132,12 +132,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/greenpeace/planet4-child-theme.git",
-                "reference": "5dbabd8ac51390b465ad1bc9d29528ac0c62ee22"
+                "reference": "980097888243a477ecf1f65faa6f2dee75f3ff6d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/greenpeace/planet4-child-theme/zipball/5dbabd8ac51390b465ad1bc9d29528ac0c62ee22",
-                "reference": "5dbabd8ac51390b465ad1bc9d29528ac0c62ee22",
+                "url": "https://api.github.com/repos/greenpeace/planet4-child-theme/zipball/980097888243a477ecf1f65faa6f2dee75f3ff6d",
+                "reference": "980097888243a477ecf1f65faa6f2dee75f3ff6d",
                 "shasum": ""
             },
             "require": {
@@ -164,7 +164,7 @@
                 }
             ],
             "description": "Exemple child theme for the Planet 4 Wordpress project",
-            "time": "2018-02-23T11:25:23+00:00"
+            "time": "2018-02-27T10:58:17+00:00"
         },
         {
             "name": "greenpeace/planet4-content-default",
@@ -205,12 +205,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/greenpeace/planet4-master-theme.git",
-                "reference": "5b4d0c52cda29161ed52f145b6fb30662349bd85"
+                "reference": "2ba3db4d6c717ad8d582b3a3a5b96fdac0b95e4e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/greenpeace/planet4-master-theme/zipball/5b4d0c52cda29161ed52f145b6fb30662349bd85",
-                "reference": "5b4d0c52cda29161ed52f145b6fb30662349bd85",
+                "url": "https://api.github.com/repos/greenpeace/planet4-master-theme/zipball/2ba3db4d6c717ad8d582b3a3a5b96fdac0b95e4e",
+                "reference": "2ba3db4d6c717ad8d582b3a3a5b96fdac0b95e4e",
                 "shasum": ""
             },
             "require": {
@@ -252,7 +252,7 @@
                 }
             ],
             "description": "Master theme for the Planet 4 Wordpress project",
-            "time": "2018-02-26T10:26:59+00:00"
+            "time": "2018-02-27T09:34:59+00:00"
         },
         {
             "name": "greenpeace/planet4-plugin-blocks",
@@ -681,9 +681,9 @@
     "aliases": [],
     "minimum-stability": "stable",
     "stability-flags": {
+        "greenpeace/planet4-child-theme": 20,
         "greenpeace/planet4-master-theme": 20,
-        "greenpeace/planet4-plugin-blocks": 20,
-        "greenpeace/planet4-child-theme": 20
+        "greenpeace/planet4-plugin-blocks": 20
     },
     "prefer-stable": false,
     "prefer-lowest": false,
