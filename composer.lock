@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "564f53c8aa7856d7bc96cb3b1e70de45",
+    "content-hash": "3e4b4640590a7c33b7019bccd139ce18",
     "packages": [
         {
             "name": "composer/installers",
@@ -205,12 +205,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/greenpeace/planet4-master-theme.git",
-                "reference": "2ba3db4d6c717ad8d582b3a3a5b96fdac0b95e4e"
+                "reference": "bb68b6cdeaa3484d5025e06e3860a311fcab7662"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/greenpeace/planet4-master-theme/zipball/2ba3db4d6c717ad8d582b3a3a5b96fdac0b95e4e",
-                "reference": "2ba3db4d6c717ad8d582b3a3a5b96fdac0b95e4e",
+                "url": "https://api.github.com/repos/greenpeace/planet4-master-theme/zipball/bb68b6cdeaa3484d5025e06e3860a311fcab7662",
+                "reference": "bb68b6cdeaa3484d5025e06e3860a311fcab7662",
                 "shasum": ""
             },
             "require": {
@@ -252,7 +252,7 @@
                 }
             ],
             "description": "Master theme for the Planet 4 Wordpress project",
-            "time": "2018-02-27T09:34:59+00:00"
+            "time": "2018-02-27T12:57:52+00:00"
         },
         {
             "name": "greenpeace/planet4-plugin-blocks",
@@ -260,12 +260,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/greenpeace/planet4-plugin-blocks.git",
-                "reference": "2fd93cbddcb90efa6637911d939d3759217a8b03"
+                "reference": "62785026402eca1918e67fa6183bc10455944708"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/greenpeace/planet4-plugin-blocks/zipball/2fd93cbddcb90efa6637911d939d3759217a8b03",
-                "reference": "2fd93cbddcb90efa6637911d939d3759217a8b03",
+                "url": "https://api.github.com/repos/greenpeace/planet4-plugin-blocks/zipball/62785026402eca1918e67fa6183bc10455944708",
+                "reference": "62785026402eca1918e67fa6183bc10455944708",
                 "shasum": ""
             },
             "require-dev": {
@@ -294,7 +294,7 @@
                 }
             ],
             "description": "This repository contains the WordPress plugin that provides the blocks to be used with Shortcake UI plugin.",
-            "time": "2018-02-27T08:33:32+00:00"
+            "time": "2018-02-27T12:58:16+00:00"
         },
         {
             "name": "greenpeace/planet4-plugin-engagingnetworks",
