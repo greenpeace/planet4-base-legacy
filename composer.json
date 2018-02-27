@@ -74,10 +74,6 @@
 			"@core:add-contributor-capabilities", "@redis:enable", "@core:style", "@site:custom"
 		],
 
-		"site-dev": [
-			"@core:add-super-admin-user"
-		],
-
 		"docker-site-install": [
 			"@download:wordpress", "@copy:health-check",
 			"@reset:themes", "@copy:themes", "@copy:assets", "@copy:plugins",
