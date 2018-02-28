@@ -1,0 +1,2 @@
+# Application config
+IMAGE_FROM_OPENRESTY="gcr.io/planet-4-151612/openresty:develop"
