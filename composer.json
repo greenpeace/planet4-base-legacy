@@ -20,10 +20,10 @@
 	"require": {
 		"composer/installers": "~1.0",
 		"greenpeace/planet4-content-default": "0.2.*",
-		"greenpeace/planet4-master-theme" : "0.2.35",
-		"greenpeace/planet4-plugin-blocks" : "0.1.35",
+		"greenpeace/planet4-master-theme" : "0.2.36",
+		"greenpeace/planet4-plugin-blocks" : "0.1.36",
 		"greenpeace/planet4-plugin-engagingnetworks" : "0.*",
-		"greenpeace/planet4-plugin-searchwp-upstream" : "2.9.5",
+		"greenpeace/planet4-plugin-searchwp-upstream" : "2.9.7.1",
 		"leafo/scssphp": "^0.7.4",
 		"wikimedia/composer-merge-plugin": "1.4.1",
 		"wpackagist-plugin/akismet": "4.0.2",
@@ -46,7 +46,7 @@
 			"vendor/themes/{$name}/": ["type:wordpress-theme"]
 		},
 		"merge-plugin": {
-			"require": "app/planet-4-151612/develop/composer.json",
+			"require": "app/planet4-gp-greece/production/composer.json",
 			"recurse": true,
 			"replace": true,
 			"ignore-duplicates": false,
