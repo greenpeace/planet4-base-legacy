@@ -18,14 +18,14 @@
 	],
 
 	"require": {
-		"greenpeace/planet4-child-theme" : "0.2.*",
+		"greenpeace/planet4-child-theme-greece" : "0.0.*",
 		"greenpeace/planet4-plugin-migrated-urls" : "0.0.1",
 		"greenpeace/planet4-plugin-wpimport-upstream" : "4.5.0"
 	},
 
 	"scripts": {
-		"download:plugin1": "curl -o searchwp-stemmer-greek-1.0.1.zip https://raw.githubusercontent.com/greenpeace/planet4-plugin-searchwp/master/searchwp-stemmer-greek-1.0.1.zip",
-		"install:plugin1": "wp plugin install searchwp-stemmer-greek-1.0.1.zip --activate",
+		"download:plugin1": "curl -o searchwp-stemmer-greek-1.0.2.zip https://raw.githubusercontent.com/greenpeace/planet4-plugin-searchwp/master/searchwp-stemmer-greek-1.0.2.zip",
+		"install:plugin1": "wp plugin install searchwp-stemmer-greek-1.0.2.zip --activate",
 		"core:language": "wp language core install el;wp language core activate el",
 		"site:custom" : ["@download:plugin1", "@install:plugin1", "@core:language"]
 	}
