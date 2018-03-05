@@ -18,9 +18,7 @@
 	],
 
 	"require": {
-		"greenpeace/planet4-child-theme-greece" : "0.0.*",
-		"greenpeace/planet4-plugin-migrated-urls" : "0.0.1",
-		"greenpeace/planet4-plugin-wpimport-upstream" : "4.5.0"
+		"greenpeace/planet4-child-theme-greece" : "0.0.*"
 	},
 
 	"scripts": {
