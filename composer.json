@@ -68,7 +68,7 @@
 		"site-update": [
 			"@download:wordpress", "@copy:health-check",
 			"@reset:themes", "@reset:plugins", "@copy:themes", "@copy:assets", "@copy:plugins",
-			"@core:updatedb", "@plugin:deactivate", "@plugin:activate", "@theme:activate", "@core:add-author-capabilities",
+			"@core:updatedb", "@plugin:deactivate", "@plugin:activate", "@theme:activate",
 			"@core:add-contributor-capabilities", "@redis:enable", "@core:style", "@site:custom"
 		],
 
