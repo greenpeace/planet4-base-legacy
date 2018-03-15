@@ -29,9 +29,10 @@
 	},
 
 	"scripts": {
+		"copy:robots": "rsync -ar app/planet-4-151612/develop/robots.txt public/robots.txt",
 		"download:plugin1": "curl -o searchwp-stemmer-greek-1.0.2.zip https://raw.githubusercontent.com/greenpeace/planet4-plugin-searchwp/master/searchwp-stemmer-greek-1.0.2.zip",
 		"install:plugin1": "wp plugin install searchwp-stemmer-greek-1.0.2.zip --activate",
 		"core:language": "wp language core install el",
-		"site:custom" : ["@download:plugin1", "@install:plugin1", "@core:language"]
+		"site:custom" : ["@download:plugin1", "@install:plugin1", "@core:language", "@copy:robots"]
 	}
 }
