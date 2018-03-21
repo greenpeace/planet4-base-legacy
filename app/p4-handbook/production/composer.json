@@ -16,5 +16,11 @@
 	"require": {
 		"greenpeace/planet4-child-theme-handbook" : "0.0.*",
 		"wpackagist-plugin/loco-translate": "2.0.17"
+	},
+
+	"scripts": {
+		"copy:searchconsole": "rsync -ar app/p4-handbook/production/googlec6afea9a5a6b7e1c.html public/googlec6afea9a5a6b7e1c.html",
+		"site:custom" : ["@copy:searchconsole"]
 	}
+
 }
