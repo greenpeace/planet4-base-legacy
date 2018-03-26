@@ -20,15 +20,14 @@
 	"require": {
 		"composer/installers": "~1.0",
 		"greenpeace/planet4-content-default": "0.2.*",
-		"greenpeace/planet4-master-theme" : "0.2.44",
-		"greenpeace/planet4-plugin-blocks" : "0.1.44",
-		"greenpeace/planet4-plugin-searchwp-upstream" : "2.9.7.1",
+		"greenpeace/planet4-master-theme" : "0.2.45",
+		"greenpeace/planet4-plugin-blocks" : "0.1.45",
 		"leafo/scssphp": "^0.7.4",
 		"wikimedia/composer-merge-plugin": "1.4.1",
-		"wpackagist-plugin/akismet": "4.0.2",
+		"wpackagist-plugin/akismet": "4.0.3",
 		"wpackagist-plugin/cmb2": "2.3.0",
 		"wpackagist-plugin/google-apps-login": "3.2",
-		"wpackagist-plugin/redirection": "3.1.1",
+		"wpackagist-plugin/redirection": "3.2",
 		"wpackagist-plugin/shortcode-ui": "0.7.3",
 		"wpackagist-plugin/wp-redis": "0.7.0",
 		"wpackagist-plugin/wp-stateless": "^2.1"
@@ -61,6 +60,7 @@
 			"@reset:public", "@download:wordpress", "@copy:health-check",
 			"@reset:themes", "@reset:plugins", "@copy:themes", "@copy:assets", "@copy:plugins",
 			"@core:config", "@core:install", "@plugin:activate", "@theme:activate",
+			"@download:searchwp", "@install:searchwp",
 			"@core:initial-content", "@core:add-author-capabilities", "@core:add-contributor-capabilities", "@redis:enable",
 			"@core:style", "@core:js", "@site:custom"
 		],
@@ -69,6 +69,7 @@
 			"@download:wordpress", "@copy:health-check",
 			"@reset:themes", "@reset:plugins", "@copy:themes", "@copy:assets", "@copy:plugins",
 			"@core:updatedb", "@plugin:activate", "@theme:activate",
+			"@download:searchwp", "@install:searchwp",
 			"@core:add-contributor-capabilities", "@redis:enable", "@core:style", "@core:js", "@site:custom"
 		],
 
@@ -76,6 +77,7 @@
 			"@download:wordpress", "@copy:health-check",
 			"@reset:themes", "@copy:themes", "@copy:assets", "@copy:plugins",
 			"@core:config", "@core:install", "@plugin:activate", "@theme:activate",
+			"@download:searchwp", "@install:searchwp",
 			"@core:initial-content", "@core:style", "@core:js", "@site:custom"
 		],
 
@@ -91,6 +93,9 @@
 		"copy:plugins" : "rsync -ar vendor/plugins public/wp-content",
 		"copy:themes" : "rsync -ar vendor/themes public/wp-content",
 		"copy:assets" : "rsync -ar vendor/greenpeace/planet4-content-default/assets public/wp-content/themes/planet4-master-theme",
+
+		"download:searchwp": "curl -o searchwp-2.9.12.zip https://raw.githubusercontent.com/greenpeace/planet4-plugin-searchwp/master/searchwp-2.9.12.zip",
+		"install:searchwp": "wp plugin install searchwp-2.9.12.zip --activate",
 
 		"redis:enable" : "wp redis enable",
 
