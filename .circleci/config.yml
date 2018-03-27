@@ -3,7 +3,7 @@ defaults: &defaults
     GOOGLE_PROJECT_ID: planet-4-151612
     BUILD_FLAGS: -r
   docker:
-    - image: gcr.io/planet-4-151612/circleci-base:0.3.3
+    - image: gcr.io/planet-4-151612/circleci-base:0.3.6
   working_directory:  /home/circleci/app
 
 version: 2
@@ -55,16 +55,16 @@ jobs:
           paths:
             - var
 
-  test:
-    <<: *defaults
-    steps:
-      - run:
-          name: Placeholder
-          command: |
-            echo "Branch: ${CIRCLE_BRANCH}"
-            echo "Build:  ${CIRCLE_BUILD_NUM}"
-            echo "Tag:    ${CIRCLE_TAG}"
-            echo "No tests implemented yet"
+  # test:
+  #   <<: *defaults
+  #   steps:
+  #     - run:
+  #         name: Placeholder
+  #         command: |
+  #           echo "Branch: ${CIRCLE_BRANCH}"
+  #           echo "Build:  ${CIRCLE_BUILD_NUM}"
+  #           echo "Tag:    ${CIRCLE_TAG}"
+  #           echo "No tests implemented yet"
 
   deploy:
     <<: *defaults
@@ -73,19 +73,23 @@ jobs:
       BUILD_FLAGS: -r
       BUILD_ENVIRONMENT: production
     steps:
-      - checkout
-
-      - setup_remote_docker
-
-      - run:
-          name: Configure gcloud
-          command: |
-            ${HOME}/scripts/activate-gcloud-account.sh
+      # - checkout
+      #
+      # - setup_remote_docker
+      #
+      # - run:
+      #     name: Configure gcloud
+      #     command: |
+      #       ${HOME}/scripts/activate-gcloud-account.sh
 
       - run:
           name: Build production
           command: |
-            make build
+            echo "@todo Update dependent repositories with new base master release"
+            echo " - planet4-gpi"
+            echo " - planet4-gp-greece"
+            echo " - p4-handbook"
+            echo "Commit changes to new tag"
 
 
 workflows:
@@ -96,16 +100,18 @@ workflows:
           filters:
             tags:
               only: /.*/
-      - test:
+      # - test:
+      #     requires:
+      #       - build
+      #     filters:
+      #       tags:
+      #         only: /.*/
+      # Only run deploy job for tagged releases on master
+      - deploy:
           requires:
             - build
           filters:
+            branches:
+              only: master
             tags:
-              only: /.*/
-      # Only run deploy job for tagged releases, any branch
-      - deploy:
-          requires:
-            - test
-          filters:
-            tags:
-              only: /.*/
+              only: /v.*/
