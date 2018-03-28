@@ -1,6 +1,6 @@
 {
 	"name": "greenpeace/planet4-base",
-	"version": "0.2.7",
+	"version": "1.11",
 
 	"repositories": [
 		{
@@ -20,8 +20,8 @@
 	"require": {
 		"composer/installers": "~1.0",
 		"greenpeace/planet4-content-default": "0.2.*",
-		"greenpeace/planet4-master-theme" : "0.2.45",
-		"greenpeace/planet4-plugin-blocks" : "0.1.45",
+		"greenpeace/planet4-master-theme" : "1.1",
+		"greenpeace/planet4-plugin-blocks" : "1.1",
 		"leafo/scssphp": "^0.7.4",
 		"wikimedia/composer-merge-plugin": "1.4.1",
 		"wpackagist-plugin/akismet": "4.0.3",
