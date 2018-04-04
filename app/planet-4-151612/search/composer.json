@@ -17,10 +17,8 @@
     "greenpeace/planet4-child-theme" : "dev-develop",
     "greenpeace/planet4-master-theme" : "dev-develop",
     "greenpeace/planet4-plugin-blocks" : "dev-develop",
-    "greenpeace/planet4-plugin-migrated-urls" : "0.0.1",
     "wpackagist-plugin/elasticpress": "2.4.2",
-    "wpackagist-plugin/nginx-helper": "^1.9",
-    "wpackagist-plugin/wordfence": "7.1.1"
+    "wpackagist-plugin/nginx-helper": "^1.9"
   },
 
   "scripts": {
