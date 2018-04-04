@@ -84,7 +84,7 @@
 		"reset:themes" : "rm -rf public/wp-content/themes",
 		"reset:plugins" : "rm -rf public/wp-content/plugins",
 
-		"download:wordpress": "wp core download --version=4.9.4 --path=public --force",
+		"download:wordpress": "wp core download --version=4.9.5 --path=public --force",
 		"copy:health-check" : "rsync -ar health_db.php public/health_db.php; rsync -ar health_php.php public/health_php.php; rsync -ar health_redis.php public/health_redis.php",
 		"copy:plugins" : "rsync -ar vendor/plugins public/wp-content",
 		"copy:themes" : "rsync -ar vendor/themes public/wp-content",
