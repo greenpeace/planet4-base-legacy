@@ -27,7 +27,7 @@
 		"wpackagist-plugin/redirection": "3.2",
 		"wpackagist-plugin/shortcode-ui": "0.7.3",
 		"wpackagist-plugin/wp-redis": "0.7.0",
-		"wpackagist-plugin/wp-stateless": "^2.1"
+		"wpackagist-plugin/wp-stateless": "2.1.4"
 	},
 
 	"config": {
