@@ -18,7 +18,7 @@
 	},
 
 	"scripts": {
-		"copy:robots": "rsync -ar app/planet4-gp-newzealand/staging/robots.txt public/robots.txt",
+		"copy:robots": "rsync -ar app/planet4-gp-nz/staging/robots.txt public/robots.txt",
 		"site:custom" : ["@copy:robots"]
 	}
 
