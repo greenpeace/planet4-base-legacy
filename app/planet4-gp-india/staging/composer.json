@@ -20,7 +20,7 @@
 
 	"scripts": {
 		"copy:robots": "rsync -ar app/planet4-gp-india/staging/robots.txt public/robots.txt",
-		"core:language": "wp language core install hi;wp language core activate hi",
+		"core:language": "wp language core install hi_IN; wp language core activate hi_IN",
 		"download:plugin-wpimport": "curl -o wp-all-import-pro_4.5.1.zip https://raw.githubusercontent.com/greenpeace/planet4-3rdparty-plugins/master/wp-all-import-pro_4.5.1.zip",
 		"download:plugin-wpml": "curl -o sitepress-multilingual-cms-3.9.3.zip https://raw.githubusercontent.com/greenpeace/planet4-3rdparty-plugins/master/sitepress-multilingual-cms-3.9.3.zip",
 		"download:plugin-wpml-management": "curl -o wpml-translation-management-2.5.2.zip https://raw.githubusercontent.com/greenpeace/planet4-3rdparty-plugins/master/wpml-translation-management-2.5.2.zip",
