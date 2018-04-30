@@ -11,8 +11,8 @@ To create a new project, that is powered by Planet 4, fork this repository.
 ## Prerequisite
 
 -   You will need to have PHP 7 (or higher) and composer available on your system.
--   You will also need git installed
-using svn).
+-   You will need git installed
+-   You will need to have wp-cli installed and tested
 -   You will also need mysql or mariadb installed as well.
 
 ## Installation
