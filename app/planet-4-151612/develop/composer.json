@@ -19,8 +19,9 @@
 		"greenpeace/planet4-child-theme-handbook" : "dev-master",
 		"greenpeace/planet4-master-theme" : "dev-develop",
 		"greenpeace/planet4-plugin-blocks" : "dev-develop",
+		"greenpeace/planet4-plugin-medialibrary" : "dev-develop",
 		"greenpeace/planet4-plugin-migrated-urls" : "0.0.1",
-		"wpackagist-plugin/elasticpress": "2.4.2",
+		"wpackagist-plugin/elasticpress": "2.5.2",
 		"wpackagist-plugin/nginx-helper": "^1.9"
 	},
 
