@@ -1,6 +1,6 @@
 {
 	"name": "greenpeace/planet4-base",
-	"version": "1.17",
+	"version": "1.18",
 
 	"repositories": [
 		{
@@ -16,8 +16,9 @@
 	"require": {
 		"composer/installers": "~1.0",
 		"greenpeace/planet4-content-default": "0.2.*",
-		"greenpeace/planet4-master-theme" : "1.7",
-		"greenpeace/planet4-plugin-blocks" : "1.7",
+		"greenpeace/planet4-master-theme" : "1.8",
+		"greenpeace/planet4-plugin-blocks" : "1.8",
+		"greenpeace/planet4-plugin-medialibrary" : "0.1.1",
 		"leafo/scssphp": "^0.7.4",
 		"matthiasmullie/minify": "^1.3",
 		"wikimedia/composer-merge-plugin": "1.4.1",
@@ -86,14 +87,14 @@
 		"reset:themes" : "rm -rf public/wp-content/themes",
 		"reset:plugins" : "rm -rf public/wp-content/plugins",
 
-		"download:wordpress": "wp core download --version=4.9.5 --path=public --force",
+		"download:wordpress": "wp core download --version=4.9.6 --path=public --force",
 		"copy:health-check" : "rsync -ar health_db.php public/health_db.php; rsync -ar health_php.php public/health_php.php; rsync -ar health_redis.php public/health_redis.php",
 		"copy:plugins" : "rsync -ar vendor/plugins public/wp-content",
 		"copy:themes" : "rsync -ar vendor/themes public/wp-content",
 		"copy:assets" : "rsync -ar vendor/greenpeace/planet4-content-default/assets public/wp-content/themes/planet4-master-theme",
 
-		"download:searchwp": "curl -o searchwp-2.9.12.zip https://raw.githubusercontent.com/greenpeace/planet4-3rdparty-plugins/master/searchwp-2.9.12.zip",
-		"install:searchwp": "wp plugin install searchwp-2.9.12.zip --activate",
+		"download:searchwp": "curl -o searchwp-2.9.13.zip https://raw.githubusercontent.com/greenpeace/planet4-3rdparty-plugins/master/searchwp-2.9.13.zip",
+		"install:searchwp": "wp plugin install searchwp-2.9.13.zip --activate",
 
 		"redis:enable" : "wp redis enable",
 
