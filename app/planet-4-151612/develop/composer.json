@@ -14,7 +14,7 @@
 	],
 
 	"require": {
-		"greenpeace/planet4-child-theme" : "dev-develop",
+		"greenpeace/planet4-child-theme" : "dev-release-candidate",
 		"greenpeace/planet4-child-theme-greece" : "dev-master",
 		"greenpeace/planet4-child-theme-handbook" : "dev-master",
 		"greenpeace/planet4-master-theme" : "dev-release-candidate",
