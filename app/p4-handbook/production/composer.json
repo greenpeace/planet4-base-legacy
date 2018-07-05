@@ -5,16 +5,24 @@
 	"repositories": [
 		{
 			"type": "composer",
-			"url": "https://p4-composer-registry.greenpeace.org/"
+			"url": "https://wpackagist.org"
 		},
 		{
 			"type": "composer",
-			"url": "https://wpackagist.org"
+			"url": "https://packagist.org"
 		}
 	],
 
 	"require": {
 		"greenpeace/planet4-child-theme-handbook" : "0.0.*",
-		"wpackagist-plugin/loco-translate": "2.0.17"
+		"greenpeace/planet4-master-theme" : "dev-languages",
+		"greenpeace/planet4-plugin-blocks" : "dev-languages",
+		"wpackagist-plugin/loco-translate": "2.1.4"
+	},
+
+	"scripts": {
+		"copy:searchconsole": "rsync -ar app/p4-handbook/production/googlec6afea9a5a6b7e1c.html public/googlec6afea9a5a6b7e1c.html",
+		"site:custom" : ["@copy:searchconsole"]
 	}
+
 }
