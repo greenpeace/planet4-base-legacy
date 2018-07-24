@@ -17,7 +17,7 @@
 		"greenpeace/planet4-child-theme-handbook" : "0.0.*",
 		"greenpeace/planet4-master-theme" : "dev-languages",
 		"greenpeace/planet4-plugin-blocks" : "dev-languages",
-		"wpackagist-plugin/ideapush":"3.8",
+		"wpackagist-plugin/ideapush":"3.9",
 		"wpackagist-plugin/loco-translate": "2.1.4"
 	},
 
