@@ -14,16 +14,19 @@
 	],
 
 	"require": {
+		"greenpeace/planet4-child-theme" : "0.*",
 		"greenpeace/planet4-child-theme-handbook" : "0.0.*",
 		"greenpeace/planet4-master-theme" : "dev-languages",
 		"greenpeace/planet4-plugin-blocks" : "dev-languages",
-		"wpackagist-plugin/ideapush":"3.10",
+		"planet4-rpg/planet4-rpg" : "0.*",
+		"wpackagist-plugin/ideapush":"3.15",
 		"wpackagist-plugin/loco-translate": "2.1.4"
 	},
 
 	"scripts": {
 		"copy:searchconsole": "rsync -ar app/p4-handbook/production/googlec6afea9a5a6b7e1c.html public/googlec6afea9a5a6b7e1c.html",
-		"site:custom" : ["@copy:searchconsole"]
+		"copy:p4rpg": "rsync -ar vendor/planet4-rpg/planet4-rpg/* public/rpg/",
+		"site:custom" : ["@copy:searchconsole","@copy:p4rpg"]
 	}
 
 }
