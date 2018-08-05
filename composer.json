@@ -29,7 +29,7 @@
 		"wpackagist-plugin/google-sitemap-generator": "4.0.9",
 		"wpackagist-plugin/redirection": "3.4",
 		"wpackagist-plugin/shortcode-ui": "0.7.3",
-		"wpackagist-plugin/wordfence": "7.1.9",
+		"wpackagist-plugin/wordfence": "7.1.10",
 		"wpackagist-plugin/wp-redis": "0.7.0",
 		"wpackagist-plugin/wp-stateless": "2.1.6"
 	},
@@ -92,7 +92,7 @@
 		"reset:themes" : "rm -rf public/wp-content/themes",
 		"reset:plugins" : "rm -rf public/wp-content/plugins",
 
-		"download:wordpress": "wp core download --version=4.9.7 --path=public --force",
+		"download:wordpress": "wp core download --version=4.9.8 --path=public --force",
 		"copy:health-check" : "rsync -ar health_db.php public/health_db.php; rsync -ar health_php.php public/health_php.php; rsync -ar health_redis.php public/health_redis.php",
 		"copy:plugins" : "rsync -ar vendor/plugins public/wp-content",
 		"copy:themes" : "rsync -ar vendor/themes public/wp-content",
