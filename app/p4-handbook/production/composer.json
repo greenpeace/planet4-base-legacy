@@ -19,7 +19,7 @@
 		"greenpeace/planet4-master-theme" : "dev-languages",
 		"greenpeace/planet4-plugin-blocks" : "dev-languages",
 		"planet4-rpg/planet4-rpg" : "0.*",
-		"wpackagist-plugin/loco-translate": "2.1.4"
+		"wpackagist-plugin/loco-translate": "2.1.5"
 	},
 
 	"scripts": {
