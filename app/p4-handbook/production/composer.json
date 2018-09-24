@@ -24,7 +24,7 @@
 	},
 
 	"scripts": {
-		"install:plugin-ideapush": "wp plugin install --activate https://raw.githubusercontent.com/greenpeace/planet4-3rdparty-plugins/master/ideapush-v4.6.zip",
+		"install:plugin-ideapush": "wp plugin install --activate https://raw.githubusercontent.com/greenpeace/planet4-3rdparty-plugins/master/ideapush-v4.17.zip",
 		"copy:searchconsole": "rsync -ar app/p4-handbook/production/googlec6afea9a5a6b7e1c.html public/googlec6afea9a5a6b7e1c.html",
 		"copy:p4rpg": "rsync -ar vendor/planet4-rpg/planet4-rpg/* public/rpg/",
 		"site:custom" : ["@install:plugin-ideapush","@copy:searchconsole","@copy:p4rpg"]
